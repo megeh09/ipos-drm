@@ -92,7 +92,7 @@ public class DashboardImplementation {
         };
 
         DefaultTableModel model = new DefaultTableModel(null, columnName);
-        Integer maxQuantity = 10;
+        Integer maxQuantity = 5;
         List<Stock> stocks = stockJpaController.findAlmostOutOfStockWithLimit(maxQuantity);
 
         try {

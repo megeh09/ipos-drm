@@ -43,7 +43,7 @@ public class MainFrame extends javax.swing.JFrame {
     private final Color MOUSE_ENTERED_COLOR = new java.awt.Color(0, 173, 208);
     private final Color MOUSE_B1_EXITED_COLOR = new java.awt.Color(57, 72, 93);
     private final Color BUTTON_B1_DEFAULT_COLOR = new java.awt.Color(217, 231, 240);
-    private final Color MOUSE_B2_EXITED_COLOR = new java.awt.Color(167,177,194);
+    private final Color MOUSE_B2_EXITED_COLOR = new java.awt.Color(119,127,140);
     private final Color BUTTON_B2_DEFAULT_COLOR = new java.awt.Color(57, 72, 93);
     private final Integer MENU_B1_DASHBOARD = 1;
     private final Integer MENU_B1_STOCKS = 2;
@@ -208,14 +208,20 @@ public class MainFrame extends javax.swing.JFrame {
         b1LeftPanel = new javax.swing.JPanel();
         b1LeftPanelScrollPane = new javax.swing.JScrollPane();
         b1LeftInnerPanel = new javax.swing.JPanel();
-        b1TopSeparator = new javax.swing.JSeparator();
         b1DashboardButton = new javax.swing.JButton();
         b1StocksButton = new javax.swing.JButton();
         b1ReportsButton = new javax.swing.JButton();
-        b1MiddleSeparator = new javax.swing.JSeparator();
         b1SettingsButton = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
+        b1UserPanel = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        b1CurrentUserLabel = new javax.swing.JLabel();
+        b1CurrentUserGroupLabel = new javax.swing.JLabel();
+        b1CurrentUserGroupLabel2 = new javax.swing.JLabel();
+        w1B1RadioButton = new javax.swing.JRadioButton();
+        w1B2RadioButton = new javax.swing.JRadioButton();
+        b1CurrentUserGroupLabel3 = new javax.swing.JLabel();
         b1RightPanel = new javax.swing.JPanel();
         b1RightPanelScrollPane = new javax.swing.JScrollPane();
         b1TargetPanel = new javax.swing.JPanel();
@@ -223,26 +229,32 @@ public class MainFrame extends javax.swing.JFrame {
         b2LeftPanel = new javax.swing.JPanel();
         b2LeftPanelScrollPane = new javax.swing.JScrollPane();
         b2LeftInnerPanel = new javax.swing.JPanel();
-        b2TopSeparator = new javax.swing.JSeparator();
         b2DashboardButton = new javax.swing.JButton();
         b2StocksButton = new javax.swing.JButton();
         b2ReportsButton = new javax.swing.JButton();
-        b2MiddleSeparator = new javax.swing.JSeparator();
         b2SettingsButton = new javax.swing.JButton();
         jLabel14 = new javax.swing.JLabel();
         jLabel15 = new javax.swing.JLabel();
+        b2UserPanel = new javax.swing.JPanel();
+        jLabel16 = new javax.swing.JLabel();
+        b2CurrentUserLabel = new javax.swing.JLabel();
+        b2CurrentUserGroupLabel = new javax.swing.JLabel();
+        b1CurrentUserGroupLabel4 = new javax.swing.JLabel();
+        w2B1RadioButton = new javax.swing.JRadioButton();
+        w2B2RadioButton = new javax.swing.JRadioButton();
+        b1CurrentUserGroupLabel5 = new javax.swing.JLabel();
         b2RightPanel = new javax.swing.JPanel();
         b2RightPanelScrollPane = new javax.swing.JScrollPane();
         b2TargetPanel = new javax.swing.JPanel();
-        bodegaButtonGroup = new javax.swing.ButtonGroup();
+        bodega1ButtonGroup = new javax.swing.ButtonGroup();
+        bodega2ButtonGroup = new javax.swing.ButtonGroup();
         mainPanel = new javax.swing.JPanel();
         topPanel = new javax.swing.JPanel();
-        jLabel3 = new javax.swing.JLabel();
-        currentUserLabel = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         titleLabel = new javax.swing.JLabel();
-        b1RadioButton = new javax.swing.JRadioButton();
-        b2RadioButton = new javax.swing.JRadioButton();
+        storeLabel = new javax.swing.JLabel();
+        b1CurrentUserGroupLabel6 = new javax.swing.JLabel();
+        b1CurrentUserGroupLabel7 = new javax.swing.JLabel();
         centerPanel = new javax.swing.JPanel();
         bottomPanel = new javax.swing.JPanel();
 
@@ -1613,9 +1625,6 @@ public class MainFrame extends javax.swing.JFrame {
         b1LeftInnerPanel.setForeground(new java.awt.Color(57, 72, 93));
         b1LeftInnerPanel.setPreferredSize(new java.awt.Dimension(247, 261));
 
-        b1TopSeparator.setBackground(new java.awt.Color(57, 72, 93));
-        b1TopSeparator.setForeground(new java.awt.Color(57, 72, 93));
-
         b1DashboardButton.setBackground(new java.awt.Color(57, 72, 93));
         b1DashboardButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         b1DashboardButton.setForeground(new java.awt.Color(167, 177, 194));
@@ -1688,9 +1697,6 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        b1MiddleSeparator.setBackground(new java.awt.Color(217, 231, 240));
-        b1MiddleSeparator.setForeground(new java.awt.Color(217, 231, 240));
-
         b1SettingsButton.setBackground(new java.awt.Color(57, 72, 93));
         b1SettingsButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         b1SettingsButton.setForeground(new java.awt.Color(167, 177, 194));
@@ -1723,41 +1729,129 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel7.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel7.setText("© 2017 . Dgte Rubi Marketing . All rights reserved . ");
+        jLabel7.setText("© 2017 . Dgte Rubi Marketing . All rights reserved.");
+
+        b1UserPanel.setBackground(new java.awt.Color(57, 72, 93));
+        b1UserPanel.setForeground(new java.awt.Color(57, 72, 93));
+        b1UserPanel.setToolTipText("");
+
+        jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/img-profile.png"))); // NOI18N
+
+        b1CurrentUserLabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        b1CurrentUserLabel.setForeground(new java.awt.Color(0, 173, 208));
+        b1CurrentUserLabel.setText("Administrator");
+
+        b1CurrentUserGroupLabel.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        b1CurrentUserGroupLabel.setForeground(new java.awt.Color(255, 255, 255));
+        b1CurrentUserGroupLabel.setText("Administrator");
+
+        javax.swing.GroupLayout b1UserPanelLayout = new javax.swing.GroupLayout(b1UserPanel);
+        b1UserPanel.setLayout(b1UserPanelLayout);
+        b1UserPanelLayout.setHorizontalGroup(
+            b1UserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1UserPanelLayout.createSequentialGroup()
+                .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(b1UserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(b1CurrentUserLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(b1CurrentUserGroupLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        b1UserPanelLayout.setVerticalGroup(
+            b1UserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, 63, Short.MAX_VALUE)
+            .addGroup(b1UserPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(b1CurrentUserLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1CurrentUserGroupLabel)
+                .addContainerGap())
+        );
+
+        b1CurrentUserGroupLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        b1CurrentUserGroupLabel2.setForeground(new java.awt.Color(255, 255, 255));
+        b1CurrentUserGroupLabel2.setText("WAREHOUSE");
+
+        w1B1RadioButton.setBackground(new java.awt.Color(232, 236, 239));
+        bodega1ButtonGroup.add(w1B1RadioButton);
+        w1B1RadioButton.setForeground(new java.awt.Color(255, 255, 255));
+        w1B1RadioButton.setSelected(true);
+        w1B1RadioButton.setText("BODEGA 1");
+        w1B1RadioButton.setContentAreaFilled(false);
+        w1B1RadioButton.setFocusPainted(false);
+        w1B1RadioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                w1B1RadioButtonActionPerformed(evt);
+            }
+        });
+
+        w1B2RadioButton.setBackground(new java.awt.Color(232, 236, 239));
+        bodega1ButtonGroup.add(w1B2RadioButton);
+        w1B2RadioButton.setForeground(new java.awt.Color(255, 255, 255));
+        w1B2RadioButton.setText("BODEGA 2");
+        w1B2RadioButton.setContentAreaFilled(false);
+        w1B2RadioButton.setFocusPainted(false);
+        w1B2RadioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                w1B2RadioButtonActionPerformed(evt);
+            }
+        });
+
+        b1CurrentUserGroupLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        b1CurrentUserGroupLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        b1CurrentUserGroupLabel3.setText("MENU");
 
         javax.swing.GroupLayout b1LeftInnerPanelLayout = new javax.swing.GroupLayout(b1LeftInnerPanel);
         b1LeftInnerPanel.setLayout(b1LeftInnerPanelLayout);
         b1LeftInnerPanelLayout.setHorizontalGroup(
             b1LeftInnerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(b1TopSeparator, javax.swing.GroupLayout.Alignment.TRAILING)
             .addComponent(b1DashboardButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(b1StocksButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(b1ReportsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(b1MiddleSeparator)
             .addComponent(b1SettingsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(b1LeftInnerPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(b1LeftInnerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap())
+                    .addGroup(b1LeftInnerPanelLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(w1B1RadioButton)
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(b1LeftInnerPanelLayout.createSequentialGroup()
+                        .addGroup(b1LeftInnerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(b1LeftInnerPanelLayout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(w1B2RadioButton)
+                                .addGap(0, 0, Short.MAX_VALUE))
+                            .addComponent(b1CurrentUserGroupLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(b1UserPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(jLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(b1CurrentUserGroupLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap())))
         );
         b1LeftInnerPanelLayout.setVerticalGroup(
             b1LeftInnerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(b1LeftInnerPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(b1TopSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
+                .addComponent(b1UserPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(b1CurrentUserGroupLabel2)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(w1B1RadioButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(w1B2RadioButton)
+                .addGap(18, 18, 18)
+                .addComponent(b1CurrentUserGroupLabel3)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(b1DashboardButton)
                 .addGap(0, 0, 0)
                 .addComponent(b1StocksButton)
                 .addGap(0, 0, 0)
                 .addComponent(b1ReportsButton)
-                .addGap(20, 20, 20)
-                .addComponent(b1MiddleSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(b1SettingsButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 247, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 116, Short.MAX_VALUE)
                 .addComponent(jLabel7)
                 .addGap(0, 0, 0)
                 .addComponent(jLabel6)
@@ -1795,15 +1889,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         b2LeftPanelScrollPane.setPreferredSize(new java.awt.Dimension(250, 100));
 
-        b2LeftInnerPanel.setBackground(new java.awt.Color(167, 177, 194));
+        b2LeftInnerPanel.setBackground(new java.awt.Color(119, 127, 140));
         b2LeftInnerPanel.setForeground(new java.awt.Color(167, 177, 194));
         b2LeftInnerPanel.setPreferredSize(new java.awt.Dimension(247, 261));
 
-        b2TopSeparator.setBackground(new java.awt.Color(167, 177, 194));
-        b2TopSeparator.setForeground(new java.awt.Color(167, 177, 194));
-        b2TopSeparator.setToolTipText("");
-
-        b2DashboardButton.setBackground(new java.awt.Color(167, 177, 194));
+        b2DashboardButton.setBackground(new java.awt.Color(119, 127, 140));
         b2DashboardButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         b2DashboardButton.setForeground(new java.awt.Color(57, 72, 93));
         b2DashboardButton.setText("Dashboard");
@@ -1827,7 +1917,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        b2StocksButton.setBackground(new java.awt.Color(167, 177, 194));
+        b2StocksButton.setBackground(new java.awt.Color(119, 127, 140));
         b2StocksButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         b2StocksButton.setForeground(new java.awt.Color(57, 72, 93));
         b2StocksButton.setText("Stocks");
@@ -1851,7 +1941,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        b2ReportsButton.setBackground(new java.awt.Color(167, 177, 194));
+        b2ReportsButton.setBackground(new java.awt.Color(119, 127, 140));
         b2ReportsButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         b2ReportsButton.setForeground(new java.awt.Color(57, 72, 93));
         b2ReportsButton.setText("Reports");
@@ -1875,10 +1965,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        b2MiddleSeparator.setBackground(new java.awt.Color(217, 231, 240));
-        b2MiddleSeparator.setForeground(new java.awt.Color(217, 231, 240));
-
-        b2SettingsButton.setBackground(new java.awt.Color(167, 177, 194));
+        b2SettingsButton.setBackground(new java.awt.Color(119, 127, 140));
         b2SettingsButton.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         b2SettingsButton.setForeground(new java.awt.Color(57, 72, 93));
         b2SettingsButton.setText("Settings");
@@ -1910,41 +1997,128 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel15.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel15.setForeground(new java.awt.Color(46, 46, 46));
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel15.setText("© 2017 . Dgte Rubi Marketing . All rights reserved . ");
+        jLabel15.setText("© 2017 . Dgte Rubi Marketing . All rights reserved.");
+
+        b2UserPanel.setBackground(new java.awt.Color(119, 127, 140));
+        b2UserPanel.setForeground(new java.awt.Color(119, 127, 140));
+        b2UserPanel.setToolTipText("");
+
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/img-profile.png"))); // NOI18N
+
+        b2CurrentUserLabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        b2CurrentUserLabel.setForeground(new java.awt.Color(0, 173, 208));
+        b2CurrentUserLabel.setText("Administrator");
+
+        b2CurrentUserGroupLabel.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        b2CurrentUserGroupLabel.setForeground(new java.awt.Color(255, 255, 255));
+        b2CurrentUserGroupLabel.setText("Administrator");
+
+        javax.swing.GroupLayout b2UserPanelLayout = new javax.swing.GroupLayout(b2UserPanel);
+        b2UserPanel.setLayout(b2UserPanelLayout);
+        b2UserPanelLayout.setHorizontalGroup(
+            b2UserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b2UserPanelLayout.createSequentialGroup()
+                .addComponent(jLabel16, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(b2UserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(b2CurrentUserLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(b2CurrentUserGroupLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+        b2UserPanelLayout.setVerticalGroup(
+            b2UserPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(jLabel16, javax.swing.GroupLayout.DEFAULT_SIZE, 63, Short.MAX_VALUE)
+            .addGroup(b2UserPanelLayout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(b2CurrentUserLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b2CurrentUserGroupLabel)
+                .addContainerGap())
+        );
+
+        b1CurrentUserGroupLabel4.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        b1CurrentUserGroupLabel4.setForeground(new java.awt.Color(255, 255, 255));
+        b1CurrentUserGroupLabel4.setText("WAREHOUSE");
+
+        w2B1RadioButton.setBackground(new java.awt.Color(232, 236, 239));
+        bodega2ButtonGroup.add(w2B1RadioButton);
+        w2B1RadioButton.setForeground(new java.awt.Color(255, 255, 255));
+        w2B1RadioButton.setText("BODEGA 1");
+        w2B1RadioButton.setContentAreaFilled(false);
+        w2B1RadioButton.setFocusPainted(false);
+        w2B1RadioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                w2B1RadioButtonActionPerformed(evt);
+            }
+        });
+
+        w2B2RadioButton.setBackground(new java.awt.Color(232, 236, 239));
+        bodega2ButtonGroup.add(w2B2RadioButton);
+        w2B2RadioButton.setForeground(new java.awt.Color(255, 255, 255));
+        w2B2RadioButton.setSelected(true);
+        w2B2RadioButton.setText("BODEGA 2");
+        w2B2RadioButton.setContentAreaFilled(false);
+        w2B2RadioButton.setFocusPainted(false);
+        w2B2RadioButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                w2B2RadioButtonActionPerformed(evt);
+            }
+        });
+
+        b1CurrentUserGroupLabel5.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        b1CurrentUserGroupLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        b1CurrentUserGroupLabel5.setText("MENU");
 
         javax.swing.GroupLayout b2LeftInnerPanelLayout = new javax.swing.GroupLayout(b2LeftInnerPanel);
         b2LeftInnerPanel.setLayout(b2LeftInnerPanelLayout);
         b2LeftInnerPanelLayout.setHorizontalGroup(
             b2LeftInnerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(b2TopSeparator, javax.swing.GroupLayout.Alignment.TRAILING)
             .addComponent(b2DashboardButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(b2StocksButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addComponent(b2ReportsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addComponent(b2MiddleSeparator)
             .addComponent(b2SettingsButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
             .addGroup(b2LeftInnerPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(b2LeftInnerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel14, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(jLabel15, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(b2UserPanel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(b1CurrentUserGroupLabel5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(b1CurrentUserGroupLabel4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(b2LeftInnerPanelLayout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addGroup(b2LeftInnerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(b2LeftInnerPanelLayout.createSequentialGroup()
+                                .addComponent(w2B1RadioButton)
+                                .addGap(147, 147, 147))
+                            .addGroup(b2LeftInnerPanelLayout.createSequentialGroup()
+                                .addComponent(w2B2RadioButton)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
                 .addContainerGap())
         );
         b2LeftInnerPanelLayout.setVerticalGroup(
             b2LeftInnerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(b2LeftInnerPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(b2TopSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
+                .addComponent(b2UserPanel, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(b1CurrentUserGroupLabel4)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(w2B1RadioButton)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(w2B2RadioButton)
+                .addGap(18, 18, 18)
+                .addComponent(b1CurrentUserGroupLabel5)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(b2DashboardButton)
                 .addGap(0, 0, 0)
                 .addComponent(b2StocksButton)
                 .addGap(0, 0, 0)
                 .addComponent(b2ReportsButton)
-                .addGap(20, 20, 20)
-                .addComponent(b2MiddleSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(0, 0, 0)
                 .addComponent(b2SettingsButton)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 247, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 116, Short.MAX_VALUE)
                 .addComponent(jLabel15)
                 .addGap(0, 0, 0)
                 .addComponent(jLabel14)
@@ -1982,77 +2156,66 @@ public class MainFrame extends javax.swing.JFrame {
         topPanel.setForeground(new java.awt.Color(25, 32, 42));
         topPanel.setPreferredSize(new java.awt.Dimension(1024, 100));
 
-        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(46, 46, 46));
-        jLabel3.setText("Welcome:");
-
-        currentUserLabel.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        currentUserLabel.setForeground(new java.awt.Color(0, 173, 208));
-        currentUserLabel.setText("Administrator");
-
         jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/img-logo.png"))); // NOI18N
+        jLabel2.setPreferredSize(new java.awt.Dimension(250, 90));
 
-        titleLabel.setFont(new java.awt.Font("Tahoma", 1, 34)); // NOI18N
+        titleLabel.setFont(new java.awt.Font("Tahoma", 1, 30)); // NOI18N
         titleLabel.setForeground(new java.awt.Color(0, 173, 208));
         titleLabel.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
         titleLabel.setText("BODEGA 1 - Inventory System");
 
-        b1RadioButton.setBackground(new java.awt.Color(232, 236, 239));
-        bodegaButtonGroup.add(b1RadioButton);
-        b1RadioButton.setSelected(true);
-        b1RadioButton.setText("B1");
-        b1RadioButton.setContentAreaFilled(false);
-        b1RadioButton.setFocusPainted(false);
-        b1RadioButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b1RadioButtonActionPerformed(evt);
-            }
-        });
+        storeLabel.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        storeLabel.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        storeLabel.setText("DUMAGUETE RUBI MARKETING");
+        storeLabel.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
 
-        b2RadioButton.setBackground(new java.awt.Color(232, 236, 239));
-        bodegaButtonGroup.add(b2RadioButton);
-        b2RadioButton.setText("B2");
-        b2RadioButton.setContentAreaFilled(false);
-        b2RadioButton.setFocusPainted(false);
-        b2RadioButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b2RadioButtonActionPerformed(evt);
-            }
-        });
+        b1CurrentUserGroupLabel6.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        b1CurrentUserGroupLabel6.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        b1CurrentUserGroupLabel6.setText("035-4229772, 035-2261002, 0917-3220228");
+
+        b1CurrentUserGroupLabel7.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        b1CurrentUserGroupLabel7.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
+        b1CurrentUserGroupLabel7.setText("Dr. V. Locsin Cr. Maria Cristina St., Dumaguete City, Negros Oriental 6200");
 
         javax.swing.GroupLayout topPanelLayout = new javax.swing.GroupLayout(topPanel);
         topPanel.setLayout(topPanelLayout);
         topPanelLayout.setHorizontalGroup(
             topPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, topPanelLayout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, 0)
+            .addGroup(topPanelLayout.createSequentialGroup()
+                .addGroup(topPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(topPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(storeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGroup(topPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(topPanelLayout.createSequentialGroup()
-                        .addComponent(b1RadioButton)
-                        .addGap(18, 18, 18)
-                        .addComponent(b2RadioButton)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(jLabel3)
+                        .addGap(10, 10, 10)
+                        .addComponent(titleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, topPanelLayout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(currentUserLabel))
-                    .addComponent(titleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, 764, Short.MAX_VALUE))
+                        .addComponent(b1CurrentUserGroupLabel7, javax.swing.GroupLayout.DEFAULT_SIZE, 758, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, topPanelLayout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(b1CurrentUserGroupLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         topPanelLayout.setVerticalGroup(
             topPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jLabel2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, topPanelLayout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(titleLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(topPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jLabel3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(currentUserLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addGroup(topPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(b2RadioButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(b1RadioButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+            .addGroup(topPanelLayout.createSequentialGroup()
+                .addGroup(topPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(topPanelLayout.createSequentialGroup()
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 82, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(storeLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(topPanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(titleLabel)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(b1CurrentUserGroupLabel7)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(b1CurrentUserGroupLabel6)
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
 
@@ -2425,47 +2588,68 @@ public class MainFrame extends javax.swing.JFrame {
         previousB2Button = b2SettingsButton;
     }//GEN-LAST:event_b2SettingsButtonActionPerformed
 
-    private void b1RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1RadioButtonActionPerformed
+    private void w1B1RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w1B1RadioButtonActionPerformed
         triggerCenterPanel(b1CenterPanel, "BODEGA 1 - Inventory System");
-    }//GEN-LAST:event_b1RadioButtonActionPerformed
+        bodega1ButtonGroup.setSelected(w1B1RadioButton.getModel(), true);
+    }//GEN-LAST:event_w1B1RadioButtonActionPerformed
 
-    private void b2RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2RadioButtonActionPerformed
+    private void w1B2RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w1B2RadioButtonActionPerformed
         triggerCenterPanel(b2CenterPanel, "BODEGA 2 - Inventory System");
-    }//GEN-LAST:event_b2RadioButtonActionPerformed
+        bodega2ButtonGroup.setSelected(w2B2RadioButton.getModel(), true);
+    }//GEN-LAST:event_w1B2RadioButtonActionPerformed
+
+    private void w2B1RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w2B1RadioButtonActionPerformed
+        triggerCenterPanel(b1CenterPanel, "BODEGA 1 - Inventory System");
+        bodega1ButtonGroup.setSelected(w1B1RadioButton.getModel(), true);
+    }//GEN-LAST:event_w2B1RadioButtonActionPerformed
+
+    private void w2B2RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w2B2RadioButtonActionPerformed
+        triggerCenterPanel(b2CenterPanel, "BODEGA 2 - Inventory System");
+        bodega2ButtonGroup.setSelected(w2B2RadioButton.getModel(), true);
+    }//GEN-LAST:event_w2B2RadioButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel b1CenterPanel;
+    private javax.swing.JLabel b1CurrentUserGroupLabel;
+    private javax.swing.JLabel b1CurrentUserGroupLabel1;
+    private javax.swing.JLabel b1CurrentUserGroupLabel2;
+    private javax.swing.JLabel b1CurrentUserGroupLabel3;
+    private javax.swing.JLabel b1CurrentUserGroupLabel4;
+    private javax.swing.JLabel b1CurrentUserGroupLabel5;
+    private javax.swing.JLabel b1CurrentUserGroupLabel6;
+    private javax.swing.JLabel b1CurrentUserGroupLabel7;
+    private javax.swing.JLabel b1CurrentUserLabel;
+    private javax.swing.JLabel b1CurrentUserLabel1;
     private javax.swing.JButton b1DashboardButton;
     private javax.swing.JPanel b1LeftInnerPanel;
     private javax.swing.JPanel b1LeftPanel;
     private javax.swing.JScrollPane b1LeftPanelScrollPane;
-    private javax.swing.JSeparator b1MiddleSeparator;
-    private javax.swing.JRadioButton b1RadioButton;
     private javax.swing.JButton b1ReportsButton;
     private javax.swing.JPanel b1RightPanel;
     private javax.swing.JScrollPane b1RightPanelScrollPane;
     private javax.swing.JButton b1SettingsButton;
     private javax.swing.JButton b1StocksButton;
     private javax.swing.JPanel b1TargetPanel;
-    private javax.swing.JSeparator b1TopSeparator;
+    private javax.swing.JPanel b1UserPanel;
+    private javax.swing.JPanel b1UserPanel1;
     private javax.swing.JPanel b2CenterPanel;
+    private javax.swing.JLabel b2CurrentUserGroupLabel;
+    private javax.swing.JLabel b2CurrentUserLabel;
     private javax.swing.JButton b2DashboardButton;
     private javax.swing.JPanel b2LeftInnerPanel;
     private javax.swing.JPanel b2LeftPanel;
     private javax.swing.JScrollPane b2LeftPanelScrollPane;
-    private javax.swing.JSeparator b2MiddleSeparator;
-    private javax.swing.JRadioButton b2RadioButton;
     private javax.swing.JButton b2ReportsButton;
     private javax.swing.JPanel b2RightPanel;
     private javax.swing.JScrollPane b2RightPanelScrollPane;
     private javax.swing.JButton b2SettingsButton;
     private javax.swing.JButton b2StocksButton;
     private javax.swing.JPanel b2TargetPanel;
-    private javax.swing.JSeparator b2TopSeparator;
-    private javax.swing.ButtonGroup bodegaButtonGroup;
+    private javax.swing.JPanel b2UserPanel;
+    private javax.swing.ButtonGroup bodega1ButtonGroup;
+    private javax.swing.ButtonGroup bodega2ButtonGroup;
     private javax.swing.JPanel bottomPanel;
     private javax.swing.JPanel centerPanel;
-    private javax.swing.JLabel currentUserLabel;
     private javax.swing.JScrollPane dashboardAlmostOutOfStockScrollPane;
     private org.jdesktop.swingx.JXTable dashboardAlmostOutOfStockXTable;
     private javax.swing.JPanel dashboardBottomPanel;
@@ -2490,13 +2674,15 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
     private javax.swing.JLabel jLabel15;
+    private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -2558,6 +2744,7 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel stocksCenterPanel;
     private javax.swing.JPanel stocksPanel;
     private javax.swing.JPanel stocksTopPanel;
+    private javax.swing.JLabel storeLabel;
     private javax.swing.JScrollPane suplierScrollPane;
     private javax.swing.JButton suppliderAddButton;
     private javax.swing.JPanel supplierCenterPanel;
@@ -2590,6 +2777,10 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton userUpdateButton;
     private org.jdesktop.swingx.JXSearchField userXSearchField;
     private org.jdesktop.swingx.JXTable userXTable;
+    private javax.swing.JRadioButton w1B1RadioButton;
+    private javax.swing.JRadioButton w1B2RadioButton;
+    private javax.swing.JRadioButton w2B1RadioButton;
+    private javax.swing.JRadioButton w2B2RadioButton;
     // End of variables declaration//GEN-END:variables
 
     private void initElements() {
@@ -2608,9 +2799,8 @@ public class MainFrame extends javax.swing.JFrame {
         bigDecimalRenderer = new BigDecimalRenderer(new DecimalFormat("#,##0.00"));
 
         // Set to default view.
-        b1RadioButtonActionPerformed(null);
+        w1B1RadioButtonActionPerformed(null);
         b1DashboardButtonActionPerformed(null);
-//        b2DashboardButtonActionPerformed(null);
 
         // Set reports date.
         reportsSalesFromDateChooser.setDate(DateUtil.current());
@@ -2650,7 +2840,8 @@ public class MainFrame extends javax.swing.JFrame {
 
     public void setCurrentUserInfo() {
         // Set current user.
-        currentUserLabel.setText(IPOS.currentUser.getUsername());
+        b1CurrentUserLabel.setText(IPOS.currentUser.getFullname());
+        b2CurrentUserLabel.setText(IPOS.currentUser.getFullname());
     }
     
     private void triggerCenterPanel(JPanel panel, String title) {
@@ -2786,9 +2977,9 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Set column width.
         stockXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
-        stockXTable.getColumnModel().getColumn(1).setPreferredWidth(300);
-        stockXTable.getColumnModel().getColumn(2).setPreferredWidth(150);
-        stockXTable.getColumnModel().getColumn(3).setPreferredWidth(100);
+        stockXTable.getColumnModel().getColumn(1).setPreferredWidth(100);
+        stockXTable.getColumnModel().getColumn(2).setPreferredWidth(300);
+        stockXTable.getColumnModel().getColumn(3).setPreferredWidth(150);
         stockXTable.getColumnModel().getColumn(4).setPreferredWidth(100);
         stockXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
 

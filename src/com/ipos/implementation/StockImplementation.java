@@ -14,7 +14,6 @@ import com.ipos.jpa.controller.UserJpaController;
 import com.ipos.view.stock.adjust.StockAdjustDialog;
 import com.ipos.view.stock.in.StockInDialog;
 import com.ipos.view.stock.out.StockWithdrawalDialog;
-import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Vector;
@@ -49,9 +48,9 @@ public class StockImplementation {
 
     public TableModel getTableModel() {
         Object[] columnName = {
+            "SC Number",
             "Code",
             "Item",
-            "Supplier",
             "Quantity",
             "Date Ceated",
             "Created By"
@@ -65,9 +64,9 @@ public class StockImplementation {
                 int i = 0;
                 Object[] newRow = new Object[6];
 
+                newRow[i++] = stock.getStockCardNumber();
                 newRow[i++] = stock;
                 newRow[i++] = itemJpaController.findItem(stock.getFKitemId());
-                newRow[i++] = supplierJpaController.findSupplier(stock.getFKsupplierId());
                 newRow[i++] = stock.getQuantity();
                 newRow[i++] = DateUtil.toMMMMddyyyyFormat(stock.getDate());
                 newRow[i++] = userJpaController.findUser(stock.getFKcreatedByUserId()).getFullname();
@@ -97,7 +96,7 @@ public class StockImplementation {
         Integer row = table.getSelectedRow();
 
         if (row > -1) {
-            Stock stock = (Stock) table.getValueAt(row, 0);
+            Stock stock = (Stock) table.getValueAt(row, 1);
             StockAdjustDialog dialog = new StockAdjustDialog(null, true, this.emf, stock);
 
             dialog.setLocationRelativeTo(null);
