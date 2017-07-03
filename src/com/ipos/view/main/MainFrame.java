@@ -658,9 +658,8 @@ public class MainFrame extends javax.swing.JFrame {
         reportsPanel.add(reportsTopPanel, java.awt.BorderLayout.NORTH);
 
         reportsCenterPanel.setBackground(new java.awt.Color(232, 236, 239));
-        reportsCenterPanel.setLayout(new java.awt.BorderLayout());
 
-        reportsTabbedPane.setBackground(new java.awt.Color(255, 255, 255));
+        reportsTabbedPane.setBackground(new java.awt.Color(232, 236, 239));
         reportsTabbedPane.setTabPlacement(javax.swing.JTabbedPane.LEFT);
         reportsTabbedPane.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         reportsTabbedPane.setUI(new WindowsTabbedPaneUI() {
@@ -670,10 +669,10 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        reportsSalesPanel.setBackground(new java.awt.Color(255, 255, 255));
+        reportsSalesPanel.setBackground(new java.awt.Color(232, 236, 239));
         reportsSalesPanel.setLayout(new java.awt.BorderLayout());
 
-        reportsSalesTopPanel.setBackground(new java.awt.Color(255, 255, 255));
+        reportsSalesTopPanel.setBackground(new java.awt.Color(232, 236, 239));
         reportsSalesTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
 
         reportsSalesGenerateButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
@@ -717,7 +716,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(reportsSalesToDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(reportsSalesGenerateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(328, Short.MAX_VALUE))
+                .addContainerGap(308, Short.MAX_VALUE))
         );
         reportsSalesTopPanelLayout.setVerticalGroup(
             reportsSalesTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -765,10 +764,10 @@ public class MainFrame extends javax.swing.JFrame {
 
         reportsTabbedPane.addTab("Sales", reportsSalesPanel);
 
-        reportsStocksPanel.setBackground(new java.awt.Color(255, 255, 255));
+        reportsStocksPanel.setBackground(new java.awt.Color(232, 236, 239));
         reportsStocksPanel.setLayout(new java.awt.BorderLayout());
 
-        reportsStocksTopPanel.setBackground(new java.awt.Color(255, 255, 255));
+        reportsStocksTopPanel.setBackground(new java.awt.Color(232, 236, 239));
         reportsStocksTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
 
         reportsStocksFromLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -812,7 +811,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addComponent(reportsStocksToDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(reportsStocksGenerateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(328, Short.MAX_VALUE))
+                .addContainerGap(308, Short.MAX_VALUE))
         );
         reportsStocksTopPanelLayout.setVerticalGroup(
             reportsStocksTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -829,7 +828,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         reportsStocksPanel.add(reportsStocksTopPanel, java.awt.BorderLayout.NORTH);
 
-        reportsStocksCenterPanel.setBackground(new java.awt.Color(255, 255, 255));
+        reportsStocksCenterPanel.setBackground(new java.awt.Color(232, 236, 239));
         reportsStocksCenterPanel.setLayout(new java.awt.BorderLayout());
 
         reportsStocksXTable.setModel(new javax.swing.table.DefaultTableModel(
@@ -860,7 +859,22 @@ public class MainFrame extends javax.swing.JFrame {
 
         reportsTabbedPane.addTab("Stocks", reportsStocksPanel);
 
-        reportsCenterPanel.add(reportsTabbedPane, java.awt.BorderLayout.CENTER);
+        javax.swing.GroupLayout reportsCenterPanelLayout = new javax.swing.GroupLayout(reportsCenterPanel);
+        reportsCenterPanel.setLayout(reportsCenterPanelLayout);
+        reportsCenterPanelLayout.setHorizontalGroup(
+            reportsCenterPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, reportsCenterPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(reportsTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 930, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        reportsCenterPanelLayout.setVerticalGroup(
+            reportsCenterPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, reportsCenterPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(reportsTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 432, Short.MAX_VALUE)
+                .addContainerGap())
+        );
 
         reportsPanel.add(reportsCenterPanel, java.awt.BorderLayout.CENTER);
 
@@ -2611,7 +2625,6 @@ public class MainFrame extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel b1CenterPanel;
     private javax.swing.JLabel b1CurrentUserGroupLabel;
-    private javax.swing.JLabel b1CurrentUserGroupLabel1;
     private javax.swing.JLabel b1CurrentUserGroupLabel2;
     private javax.swing.JLabel b1CurrentUserGroupLabel3;
     private javax.swing.JLabel b1CurrentUserGroupLabel4;
@@ -2619,7 +2632,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel b1CurrentUserGroupLabel6;
     private javax.swing.JLabel b1CurrentUserGroupLabel7;
     private javax.swing.JLabel b1CurrentUserLabel;
-    private javax.swing.JLabel b1CurrentUserLabel1;
     private javax.swing.JButton b1DashboardButton;
     private javax.swing.JPanel b1LeftInnerPanel;
     private javax.swing.JPanel b1LeftPanel;
@@ -2631,7 +2643,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton b1StocksButton;
     private javax.swing.JPanel b1TargetPanel;
     private javax.swing.JPanel b1UserPanel;
-    private javax.swing.JPanel b1UserPanel1;
     private javax.swing.JPanel b2CenterPanel;
     private javax.swing.JLabel b2CurrentUserGroupLabel;
     private javax.swing.JLabel b2CurrentUserLabel;
@@ -2682,7 +2693,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel20;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
@@ -2978,10 +2988,11 @@ public class MainFrame extends javax.swing.JFrame {
         // Set column width.
         stockXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
         stockXTable.getColumnModel().getColumn(1).setPreferredWidth(100);
-        stockXTable.getColumnModel().getColumn(2).setPreferredWidth(300);
-        stockXTable.getColumnModel().getColumn(3).setPreferredWidth(150);
+        stockXTable.getColumnModel().getColumn(2).setPreferredWidth(250);
+        stockXTable.getColumnModel().getColumn(3).setPreferredWidth(100);
         stockXTable.getColumnModel().getColumn(4).setPreferredWidth(100);
         stockXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
+        stockXTable.getColumnModel().getColumn(6).setPreferredWidth(100);
 
         // Set column renderer for decimals.
         stockXTable.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
@@ -3013,17 +3024,15 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Set column width.
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
-        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(1).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(1).setPreferredWidth(200);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(2).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(3).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(4).setPreferredWidth(50);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(6).setPreferredWidth(100);
-        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(7).setPreferredWidth(100);
-        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(8).setPreferredWidth(100);
 
         // Set column renderer for decimals.
-        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(5).setCellRenderer(bigDecimalRenderer);
+        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
     }
 
     private void generateSalesFromToReport() {
@@ -3064,10 +3073,8 @@ public class MainFrame extends javax.swing.JFrame {
         reportsStocksXTable.getColumnModel().getColumn(4).setPreferredWidth(50);
         reportsStocksXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
         reportsStocksXTable.getColumnModel().getColumn(6).setPreferredWidth(100);
-        reportsStocksXTable.getColumnModel().getColumn(7).setPreferredWidth(100);
-        reportsStocksXTable.getColumnModel().getColumn(8).setPreferredWidth(100);
 
         // Set column renderer for decimals.
-        reportsStocksXTable.getColumnModel().getColumn(5).setCellRenderer(bigDecimalRenderer);
+        reportsStocksXTable.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
     }
 }

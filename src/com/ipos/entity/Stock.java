@@ -42,6 +42,7 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Stock.findByCreatedOn", query = "SELECT s FROM Stock s WHERE s.createdOn = :createdOn"),
     @NamedQuery(name = "Stock.findByUpdatedOn", query = "SELECT s FROM Stock s WHERE s.updatedOn = :updatedOn"),
     @NamedQuery(name = "Stock.findByFKsupplierId", query = "SELECT s FROM Stock s WHERE s.fKsupplierId = :fKsupplierId"),
+    @NamedQuery(name = "Stock.findByFKpersonnelId", query = "SELECT s FROM Stock s WHERE s.fKpersonnelId = :fKpersonnelId"),
     @NamedQuery(name = "Stock.findByFKitemId", query = "SELECT s FROM Stock s WHERE s.fKitemId = :fKitemId"),
     @NamedQuery(name = "Stock.findByFKcreatedByUserId", query = "SELECT s FROM Stock s WHERE s.fKcreatedByUserId = :fKcreatedByUserId"),
     @NamedQuery(name = "Stock.findAlmostOutOfStockWithLimit", query = "SELECT s FROM Stock s WHERE s.quantity <= :quantityLimit"),
@@ -89,6 +90,9 @@ public class Stock implements Serializable {
     @Column(name = "FK_supplierId")
     private int fKsupplierId;
     @Basic(optional = false)
+    @Column(name = "FK_personnelId")
+    private int fKpersonnelId;
+    @Basic(optional = false)
     @Column(name = "FK_itemId")
     private int fKitemId;
     @Basic(optional = false)
@@ -102,7 +106,7 @@ public class Stock implements Serializable {
         this.id = id;
     }
 
-    public Stock(Integer id, String code, String stockCardNumber, BigDecimal quantity, BigDecimal unitPrice, boolean isExpirable, Date date, Date createdOn, Date updatedOn, int fKsupplierId, int fKitemId, int fKcreatedByUserId) {
+    public Stock(Integer id, String code, String stockCardNumber, BigDecimal quantity, BigDecimal unitPrice, boolean isExpirable, Date date, Date createdOn, Date updatedOn, int fKsupplierId, int fKpersonnelId, int fKitemId, int fKcreatedByUserId) {
         this.id = id;
         this.code = code;
         this.stockCardNumber = stockCardNumber;
@@ -113,6 +117,7 @@ public class Stock implements Serializable {
         this.createdOn = createdOn;
         this.updatedOn = updatedOn;
         this.fKsupplierId = fKsupplierId;
+        this.fKpersonnelId = fKpersonnelId;
         this.fKitemId = fKitemId;
         this.fKcreatedByUserId = fKcreatedByUserId;
     }
@@ -203,6 +208,14 @@ public class Stock implements Serializable {
 
     public void setFKsupplierId(int fKsupplierId) {
         this.fKsupplierId = fKsupplierId;
+    }
+
+    public int getFKpersonnelId() {
+        return fKpersonnelId;
+    }
+
+    public void setFKpersonnelId(int fKpersonnelId) {
+        this.fKpersonnelId = fKpersonnelId;
     }
 
     public int getFKitemId() {

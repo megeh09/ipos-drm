@@ -9,9 +9,9 @@ import com.ipos.entity.Sales;
 import com.ipos.entity.Stock;
 import com.ipos.helper.util.DateUtil;
 import com.ipos.jpa.controller.ItemJpaController;
+import com.ipos.jpa.controller.PersonnelJpaController;
 import com.ipos.jpa.controller.SalesJpaController;
 import com.ipos.jpa.controller.StockJpaController;
-import com.ipos.jpa.controller.SupplierJpaController;
 import com.ipos.jpa.controller.UserJpaController;
 import java.util.List;
 import java.util.logging.Level;
@@ -29,7 +29,7 @@ public class DashboardImplementation {
     protected EntityManagerFactory emf;
     protected SalesJpaController salesJpaController;
     protected StockJpaController stockJpaController;
-    protected SupplierJpaController supplierJpaController;
+    protected PersonnelJpaController personnelJpaController;
     protected ItemJpaController itemJpaController;
     protected UserJpaController userJpaController;
 
@@ -38,7 +38,7 @@ public class DashboardImplementation {
 
         salesJpaController = new SalesJpaController(emf);
         stockJpaController = new StockJpaController(emf);
-        supplierJpaController = new SupplierJpaController(emf);
+        personnelJpaController = new PersonnelJpaController(emf);
         itemJpaController = new ItemJpaController(emf);
         userJpaController = new UserJpaController(emf);
     }
@@ -82,11 +82,9 @@ public class DashboardImplementation {
         Object[] columnName = {
             "Code",
             "Item",
-            "Supplier",
+            "Personnel",
             "SC Number",
             "Quantity",
-            "Unit Price",
-            "Expiry Date",
             "Date Ceated",
             "Created By"
         };
@@ -98,15 +96,13 @@ public class DashboardImplementation {
         try {
             for (Stock stock : stocks) {
                 int i = 0;
-                Object[] newRow = new Object[9];
+                Object[] newRow = new Object[7];
 
                 newRow[i++] = stock;
                 newRow[i++] = itemJpaController.findItem(stock.getFKitemId());
-                newRow[i++] = supplierJpaController.findSupplier(stock.getFKsupplierId());
+                newRow[i++] = personnelJpaController.findPersonnel(stock.getFKpersonnelId());
                 newRow[i++] = stock.getStockCardNumber();
                 newRow[i++] = stock.getQuantity();
-                newRow[i++] = stock.getUnitPrice();
-                newRow[i++] = (stock.getExpiryDate().compareTo(DateUtil.parseDate("1989-03-13").getTime()) > 0) ? DateUtil.toMMMMddyyyyFormat(stock.getExpiryDate()) : "";
                 newRow[i++] = DateUtil.toMMMMddyyyyFormat(stock.getDate());
                 newRow[i++] = userJpaController.findUser(stock.getFKcreatedByUserId()).getFullname();
 

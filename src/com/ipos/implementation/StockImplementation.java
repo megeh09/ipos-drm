@@ -8,15 +8,13 @@ package com.ipos.implementation;
 import com.ipos.entity.Stock;
 import com.ipos.helper.util.DateUtil;
 import com.ipos.jpa.controller.ItemJpaController;
+import com.ipos.jpa.controller.PersonnelJpaController;
 import com.ipos.jpa.controller.StockJpaController;
-import com.ipos.jpa.controller.SupplierJpaController;
 import com.ipos.jpa.controller.UserJpaController;
 import com.ipos.view.stock.adjust.StockAdjustDialog;
 import com.ipos.view.stock.in.StockInDialog;
 import com.ipos.view.stock.out.StockWithdrawalDialog;
-import java.util.Comparator;
 import java.util.List;
-import java.util.Vector;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.persistence.EntityManagerFactory;
@@ -33,7 +31,7 @@ public class StockImplementation {
 
     protected EntityManagerFactory emf;
     protected StockJpaController stockJpaController;
-    protected SupplierJpaController supplierJpaController;
+    protected PersonnelJpaController personnelJpaController;
     protected ItemJpaController itemJpaController;
     protected UserJpaController userJpaController;
 
@@ -41,7 +39,7 @@ public class StockImplementation {
         this.emf = emf;
 
         stockJpaController = new StockJpaController(emf);
-        supplierJpaController = new SupplierJpaController(emf);
+        personnelJpaController = new PersonnelJpaController(emf);
         itemJpaController = new ItemJpaController(emf);
         userJpaController = new UserJpaController(emf);
     }
@@ -52,6 +50,7 @@ public class StockImplementation {
             "Code",
             "Item",
             "Quantity",
+            "Personnel",
             "Date Ceated",
             "Created By"
         };
@@ -62,22 +61,18 @@ public class StockImplementation {
         try {
             for (Stock stock : stocks) {
                 int i = 0;
-                Object[] newRow = new Object[6];
+                Object[] newRow = new Object[7];
 
                 newRow[i++] = stock.getStockCardNumber();
                 newRow[i++] = stock;
                 newRow[i++] = itemJpaController.findItem(stock.getFKitemId());
                 newRow[i++] = stock.getQuantity();
+                newRow[i++] = personnelJpaController.findPersonnel(stock.getFKpersonnelId());
                 newRow[i++] = DateUtil.toMMMMddyyyyFormat(stock.getDate());
                 newRow[i++] = userJpaController.findUser(stock.getFKcreatedByUserId()).getFullname();
 
                 model.addRow(newRow);
             }
-
-            // Sort column.
-//            Vector data = model.getDataVector();
-//            Collections.sort(data, new ColumnSorter(1));
-//            model.fireTableStructureChanged();
         } catch (Exception ex) {
             Logger.getLogger(StockImplementation.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -111,43 +106,5 @@ public class StockImplementation {
 
         dialog.setLocationRelativeTo(null);
         dialog.setVisible(true);
-    }
-
-    class ColumnSorter implements Comparator {
-
-        int colIndex;
-
-        ColumnSorter(int colIndex) {
-            this.colIndex = colIndex;
-        }
-
-        @Override
-        public int compare(Object a, Object b) {
-            Vector v1 = (Vector) a;
-            Vector v2 = (Vector) b;
-            Object o1 = v1.get(colIndex);
-            Object o2 = v2.get(colIndex);
-
-            if (o1 instanceof String && ((String) o1).length() == 0) {
-                o1 = null;
-            }
-            if (o2 instanceof String && ((String) o2).length() == 0) {
-                o2 = null;
-            }
-
-            if (o1 == null && o2 == null) {
-                return 0;
-            } else if (o1 == null) {
-                return 1;
-            } else if (o2 == null) {
-                return -1;
-            } else if (o1 instanceof Comparable) {
-
-                return ((Comparable) o1).compareTo(o2);
-            } else {
-
-                return o1.toString().compareTo(o2.toString());
-            }
-        }
     }
 }

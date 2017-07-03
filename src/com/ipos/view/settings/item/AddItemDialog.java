@@ -65,6 +65,8 @@ public class AddItemDialog extends javax.swing.JDialog {
         unitLabel = new javax.swing.JLabel();
         jScrollPane1 = new javax.swing.JScrollPane();
         descriptionTextArea = new javax.swing.JTextArea();
+        colorLabel = new javax.swing.JLabel();
+        colorTextField = new javax.swing.JTextField();
         bottomPanel = new javax.swing.JPanel();
         addButton = new javax.swing.JButton();
         cancelButton = new javax.swing.JButton();
@@ -118,6 +120,11 @@ public class AddItemDialog extends javax.swing.JDialog {
         descriptionTextArea.setRows(5);
         jScrollPane1.setViewportView(descriptionTextArea);
 
+        colorLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        colorLabel.setText("Color");
+
+        colorTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+
         javax.swing.GroupLayout centerPanelLayout = new javax.swing.GroupLayout(centerPanel);
         centerPanel.setLayout(centerPanelLayout);
         centerPanelLayout.setHorizontalGroup(
@@ -147,7 +154,11 @@ public class AddItemDialog extends javax.swing.JDialog {
                             .addGroup(centerPanelLayout.createSequentialGroup()
                                 .addComponent(stockCardLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(stockCardTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addComponent(stockCardTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(centerPanelLayout.createSequentialGroup()
+                                .addComponent(colorLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(colorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 66, Short.MAX_VALUE)))
                 .addContainerGap())
         );
@@ -166,6 +177,10 @@ public class AddItemDialog extends javax.swing.JDialog {
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nameLabel)
                     .addComponent(nameTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(colorLabel)
+                    .addComponent(colorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(unitComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -242,6 +257,7 @@ public class AddItemDialog extends javax.swing.JDialog {
             entity.setCode(codeTextField.getText());
             entity.setStockCardNumber(stockCardTextField.getText());
             entity.setName(nameTextField.getText());
+            entity.setColor(colorTextField.getText());
             entity.setDescription(descriptionTextArea.getText());
             entity.setDate(DateUtil.current());
             entity.setFKunitId(((Unit) unitComboBox.getSelectedItem()).getId());
@@ -271,6 +287,8 @@ public class AddItemDialog extends javax.swing.JDialog {
     private javax.swing.JPanel centerPanel;
     private javax.swing.JLabel codeLabel;
     private javax.swing.JTextField codeTextField;
+    private javax.swing.JLabel colorLabel;
+    private javax.swing.JTextField colorTextField;
     private javax.swing.JLabel descriptionLabel;
     private javax.swing.JTextArea descriptionTextArea;
     private javax.swing.JScrollPane jScrollPane1;

@@ -6,14 +6,13 @@
 package com.ipos.view.stock.adjust;
 
 import com.ipos.entity.Item;
+import com.ipos.entity.Personnel;
 import com.ipos.entity.Stock;
-import com.ipos.entity.Supplier;
-import com.ipos.helper.util.DateUtil;
 import com.ipos.helper.util.DecimalFormatterUtil;
 import com.ipos.helper.util.JComboBoxModelUtil;
 import com.ipos.jpa.controller.ItemJpaController;
+import com.ipos.jpa.controller.PersonnelJpaController;
 import com.ipos.jpa.controller.StockJpaController;
-import com.ipos.jpa.controller.SupplierJpaController;
 import com.ipos.start.IPOS;
 import java.math.BigDecimal;
 import java.util.logging.Level;
@@ -28,7 +27,7 @@ import javax.swing.JOptionPane;
 public class StockAdjustDialog extends javax.swing.JDialog {
 
     private StockJpaController controller;
-    private SupplierJpaController supplierJpaController;
+    private PersonnelJpaController personnelJpaController;
     private ItemJpaController itemJpaController;
     private DecimalFormatterUtil dfNoComma;
     private DecimalFormatterUtil dfWithComma;
@@ -69,10 +68,8 @@ public class StockAdjustDialog extends javax.swing.JDialog {
         itemComboBox = new javax.swing.JComboBox();
         itemLabel = new javax.swing.JLabel();
         quantityFormattedTextField = new javax.swing.JFormattedTextField();
-        expirableCheckBox = new javax.swing.JCheckBox();
-        expiryDateDateChooser = new com.toedter.calendar.JDateChooser();
-        supplierLabel = new javax.swing.JLabel();
-        supplierComboBox = new javax.swing.JComboBox();
+        personnelLabel = new javax.swing.JLabel();
+        personnelComboBox = new javax.swing.JComboBox();
         bottomPanel = new javax.swing.JPanel();
         addButton = new javax.swing.JButton();
         cancelButton = new javax.swing.JButton();
@@ -111,6 +108,7 @@ public class StockAdjustDialog extends javax.swing.JDialog {
 
         itemComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         itemComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        itemComboBox.setEnabled(false);
         itemComboBox.setName("approvedBy"); // NOI18N
         itemComboBox.setPreferredSize(new java.awt.Dimension(205, 27));
 
@@ -123,27 +121,13 @@ public class StockAdjustDialog extends javax.swing.JDialog {
         quantityFormattedTextField.setName("assetValue"); // NOI18N
         quantityFormattedTextField.setPreferredSize(new java.awt.Dimension(6, 27));
 
-        expirableCheckBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        expirableCheckBox.setText("Expirable");
-        expirableCheckBox.setMargin(new java.awt.Insets(2, 0, 2, 2));
-        expirableCheckBox.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                expirableCheckBoxActionPerformed(evt);
-            }
-        });
+        personnelLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        personnelLabel.setText("Personnel");
 
-        expiryDateDateChooser.setDateFormatString("MMMM d, yyyy");
-        expiryDateDateChooser.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        expiryDateDateChooser.setName("acquisitionDate"); // NOI18N
-        expiryDateDateChooser.setPreferredSize(new java.awt.Dimension(99, 27));
-
-        supplierLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        supplierLabel.setText("Supplier");
-
-        supplierComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        supplierComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        supplierComboBox.setName("approvedBy"); // NOI18N
-        supplierComboBox.setPreferredSize(new java.awt.Dimension(205, 27));
+        personnelComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        personnelComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        personnelComboBox.setName("approvedBy"); // NOI18N
+        personnelComboBox.setPreferredSize(new java.awt.Dimension(205, 27));
 
         javax.swing.GroupLayout centerPanelLayout = new javax.swing.GroupLayout(centerPanel);
         centerPanel.setLayout(centerPanelLayout);
@@ -165,9 +149,9 @@ public class StockAdjustDialog extends javax.swing.JDialog {
                                 .addComponent(codeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(centerPanelLayout.createSequentialGroup()
-                                .addComponent(supplierLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(personnelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(supplierComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                .addComponent(personnelComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addContainerGap())
                     .addGroup(centerPanelLayout.createSequentialGroup()
                         .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -175,15 +159,10 @@ public class StockAdjustDialog extends javax.swing.JDialog {
                                 .addComponent(stockCardLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(stockCardTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, centerPanelLayout.createSequentialGroup()
-                                    .addComponent(expirableCheckBox)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(expiryDateDateChooser, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, centerPanelLayout.createSequentialGroup()
-                                    .addComponent(quantityLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                    .addComponent(quantityFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addGroup(centerPanelLayout.createSequentialGroup()
+                                .addComponent(quantityLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(quantityFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGap(0, 76, Short.MAX_VALUE))))
         );
         centerPanelLayout.setVerticalGroup(
@@ -199,8 +178,8 @@ public class StockAdjustDialog extends javax.swing.JDialog {
                     .addComponent(itemLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(supplierComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(supplierLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(personnelComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(personnelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(stockCardLabel)
@@ -209,10 +188,6 @@ public class StockAdjustDialog extends javax.swing.JDialog {
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(quantityLabel)
                     .addComponent(quantityFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(expirableCheckBox)
-                    .addComponent(expiryDateDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 11, Short.MAX_VALUE)
                 .addComponent(bottomSeparator, javax.swing.GroupLayout.PREFERRED_SIZE, 1, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
@@ -278,7 +253,7 @@ public class StockAdjustDialog extends javax.swing.JDialog {
                 return;
             }
 
-            if (supplierComboBox.getSelectedIndex() == 0) {
+            if (personnelComboBox.getSelectedIndex() == 0) {
                 JOptionPane.showMessageDialog(null, "Error, please select supplier.", "Failed", JOptionPane.ERROR_MESSAGE);
 
                 return;
@@ -288,9 +263,7 @@ public class StockAdjustDialog extends javax.swing.JDialog {
             entity.setStockCardNumber(stockCardTextField.getText());
             entity.setQuantity(stock.getQuantity().add(dfNoComma.format(quantityFormattedTextField.getText())));
             entity.setUnitPrice(BigDecimal.ZERO);
-            entity.setIsExpirable(expirableCheckBox.isSelected());
-            entity.setExpiryDate((expiryDateDateChooser.getDate() != null) ? expiryDateDateChooser.getDate() : DateUtil.parseDate("1989-03-13").getTime());
-            entity.setFKsupplierId(((Supplier) supplierComboBox.getSelectedItem()).getId());
+            entity.setFKpersonnelId(((Personnel) personnelComboBox.getSelectedItem()).getId());
             entity.setFKitemId(((Item) itemComboBox.getSelectedItem()).getId());
             entity.setFKcreatedByUserId(IPOS.currentUser.getId());
 
@@ -310,10 +283,6 @@ public class StockAdjustDialog extends javax.swing.JDialog {
         hideThis();
     }//GEN-LAST:event_cancelButtonActionPerformed
 
-    private void expirableCheckBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_expirableCheckBoxActionPerformed
-        expiryDateDateChooser.setEnabled(expirableCheckBox.isSelected());
-    }//GEN-LAST:event_expirableCheckBoxActionPerformed
-
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton addButton;
     private javax.swing.JPanel bottomPanel;
@@ -322,43 +291,39 @@ public class StockAdjustDialog extends javax.swing.JDialog {
     private javax.swing.JPanel centerPanel;
     private javax.swing.JLabel codeLabel;
     private javax.swing.JTextField codeTextField;
-    private javax.swing.JCheckBox expirableCheckBox;
-    private com.toedter.calendar.JDateChooser expiryDateDateChooser;
     private javax.swing.JComboBox itemComboBox;
     private javax.swing.JLabel itemLabel;
     private javax.swing.JPanel mainPanel;
+    private javax.swing.JComboBox personnelComboBox;
+    private javax.swing.JLabel personnelLabel;
     public javax.swing.JFormattedTextField quantityFormattedTextField;
     private javax.swing.JLabel quantityLabel;
     private javax.swing.JLabel stockCardLabel;
     private javax.swing.JTextField stockCardTextField;
-    private javax.swing.JComboBox supplierComboBox;
-    private javax.swing.JLabel supplierLabel;
     private javax.swing.JPanel topPanel;
     // End of variables declaration//GEN-END:variables
 
     private void initElements(EntityManagerFactory emf, Stock s) {
         controller = new StockJpaController(emf);
-        supplierJpaController = new SupplierJpaController(emf);
+        personnelJpaController = new PersonnelJpaController(emf);
         itemJpaController = new ItemJpaController(emf);
         dfNoComma = new DecimalFormatterUtil("#####0.00");
         dfWithComma = new DecimalFormatterUtil();
         stock = s;
 
-        // Set expirable.
-        expirableCheckBox.setSelected(stock.getIsExpirable());
-
         // Set combo box.
-        supplierComboBox.setModel(JComboBoxModelUtil.getSupplierModel("Select Supplier", supplierJpaController.findSupplierEntities()));
+        personnelComboBox.setModel(JComboBoxModelUtil.getPersonnelModel("Select Supplier", personnelJpaController.findPersonnelEntities()));
         itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities()));
 
         // Set entity to be updated.
         codeTextField.setText(stock.getCode());
         itemComboBox.setSelectedItem(itemJpaController.findItem(stock.getFKitemId()));
-        supplierComboBox.setSelectedItem(supplierJpaController.findSupplier(stock.getFKsupplierId()));
+        personnelComboBox.setSelectedItem(personnelJpaController.findPersonnel(stock.getFKpersonnelId()));
         stockCardTextField.setText(stock.getStockCardNumber());
-        quantityFormattedTextField.setText(dfWithComma.format(stock.getQuantity()));
-        expirableCheckBox.setSelected(stock.getIsExpirable());
-        expiryDateDateChooser.setDate(stock.getIsExpirable() ? stock.getExpiryDate() : null);
+        quantityFormattedTextField.setText("");
+        
+        // Request focus.
+        quantityFormattedTextField.requestFocus();
     }
 
     private void hideThis() {

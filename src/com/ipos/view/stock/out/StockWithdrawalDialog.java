@@ -307,7 +307,10 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
 
         stockLabel.setText(stock.getCode().concat(" / ").concat(stock.getStockCardNumber()));
         unitLabel.setText(unitJpaController.findUnit(item.getFKunitId()).getDescription());
-        quantityFormattedTextField.setText(dfNoComma.format(stock.getQuantity()));
+        quantityFormattedTextField.setText("");
+        
+        // Request focus.
+        quantityFormattedTextField.requestFocus();
     }//GEN-LAST:event_itemComboBoxActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

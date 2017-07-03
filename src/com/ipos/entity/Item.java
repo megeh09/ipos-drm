@@ -34,6 +34,7 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Item.findByCode", query = "SELECT i FROM Item i WHERE i.code = :code"),
     @NamedQuery(name = "Item.findByStockCardNumber", query = "SELECT i FROM Item i WHERE i.stockCardNumber = :stockCardNumber"),
     @NamedQuery(name = "Item.findByName", query = "SELECT i FROM Item i WHERE i.name = :name"),
+    @NamedQuery(name = "Item.findByColor", query = "SELECT i FROM Item i WHERE i.color = :color"),
     @NamedQuery(name = "Item.findByDescription", query = "SELECT i FROM Item i WHERE i.description = :description"),
     @NamedQuery(name = "Item.findByDate", query = "SELECT i FROM Item i WHERE i.date = :date"),
     @NamedQuery(name = "Item.findByCreatedOn", query = "SELECT i FROM Item i WHERE i.createdOn = :createdOn"),
@@ -57,6 +58,9 @@ public class Item implements Serializable {
     @Basic(optional = false)
     @Column(name = "name")
     private String name;
+    @Basic(optional = false)
+    @Column(name = "color")
+    private String color;
     @Basic(optional = false)
     @Column(name = "description")
     private String description;
@@ -86,11 +90,12 @@ public class Item implements Serializable {
         this.id = id;
     }
 
-    public Item(Integer id, String code, String stockCardNumber, String name, String description, Date date, Date createdOn, Date updatedOn, int fKunitId, int fKcreatedByUserId) {
+    public Item(Integer id, String code, String stockCardNumber, String name, String color, String description, Date date, Date createdOn, Date updatedOn, int fKunitId, int fKcreatedByUserId) {
         this.id = id;
         this.code = code;
         this.stockCardNumber = stockCardNumber;
         this.name = name;
+        this.color = color;
         this.description = description;
         this.date = date;
         this.createdOn = createdOn;
@@ -129,6 +134,14 @@ public class Item implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
     }
 
     public String getDescription() {
