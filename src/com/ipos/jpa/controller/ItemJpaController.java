@@ -131,6 +131,28 @@ public class ItemJpaController implements Serializable {
         }
     }
 
+    public List<Item> findByName(String name) {
+        EntityManager em = getEntityManager();
+        try {
+            return em.createNamedQuery("Item.findByName")
+                    .setParameter("name", name)
+                    .getResultList();
+        } finally {
+            em.close();
+        }
+    }
+
+    public List<Item> findLikeName(String name) {
+        EntityManager em = getEntityManager();
+        try {
+            return em.createNamedQuery("Item.findLikeName")
+                    .setParameter("name", '%' + name + '%')
+                    .getResultList();
+        } finally {
+            em.close();
+        }
+    }
+
     public int getItemCount() {
         EntityManager em = getEntityManager();
         try {
@@ -143,5 +165,5 @@ public class ItemJpaController implements Serializable {
             em.close();
         }
     }
-    
+
 }
