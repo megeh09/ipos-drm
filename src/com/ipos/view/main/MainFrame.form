@@ -696,7 +696,7 @@
     <Container class="javax.swing.JPanel" name="reportsPanel">
       <Properties>
         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-          <Dimension value="[950, 500]"/>
+          <Dimension value="[740, 500]"/>
         </Property>
       </Properties>
 
@@ -708,7 +708,7 @@
               <Color blue="ff" green="ff" red="fe" type="rgb"/>
             </Property>
             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
-              <Dimension value="[950, 50]"/>
+              <Dimension value="[740, 50]"/>
             </Property>
           </Properties>
           <Constraints>
@@ -730,7 +730,7 @@
                           </Group>
                           <Component id="jLabel13" alignment="0" min="-2" max="-2" attributes="0"/>
                       </Group>
-                      <EmptySpace pref="880" max="32767" attributes="0"/>
+                      <EmptySpace pref="670" max="32767" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
@@ -790,6 +790,9 @@
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ef" green="ec" red="e8" type="rgb"/>
             </Property>
+            <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+              <Dimension value="[740, 450]"/>
+            </Property>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout" value="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout$BorderConstraintsDescription">
@@ -800,18 +803,18 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="reportsTabbedPane" pref="930" max="32767" attributes="0"/>
+                      <Component id="reportsTabbedPane" pref="720" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="reportsTabbedPane" pref="432" max="32767" attributes="0"/>
+                      <Component id="reportsTabbedPane" pref="428" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -872,14 +875,18 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="reportsSalesFromLabel" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="reportsSalesFromDateChooser" min="-2" pref="180" max="-2" attributes="0"/>
+                                  <Component id="reportsSalesFromDateChooser" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="reportsSalesToLabel" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="reportsSalesToDateChooser" min="-2" pref="180" max="-2" attributes="0"/>
+                                  <Component id="reportsSalesToDateChooser" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="salesStockLabel" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="salesStockComboBox" min="-2" pref="145" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="reportsSalesGenerateButton" min="-2" pref="100" max="-2" attributes="0"/>
-                                  <EmptySpace pref="308" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -888,13 +895,17 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="1" attributes="0">
+                                      <Group type="103" groupAlignment="3" attributes="0">
+                                          <Component id="salesStockLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                          <Component id="salesStockComboBox" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                          <Component id="reportsSalesGenerateButton" alignment="3" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                       <Component id="reportsSalesToLabel" alignment="1" min="-2" pref="23" max="-2" attributes="0"/>
                                       <Component id="reportsSalesToDateChooser" alignment="1" min="-2" pref="23" max="-2" attributes="0"/>
                                       <Component id="reportsSalesFromLabel" min="-2" pref="23" max="-2" attributes="0"/>
                                       <Component id="reportsSalesFromDateChooser" min="-2" pref="23" max="-2" attributes="0"/>
-                                      <Component id="reportsSalesGenerateButton" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <EmptySpace pref="16" max="32767" attributes="0"/>
+                                  <EmptySpace pref="15" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -917,7 +928,7 @@
                         </Component>
                         <Component class="com.toedter.calendar.JDateChooser" name="reportsSalesFromDateChooser">
                           <Properties>
-                            <Property name="dateFormatString" type="java.lang.String" value="MMMM d, yyyy"/>
+                            <Property name="dateFormatString" type="java.lang.String" value="MMM d, yyyy"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
                             </Property>
@@ -945,7 +956,7 @@
                         </Component>
                         <Component class="com.toedter.calendar.JDateChooser" name="reportsSalesToDateChooser">
                           <Properties>
-                            <Property name="dateFormatString" type="java.lang.String" value="MMMM d, yyyy"/>
+                            <Property name="dateFormatString" type="java.lang.String" value="MMM d, yyyy"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
                             </Property>
@@ -953,6 +964,30 @@
                             <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                               <Dimension value="[99, 27]"/>
                             </Property>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JComboBox" name="salesStockComboBox">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="14" style="0"/>
+                            </Property>
+                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                              <StringArray count="4">
+                                <StringItem index="0" value="Item 1"/>
+                                <StringItem index="1" value="Item 2"/>
+                                <StringItem index="2" value="Item 3"/>
+                                <StringItem index="3" value="Item 4"/>
+                              </StringArray>
+                            </Property>
+                            <Property name="name" type="java.lang.String" value="approvedBy" noResource="true"/>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="salesStockLabel">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="14" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Stock:"/>
                           </Properties>
                         </Component>
                       </SubComponents>
@@ -1074,14 +1109,18 @@
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Component id="reportsStocksFromLabel" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="reportsStocksFromDateChooser" min="-2" pref="180" max="-2" attributes="0"/>
+                                  <Component id="reportsStocksFromDateChooser" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="reportsStocksToLabel" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="reportsStocksToDateChooser" min="-2" pref="180" max="-2" attributes="0"/>
+                                  <Component id="reportsStocksToDateChooser" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                                  <Component id="stocksStockLabel" min="-2" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
+                                  <Component id="stocksStockComboBox" min="-2" pref="145" max="-2" attributes="0"/>
+                                  <EmptySpace type="separate" max="-2" attributes="0"/>
                                   <Component id="reportsStocksGenerateButton" min="-2" pref="100" max="-2" attributes="0"/>
-                                  <EmptySpace pref="308" max="32767" attributes="0"/>
+                                  <EmptySpace min="-2" pref="96" max="-2" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1094,9 +1133,15 @@
                                       <Component id="reportsStocksToDateChooser" alignment="1" min="-2" pref="23" max="-2" attributes="0"/>
                                       <Component id="reportsStocksFromLabel" alignment="1" min="-2" pref="23" max="-2" attributes="0"/>
                                       <Component id="reportsStocksFromDateChooser" alignment="1" min="-2" pref="23" max="-2" attributes="0"/>
-                                      <Component id="reportsStocksGenerateButton" alignment="1" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                                          <Group type="103" alignment="0" groupAlignment="3" attributes="0">
+                                              <Component id="stocksStockLabel" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                              <Component id="stocksStockComboBox" alignment="3" min="-2" pref="23" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="reportsStocksGenerateButton" min="-2" max="-2" attributes="0"/>
+                                      </Group>
                                   </Group>
-                                  <EmptySpace pref="16" max="32767" attributes="0"/>
+                                  <EmptySpace pref="15" max="32767" attributes="0"/>
                               </Group>
                           </Group>
                         </DimensionLayout>
@@ -1112,7 +1157,7 @@
                         </Component>
                         <Component class="com.toedter.calendar.JDateChooser" name="reportsStocksFromDateChooser">
                           <Properties>
-                            <Property name="dateFormatString" type="java.lang.String" value="MMMM d, yyyy"/>
+                            <Property name="dateFormatString" type="java.lang.String" value="MMM d, yyyy"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
                             </Property>
@@ -1132,7 +1177,7 @@
                         </Component>
                         <Component class="com.toedter.calendar.JDateChooser" name="reportsStocksToDateChooser">
                           <Properties>
-                            <Property name="dateFormatString" type="java.lang.String" value="MMMM d, yyyy"/>
+                            <Property name="dateFormatString" type="java.lang.String" value="MMM d, yyyy"/>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
                             </Property>
@@ -1156,6 +1201,30 @@
                           <Events>
                             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="reportsStocksGenerateButtonActionPerformed"/>
                           </Events>
+                        </Component>
+                        <Component class="javax.swing.JLabel" name="stocksStockLabel">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="14" style="0"/>
+                            </Property>
+                            <Property name="text" type="java.lang.String" value="Stock:"/>
+                          </Properties>
+                        </Component>
+                        <Component class="javax.swing.JComboBox" name="stocksStockComboBox">
+                          <Properties>
+                            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                              <Font name="Tahoma" size="14" style="0"/>
+                            </Property>
+                            <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
+                              <StringArray count="4">
+                                <StringItem index="0" value="Item 1"/>
+                                <StringItem index="1" value="Item 2"/>
+                                <StringItem index="2" value="Item 3"/>
+                                <StringItem index="3" value="Item 4"/>
+                              </StringArray>
+                            </Property>
+                            <Property name="name" type="java.lang.String" value="approvedBy" noResource="true"/>
+                          </Properties>
                         </Component>
                       </SubComponents>
                     </Container>
@@ -1260,7 +1329,7 @@
           <Layout>
             <DimensionLayout dim="0">
               <Group type="103" groupAlignment="0" attributes="0">
-                  <EmptySpace min="0" pref="950" max="32767" attributes="0"/>
+                  <EmptySpace min="0" pref="740" max="32767" attributes="0"/>
               </Group>
             </DimensionLayout>
             <DimensionLayout dim="1">

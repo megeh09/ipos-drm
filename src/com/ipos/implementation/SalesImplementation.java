@@ -61,9 +61,9 @@ public class SalesImplementation {
             for (Sales sale : sales) {
                 int i = 0;
                 Object[] newRow = new Object[6];
-                Stock stock = stockJpaController.findStock(sale.getFKstockId());
+                Stock stock = stockJpaController.findStock(sale.getStock().getId());
 
-                newRow[i++] = itemJpaController.findItem(stock.getFKitemId());
+                newRow[i++] = itemJpaController.findItem(stock.getItem().getId());
                 newRow[i++] = sale.getQuantity();
                 newRow[i++] = sale.getUnitPrice();
                 newRow[i++] = sale.getTotalAmount();

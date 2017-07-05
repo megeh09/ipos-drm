@@ -127,8 +127,8 @@ public class StockJpaController implements Serializable {
     public List<Stock> findStock(Item item) {
         EntityManager em = getEntityManager();
         try {
-            return em.createNamedQuery("Stock.findByFKitemId")
-                    .setParameter("fKitemId", item.getId())
+            return em.createNamedQuery("Stock.findByItemId")
+                    .setParameter("itemId", item.getId())
                     .getResultList();
         } finally {
             em.close();
@@ -152,6 +152,19 @@ public class StockJpaController implements Serializable {
             return em.createNamedQuery("Stock.findStocksFromTo")
                     .setParameter("from", from)
                     .setParameter("to", to)
+                    .getResultList();
+        } finally {
+            em.close();
+        }
+    }
+
+    public List<Stock> findStocksFromToAndStock(Date from, Date to, Integer stockId) {
+        EntityManager em = getEntityManager();
+        try {
+            return em.createNamedQuery("Stock.findStocksFromToAndStock")
+                    .setParameter("from", from)
+                    .setParameter("to", to)
+                    .setParameter("stockId", stockId)
                     .getResultList();
         } finally {
             em.close();

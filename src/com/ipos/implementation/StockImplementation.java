@@ -7,6 +7,7 @@ package com.ipos.implementation;
 
 import com.ipos.entity.Stock;
 import com.ipos.helper.util.DateUtil;
+import com.ipos.helper.util.JComboBoxModelUtil;
 import com.ipos.jpa.controller.ItemJpaController;
 import com.ipos.jpa.controller.PersonnelJpaController;
 import com.ipos.jpa.controller.StockJpaController;
@@ -18,6 +19,7 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.persistence.EntityManagerFactory;
+import javax.swing.ComboBoxModel;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
@@ -44,6 +46,10 @@ public class StockImplementation {
         userJpaController = new UserJpaController(emf);
     }
 
+    public ComboBoxModel getComboBoxModel() {
+        return JComboBoxModelUtil.getStockModel("Select Stock", stockJpaController.findStockEntities());
+    }
+
     public TableModel getTableModel() {
         Object[] columnName = {
             "SC Number",
@@ -64,8 +70,8 @@ public class StockImplementation {
                 Object[] newRow = new Object[7];
 
                 newRow[i++] = stock.getStockCardNumber();
+                newRow[i++] = stock.getCode();
                 newRow[i++] = stock;
-                newRow[i++] = itemJpaController.findItem(stock.getFKitemId());
                 newRow[i++] = stock.getQuantity();
                 newRow[i++] = personnelJpaController.findPersonnel(stock.getFKpersonnelId());
                 newRow[i++] = DateUtil.toMMMMddyyyyFormat(stock.getDate());
@@ -91,7 +97,7 @@ public class StockImplementation {
         Integer row = table.getSelectedRow();
 
         if (row > -1) {
-            Stock stock = (Stock) table.getValueAt(row, 1);
+            Stock stock = (Stock) table.getValueAt(row, 2);
             StockAdjustDialog dialog = new StockAdjustDialog(null, true, this.emf, stock);
 
             dialog.setLocationRelativeTo(null);

@@ -14,8 +14,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -43,10 +45,11 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Stock.findByUpdatedOn", query = "SELECT s FROM Stock s WHERE s.updatedOn = :updatedOn"),
     @NamedQuery(name = "Stock.findByFKsupplierId", query = "SELECT s FROM Stock s WHERE s.fKsupplierId = :fKsupplierId"),
     @NamedQuery(name = "Stock.findByFKpersonnelId", query = "SELECT s FROM Stock s WHERE s.fKpersonnelId = :fKpersonnelId"),
-    @NamedQuery(name = "Stock.findByFKitemId", query = "SELECT s FROM Stock s WHERE s.fKitemId = :fKitemId"),
+    @NamedQuery(name = "Stock.findByItemId", query = "SELECT s FROM Stock s WHERE s.item.id = :itemId"),
     @NamedQuery(name = "Stock.findByFKcreatedByUserId", query = "SELECT s FROM Stock s WHERE s.fKcreatedByUserId = :fKcreatedByUserId"),
     @NamedQuery(name = "Stock.findAlmostOutOfStockWithLimit", query = "SELECT s FROM Stock s WHERE s.quantity <= :quantityLimit"),
-    @NamedQuery(name = "Stock.findStocksFromTo", query = "SELECT s FROM Stock s WHERE s.date BETWEEN :from AND :to")})
+    @NamedQuery(name = "Stock.findStocksFromTo", query = "SELECT s FROM Stock s WHERE s.date BETWEEN :from AND :to"),
+    @NamedQuery(name = "Stock.findStocksFromToAndStock", query = "SELECT s FROM Stock s WHERE s.id = :stockId AND s.date BETWEEN :from AND :to")})
 public class Stock implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -92,9 +95,9 @@ public class Stock implements Serializable {
     @Basic(optional = false)
     @Column(name = "FK_personnelId")
     private int fKpersonnelId;
-    @Basic(optional = false)
-    @Column(name = "FK_itemId")
-    private int fKitemId;
+    @OneToOne
+    @JoinColumn(name = "FK_itemId")
+    private Item item;
     @Basic(optional = false)
     @Column(name = "FK_createdByUserId")
     private int fKcreatedByUserId;
@@ -106,7 +109,7 @@ public class Stock implements Serializable {
         this.id = id;
     }
 
-    public Stock(Integer id, String code, String stockCardNumber, BigDecimal quantity, BigDecimal unitPrice, boolean isExpirable, Date date, Date createdOn, Date updatedOn, int fKsupplierId, int fKpersonnelId, int fKitemId, int fKcreatedByUserId) {
+    public Stock(Integer id, String code, String stockCardNumber, BigDecimal quantity, BigDecimal unitPrice, boolean isExpirable, Date date, Date createdOn, Date updatedOn, int fKsupplierId, int fKpersonnelId, Item item, int fKcreatedByUserId) {
         this.id = id;
         this.code = code;
         this.stockCardNumber = stockCardNumber;
@@ -118,7 +121,7 @@ public class Stock implements Serializable {
         this.updatedOn = updatedOn;
         this.fKsupplierId = fKsupplierId;
         this.fKpersonnelId = fKpersonnelId;
-        this.fKitemId = fKitemId;
+        this.item = item;
         this.fKcreatedByUserId = fKcreatedByUserId;
     }
 
@@ -218,12 +221,12 @@ public class Stock implements Serializable {
         this.fKpersonnelId = fKpersonnelId;
     }
 
-    public int getFKitemId() {
-        return fKitemId;
+    public Item getItem() {
+        return item;
     }
 
-    public void setFKitemId(int fKitemId) {
-        this.fKitemId = fKitemId;
+    public void setItem(Item item) {
+        this.item = item;
     }
 
     public int getFKcreatedByUserId() {
@@ -256,7 +259,7 @@ public class Stock implements Serializable {
 
     @Override
     public String toString() {
-        return code;
+        return item.getName().concat(" / ").concat(item.getColor());
     }
-    
+
 }

@@ -137,6 +137,19 @@ public class SalesJpaController implements Serializable {
         }
     }
 
+    public List<Sales> findSalesFromToAndStock(Date from, Date to, Integer stockId) {
+        EntityManager em = getEntityManager();
+        try {
+            return em.createNamedQuery("Sales.findSalesFromToAndStock")
+                    .setParameter("from", from)
+                    .setParameter("to", to)
+                    .setParameter("stockId", stockId)
+                    .getResultList();
+        } finally {
+            em.close();
+        }
+    }
+
     public Sales findSales(Integer id) {
         EntityManager em = getEntityManager();
         try {

@@ -5,21 +5,19 @@
  */
 package com.ipos.view.stock.out;
 
-import com.ipos.entity.Item;
 import com.ipos.entity.Personnel;
 import com.ipos.entity.Stock;
 import com.ipos.entity.StockWithdrawal;
 import com.ipos.helper.util.DateUtil;
 import com.ipos.helper.util.DecimalFormatterUtil;
 import com.ipos.helper.util.JComboBoxModelUtil;
-import com.ipos.jpa.controller.ItemJpaController;
 import com.ipos.jpa.controller.PersonnelJpaController;
 import com.ipos.jpa.controller.StockJpaController;
 import com.ipos.jpa.controller.StockWithdrawalJpaController;
 import com.ipos.jpa.controller.UnitJpaController;
 import com.ipos.start.IPOS;
 import java.awt.HeadlessException;
-import java.util.List;
+import java.math.BigDecimal;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.persistence.EntityManagerFactory;
@@ -34,7 +32,6 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
     private StockWithdrawalJpaController controller;
     private StockJpaController stockJpaController;
     private PersonnelJpaController personnelJpaController;
-    private ItemJpaController itemJpaController;
     private UnitJpaController unitJpaController;
     private DecimalFormatterUtil dfNoComma;
     private DecimalFormatterUtil dfWithComma;
@@ -74,9 +71,9 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
         personnelLabel = new javax.swing.JLabel();
         personnelComboBox = new javax.swing.JComboBox();
         unitLabel = new javax.swing.JLabel();
-        itemLabel = new javax.swing.JLabel();
-        itemComboBox = new javax.swing.JComboBox();
         stockLabel = new javax.swing.JLabel();
+        stockComboBox = new javax.swing.JComboBox();
+        stockCodesLabel = new javax.swing.JLabel();
         bottomPanel = new javax.swing.JPanel();
         withdrawButton = new javax.swing.JButton();
         cancelButton = new javax.swing.JButton();
@@ -127,22 +124,22 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
         unitLabel.setForeground(new java.awt.Color(255, 0, 0));
         unitLabel.setText("-- unit --");
 
-        itemLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        itemLabel.setText("Item");
+        stockLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stockLabel.setText("Stock");
 
-        itemComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        itemComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
-        itemComboBox.setName("approvedBy"); // NOI18N
-        itemComboBox.setPreferredSize(new java.awt.Dimension(205, 27));
-        itemComboBox.addActionListener(new java.awt.event.ActionListener() {
+        stockComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stockComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        stockComboBox.setName("approvedBy"); // NOI18N
+        stockComboBox.setPreferredSize(new java.awt.Dimension(205, 27));
+        stockComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemComboBoxActionPerformed(evt);
+                stockComboBoxActionPerformed(evt);
             }
         });
 
-        stockLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        stockLabel.setForeground(new java.awt.Color(255, 0, 0));
-        stockLabel.setText("-- item --");
+        stockCodesLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stockCodesLabel.setForeground(new java.awt.Color(255, 0, 0));
+        stockCodesLabel.setText("-- item --");
 
         javax.swing.GroupLayout centerPanelLayout = new javax.swing.GroupLayout(centerPanel);
         centerPanel.setLayout(centerPanelLayout);
@@ -167,11 +164,11 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(unitLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(centerPanelLayout.createSequentialGroup()
-                        .addComponent(itemLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(stockLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(4, 4, 4)
                         .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(stockLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(itemComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                            .addComponent(stockCodesLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(stockComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap())
         );
         centerPanelLayout.setVerticalGroup(
@@ -187,10 +184,10 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
                     .addComponent(personnelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itemComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(itemLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(stockComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(stockLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(stockLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(stockCodesLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(quantityLabel)
@@ -260,11 +257,22 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
 
                 return;
             }
-            
-            if (itemComboBox.getSelectedIndex() == 0) {
-                JOptionPane.showMessageDialog(null, "Error, please select item.", "Failed", JOptionPane.ERROR_MESSAGE);
+
+            if (stockComboBox.getSelectedIndex() == 0) {
+                JOptionPane.showMessageDialog(null, "Error, please select a stock.", "Failed", JOptionPane.ERROR_MESSAGE);
 
                 return;
+            }
+
+            if (stockComboBox.getSelectedIndex() > 0) {
+                Stock s = (Stock) stockComboBox.getSelectedItem();
+                BigDecimal q = dfNoComma.format(quantityFormattedTextField.getText());
+
+                if (s.getQuantity().compareTo(q) == -1 || q.compareTo(BigDecimal.ZERO) == -1) {
+                    JOptionPane.showMessageDialog(null, "Error, quantity should be greater than 0 or less than or equal to available stock.", "Error", JOptionPane.ERROR_MESSAGE);
+
+                    return;
+                }
             }
 
             entity.setPurpose(purposeTextArea.getText());
@@ -297,29 +305,31 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
         hideThis();
     }//GEN-LAST:event_cancelButtonActionPerformed
 
-    private void itemComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemComboBoxActionPerformed
-        Item item = (Item) itemComboBox.getSelectedItem();
-        List<Stock> stocks = stockJpaController.findStock(item);
+    private void stockComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockComboBoxActionPerformed
+        String codes = "",
+                unit = "";
 
-        if (!stocks.isEmpty()) {
-            stock = stocks.get(0);
+        stock = new Stock();
+
+        if (stockComboBox.getSelectedIndex() > 0) {
+            stock = (Stock) stockComboBox.getSelectedItem();
+            codes = stock.getCode().concat(" / ").concat(stock.getStockCardNumber().concat(" / ").concat(stock.getItem().getColor()));
+            unit = stock.getQuantity().toString().concat(" ").concat(unitJpaController.findUnit(stock.getItem().getFKunitId()).getDescription());
         }
 
-        stockLabel.setText(stock.getCode().concat(" / ").concat(stock.getStockCardNumber()));
-        unitLabel.setText(unitJpaController.findUnit(item.getFKunitId()).getDescription());
+        stockCodesLabel.setText(codes);
+        unitLabel.setText(unit);
         quantityFormattedTextField.setText("");
-        
+
         // Request focus.
         quantityFormattedTextField.requestFocus();
-    }//GEN-LAST:event_itemComboBoxActionPerformed
+    }//GEN-LAST:event_stockComboBoxActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel bottomPanel;
     private javax.swing.JSeparator bottomSeparator;
     private javax.swing.JButton cancelButton;
     private javax.swing.JPanel centerPanel;
-    private javax.swing.JComboBox itemComboBox;
-    private javax.swing.JLabel itemLabel;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JComboBox personnelComboBox;
@@ -328,6 +338,8 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
     private javax.swing.JTextArea purposeTextArea;
     public javax.swing.JFormattedTextField quantityFormattedTextField;
     private javax.swing.JLabel quantityLabel;
+    private javax.swing.JLabel stockCodesLabel;
+    private javax.swing.JComboBox stockComboBox;
     private javax.swing.JLabel stockLabel;
     private javax.swing.JPanel topPanel;
     private javax.swing.JLabel unitLabel;
@@ -338,13 +350,12 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
         controller = new StockWithdrawalJpaController(emf);
         stockJpaController = new StockJpaController(emf);
         personnelJpaController = new PersonnelJpaController(emf);
-        itemJpaController = new ItemJpaController(emf);
         unitJpaController = new UnitJpaController(emf);
         dfNoComma = new DecimalFormatterUtil("#####0.00");
         dfWithComma = new DecimalFormatterUtil();
 
         // Set combo box.
-        itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities()));
+        stockComboBox.setModel(JComboBoxModelUtil.getStockModel("Select Stock", stockJpaController.findStockEntities()));
         personnelComboBox.setModel(JComboBoxModelUtil.getPersonnelModel("Select Personnel", personnelJpaController.findPersonnelEntities()));
     }
 

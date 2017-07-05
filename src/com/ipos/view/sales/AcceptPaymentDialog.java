@@ -395,7 +395,7 @@ public class AcceptPaymentDialog extends javax.swing.JDialog {
             entity.setChangeAmount(dfNoComma.format(changeValueLabel.getText()));
             entity.setTotalAmount(total);
             entity.setDate(DateUtil.current());
-            entity.setFKstockId(stock.getId());
+            entity.setStock(stock);
             entity.setFKcreatedByUserId(IPOS.currentUser.getId());
 
             controller.create(entity);

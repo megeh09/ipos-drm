@@ -264,7 +264,7 @@ public class StockAdjustDialog extends javax.swing.JDialog {
             entity.setQuantity(stock.getQuantity().add(dfNoComma.format(quantityFormattedTextField.getText())));
             entity.setUnitPrice(BigDecimal.ZERO);
             entity.setFKpersonnelId(((Personnel) personnelComboBox.getSelectedItem()).getId());
-            entity.setFKitemId(((Item) itemComboBox.getSelectedItem()).getId());
+            entity.setItem((Item) itemComboBox.getSelectedItem());
             entity.setFKcreatedByUserId(IPOS.currentUser.getId());
 
             controller.edit(entity);
@@ -317,7 +317,7 @@ public class StockAdjustDialog extends javax.swing.JDialog {
 
         // Set entity to be updated.
         codeTextField.setText(stock.getCode());
-        itemComboBox.setSelectedItem(itemJpaController.findItem(stock.getFKitemId()));
+        itemComboBox.setSelectedItem(itemJpaController.findItem(stock.getItem().getId()));
         personnelComboBox.setSelectedItem(personnelJpaController.findPersonnel(stock.getFKpersonnelId()));
         stockCardTextField.setText(stock.getStockCardNumber());
         quantityFormattedTextField.setText("");

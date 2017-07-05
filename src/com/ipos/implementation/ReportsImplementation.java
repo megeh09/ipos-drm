@@ -44,7 +44,7 @@ public class ReportsImplementation {
         userJpaController = new UserJpaController(emf);
     }
 
-    public TableModel getSalesFromToTableModel(Date from, Date to) {
+    public TableModel getSalesReportTableModel(Date from, Date to, Integer stockId) {
         Object[] columnName = {
             "Item",
             "Quantity",
@@ -55,15 +55,15 @@ public class ReportsImplementation {
         };
 
         DefaultTableModel model = new DefaultTableModel(null, columnName);
-        List<Sales> sales = salesJpaController.findSalesFromTo(from, to);
+        List<Sales> sales = (stockId == 0 ? salesJpaController.findSalesFromTo(from, to) : salesJpaController.findSalesFromToAndStock(from, to, stockId));
 
         try {
             for (Sales sale : sales) {
                 int i = 0;
                 Object[] newRow = new Object[6];
-                Stock stock = stockJpaController.findStock(sale.getFKstockId());
+                Stock stock = stockJpaController.findStock(sale.getStock().getId());
 
-                newRow[i++] = itemJpaController.findItem(stock.getFKitemId());
+                newRow[i++] = itemJpaController.findItem(stock.getItem().getId());
                 newRow[i++] = sale.getQuantity();
                 newRow[i++] = sale.getUnitPrice();
                 newRow[i++] = sale.getTotalAmount();
@@ -79,7 +79,7 @@ public class ReportsImplementation {
         return model;
     }
 
-    public TableModel getStocksFromToTableModel(Date from, Date to) {
+    public TableModel getStocksReportTableModel(Date from, Date to, Integer stockId) {
         Object[] columnName = {
             "Code",
             "Item",
@@ -91,15 +91,15 @@ public class ReportsImplementation {
         };
 
         DefaultTableModel model = new DefaultTableModel(null, columnName);
-        List<Stock> stocks = stockJpaController.findStocksFromTo(from, to);
+        List<Stock> stocks = (stockId == 0 ? stockJpaController.findStocksFromTo(from, to) : stockJpaController.findStocksFromToAndStock(from, to, stockId));
 
         try {
             for (Stock stock : stocks) {
                 int i = 0;
                 Object[] newRow = new Object[7];
 
+                newRow[i++] = stock.getCode();
                 newRow[i++] = stock;
-                newRow[i++] = itemJpaController.findItem(stock.getFKitemId());
                 newRow[i++] = personnelJpaController.findPersonnel(stock.getFKpersonnelId());
                 newRow[i++] = stock.getStockCardNumber();
                 newRow[i++] = stock.getQuantity();

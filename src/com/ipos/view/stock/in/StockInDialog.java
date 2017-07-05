@@ -270,7 +270,7 @@ public class StockInDialog extends javax.swing.JDialog {
             entity.setDate(DateUtil.current());
             entity.setFKsupplierId(0);
             entity.setFKpersonnelId(((Personnel) personnelComboBox.getSelectedItem()).getId());
-            entity.setFKitemId(((Item) itemComboBox.getSelectedItem()).getId());
+            entity.setItem((Item) itemComboBox.getSelectedItem());
             entity.setFKcreatedByUserId(IPOS.currentUser.getId());
 
             controller.create(entity);

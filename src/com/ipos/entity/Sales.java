@@ -14,8 +14,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -40,9 +42,10 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Sales.findByDate", query = "SELECT s FROM Sales s WHERE s.date = :date"),
     @NamedQuery(name = "Sales.findByCreatedOn", query = "SELECT s FROM Sales s WHERE s.createdOn = :createdOn"),
     @NamedQuery(name = "Sales.findByUpdatedOn", query = "SELECT s FROM Sales s WHERE s.updatedOn = :updatedOn"),
-    @NamedQuery(name = "Sales.findByFKstockId", query = "SELECT s FROM Sales s WHERE s.fKstockId = :fKstockId"),
+    @NamedQuery(name = "Sales.findByFKstockId", query = "SELECT s FROM Sales s JOIN s.stock st WHERE st.id = :stockId"),
     @NamedQuery(name = "Sales.findByFKcreatedByUserId", query = "SELECT s FROM Sales s WHERE s.fKcreatedByUserId = :fKcreatedByUserId"),
-    @NamedQuery(name = "Sales.findSalesFromTo", query = "SELECT s FROM Sales s WHERE s.date BETWEEN :from AND :to")})
+    @NamedQuery(name = "Sales.findSalesFromTo", query = "SELECT s FROM Sales s WHERE s.date BETWEEN :from AND :to"),
+    @NamedQuery(name = "Sales.findSalesFromToAndStock", query = "SELECT s FROM Sales s WHERE s.stock.id = :stockId AND s.date BETWEEN :from AND :to")})
 public class Sales implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -79,9 +82,9 @@ public class Sales implements Serializable {
     @Column(name = "updatedOn")
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatedOn;
-    @Basic(optional = false)
-    @Column(name = "FK_stockId")
-    private int fKstockId;
+    @OneToOne
+    @JoinColumn(name = "FK_stockId")
+    private Stock stock;
     @Basic(optional = false)
     @Column(name = "FK_createdByUserId")
     private int fKcreatedByUserId;
@@ -93,7 +96,7 @@ public class Sales implements Serializable {
         this.id = id;
     }
 
-    public Sales(Integer id, BigDecimal quantity, BigDecimal unitPrice, BigDecimal cashAmount, BigDecimal changeAmount, BigDecimal totalAmount, Date date, Date createdOn, Date updatedOn, int fKstockId, int fKcreatedByUserId) {
+    public Sales(Integer id, BigDecimal quantity, BigDecimal unitPrice, BigDecimal cashAmount, BigDecimal changeAmount, BigDecimal totalAmount, Date date, Date createdOn, Date updatedOn, Stock stock, int fKcreatedByUserId) {
         this.id = id;
         this.quantity = quantity;
         this.unitPrice = unitPrice;
@@ -103,7 +106,7 @@ public class Sales implements Serializable {
         this.date = date;
         this.createdOn = createdOn;
         this.updatedOn = updatedOn;
-        this.fKstockId = fKstockId;
+        this.stock = stock;
         this.fKcreatedByUserId = fKcreatedByUserId;
     }
 
@@ -179,12 +182,12 @@ public class Sales implements Serializable {
         this.updatedOn = updatedOn;
     }
 
-    public int getFKstockId() {
-        return fKstockId;
+    public Stock getStock() {
+        return stock;
     }
 
-    public void setFKstockId(int fKstockId) {
-        this.fKstockId = fKstockId;
+    public void setStock(Stock stock) {
+        this.stock = stock;
     }
 
     public int getFKcreatedByUserId() {

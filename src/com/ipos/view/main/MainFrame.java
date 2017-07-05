@@ -5,6 +5,7 @@
  */
 package com.ipos.view.main;
 
+import com.ipos.entity.Stock;
 import com.ipos.helper.renderer.BigDecimalRenderer;
 import com.ipos.helper.util.DateUtil;
 import com.ipos.helper.util.JTableSearchUtil;
@@ -43,7 +44,7 @@ public class MainFrame extends javax.swing.JFrame {
     private final Color MOUSE_ENTERED_COLOR = new java.awt.Color(0, 173, 208);
     private final Color MOUSE_B1_EXITED_COLOR = new java.awt.Color(57, 72, 93);
     private final Color BUTTON_B1_DEFAULT_COLOR = new java.awt.Color(217, 231, 240);
-    private final Color MOUSE_B2_EXITED_COLOR = new java.awt.Color(119,127,140);
+    private final Color MOUSE_B2_EXITED_COLOR = new java.awt.Color(119, 127, 140);
     private final Color BUTTON_B2_DEFAULT_COLOR = new java.awt.Color(57, 72, 93);
     private final Integer MENU_B1_DASHBOARD = 1;
     private final Integer MENU_B1_STOCKS = 2;
@@ -132,6 +133,8 @@ public class MainFrame extends javax.swing.JFrame {
         reportsSalesFromLabel = new javax.swing.JLabel();
         reportsSalesToLabel = new javax.swing.JLabel();
         reportsSalesToDateChooser = new com.toedter.calendar.JDateChooser();
+        salesStockComboBox = new javax.swing.JComboBox();
+        salesStockLabel = new javax.swing.JLabel();
         reportsSalesCenterPanel = new javax.swing.JPanel();
         reportsSalesScrollPane = new javax.swing.JScrollPane();
         reportsSalesXTable = new org.jdesktop.swingx.JXTable();
@@ -142,6 +145,8 @@ public class MainFrame extends javax.swing.JFrame {
         reportsStocksToLabel = new javax.swing.JLabel();
         reportsStocksToDateChooser = new com.toedter.calendar.JDateChooser();
         reportsStocksGenerateButton = new javax.swing.JButton();
+        stocksStockLabel = new javax.swing.JLabel();
+        stocksStockComboBox = new javax.swing.JComboBox();
         reportsStocksCenterPanel = new javax.swing.JPanel();
         reportsStocksScrollPane = new javax.swing.JScrollPane();
         reportsStocksXTable = new org.jdesktop.swingx.JXTable();
@@ -611,11 +616,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         stocksPanel.add(stocksBottomPanel, java.awt.BorderLayout.SOUTH);
 
-        reportsPanel.setPreferredSize(new java.awt.Dimension(950, 500));
+        reportsPanel.setPreferredSize(new java.awt.Dimension(740, 500));
         reportsPanel.setLayout(new java.awt.BorderLayout());
 
         reportsTopPanel.setBackground(new java.awt.Color(254, 255, 255));
-        reportsTopPanel.setPreferredSize(new java.awt.Dimension(950, 50));
+        reportsTopPanel.setPreferredSize(new java.awt.Dimension(740, 50));
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 8)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 173, 208));
@@ -641,7 +646,7 @@ public class MainFrame extends javax.swing.JFrame {
                         .addGap(3, 3, 3)
                         .addComponent(jLabel12))
                     .addComponent(jLabel13))
-                .addContainerGap(880, Short.MAX_VALUE))
+                .addContainerGap(670, Short.MAX_VALUE))
         );
         reportsTopPanelLayout.setVerticalGroup(
             reportsTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -658,6 +663,7 @@ public class MainFrame extends javax.swing.JFrame {
         reportsPanel.add(reportsTopPanel, java.awt.BorderLayout.NORTH);
 
         reportsCenterPanel.setBackground(new java.awt.Color(232, 236, 239));
+        reportsCenterPanel.setPreferredSize(new java.awt.Dimension(740, 450));
 
         reportsTabbedPane.setBackground(new java.awt.Color(232, 236, 239));
         reportsTabbedPane.setTabPlacement(javax.swing.JTabbedPane.LEFT);
@@ -685,7 +691,7 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
-        reportsSalesFromDateChooser.setDateFormatString("MMMM d, yyyy");
+        reportsSalesFromDateChooser.setDateFormatString("MMM d, yyyy");
         reportsSalesFromDateChooser.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         reportsSalesFromDateChooser.setName("acquisitionDate"); // NOI18N
         reportsSalesFromDateChooser.setPreferredSize(new java.awt.Dimension(99, 27));
@@ -696,10 +702,17 @@ public class MainFrame extends javax.swing.JFrame {
         reportsSalesToLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         reportsSalesToLabel.setText("To:");
 
-        reportsSalesToDateChooser.setDateFormatString("MMMM d, yyyy");
+        reportsSalesToDateChooser.setDateFormatString("MMM d, yyyy");
         reportsSalesToDateChooser.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         reportsSalesToDateChooser.setName("acquisitionDate"); // NOI18N
         reportsSalesToDateChooser.setPreferredSize(new java.awt.Dimension(99, 27));
+
+        salesStockComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        salesStockComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        salesStockComboBox.setName("approvedBy"); // NOI18N
+
+        salesStockLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        salesStockLabel.setText("Stock:");
 
         javax.swing.GroupLayout reportsSalesTopPanelLayout = new javax.swing.GroupLayout(reportsSalesTopPanel);
         reportsSalesTopPanel.setLayout(reportsSalesTopPanelLayout);
@@ -709,26 +722,33 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(reportsSalesFromLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(reportsSalesFromDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(reportsSalesFromDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(reportsSalesToLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(reportsSalesToDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(reportsSalesToDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(salesStockLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(salesStockComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(reportsSalesGenerateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(308, Short.MAX_VALUE))
+                .addGap(96, 96, 96))
         );
         reportsSalesTopPanelLayout.setVerticalGroup(
             reportsSalesTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(reportsSalesTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(reportsSalesTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(reportsSalesTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(salesStockLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(salesStockComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(reportsSalesGenerateButton))
                     .addComponent(reportsSalesToLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(reportsSalesToDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(reportsSalesFromLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(reportsSalesFromDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(reportsSalesGenerateButton))
-                .addContainerGap(16, Short.MAX_VALUE))
+                    .addComponent(reportsSalesFromDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         reportsSalesPanel.add(reportsSalesTopPanel, java.awt.BorderLayout.NORTH);
@@ -773,7 +793,7 @@ public class MainFrame extends javax.swing.JFrame {
         reportsStocksFromLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         reportsStocksFromLabel.setText("From:");
 
-        reportsStocksFromDateChooser.setDateFormatString("MMMM d, yyyy");
+        reportsStocksFromDateChooser.setDateFormatString("MMM d, yyyy");
         reportsStocksFromDateChooser.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         reportsStocksFromDateChooser.setName("acquisitionDate"); // NOI18N
         reportsStocksFromDateChooser.setPreferredSize(new java.awt.Dimension(99, 27));
@@ -781,7 +801,7 @@ public class MainFrame extends javax.swing.JFrame {
         reportsStocksToLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         reportsStocksToLabel.setText("To:");
 
-        reportsStocksToDateChooser.setDateFormatString("MMMM d, yyyy");
+        reportsStocksToDateChooser.setDateFormatString("MMM d, yyyy");
         reportsStocksToDateChooser.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         reportsStocksToDateChooser.setName("acquisitionDate"); // NOI18N
         reportsStocksToDateChooser.setPreferredSize(new java.awt.Dimension(99, 27));
@@ -796,6 +816,13 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        stocksStockLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stocksStockLabel.setText("Stock:");
+
+        stocksStockComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stocksStockComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        stocksStockComboBox.setName("approvedBy"); // NOI18N
+
         javax.swing.GroupLayout reportsStocksTopPanelLayout = new javax.swing.GroupLayout(reportsStocksTopPanel);
         reportsStocksTopPanel.setLayout(reportsStocksTopPanelLayout);
         reportsStocksTopPanelLayout.setHorizontalGroup(
@@ -804,14 +831,18 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(reportsStocksFromLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(reportsStocksFromDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(reportsStocksFromDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(reportsStocksToLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(reportsStocksToDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(reportsStocksToDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(stocksStockLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(stocksStockComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addComponent(reportsStocksGenerateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(308, Short.MAX_VALUE))
+                .addGap(96, 96, 96))
         );
         reportsStocksTopPanelLayout.setVerticalGroup(
             reportsStocksTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -822,8 +853,12 @@ public class MainFrame extends javax.swing.JFrame {
                     .addComponent(reportsStocksToDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(reportsStocksFromLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(reportsStocksFromDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(reportsStocksGenerateButton))
-                .addContainerGap(16, Short.MAX_VALUE))
+                    .addGroup(reportsStocksTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(reportsStocksTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(stocksStockLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(stocksStockComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(reportsStocksGenerateButton)))
+                .addContainerGap(15, Short.MAX_VALUE))
         );
 
         reportsStocksPanel.add(reportsStocksTopPanel, java.awt.BorderLayout.NORTH);
@@ -863,16 +898,16 @@ public class MainFrame extends javax.swing.JFrame {
         reportsCenterPanel.setLayout(reportsCenterPanelLayout);
         reportsCenterPanelLayout.setHorizontalGroup(
             reportsCenterPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, reportsCenterPanelLayout.createSequentialGroup()
+            .addGroup(reportsCenterPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(reportsTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 930, Short.MAX_VALUE)
+                .addComponent(reportsTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 720, Short.MAX_VALUE)
                 .addContainerGap())
         );
         reportsCenterPanelLayout.setVerticalGroup(
             reportsCenterPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, reportsCenterPanelLayout.createSequentialGroup()
+            .addGroup(reportsCenterPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(reportsTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 432, Short.MAX_VALUE)
+                .addComponent(reportsTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
@@ -885,7 +920,7 @@ public class MainFrame extends javax.swing.JFrame {
         reportsBottomPanel.setLayout(reportsBottomPanelLayout);
         reportsBottomPanelLayout.setHorizontalGroup(
             reportsBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 950, Short.MAX_VALUE)
+            .addGap(0, 740, Short.MAX_VALUE)
         );
         reportsBottomPanelLayout.setVerticalGroup(
             reportsBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2527,11 +2562,11 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_stockRefreshButtonActionPerformed
 
     private void reportsSalesGenerateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportsSalesGenerateButtonActionPerformed
-        generateSalesFromToReport();
+        generateSalesReport();
     }//GEN-LAST:event_reportsSalesGenerateButtonActionPerformed
 
     private void reportsStocksGenerateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportsStocksGenerateButtonActionPerformed
-        generateStocksFromToReport();
+        generateStocksReport();
     }//GEN-LAST:event_reportsStocksGenerateButtonActionPerformed
 
     private void b2DashboardButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b2DashboardButtonMouseEntered
@@ -2738,6 +2773,8 @@ public class MainFrame extends javax.swing.JFrame {
     private org.jdesktop.swingx.JXTable reportsStocksXTable;
     private javax.swing.JTabbedPane reportsTabbedPane;
     private javax.swing.JPanel reportsTopPanel;
+    private javax.swing.JComboBox salesStockComboBox;
+    private javax.swing.JLabel salesStockLabel;
     private javax.swing.JPanel settingsBottomPanel;
     private javax.swing.JPanel settingsCenterPanel;
     private javax.swing.JPanel settingsPanel;
@@ -2753,6 +2790,8 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel stocksBottomPanel;
     private javax.swing.JPanel stocksCenterPanel;
     private javax.swing.JPanel stocksPanel;
+    private javax.swing.JComboBox stocksStockComboBox;
+    private javax.swing.JLabel stocksStockLabel;
     private javax.swing.JPanel stocksTopPanel;
     private javax.swing.JLabel storeLabel;
     private javax.swing.JScrollPane suplierScrollPane;
@@ -2818,9 +2857,13 @@ public class MainFrame extends javax.swing.JFrame {
         reportsStocksFromDateChooser.setDate(DateUtil.current());
         reportsStocksToDateChooser.setDate(DateUtil.current());
 
+        // Set combo box.
+        salesStockComboBox.setModel(stockImplementation.getComboBoxModel());
+        stocksStockComboBox.setModel(stockImplementation.getComboBoxModel());
+
         // Generate default report.
-        generateSalesFromToReport();
-        generateStocksFromToReport();
+        generateSalesReport();
+        generateStocksReport();
 
         // Set tables.
         setUnitTable();
@@ -2853,10 +2896,10 @@ public class MainFrame extends javax.swing.JFrame {
         b1CurrentUserLabel.setText(IPOS.currentUser.getFullname());
         b2CurrentUserLabel.setText(IPOS.currentUser.getFullname());
     }
-    
+
     private void triggerCenterPanel(JPanel panel, String title) {
         titleLabel.setText(title);
-        
+
         centerPanel.removeAll();
         centerPanel.add(panel);
         centerPanel.validate();
@@ -3035,11 +3078,12 @@ public class MainFrame extends javax.swing.JFrame {
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
     }
 
-    private void generateSalesFromToReport() {
+    private void generateSalesReport() {
         Date from = reportsSalesFromDateChooser.getDate();
         Date to = reportsSalesToDateChooser.getDate();
+        Integer stockId = (salesStockComboBox.getSelectedIndex() < 1 ? 0 : ((Stock) salesStockComboBox.getModel().getSelectedItem()).getId());
 
-        reportsSalesXTable.setModel(reportsImplementation.getSalesFromToTableModel(from, to));
+        reportsSalesXTable.setModel(reportsImplementation.getSalesReportTableModel(from, to, stockId));
         reportsSalesXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         reportsSalesXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
@@ -3057,11 +3101,12 @@ public class MainFrame extends javax.swing.JFrame {
         reportsSalesXTable.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
     }
 
-    private void generateStocksFromToReport() {
+    private void generateStocksReport() {
         Date from = reportsStocksFromDateChooser.getDate();
         Date to = reportsStocksToDateChooser.getDate();
+        Integer stockId = (stocksStockComboBox.getSelectedIndex() < 1 ? 0 : ((Stock) stocksStockComboBox.getModel().getSelectedItem()).getId());
 
-        reportsStocksXTable.setModel(reportsImplementation.getStocksFromToTableModel(from, to));
+        reportsStocksXTable.setModel(reportsImplementation.getStocksReportTableModel(from, to, stockId));
         reportsStocksXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         reportsStocksXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
