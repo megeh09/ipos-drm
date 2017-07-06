@@ -14,8 +14,10 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
 import javax.persistence.NamedQueries;
 import javax.persistence.NamedQuery;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
@@ -36,9 +38,8 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "StockWithdrawal.findByDate", query = "SELECT s FROM StockWithdrawal s WHERE s.date = :date"),
     @NamedQuery(name = "StockWithdrawal.findByCreatedOn", query = "SELECT s FROM StockWithdrawal s WHERE s.createdOn = :createdOn"),
     @NamedQuery(name = "StockWithdrawal.findByUpdatedOn", query = "SELECT s FROM StockWithdrawal s WHERE s.updatedOn = :updatedOn"),
-    @NamedQuery(name = "StockWithdrawal.findByFKstockId", query = "SELECT s FROM StockWithdrawal s WHERE s.fKstockId = :fKstockId"),
-    @NamedQuery(name = "StockWithdrawal.findByFKpersonnelId", query = "SELECT s FROM StockWithdrawal s WHERE s.fKpersonnelId = :fKpersonnelId"),
-    @NamedQuery(name = "StockWithdrawal.findByFKcreatedByUserId", query = "SELECT s FROM StockWithdrawal s WHERE s.fKcreatedByUserId = :fKcreatedByUserId")})
+    @NamedQuery(name = "StockWithdrawal.findStockWithdrawalFromTo", query = "SELECT s FROM StockWithdrawal s WHERE s.date BETWEEN :from AND :to"),
+    @NamedQuery(name = "StockWithdrawal.findStockWithdrawalFromToAndStock", query = "SELECT s FROM StockWithdrawal s WHERE s.stock.id = :stockId AND s.date BETWEEN :from AND :to")})
 public class StockWithdrawal implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -66,15 +67,15 @@ public class StockWithdrawal implements Serializable {
     @Column(name = "updatedOn")
     @Temporal(TemporalType.TIMESTAMP)
     private Date updatedOn;
-    @Basic(optional = false)
-    @Column(name = "FK_stockId")
-    private int fKstockId;
-    @Basic(optional = false)
-    @Column(name = "FK_personnelId")
-    private int fKpersonnelId;
-    @Basic(optional = false)
-    @Column(name = "FK_createdByUserId")
-    private int fKcreatedByUserId;
+    @OneToOne
+    @JoinColumn(name = "FK_stockId")
+    private Stock stock;
+    @OneToOne
+    @JoinColumn(name = "FK_personnelId")
+    private Personnel personnel;
+    @OneToOne
+    @JoinColumn(name = "FK_createdByUserId")
+    private User user;
 
     public StockWithdrawal() {
     }
@@ -83,16 +84,16 @@ public class StockWithdrawal implements Serializable {
         this.id = id;
     }
 
-    public StockWithdrawal(Integer id, String purpose, BigDecimal quantity, Date date, Date createdOn, Date updatedOn, int fKstockId, int fKpersonnelId, int fKcreatedByUserId) {
+    public StockWithdrawal(Integer id, String purpose, BigDecimal quantity, Date date, Date createdOn, Date updatedOn, Stock stock, Personnel personnel, User user) {
         this.id = id;
         this.purpose = purpose;
         this.quantity = quantity;
         this.date = date;
         this.createdOn = createdOn;
         this.updatedOn = updatedOn;
-        this.fKstockId = fKstockId;
-        this.fKpersonnelId = fKpersonnelId;
-        this.fKcreatedByUserId = fKcreatedByUserId;
+        this.stock = stock;
+        this.personnel = personnel;
+        this.user = user;
     }
 
     public Integer getId() {
@@ -143,28 +144,28 @@ public class StockWithdrawal implements Serializable {
         this.updatedOn = updatedOn;
     }
 
-    public int getFKstockId() {
-        return fKstockId;
+    public Stock getStock() {
+        return stock;
     }
 
-    public void setFKstockId(int fKstockId) {
-        this.fKstockId = fKstockId;
+    public void setStock(Stock stock) {
+        this.stock = stock;
     }
 
-    public int getFKpersonnelId() {
-        return fKpersonnelId;
+    public Personnel getPersonnel() {
+        return personnel;
     }
 
-    public void setFKpersonnelId(int fKpersonnelId) {
-        this.fKpersonnelId = fKpersonnelId;
+    public void setPersonnel(Personnel personnel) {
+        this.personnel = personnel;
     }
 
-    public int getFKcreatedByUserId() {
-        return fKcreatedByUserId;
+    public User getUser() {
+        return user;
     }
 
-    public void setFKcreatedByUserId(int fKcreatedByUserId) {
-        this.fKcreatedByUserId = fKcreatedByUserId;
+    public void setUser(User user) {
+        this.user = user;
     }
 
     @Override

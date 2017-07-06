@@ -150,6 +150,18 @@ public class MainFrame extends javax.swing.JFrame {
         reportsStocksCenterPanel = new javax.swing.JPanel();
         reportsStocksScrollPane = new javax.swing.JScrollPane();
         reportsStocksXTable = new org.jdesktop.swingx.JXTable();
+        reportsStockOutPanel = new javax.swing.JPanel();
+        reportsStockOutTopPanel = new javax.swing.JPanel();
+        reportsStockOutFromLabel = new javax.swing.JLabel();
+        reportsStockOutFromDateChooser = new com.toedter.calendar.JDateChooser();
+        reportsStockOutToLabel = new javax.swing.JLabel();
+        reportsStockOutToDateChooser = new com.toedter.calendar.JDateChooser();
+        reportsStockOutGenerateButton = new javax.swing.JButton();
+        stockOutStockLabel = new javax.swing.JLabel();
+        stockOutStockComboBox = new javax.swing.JComboBox();
+        reportsStockOutCenterPanel = new javax.swing.JPanel();
+        reportsStockOutScrollPane = new javax.swing.JScrollPane();
+        reportsStockOutXTable = new org.jdesktop.swingx.JXTable();
         reportsBottomPanel = new javax.swing.JPanel();
         settingsPanel = new javax.swing.JPanel();
         settingsTopPanel = new javax.swing.JPanel();
@@ -671,7 +683,7 @@ public class MainFrame extends javax.swing.JFrame {
         reportsTabbedPane.setUI(new WindowsTabbedPaneUI() {
             @Override
             protected int calculateTabWidth(int tabPlacement, int tabIndex, FontMetrics metrics) {
-                return 50;
+                return 80;
             }
         });
 
@@ -894,6 +906,116 @@ public class MainFrame extends javax.swing.JFrame {
 
         reportsTabbedPane.addTab("Stocks", reportsStocksPanel);
 
+        reportsStockOutPanel.setBackground(new java.awt.Color(232, 236, 239));
+        reportsStockOutPanel.setLayout(new java.awt.BorderLayout());
+
+        reportsStockOutTopPanel.setBackground(new java.awt.Color(232, 236, 239));
+        reportsStockOutTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
+
+        reportsStockOutFromLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsStockOutFromLabel.setText("From:");
+
+        reportsStockOutFromDateChooser.setDateFormatString("MMM d, yyyy");
+        reportsStockOutFromDateChooser.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        reportsStockOutFromDateChooser.setName("acquisitionDate"); // NOI18N
+        reportsStockOutFromDateChooser.setPreferredSize(new java.awt.Dimension(99, 27));
+
+        reportsStockOutToLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsStockOutToLabel.setText("To:");
+
+        reportsStockOutToDateChooser.setDateFormatString("MMM d, yyyy");
+        reportsStockOutToDateChooser.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        reportsStockOutToDateChooser.setName("acquisitionDate"); // NOI18N
+        reportsStockOutToDateChooser.setPreferredSize(new java.awt.Dimension(99, 27));
+
+        reportsStockOutGenerateButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        reportsStockOutGenerateButton.setText("GENERATE");
+        reportsStockOutGenerateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        reportsStockOutGenerateButton.setFocusPainted(false);
+        reportsStockOutGenerateButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reportsStockOutGenerateButtonActionPerformed(evt);
+            }
+        });
+
+        stockOutStockLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stockOutStockLabel.setText("Stock:");
+
+        stockOutStockComboBox.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stockOutStockComboBox.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        stockOutStockComboBox.setName("approvedBy"); // NOI18N
+
+        javax.swing.GroupLayout reportsStockOutTopPanelLayout = new javax.swing.GroupLayout(reportsStockOutTopPanel);
+        reportsStockOutTopPanel.setLayout(reportsStockOutTopPanelLayout);
+        reportsStockOutTopPanelLayout.setHorizontalGroup(
+            reportsStockOutTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportsStockOutTopPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(reportsStockOutFromLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(reportsStockOutFromDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(reportsStockOutToLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(reportsStockOutToDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(stockOutStockLabel)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(stockOutStockComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(reportsStockOutGenerateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(96, 96, 96))
+        );
+        reportsStockOutTopPanelLayout.setVerticalGroup(
+            reportsStockOutTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportsStockOutTopPanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(reportsStockOutTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(reportsStockOutToLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reportsStockOutToDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reportsStockOutFromLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reportsStockOutFromDateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(reportsStockOutTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(reportsStockOutTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(stockOutStockLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(stockOutStockComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(reportsStockOutGenerateButton)))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+
+        reportsStockOutPanel.add(reportsStockOutTopPanel, java.awt.BorderLayout.NORTH);
+
+        reportsStockOutCenterPanel.setBackground(new java.awt.Color(232, 236, 239));
+        reportsStockOutCenterPanel.setLayout(new java.awt.BorderLayout());
+
+        reportsStockOutXTable.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
+                {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
+                {"XXX-2013003", "04 Jul 2013", "Ricky's", "11,733.00"},
+                {"XXX-2013004", "09 Jun 2013", "Scooby's", "25,213.00"}
+            },
+            new String [] {
+                "Code", "Date Created", "Supplier", "Amount"
+            }
+        ));
+        reportsStockOutXTable.setColumnControlVisible(true);
+        reportsStockOutXTable.setEditable(false);
+        reportsStockOutXTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsStockOutXTable.setHorizontalScrollEnabled(true);
+        reportsStockOutXTable.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        reportsStockOutXTable.setRowHeight(20);
+        reportsStockOutXTable.setShowHorizontalLines(false);
+        reportsStockOutXTable.setShowVerticalLines(false);
+        reportsStockOutXTable.getTableHeader().setReorderingAllowed(false);
+        reportsStockOutScrollPane.setViewportView(reportsStockOutXTable);
+
+        reportsStockOutCenterPanel.add(reportsStockOutScrollPane, java.awt.BorderLayout.CENTER);
+
+        reportsStockOutPanel.add(reportsStockOutCenterPanel, java.awt.BorderLayout.CENTER);
+
+        reportsTabbedPane.addTab("Stock Out", reportsStockOutPanel);
+
         javax.swing.GroupLayout reportsCenterPanelLayout = new javax.swing.GroupLayout(reportsCenterPanel);
         reportsCenterPanel.setLayout(reportsCenterPanelLayout);
         reportsCenterPanelLayout.setHorizontalGroup(
@@ -907,7 +1029,7 @@ public class MainFrame extends javax.swing.JFrame {
             reportsCenterPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(reportsCenterPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(reportsTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE)
+                .addComponent(reportsTabbedPane)
                 .addContainerGap())
         );
 
@@ -2657,6 +2779,10 @@ public class MainFrame extends javax.swing.JFrame {
         bodega2ButtonGroup.setSelected(w2B2RadioButton.getModel(), true);
     }//GEN-LAST:event_w2B2RadioButtonActionPerformed
 
+    private void reportsStockOutGenerateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportsStockOutGenerateButtonActionPerformed
+        generateStockOutReport();
+    }//GEN-LAST:event_reportsStockOutGenerateButtonActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel b1CenterPanel;
     private javax.swing.JLabel b1CurrentUserGroupLabel;
@@ -2761,6 +2887,16 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel reportsSalesToLabel;
     private javax.swing.JPanel reportsSalesTopPanel;
     private org.jdesktop.swingx.JXTable reportsSalesXTable;
+    private javax.swing.JPanel reportsStockOutCenterPanel;
+    private com.toedter.calendar.JDateChooser reportsStockOutFromDateChooser;
+    private javax.swing.JLabel reportsStockOutFromLabel;
+    private javax.swing.JButton reportsStockOutGenerateButton;
+    private javax.swing.JPanel reportsStockOutPanel;
+    private javax.swing.JScrollPane reportsStockOutScrollPane;
+    private com.toedter.calendar.JDateChooser reportsStockOutToDateChooser;
+    private javax.swing.JLabel reportsStockOutToLabel;
+    private javax.swing.JPanel reportsStockOutTopPanel;
+    private org.jdesktop.swingx.JXTable reportsStockOutXTable;
     private javax.swing.JPanel reportsStocksCenterPanel;
     private com.toedter.calendar.JDateChooser reportsStocksFromDateChooser;
     private javax.swing.JLabel reportsStocksFromLabel;
@@ -2783,6 +2919,8 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton stockAdjustButton;
     private javax.swing.JButton stockInButton;
     private javax.swing.JButton stockOutButton;
+    private javax.swing.JComboBox stockOutStockComboBox;
+    private javax.swing.JLabel stockOutStockLabel;
     private javax.swing.JButton stockRefreshButton;
     private javax.swing.JScrollPane stockScrollPane;
     private org.jdesktop.swingx.JXSearchField stockXSearchField;
@@ -2856,14 +2994,18 @@ public class MainFrame extends javax.swing.JFrame {
         reportsSalesToDateChooser.setDate(DateUtil.current());
         reportsStocksFromDateChooser.setDate(DateUtil.current());
         reportsStocksToDateChooser.setDate(DateUtil.current());
+        reportsStockOutFromDateChooser.setDate(DateUtil.current());
+        reportsStockOutToDateChooser.setDate(DateUtil.current());
 
         // Set combo box.
         salesStockComboBox.setModel(stockImplementation.getComboBoxModel());
         stocksStockComboBox.setModel(stockImplementation.getComboBoxModel());
+        stockOutStockComboBox.setModel(stockImplementation.getComboBoxModel());
 
         // Generate default report.
         generateSalesReport();
         generateStocksReport();
+        generateStockOutReport();
 
         // Set tables.
         setUnitTable();
@@ -3121,5 +3263,25 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Set column renderer for decimals.
         reportsStocksXTable.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
+    }
+
+    private void generateStockOutReport() {
+        Date from = reportsStockOutFromDateChooser.getDate();
+        Date to = reportsStockOutToDateChooser.getDate();
+        Integer stockId = (stockOutStockComboBox.getSelectedIndex() < 1 ? 0 : ((Stock) stockOutStockComboBox.getModel().getSelectedItem()).getId());
+
+        reportsStockOutXTable.setModel(reportsImplementation.getStockOutReportTableModel(from, to, stockId));
+        reportsStockOutXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        reportsStockOutXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+
+        // Set column width.
+        reportsStockOutXTable.getColumnModel().getColumn(0).setPreferredWidth(150);
+        reportsStockOutXTable.getColumnModel().getColumn(1).setPreferredWidth(100);
+        reportsStockOutXTable.getColumnModel().getColumn(2).setPreferredWidth(250);
+        reportsStockOutXTable.getColumnModel().getColumn(3).setPreferredWidth(50);
+        reportsStockOutXTable.getColumnModel().getColumn(4).setPreferredWidth(100);
+
+        // Set column renderer for decimals.
+        reportsStockOutXTable.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
     }
 }

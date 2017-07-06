@@ -7,11 +7,13 @@ package com.ipos.implementation;
 
 import com.ipos.entity.Sales;
 import com.ipos.entity.Stock;
+import com.ipos.entity.StockWithdrawal;
 import com.ipos.helper.util.DateUtil;
 import com.ipos.jpa.controller.ItemJpaController;
 import com.ipos.jpa.controller.PersonnelJpaController;
 import com.ipos.jpa.controller.SalesJpaController;
 import com.ipos.jpa.controller.StockJpaController;
+import com.ipos.jpa.controller.StockWithdrawalJpaController;
 import com.ipos.jpa.controller.UserJpaController;
 import java.util.Date;
 import java.util.List;
@@ -30,6 +32,7 @@ public class ReportsImplementation {
     protected EntityManagerFactory emf;
     protected SalesJpaController salesJpaController;
     protected StockJpaController stockJpaController;
+    protected StockWithdrawalJpaController stockWithdrawalJpaController;
     protected PersonnelJpaController personnelJpaController;
     protected ItemJpaController itemJpaController;
     protected UserJpaController userJpaController;
@@ -39,6 +42,7 @@ public class ReportsImplementation {
 
         salesJpaController = new SalesJpaController(emf);
         stockJpaController = new StockJpaController(emf);
+        stockWithdrawalJpaController = new StockWithdrawalJpaController(emf);
         personnelJpaController = new PersonnelJpaController(emf);
         itemJpaController = new ItemJpaController(emf);
         userJpaController = new UserJpaController(emf);
@@ -109,7 +113,39 @@ public class ReportsImplementation {
                 model.addRow(newRow);
             }
         } catch (Exception ex) {
-            Logger.getLogger(StockImplementation.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(ReportsImplementation.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        return model;
+    }
+
+    public TableModel getStockOutReportTableModel(Date from, Date to, Integer stockId) {
+        Object[] columnName = {
+            "Item",
+            "Personnel",
+            "Purpose",
+            "Quantity",
+            "Date Withdrawn"
+        };
+
+        DefaultTableModel model = new DefaultTableModel(null, columnName);
+        List<StockWithdrawal> stockWithdrawals = (stockId == 0 ? stockWithdrawalJpaController.findStockWithdrawalFromTo(from, to) : stockWithdrawalJpaController.findStockWithdrawalFromToAndStock(from, to, stockId));
+
+        try {
+            for (StockWithdrawal stockWithdrawal : stockWithdrawals) {
+                int i = 0;
+                Object[] newRow = new Object[5];
+
+                newRow[i++] = stockWithdrawal.getStock();
+                newRow[i++] = stockWithdrawal.getPersonnel().getFullname();
+                newRow[i++] = stockWithdrawal.getPurpose();
+                newRow[i++] = stockWithdrawal.getQuantity();
+                newRow[i++] = DateUtil.toMMMMddyyyyFormat(stockWithdrawal.getDate());
+
+                model.addRow(newRow);
+            }
+        } catch (Exception ex) {
+            Logger.getLogger(ReportsImplementation.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         return model;

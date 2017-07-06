@@ -278,9 +278,9 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
             entity.setPurpose(purposeTextArea.getText());
             entity.setQuantity(dfNoComma.format(quantityFormattedTextField.getText()));
             entity.setDate(DateUtil.current());
-            entity.setFKstockId((stock).getId());
-            entity.setFKpersonnelId(((Personnel) personnelComboBox.getSelectedItem()).getId());
-            entity.setFKcreatedByUserId(IPOS.currentUser.getId());
+            entity.setStock(stock);
+            entity.setPersonnel((Personnel) personnelComboBox.getSelectedItem());
+            entity.setUser(IPOS.currentUser);
 
             controller.create(entity);
 

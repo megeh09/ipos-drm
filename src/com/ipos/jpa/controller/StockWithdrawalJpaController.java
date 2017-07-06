@@ -8,6 +8,7 @@ package com.ipos.jpa.controller;
 import com.ipos.entity.StockWithdrawal;
 import com.ipos.jpa.controller.exceptions.NonexistentEntityException;
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -113,6 +114,31 @@ public class StockWithdrawalJpaController implements Serializable {
         }
     }
 
+    public List<StockWithdrawal> findStockWithdrawalFromTo(Date from, Date to) {
+        EntityManager em = getEntityManager();
+        try {
+            return em.createNamedQuery("StockWithdrawal.findStockWithdrawalFromTo")
+                    .setParameter("from", from)
+                    .setParameter("to", to)
+                    .getResultList();
+        } finally {
+            em.close();
+        }
+    }
+
+    public List<StockWithdrawal> findStockWithdrawalFromToAndStock(Date from, Date to, Integer stockId) {
+        EntityManager em = getEntityManager();
+        try {
+            return em.createNamedQuery("StockWithdrawal.findStockWithdrawalFromToAndStock")
+                    .setParameter("from", from)
+                    .setParameter("to", to)
+                    .setParameter("stockId", stockId)
+                    .getResultList();
+        } finally {
+            em.close();
+        }
+    }
+
     public StockWithdrawal findStockWithdrawal(Integer id) {
         EntityManager em = getEntityManager();
         try {
@@ -134,5 +160,5 @@ public class StockWithdrawalJpaController implements Serializable {
             em.close();
         }
     }
-    
+
 }
