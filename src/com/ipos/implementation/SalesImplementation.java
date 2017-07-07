@@ -55,7 +55,7 @@ public class SalesImplementation {
         };
 
         DefaultTableModel model = new DefaultTableModel(null, columnName);
-        List<Sales> sales = salesJpaController.findSalesEntities();
+        List<Sales> sales = salesJpaController.findSales(bodega);
 
         try {
             for (Sales sale : sales) {
@@ -63,7 +63,7 @@ public class SalesImplementation {
                 Object[] newRow = new Object[6];
                 Stock stock = stockJpaController.findStock(sale.getStock().getId());
 
-                newRow[i++] = itemJpaController.findItem(stock.getItem().getId(), bodega);
+                newRow[i++] = itemJpaController.findItem(stock.getItem().getId());
                 newRow[i++] = sale.getQuantity();
                 newRow[i++] = sale.getUnitPrice();
                 newRow[i++] = sale.getTotalAmount();

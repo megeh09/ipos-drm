@@ -90,20 +90,21 @@ public class StockWithdrawalJpaController implements Serializable {
         }
     }
 
-    public List<StockWithdrawal> findStockWithdrawalEntities() {
-        return findStockWithdrawalEntities(true, -1, -1);
+    public List<StockWithdrawal> findStockWithdrawalEntities(String bodega) {
+        return findStockWithdrawalEntities(true, -1, -1, bodega);
     }
 
-    public List<StockWithdrawal> findStockWithdrawalEntities(int maxResults, int firstResult) {
-        return findStockWithdrawalEntities(false, maxResults, firstResult);
+    public List<StockWithdrawal> findStockWithdrawalEntities(int maxResults, int firstResult, String bodega) {
+        return findStockWithdrawalEntities(false, maxResults, firstResult, bodega);
     }
 
-    private List<StockWithdrawal> findStockWithdrawalEntities(boolean all, int maxResults, int firstResult) {
+    private List<StockWithdrawal> findStockWithdrawalEntities(boolean all, int maxResults, int firstResult, String bodega) {
         EntityManager em = getEntityManager();
         try {
             CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
             cq.select(cq.from(StockWithdrawal.class));
-            Query q = em.createQuery(cq);
+            Query q = em.createQuery(cq)
+                    .setParameter("bodega", bodega);
             if (!all) {
                 q.setMaxResults(maxResults);
                 q.setFirstResult(firstResult);
@@ -114,25 +115,27 @@ public class StockWithdrawalJpaController implements Serializable {
         }
     }
 
-    public List<StockWithdrawal> findStockWithdrawalFromTo(Date from, Date to) {
+    public List<StockWithdrawal> findStockWithdrawalFromTo(Date from, Date to, String bodega) {
         EntityManager em = getEntityManager();
         try {
             return em.createNamedQuery("StockWithdrawal.findStockWithdrawalFromTo")
                     .setParameter("from", from)
                     .setParameter("to", to)
+                    .setParameter("bodega", bodega)
                     .getResultList();
         } finally {
             em.close();
         }
     }
 
-    public List<StockWithdrawal> findStockWithdrawalFromToAndStock(Date from, Date to, Integer stockId) {
+    public List<StockWithdrawal> findStockWithdrawalFromToAndStock(Date from, Date to, Integer stockId, String bodega) {
         EntityManager em = getEntityManager();
         try {
             return em.createNamedQuery("StockWithdrawal.findStockWithdrawalFromToAndStock")
                     .setParameter("from", from)
                     .setParameter("to", to)
                     .setParameter("stockId", stockId)
+                    .setParameter("bodega", bodega)
                     .getResultList();
         } finally {
             em.close();

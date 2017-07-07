@@ -22,6 +22,7 @@ import javax.swing.JOptionPane;
  */
 public class AddSupplierDialog extends javax.swing.JDialog {
 
+    private String bodega;
     private SupplierJpaController controller;
 
     /**

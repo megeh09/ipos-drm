@@ -90,20 +90,21 @@ public class SalesJpaController implements Serializable {
         }
     }
 
-    public List<Sales> findSalesEntities() {
-        return findSalesEntities(true, -1, -1);
+    public List<Sales> findSalesEntities(String bodega) {
+        return findSalesEntities(true, -1, -1, bodega);
     }
 
-    public List<Sales> findSalesEntities(int maxResults, int firstResult) {
-        return findSalesEntities(false, maxResults, firstResult);
+    public List<Sales> findSalesEntities(int maxResults, int firstResult, String bodega) {
+        return findSalesEntities(false, maxResults, firstResult, bodega);
     }
 
-    private List<Sales> findSalesEntities(boolean all, int maxResults, int firstResult) {
+    private List<Sales> findSalesEntities(boolean all, int maxResults, int firstResult, String bodega) {
         EntityManager em = getEntityManager();
         try {
             CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
             cq.select(cq.from(Sales.class));
-            Query q = em.createQuery(cq);
+            Query q = em.createQuery(cq)
+                    .setParameter("bodega", bodega);
             if (!all) {
                 q.setMaxResults(maxResults);
                 q.setFirstResult(firstResult);
@@ -114,36 +115,50 @@ public class SalesJpaController implements Serializable {
         }
     }
 
-    public List<Sales> findHotSales() {
+    public List<Sales> findSales(String bodega) {
         EntityManager em = getEntityManager();
         try {
-            return em.createNamedQuery("Sales.findAllHot")
-                    .setMaxResults(10)
+            return em.createNamedQuery("Sales.findAll")
+                    .setParameter("bodega", bodega)
                     .getResultList();
         } finally {
             em.close();
         }
     }
 
-    public List<Sales> findSalesFromTo(Date from, Date to) {
+    public List<Sales> findHotSales(String bodega) {
+        EntityManager em = getEntityManager();
+        try {
+            return em.createNamedQuery("Sales.findAllHot")
+                    .setMaxResults(10)
+                    .setParameter("bodega", bodega)
+                    .getResultList();
+        } finally {
+            em.close();
+        }
+    }
+
+    public List<Sales> findSalesFromTo(Date from, Date to, String bodega) {
         EntityManager em = getEntityManager();
         try {
             return em.createNamedQuery("Sales.findSalesFromTo")
                     .setParameter("from", from)
                     .setParameter("to", to)
+                    .setParameter("bodega", bodega)
                     .getResultList();
         } finally {
             em.close();
         }
     }
 
-    public List<Sales> findSalesFromToAndStock(Date from, Date to, Integer stockId) {
+    public List<Sales> findSalesFromToAndStock(Date from, Date to, Integer stockId, String bodega) {
         EntityManager em = getEntityManager();
         try {
             return em.createNamedQuery("Sales.findSalesFromToAndStock")
                     .setParameter("from", from)
                     .setParameter("to", to)
                     .setParameter("stockId", stockId)
+                    .setParameter("bodega", bodega)
                     .getResultList();
         } finally {
             em.close();

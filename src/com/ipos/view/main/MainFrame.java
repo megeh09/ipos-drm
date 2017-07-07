@@ -57,6 +57,7 @@ public class MainFrame extends javax.swing.JFrame {
     private final Integer MENU_B2_STOCKS = 2;
     private final Integer MENU_B2_REPORTS = 4;
     private final Integer MENU_B2_SETTINGS = 5;
+    private String currentBodega;
     private Integer menuB1Active;
     private Integer menuB2Active;
     private JButton previousB1Button;
@@ -2495,125 +2496,125 @@ public class MainFrame extends javax.swing.JFrame {
         unitImplementation.add();
 
         // Reload table.
-        setUnitTable();
+        b1SetUnitTable();
     }//GEN-LAST:event_b1UnitAddButtonActionPerformed
 
     private void b1UnitUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UnitUpdateButtonActionPerformed
         unitImplementation.update(b1UnitXTable);
 
         // Reload table.
-        setUnitTable();
+        b1SetUnitTable();
     }//GEN-LAST:event_b1UnitUpdateButtonActionPerformed
 
     private void b1UnitRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UnitRemoveButtonActionPerformed
         unitImplementation.remove(b1UnitXTable);
 
         // Reload table.
-        setUnitTable();
+        b1SetUnitTable();
     }//GEN-LAST:event_b1UnitRemoveButtonActionPerformed
 
     private void b1UnitRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UnitRefreshButtonActionPerformed
-        setUnitTable();
+        b1SetUnitTable();
     }//GEN-LAST:event_b1UnitRefreshButtonActionPerformed
 
     private void b1SuppliderAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SuppliderAddButtonActionPerformed
         supplierImplementation.add();
 
         // Reload table.
-        setSupplierTable();
+        b1SetSupplierTable();
     }//GEN-LAST:event_b1SuppliderAddButtonActionPerformed
 
     private void b1SupplierUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SupplierUpdateButtonActionPerformed
         supplierImplementation.update(b1SupplierXTable);
 
         // Reload table.
-        setSupplierTable();
+        b1SetSupplierTable();
     }//GEN-LAST:event_b1SupplierUpdateButtonActionPerformed
 
     private void b1SupplierRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SupplierRemoveButtonActionPerformed
         supplierImplementation.remove(b1SupplierXTable);
 
         // Reload table.
-        setSupplierTable();
+        b1SetSupplierTable();
     }//GEN-LAST:event_b1SupplierRemoveButtonActionPerformed
 
     private void b1SupplierRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SupplierRefreshButtonActionPerformed
-        setSupplierTable();
+        b1SetSupplierTable();
     }//GEN-LAST:event_b1SupplierRefreshButtonActionPerformed
 
     private void b1ItemAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemAddButtonActionPerformed
         itemImplementation.add();
 
         // Reload table.
-        setItemTable(BODEGA_1);
+        b1SetItemTable();
     }//GEN-LAST:event_b1ItemAddButtonActionPerformed
 
     private void b1ItemUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemUpdateButtonActionPerformed
         itemImplementation.update(b1ItemXTable);
 
         // Reload table.
-        setItemTable(BODEGA_1);
+        b1SetItemTable();
     }//GEN-LAST:event_b1ItemUpdateButtonActionPerformed
 
     private void b1ItemRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemRemoveButtonActionPerformed
         itemImplementation.remove(b1ItemXTable);
 
         // Reload table.
-        setItemTable(BODEGA_1);
+        b1SetItemTable();
     }//GEN-LAST:event_b1ItemRemoveButtonActionPerformed
 
     private void b1ItemRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemRefreshButtonActionPerformed
-        setItemTable(BODEGA_1);
+        b1SetItemTable();
     }//GEN-LAST:event_b1ItemRefreshButtonActionPerformed
 
     private void b1PersonnelAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1PersonnelAddButtonActionPerformed
         personnelImplementation.add();
 
         // Reload table.
-        setPersonnelTable();
+        b1SetPersonnelTable();
     }//GEN-LAST:event_b1PersonnelAddButtonActionPerformed
 
     private void b1PersonnelUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1PersonnelUpdateButtonActionPerformed
         personnelImplementation.update(b1PersonnelXTable);
 
         // Reload table.
-        setPersonnelTable();
+        b1SetPersonnelTable();
     }//GEN-LAST:event_b1PersonnelUpdateButtonActionPerformed
 
     private void b1PersonnelRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1PersonnelRemoveButtonActionPerformed
         personnelImplementation.remove(b1PersonnelXTable);
 
         // Reload table.
-        setPersonnelTable();
+        b1SetPersonnelTable();
     }//GEN-LAST:event_b1PersonnelRemoveButtonActionPerformed
 
     private void b1PersonnelRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1PersonnelRefreshButtonActionPerformed
-        setPersonnelTable();
+        b1SetPersonnelTable();
     }//GEN-LAST:event_b1PersonnelRefreshButtonActionPerformed
 
     private void b1UserAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UserAddButtonActionPerformed
         userImplementation.add();
 
         // Reload table.
-        setUserTable();
+        b1SetUserTable();
     }//GEN-LAST:event_b1UserAddButtonActionPerformed
 
     private void b1UserUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UserUpdateButtonActionPerformed
         userImplementation.update(b1UserXTable);
 
         // Reload table.
-        setUserTable();
+        b1SetUserTable();
     }//GEN-LAST:event_b1UserUpdateButtonActionPerformed
 
     private void b1UserRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UserRemoveButtonActionPerformed
         userImplementation.remove(b1UserXTable);
 
         // Reload table.
-        setUserTable();
+        b1SetUserTable();
     }//GEN-LAST:event_b1UserRemoveButtonActionPerformed
 
     private void b1UserRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UserRefreshButtonActionPerformed
-        setUserTable();
+        b1SetUserTable();
     }//GEN-LAST:event_b1UserRefreshButtonActionPerformed
 
     private void b1ItemXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1ItemXSearchFieldFocusLost
@@ -2665,36 +2666,36 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_stockXSearchFieldKeyReleased
 
     private void stockInButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockInButtonActionPerformed
-        stockImplementation.add();
+        stockImplementation.add(currentBodega);
 
         // Reload table.
-        setStockTable();
+        b1SetStockTable();
     }//GEN-LAST:event_stockInButtonActionPerformed
 
     private void stockAdjustButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockAdjustButtonActionPerformed
         stockImplementation.update(stockXTable);
 
         // Reload table.
-        setStockTable();
+        b1SetStockTable();
     }//GEN-LAST:event_stockAdjustButtonActionPerformed
 
     private void stockOutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockOutButtonActionPerformed
-        stockImplementation.withdrawal();
+        stockImplementation.withdrawal(currentBodega);
 
         // Reload table.
-        setStockTable();
+        b1SetStockTable();
     }//GEN-LAST:event_stockOutButtonActionPerformed
 
     private void stockRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockRefreshButtonActionPerformed
-        setStockTable();
+        b1SetStockTable();
     }//GEN-LAST:event_stockRefreshButtonActionPerformed
 
     private void reportsSalesGenerateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportsSalesGenerateButtonActionPerformed
-        generateSalesReport(BODEGA_1);
+        b1GenerateSalesReport();
     }//GEN-LAST:event_reportsSalesGenerateButtonActionPerformed
 
     private void reportsStocksGenerateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportsStocksGenerateButtonActionPerformed
-        generateStocksReport();
+        b1GenerateStocksReport();
     }//GEN-LAST:event_reportsStocksGenerateButtonActionPerformed
 
     private void b2DashboardButtonMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_b2DashboardButtonMouseEntered
@@ -2768,25 +2769,33 @@ public class MainFrame extends javax.swing.JFrame {
     private void w1B1RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w1B1RadioButtonActionPerformed
         triggerCenterPanel(b1CenterPanel, "BODEGA 1 - Inventory System");
         bodega1ButtonGroup.setSelected(w1B1RadioButton.getModel(), true);
+        
+        currentBodega = Warehouse.BODEGA_1.getName();
     }//GEN-LAST:event_w1B1RadioButtonActionPerformed
 
     private void w1B2RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w1B2RadioButtonActionPerformed
         triggerCenterPanel(b2CenterPanel, "BODEGA 2 - Inventory System");
         bodega2ButtonGroup.setSelected(w2B2RadioButton.getModel(), true);
+        
+        currentBodega = Warehouse.BODEGA_2.getName();
     }//GEN-LAST:event_w1B2RadioButtonActionPerformed
 
     private void w2B1RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w2B1RadioButtonActionPerformed
         triggerCenterPanel(b1CenterPanel, "BODEGA 1 - Inventory System");
         bodega1ButtonGroup.setSelected(w1B1RadioButton.getModel(), true);
+        
+        currentBodega = Warehouse.BODEGA_1.getName();
     }//GEN-LAST:event_w2B1RadioButtonActionPerformed
 
     private void w2B2RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w2B2RadioButtonActionPerformed
         triggerCenterPanel(b2CenterPanel, "BODEGA 2 - Inventory System");
         bodega2ButtonGroup.setSelected(w2B2RadioButton.getModel(), true);
+        
+        currentBodega = Warehouse.BODEGA_2.getName();
     }//GEN-LAST:event_w2B2RadioButtonActionPerformed
 
     private void reportsStockOutGenerateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportsStockOutGenerateButtonActionPerformed
-        generateStockOutReport();
+        b1GenerateStockOutReport();
     }//GEN-LAST:event_reportsStockOutGenerateButtonActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -3004,24 +3013,24 @@ public class MainFrame extends javax.swing.JFrame {
         reportsStockOutToDateChooser.setDate(DateUtil.current());
 
         // Set combo box.
-        salesStockComboBox.setModel(stockImplementation.getComboBoxModel());
-        stocksStockComboBox.setModel(stockImplementation.getComboBoxModel());
-        stockOutStockComboBox.setModel(stockImplementation.getComboBoxModel());
+        salesStockComboBox.setModel(stockImplementation.getComboBoxModel(BODEGA_1));
+        stocksStockComboBox.setModel(stockImplementation.getComboBoxModel(BODEGA_1));
+        stockOutStockComboBox.setModel(stockImplementation.getComboBoxModel(BODEGA_1));
 
         // Generate BODEGA 1 default reports.
-        generateSalesReport(BODEGA_1);
-        generateStocksReport();
-        generateStockOutReport();
+        b1GenerateSalesReport();
+        b1GenerateStocksReport();
+        b1GenerateStockOutReport();
 
         // Set BODEGA 1 tables.
-        setUnitTable();
-        setSupplierTable();
-        setPersonnelTable();
-        setUserTable();
-        setItemTable(BODEGA_1);
-        setStockTable();
-        setDashboardHotTable(BODEGA_1);
-        setDashboardAlmostOutOfStockTable();
+        b1SetUnitTable();
+        b1SetSupplierTable();
+        b1SetPersonnelTable();
+        b1SetUserTable();
+        b1SetItemTable();
+        b1SetStockTable();
+        b1SetDashboardHotTable();
+        b1SetDashboardAlmostOutOfStockTable();
 
         b1UnitXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         b1UnitXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
@@ -3110,7 +3119,7 @@ public class MainFrame extends javax.swing.JFrame {
         JTableSearchUtil.performSearch(table, text);
     }
 
-    private void setUnitTable() {
+    private void b1SetUnitTable() {
         b1UnitXTable.setModel(unitImplementation.getTableModel());
         b1UnitXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         b1UnitXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
@@ -3122,7 +3131,7 @@ public class MainFrame extends javax.swing.JFrame {
         b1UnitXTable.getColumnModel().getColumn(3).setPreferredWidth(200);
     }
 
-    private void setSupplierTable() {
+    private void b1SetSupplierTable() {
         b1SupplierXTable.setModel(supplierImplementation.getTableModel());
         b1SupplierXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         b1SupplierXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
@@ -3135,7 +3144,7 @@ public class MainFrame extends javax.swing.JFrame {
         b1SupplierXTable.getColumnModel().getColumn(4).setPreferredWidth(200);
     }
 
-    private void setPersonnelTable() {
+    private void b1SetPersonnelTable() {
         b1PersonnelXTable.setModel(personnelImplementation.getTableModel());
         b1PersonnelXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         b1PersonnelXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
@@ -3146,7 +3155,7 @@ public class MainFrame extends javax.swing.JFrame {
         b1PersonnelXTable.getColumnModel().getColumn(2).setPreferredWidth(200);
     }
 
-    private void setUserTable() {
+    private void b1SetUserTable() {
         b1UserXTable.setModel(userImplementation.getTableModel());
         b1UserXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         b1UserXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
@@ -3158,8 +3167,8 @@ public class MainFrame extends javax.swing.JFrame {
         b1UserXTable.getColumnModel().getColumn(3).setPreferredWidth(200);
     }
 
-    private void setItemTable(String bodega) {
-        b1ItemXTable.setModel(itemImplementation.getTableModel(bodega));
+    private void b1SetItemTable() {
+        b1ItemXTable.setModel(itemImplementation.getTableModel());
         b1ItemXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         b1ItemXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
@@ -3173,8 +3182,8 @@ public class MainFrame extends javax.swing.JFrame {
         b1ItemXTable.getColumnModel().getColumn(6).setPreferredWidth(150);
     }
 
-    private void setStockTable() {
-        stockXTable.setModel(stockImplementation.getTableModel());
+    private void b1SetStockTable() {
+        stockXTable.setModel(stockImplementation.getTableModel(BODEGA_1));
         stockXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         stockXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
@@ -3191,8 +3200,8 @@ public class MainFrame extends javax.swing.JFrame {
         stockXTable.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
     }
 
-    private void setDashboardHotTable(String bodega) {
-        dashboardHotXTable.setModel(dashboardImplementation.getHotTableModel(bodega));
+    private void b1SetDashboardHotTable() {
+        dashboardHotXTable.setModel(dashboardImplementation.getHotTableModel(BODEGA_1));
         dashboardHotXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         dashboardHotXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
@@ -3210,8 +3219,8 @@ public class MainFrame extends javax.swing.JFrame {
         dashboardHotXTable.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
     }
 
-    private void setDashboardAlmostOutOfStockTable() {
-        dashboardAlmostOutOfStockXTable.setModel(dashboardImplementation.getAlmostOutOfStockTableModel());
+    private void b1SetDashboardAlmostOutOfStockTable() {
+        dashboardAlmostOutOfStockXTable.setModel(dashboardImplementation.getAlmostOutOfStockTableModel(BODEGA_1));
         dashboardAlmostOutOfStockXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         dashboardAlmostOutOfStockXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
@@ -3228,12 +3237,12 @@ public class MainFrame extends javax.swing.JFrame {
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
     }
 
-    private void generateSalesReport(String bodega) {
+    private void b1GenerateSalesReport() {
         Date from = reportsSalesFromDateChooser.getDate();
         Date to = reportsSalesToDateChooser.getDate();
         Integer stockId = (salesStockComboBox.getSelectedIndex() < 1 ? 0 : ((Stock) salesStockComboBox.getModel().getSelectedItem()).getId());
 
-        reportsSalesXTable.setModel(reportsImplementation.getSalesReportTableModel(from, to, stockId, bodega));
+        reportsSalesXTable.setModel(reportsImplementation.getSalesReportTableModel(from, to, stockId, BODEGA_1));
         reportsSalesXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         reportsSalesXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
@@ -3251,12 +3260,12 @@ public class MainFrame extends javax.swing.JFrame {
         reportsSalesXTable.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
     }
 
-    private void generateStocksReport() {
+    private void b1GenerateStocksReport() {
         Date from = reportsStocksFromDateChooser.getDate();
         Date to = reportsStocksToDateChooser.getDate();
         Integer stockId = (stocksStockComboBox.getSelectedIndex() < 1 ? 0 : ((Stock) stocksStockComboBox.getModel().getSelectedItem()).getId());
 
-        reportsStocksXTable.setModel(reportsImplementation.getStocksReportTableModel(from, to, stockId));
+        reportsStocksXTable.setModel(reportsImplementation.getStocksReportTableModel(from, to, stockId, BODEGA_1));
         reportsStocksXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         reportsStocksXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
@@ -3273,12 +3282,12 @@ public class MainFrame extends javax.swing.JFrame {
         reportsStocksXTable.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
     }
 
-    private void generateStockOutReport() {
+    private void b1GenerateStockOutReport() {
         Date from = reportsStockOutFromDateChooser.getDate();
         Date to = reportsStockOutToDateChooser.getDate();
         Integer stockId = (stockOutStockComboBox.getSelectedIndex() < 1 ? 0 : ((Stock) stockOutStockComboBox.getModel().getSelectedItem()).getId());
 
-        reportsStockOutXTable.setModel(reportsImplementation.getStockOutReportTableModel(from, to, stockId));
+        reportsStockOutXTable.setModel(reportsImplementation.getStockOutReportTableModel(from, to, stockId, BODEGA_1));
         reportsStockOutXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         reportsStockOutXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 

@@ -59,7 +59,7 @@ public class ReportsImplementation {
         };
 
         DefaultTableModel model = new DefaultTableModel(null, columnName);
-        List<Sales> sales = (stockId == 0 ? salesJpaController.findSalesFromTo(from, to) : salesJpaController.findSalesFromToAndStock(from, to, stockId));
+        List<Sales> sales = (stockId == 0 ? salesJpaController.findSalesFromTo(from, to, bodega) : salesJpaController.findSalesFromToAndStock(from, to, stockId, bodega));
 
         try {
             for (Sales sale : sales) {
@@ -67,7 +67,7 @@ public class ReportsImplementation {
                 Object[] newRow = new Object[6];
                 Stock stock = stockJpaController.findStock(sale.getStock().getId());
 
-                newRow[i++] = itemJpaController.findItem(stock.getItem().getId(), bodega);
+                newRow[i++] = itemJpaController.findItem(stock.getItem().getId());
                 newRow[i++] = sale.getQuantity();
                 newRow[i++] = sale.getUnitPrice();
                 newRow[i++] = sale.getTotalAmount();
@@ -83,7 +83,7 @@ public class ReportsImplementation {
         return model;
     }
 
-    public TableModel getStocksReportTableModel(Date from, Date to, Integer stockId) {
+    public TableModel getStocksReportTableModel(Date from, Date to, Integer stockId, String bodega) {
         Object[] columnName = {
             "Code",
             "Item",
@@ -95,7 +95,7 @@ public class ReportsImplementation {
         };
 
         DefaultTableModel model = new DefaultTableModel(null, columnName);
-        List<Stock> stocks = (stockId == 0 ? stockJpaController.findStocksFromTo(from, to) : stockJpaController.findStocksFromToAndStock(from, to, stockId));
+        List<Stock> stocks = (stockId == 0 ? stockJpaController.findStocksFromTo(from, to, bodega) : stockJpaController.findStocksFromToAndStock(from, to, stockId, bodega));
 
         try {
             for (Stock stock : stocks) {
@@ -119,7 +119,7 @@ public class ReportsImplementation {
         return model;
     }
 
-    public TableModel getStockOutReportTableModel(Date from, Date to, Integer stockId) {
+    public TableModel getStockOutReportTableModel(Date from, Date to, Integer stockId, String bodega) {
         Object[] columnName = {
             "Item",
             "Personnel",
@@ -129,7 +129,7 @@ public class ReportsImplementation {
         };
 
         DefaultTableModel model = new DefaultTableModel(null, columnName);
-        List<StockWithdrawal> stockWithdrawals = (stockId == 0 ? stockWithdrawalJpaController.findStockWithdrawalFromTo(from, to) : stockWithdrawalJpaController.findStockWithdrawalFromToAndStock(from, to, stockId));
+        List<StockWithdrawal> stockWithdrawals = (stockId == 0 ? stockWithdrawalJpaController.findStockWithdrawalFromTo(from, to, bodega) : stockWithdrawalJpaController.findStockWithdrawalFromToAndStock(from, to, stockId, bodega));
 
         try {
             for (StockWithdrawal stockWithdrawal : stockWithdrawals) {

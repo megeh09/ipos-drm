@@ -8,7 +8,6 @@ package com.ipos.view.stock.in;
 import com.ipos.entity.Item;
 import com.ipos.entity.Personnel;
 import com.ipos.entity.Stock;
-import com.ipos.entity.enums.Warehouse;
 import com.ipos.helper.util.DateUtil;
 import com.ipos.helper.util.DecimalFormatterUtil;
 import com.ipos.helper.util.GeneratorUtil;
@@ -31,7 +30,7 @@ import javax.swing.JOptionPane;
  */
 public class StockInDialog extends javax.swing.JDialog {
 
-    private final String BODEGA = Warehouse.BODEGA_1.getName();
+    private String bodega;
     private StockJpaController controller;
     private PersonnelJpaController personnelJpaController;
     private ItemJpaController itemJpaController;
@@ -43,11 +42,12 @@ public class StockInDialog extends javax.swing.JDialog {
      * @param parent
      * @param modal
      * @param emf
+     * @param bodega
      */
-    public StockInDialog(java.awt.Frame parent, boolean modal, EntityManagerFactory emf) {
+    public StockInDialog(java.awt.Frame parent, boolean modal, EntityManagerFactory emf, String bodega) {
         super(parent, modal);
         initComponents();
-        initElements(emf);
+        initElements(emf, bodega);
     }
 
     /**
@@ -270,6 +270,7 @@ public class StockInDialog extends javax.swing.JDialog {
             entity.setUnitPrice(BigDecimal.ZERO);
             entity.setIsExpirable(false);
             entity.setDate(DateUtil.current());
+            entity.setBodega(bodega);
             entity.setFKsupplierId(0);
             entity.setFKpersonnelId(((Personnel) personnelComboBox.getSelectedItem()).getId());
             entity.setItem((Item) itemComboBox.getSelectedItem());
@@ -311,7 +312,8 @@ public class StockInDialog extends javax.swing.JDialog {
     private javax.swing.JPanel topPanel;
     // End of variables declaration//GEN-END:variables
 
-    private void initElements(EntityManagerFactory emf) {
+    private void initElements(EntityManagerFactory emf, String b) {
+        bodega = b;
         controller = new StockJpaController(emf);
         personnelJpaController = new PersonnelJpaController(emf);
         itemJpaController = new ItemJpaController(emf);
@@ -322,7 +324,7 @@ public class StockInDialog extends javax.swing.JDialog {
 
         // Set combo box.
         personnelComboBox.setModel(JComboBoxModelUtil.getPersonnelModel("Select Personnel", personnelJpaController.findPersonnelEntities()));
-        itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities(BODEGA)));
+        itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities()));
     }
 
     private void hideThis() {
@@ -330,7 +332,7 @@ public class StockInDialog extends javax.swing.JDialog {
     }
 
     private void setCode() {
-        List<Stock> stocks = controller.findStockEntitiesOrderByIdDesc();
+        List<Stock> stocks = controller.findStockEntitiesOrderByIdDesc(bodega);
         String code = null;
 
         if (!stocks.isEmpty()) {

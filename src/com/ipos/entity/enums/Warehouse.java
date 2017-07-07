@@ -10,6 +10,7 @@ package com.ipos.entity.enums;
  * @author megeh
  */
 public enum Warehouse {
+    BODEGA_MAIN("BODEGA MAIN"),
     BODEGA_1("BODEGA 1"),
     BODEGA_2("BODEGA 2");
 

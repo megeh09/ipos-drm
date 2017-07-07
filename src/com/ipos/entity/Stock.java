@@ -31,25 +31,25 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "Stock")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Stock.findAll", query = "SELECT s FROM Stock s"),
-    @NamedQuery(name = "Stock.findAllOrderByIdDesc", query = "SELECT s FROM Stock s ORDER BY s.id DESC"),
-    @NamedQuery(name = "Stock.findById", query = "SELECT s FROM Stock s WHERE s.id = :id"),
-    @NamedQuery(name = "Stock.findByCode", query = "SELECT s FROM Stock s WHERE s.code = :code"),
-    @NamedQuery(name = "Stock.findByStockCardNumber", query = "SELECT s FROM Stock s WHERE s.stockCardNumber = :stockCardNumber"),
-    @NamedQuery(name = "Stock.findByQuantity", query = "SELECT s FROM Stock s WHERE s.quantity = :quantity"),
-    @NamedQuery(name = "Stock.findByUnitPrice", query = "SELECT s FROM Stock s WHERE s.unitPrice = :unitPrice"),
-    @NamedQuery(name = "Stock.findByIsExpirable", query = "SELECT s FROM Stock s WHERE s.isExpirable = :isExpirable"),
-    @NamedQuery(name = "Stock.findByExpiryDate", query = "SELECT s FROM Stock s WHERE s.expiryDate = :expiryDate"),
-    @NamedQuery(name = "Stock.findByDate", query = "SELECT s FROM Stock s WHERE s.date = :date"),
-    @NamedQuery(name = "Stock.findByCreatedOn", query = "SELECT s FROM Stock s WHERE s.createdOn = :createdOn"),
-    @NamedQuery(name = "Stock.findByUpdatedOn", query = "SELECT s FROM Stock s WHERE s.updatedOn = :updatedOn"),
-    @NamedQuery(name = "Stock.findByFKsupplierId", query = "SELECT s FROM Stock s WHERE s.fKsupplierId = :fKsupplierId"),
-    @NamedQuery(name = "Stock.findByFKpersonnelId", query = "SELECT s FROM Stock s WHERE s.fKpersonnelId = :fKpersonnelId"),
-    @NamedQuery(name = "Stock.findByItemId", query = "SELECT s FROM Stock s WHERE s.item.id = :itemId"),
-    @NamedQuery(name = "Stock.findByFKcreatedByUserId", query = "SELECT s FROM Stock s WHERE s.fKcreatedByUserId = :fKcreatedByUserId"),
-    @NamedQuery(name = "Stock.findAlmostOutOfStockWithLimit", query = "SELECT s FROM Stock s WHERE s.quantity <= :quantityLimit"),
-    @NamedQuery(name = "Stock.findStocksFromTo", query = "SELECT s FROM Stock s WHERE s.date BETWEEN :from AND :to"),
-    @NamedQuery(name = "Stock.findStocksFromToAndStock", query = "SELECT s FROM Stock s WHERE s.id = :stockId AND s.date BETWEEN :from AND :to")})
+    @NamedQuery(name = "Stock.findAll", query = "SELECT s FROM Stock s WHERE s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findAllOrderByIdDesc", query = "SELECT s FROM Stock s WHERE s.bodega = :bodega ORDER BY s.id DESC"),
+    @NamedQuery(name = "Stock.findById", query = "SELECT s FROM Stock s WHERE s.id = :id AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByCode", query = "SELECT s FROM Stock s WHERE s.code = :code AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByStockCardNumber", query = "SELECT s FROM Stock s WHERE s.stockCardNumber = :stockCardNumber AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByQuantity", query = "SELECT s FROM Stock s WHERE s.quantity = :quantity AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByUnitPrice", query = "SELECT s FROM Stock s WHERE s.unitPrice = :unitPrice AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByIsExpirable", query = "SELECT s FROM Stock s WHERE s.isExpirable = :isExpirable AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByExpiryDate", query = "SELECT s FROM Stock s WHERE s.expiryDate = :expiryDate AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByDate", query = "SELECT s FROM Stock s WHERE s.date = :date AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByCreatedOn", query = "SELECT s FROM Stock s WHERE s.createdOn = :createdOn AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByUpdatedOn", query = "SELECT s FROM Stock s WHERE s.updatedOn = :updatedOn AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByFKsupplierId", query = "SELECT s FROM Stock s WHERE s.fKsupplierId = :fKsupplierId AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByFKpersonnelId", query = "SELECT s FROM Stock s WHERE s.fKpersonnelId = :fKpersonnelId AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByItemId", query = "SELECT s FROM Stock s WHERE s.item.id = :itemId AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findByFKcreatedByUserId", query = "SELECT s FROM Stock s WHERE s.fKcreatedByUserId = :fKcreatedByUserId AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findAlmostOutOfStockWithLimit", query = "SELECT s FROM Stock s WHERE s.quantity <= :quantityLimit AND s.bodega = :bodega"),
+    @NamedQuery(name = "Stock.findStocksFromTo", query = "SELECT s FROM Stock s WHERE s.bodega = :bodega AND s.date BETWEEN :from AND :to"),
+    @NamedQuery(name = "Stock.findStocksFromToAndStock", query = "SELECT s FROM Stock s WHERE s.id = :stockId AND s.bodega = :bodega AND s.date BETWEEN :from AND :to")})
 public class Stock implements Serializable {
 
     private static final long serialVersionUID = 1L;

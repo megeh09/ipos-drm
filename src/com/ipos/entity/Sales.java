@@ -31,21 +31,21 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "Sales")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Sales.findAll", query = "SELECT s FROM Sales s"),
-    @NamedQuery(name = "Sales.findAllHot", query = "SELECT s FROM Sales s ORDER BY s.quantity ASC, s.totalAmount ASC"),
-    @NamedQuery(name = "Sales.findById", query = "SELECT s FROM Sales s WHERE s.id = :id"),
-    @NamedQuery(name = "Sales.findByQuantity", query = "SELECT s FROM Sales s WHERE s.quantity = :quantity"),
-    @NamedQuery(name = "Sales.findByUnitPrice", query = "SELECT s FROM Sales s WHERE s.unitPrice = :unitPrice"),
-    @NamedQuery(name = "Sales.findByCashAmount", query = "SELECT s FROM Sales s WHERE s.cashAmount = :cashAmount"),
-    @NamedQuery(name = "Sales.findByChangeAmount", query = "SELECT s FROM Sales s WHERE s.changeAmount = :changeAmount"),
-    @NamedQuery(name = "Sales.findByTotalAmount", query = "SELECT s FROM Sales s WHERE s.totalAmount = :totalAmount"),
-    @NamedQuery(name = "Sales.findByDate", query = "SELECT s FROM Sales s WHERE s.date = :date"),
-    @NamedQuery(name = "Sales.findByCreatedOn", query = "SELECT s FROM Sales s WHERE s.createdOn = :createdOn"),
-    @NamedQuery(name = "Sales.findByUpdatedOn", query = "SELECT s FROM Sales s WHERE s.updatedOn = :updatedOn"),
-    @NamedQuery(name = "Sales.findByFKstockId", query = "SELECT s FROM Sales s JOIN s.stock st WHERE st.id = :stockId"),
-    @NamedQuery(name = "Sales.findByFKcreatedByUserId", query = "SELECT s FROM Sales s WHERE s.fKcreatedByUserId = :fKcreatedByUserId"),
-    @NamedQuery(name = "Sales.findSalesFromTo", query = "SELECT s FROM Sales s WHERE s.date BETWEEN :from AND :to"),
-    @NamedQuery(name = "Sales.findSalesFromToAndStock", query = "SELECT s FROM Sales s WHERE s.stock.id = :stockId AND s.date BETWEEN :from AND :to")})
+    @NamedQuery(name = "Sales.findAll", query = "SELECT s FROM Sales s WHERE s.bodega = :bodega"),
+    @NamedQuery(name = "Sales.findAllHot", query = "SELECT s FROM Sales s WHERE s.bodega = :bodega ORDER BY s.quantity ASC, s.totalAmount ASC"),
+    @NamedQuery(name = "Sales.findById", query = "SELECT s FROM Sales s WHERE s.id = :id AND s.bodega = :bodega"),
+    @NamedQuery(name = "Sales.findByQuantity", query = "SELECT s FROM Sales s WHERE s.quantity = :quantity AND s.bodega = :bodega"),
+    @NamedQuery(name = "Sales.findByUnitPrice", query = "SELECT s FROM Sales s WHERE s.unitPrice = :unitPrice AND s.bodega = :bodega"),
+    @NamedQuery(name = "Sales.findByCashAmount", query = "SELECT s FROM Sales s WHERE s.cashAmount = :cashAmount AND s.bodega = :bodega"),
+    @NamedQuery(name = "Sales.findByChangeAmount", query = "SELECT s FROM Sales s WHERE s.changeAmount = :changeAmount AND s.bodega = :bodega"),
+    @NamedQuery(name = "Sales.findByTotalAmount", query = "SELECT s FROM Sales s WHERE s.totalAmount = :totalAmount AND s.bodega = :bodega"),
+    @NamedQuery(name = "Sales.findByDate", query = "SELECT s FROM Sales s WHERE s.date = :date AND s.bodega = :bodega"),
+    @NamedQuery(name = "Sales.findByCreatedOn", query = "SELECT s FROM Sales s WHERE s.createdOn = :createdOn AND s.bodega = :bodega"),
+    @NamedQuery(name = "Sales.findByUpdatedOn", query = "SELECT s FROM Sales s WHERE s.updatedOn = :updatedOn AND s.bodega = :bodega"),
+    @NamedQuery(name = "Sales.findByFKstockId", query = "SELECT s FROM Sales s JOIN s.stock st WHERE st.id = :stockId AND s.bodega = :bodega"),
+    @NamedQuery(name = "Sales.findByFKcreatedByUserId", query = "SELECT s FROM Sales s WHERE s.fKcreatedByUserId = :fKcreatedByUserId AND s.bodega = :bodega"),
+    @NamedQuery(name = "Sales.findSalesFromTo", query = "SELECT s FROM Sales s WHERE s.bodega = :bodega AND s.date BETWEEN :from AND :to"),
+    @NamedQuery(name = "Sales.findSalesFromToAndStock", query = "SELECT s FROM Sales s WHERE s.stock.id = :stockId AND s.bodega = :bodega AND s.date BETWEEN :from AND :to")})
 public class Sales implements Serializable {
 
     private static final long serialVersionUID = 1L;

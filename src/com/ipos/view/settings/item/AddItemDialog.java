@@ -7,7 +7,6 @@ package com.ipos.view.settings.item;
 
 import com.ipos.entity.Item;
 import com.ipos.entity.Unit;
-import com.ipos.entity.enums.Warehouse;
 import com.ipos.helper.util.DateUtil;
 import com.ipos.helper.util.GeneratorUtil;
 import com.ipos.helper.util.JComboBoxModelUtil;
@@ -26,7 +25,6 @@ import javax.swing.JOptionPane;
  */
 public class AddItemDialog extends javax.swing.JDialog {
 
-    private final String BODEGA = Warehouse.BODEGA_1.getName();
     private ItemJpaController controller;
     private UnitJpaController unitJpaController;
 
@@ -250,7 +248,7 @@ public class AddItemDialog extends javax.swing.JDialog {
 
         try {
             // Check if item is existing.
-            if (!controller.findByName(nameTextField.getText(), BODEGA).isEmpty()) {
+            if (!controller.findByName(nameTextField.getText()).isEmpty()) {
                 JOptionPane.showMessageDialog(null, "An item found with the same name.  Please check.", "Warning", JOptionPane.WARNING_MESSAGE);
 
                 return;
@@ -269,7 +267,6 @@ public class AddItemDialog extends javax.swing.JDialog {
             entity.setColor(colorTextField.getText());
             entity.setDescription(descriptionTextArea.getText());
             entity.setDate(DateUtil.current());
-            entity.setBodega(BODEGA);
             entity.setFKunitId(((Unit) unitComboBox.getSelectedItem()).getId());
             entity.setFKcreatedByUserId(IPOS.currentUser.getId());
 
@@ -328,7 +325,7 @@ public class AddItemDialog extends javax.swing.JDialog {
     }
 
     private void setCode() {
-        List<Item> items = controller.findItemEntitiesOrderByDesc(BODEGA);
+        List<Item> items = controller.findItemEntitiesOrderByDesc();
         String code = null;
 
         if (!items.isEmpty()) {

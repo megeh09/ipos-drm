@@ -29,6 +29,7 @@ import javax.swing.JOptionPane;
  */
 public class StockWithdrawalDialog extends javax.swing.JDialog {
 
+    private String bodega;
     private StockWithdrawalJpaController controller;
     private StockJpaController stockJpaController;
     private PersonnelJpaController personnelJpaController;
@@ -43,11 +44,12 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
      * @param parent
      * @param modal
      * @param emf
+     * @param bodega
      */
-    public StockWithdrawalDialog(java.awt.Frame parent, boolean modal, EntityManagerFactory emf) {
+    public StockWithdrawalDialog(java.awt.Frame parent, boolean modal, EntityManagerFactory emf, String bodega) {
         super(parent, modal);
         initComponents();
-        initElements(emf);
+        initElements(emf, bodega);
     }
 
     /**
@@ -278,6 +280,7 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
             entity.setPurpose(purposeTextArea.getText());
             entity.setQuantity(dfNoComma.format(quantityFormattedTextField.getText()));
             entity.setDate(DateUtil.current());
+            entity.setBodega(bodega);
             entity.setStock(stock);
             entity.setPersonnel((Personnel) personnelComboBox.getSelectedItem());
             entity.setUser(IPOS.currentUser);
@@ -346,7 +349,8 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
     private javax.swing.JButton withdrawButton;
     // End of variables declaration//GEN-END:variables
 
-    private void initElements(EntityManagerFactory emf) {
+    private void initElements(EntityManagerFactory emf, String b) {
+        bodega = b;
         controller = new StockWithdrawalJpaController(emf);
         stockJpaController = new StockJpaController(emf);
         personnelJpaController = new PersonnelJpaController(emf);
@@ -355,7 +359,7 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
         dfWithComma = new DecimalFormatterUtil();
 
         // Set combo box.
-        stockComboBox.setModel(JComboBoxModelUtil.getStockModel("Select Stock", stockJpaController.findStockEntities()));
+        stockComboBox.setModel(JComboBoxModelUtil.getStockModel("Select Stock", stockJpaController.findStocks(b)));
         personnelComboBox.setModel(JComboBoxModelUtil.getPersonnelModel("Select Personnel", personnelJpaController.findPersonnelEntities()));
     }
 

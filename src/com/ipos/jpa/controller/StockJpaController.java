@@ -91,20 +91,21 @@ public class StockJpaController implements Serializable {
         }
     }
 
-    public List<Stock> findStockEntities() {
-        return findStockEntities(true, -1, -1);
+    public List<Stock> findStockEntities(String bodega) {
+        return findStockEntities(true, -1, -1, bodega);
     }
 
-    public List<Stock> findStockEntities(int maxResults, int firstResult) {
-        return findStockEntities(false, maxResults, firstResult);
+    public List<Stock> findStockEntities(int maxResults, int firstResult, String bodega) {
+        return findStockEntities(false, maxResults, firstResult, bodega);
     }
 
-    private List<Stock> findStockEntities(boolean all, int maxResults, int firstResult) {
+    private List<Stock> findStockEntities(boolean all, int maxResults, int firstResult, String bodega) {
         EntityManager em = getEntityManager();
         try {
             CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
             cq.select(cq.from(Stock.class));
-            Query q = em.createQuery(cq);
+            Query q = em.createQuery(cq)
+                    .setParameter("bodega", bodega);
             if (!all) {
                 q.setMaxResults(maxResults);
                 q.setFirstResult(firstResult);
@@ -115,56 +116,73 @@ public class StockJpaController implements Serializable {
         }
     }
 
-    public List<Stock> findStockEntitiesOrderByIdDesc() {
+    public List<Stock> findStocks(String bodega) {
         EntityManager em = getEntityManager();
         try {
-            return em.createNamedQuery("Stock.findAllOrderByIdDesc").getResultList();
+            return em.createNamedQuery("Stock.findAll")
+                    .setParameter("bodega", bodega)
+                    .getResultList();
         } finally {
             em.close();
         }
     }
 
-    public List<Stock> findStock(Item item) {
+    public List<Stock> findStockEntitiesOrderByIdDesc(String bodega) {
+        EntityManager em = getEntityManager();
+        try {
+            return em.createNamedQuery("Stock.findAllOrderByIdDesc")
+                    .setParameter("bodega", bodega)
+                    .getResultList();
+        } finally {
+            em.close();
+        }
+    }
+
+    public List<Stock> findStock(Item item, String bodega) {
         EntityManager em = getEntityManager();
         try {
             return em.createNamedQuery("Stock.findByItemId")
                     .setParameter("itemId", item.getId())
+                    .setParameter("bodega", bodega)
                     .getResultList();
         } finally {
             em.close();
         }
     }
 
-    public List<Stock> findAlmostOutOfStockWithLimit(Integer maxQuantity) {
+    public List<Stock> findAlmostOutOfStockWithLimit(Integer maxQuantity, String bodega) {
         EntityManager em = getEntityManager();
         try {
             return em.createNamedQuery("Stock.findAlmostOutOfStockWithLimit")
                     .setParameter("quantityLimit", maxQuantity)
+                    .setParameter("bodega", bodega)
                     .getResultList();
         } finally {
             em.close();
         }
     }
 
-    public List<Stock> findStocksFromTo(Date from, Date to) {
+    public List<Stock> findStocksFromTo(Date from, Date to, String bodega) {
         EntityManager em = getEntityManager();
         try {
             return em.createNamedQuery("Stock.findStocksFromTo")
                     .setParameter("from", from)
                     .setParameter("to", to)
+                    .setParameter("bodega", bodega)
                     .getResultList();
         } finally {
             em.close();
         }
     }
 
-    public List<Stock> findStocksFromToAndStock(Date from, Date to, Integer stockId) {
+    public List<Stock> findStocksFromToAndStock(Date from, Date to, Integer stockId, String bodega) {
         EntityManager em = getEntityManager();
         try {
             return em.createNamedQuery("Stock.findStocksFromToAndStock")
                     .setParameter("from", from)
                     .setParameter("to", to)
                     .setParameter("stockId", stockId)
+                    .setParameter("bodega", bodega)
                     .getResultList();
         } finally {
             em.close();

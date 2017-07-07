@@ -28,13 +28,13 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "Item")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "Item.findAll", query = "SELECT i FROM Item i WHERE i.bodega = :bodega"),
-    @NamedQuery(name = "Item.findAllOrderByDesc", query = "SELECT i FROM Item i WHERE i.bodega = :bodega ORDER BY i.id DESC"),
-    @NamedQuery(name = "Item.findById", query = "SELECT i FROM Item i WHERE i.id = :id AND i.bodega = :bodega"),
-    @NamedQuery(name = "Item.findByCode", query = "SELECT i FROM Item i WHERE i.code = :code AND i.bodega = :bodega"),
-    @NamedQuery(name = "Item.findByStockCardNumber", query = "SELECT i FROM Item i WHERE i.stockCardNumber = :stockCardNumber AND i.bodega = :bodega"),
-    @NamedQuery(name = "Item.findByName", query = "SELECT i FROM Item i WHERE i.name = :name AND i.bodega = :bodega"),
-    @NamedQuery(name = "Item.findLikeName", query = "SELECT i FROM Item i WHERE i.name like :name AND i.bodega = :bodega"),
+    @NamedQuery(name = "Item.findAll", query = "SELECT i FROM Item i"),
+    @NamedQuery(name = "Item.findAllOrderByDesc", query = "SELECT i FROM Item i ORDER BY i.id DESC"),
+    @NamedQuery(name = "Item.findById", query = "SELECT i FROM Item i WHERE i.id = :id"),
+    @NamedQuery(name = "Item.findByCode", query = "SELECT i FROM Item i WHERE i.code = :code"),
+    @NamedQuery(name = "Item.findByStockCardNumber", query = "SELECT i FROM Item i WHERE i.stockCardNumber = :stockCardNumber"),
+    @NamedQuery(name = "Item.findByName", query = "SELECT i FROM Item i WHERE i.name = :name"),
+    @NamedQuery(name = "Item.findLikeName", query = "SELECT i FROM Item i WHERE i.name like :name"),
     @NamedQuery(name = "Item.findByColor", query = "SELECT i FROM Item i WHERE i.color = :color"),
     @NamedQuery(name = "Item.findByDescription", query = "SELECT i FROM Item i WHERE i.description = :description"),
     @NamedQuery(name = "Item.findByDate", query = "SELECT i FROM Item i WHERE i.date = :date"),
@@ -70,9 +70,6 @@ public class Item implements Serializable {
     @Temporal(TemporalType.DATE)
     private Date date;
     @Basic(optional = false)
-    @Column(name = "bodega")
-    private String bodega;
-    @Basic(optional = false)
     @Column(name = "createdOn")
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdOn;
@@ -94,7 +91,7 @@ public class Item implements Serializable {
         this.id = id;
     }
 
-    public Item(Integer id, String code, String stockCardNumber, String name, String color, String description, Date date, String bodega, Date createdOn, Date updatedOn, int fKunitId, int fKcreatedByUserId) {
+    public Item(Integer id, String code, String stockCardNumber, String name, String color, String description, Date date, Date createdOn, Date updatedOn, int fKunitId, int fKcreatedByUserId) {
         this.id = id;
         this.code = code;
         this.stockCardNumber = stockCardNumber;
@@ -102,7 +99,6 @@ public class Item implements Serializable {
         this.color = color;
         this.description = description;
         this.date = date;
-        this.bodega = bodega;
         this.createdOn = createdOn;
         this.updatedOn = updatedOn;
         this.fKunitId = fKunitId;
@@ -163,14 +159,6 @@ public class Item implements Serializable {
 
     public void setDate(Date date) {
         this.date = date;
-    }
-
-    public String getBodega() {
-        return bodega;
-    }
-
-    public void setBodega(String bodega) {
-        this.bodega = bodega;
     }
 
     public Date getCreatedOn() {

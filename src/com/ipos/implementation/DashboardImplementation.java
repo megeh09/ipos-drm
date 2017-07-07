@@ -54,7 +54,7 @@ public class DashboardImplementation {
         };
 
         DefaultTableModel model = new DefaultTableModel(null, columnName);
-        List<Sales> sales = salesJpaController.findHotSales();
+        List<Sales> sales = salesJpaController.findHotSales(bodega);
 
         try {
             for (Sales sale : sales) {
@@ -62,7 +62,7 @@ public class DashboardImplementation {
                 Object[] newRow = new Object[6];
                 Stock stock = stockJpaController.findStock(sale.getStock().getId());
 
-                newRow[i++] = itemJpaController.findItem(stock.getItem().getId(), bodega);
+                newRow[i++] = itemJpaController.findItem(stock.getItem().getId());
                 newRow[i++] = sale.getQuantity();
                 newRow[i++] = sale.getUnitPrice();
                 newRow[i++] = sale.getTotalAmount();
@@ -78,7 +78,7 @@ public class DashboardImplementation {
         return model;
     }
 
-    public TableModel getAlmostOutOfStockTableModel() {
+    public TableModel getAlmostOutOfStockTableModel(String bodega) {
         Object[] columnName = {
             "Code",
             "Item",
@@ -91,7 +91,7 @@ public class DashboardImplementation {
 
         DefaultTableModel model = new DefaultTableModel(null, columnName);
         Integer maxQuantity = 5;
-        List<Stock> stocks = stockJpaController.findAlmostOutOfStockWithLimit(maxQuantity);
+        List<Stock> stocks = stockJpaController.findAlmostOutOfStockWithLimit(maxQuantity, bodega);
 
         try {
             for (Stock stock : stocks) {

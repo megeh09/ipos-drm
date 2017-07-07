@@ -15,7 +15,6 @@ import com.ipos.helper.util.JComboBoxModelUtil;
 import com.ipos.jpa.controller.ItemJpaController;
 import com.ipos.jpa.controller.SalesJpaController;
 import com.ipos.jpa.controller.StockJpaController;
-import com.ipos.jpa.controller.SupplierJpaController;
 import com.ipos.jpa.controller.UnitJpaController;
 import com.ipos.start.IPOS;
 import java.math.BigDecimal;
@@ -31,10 +30,9 @@ import javax.swing.JOptionPane;
  */
 public class AcceptPaymentDialog extends javax.swing.JDialog {
 
-    private final String BODEGA = Warehouse.BODEGA_1.getName();
+    private final String BODEGA_MAIN = Warehouse.BODEGA_MAIN.getName();
     private SalesJpaController controller;
     private StockJpaController stockJpaController;
-    private SupplierJpaController supplierJpaController;
     private ItemJpaController itemJpaController;
     private UnitJpaController unitJpaController;
     private DecimalFormatterUtil dfNoComma;
@@ -397,6 +395,7 @@ public class AcceptPaymentDialog extends javax.swing.JDialog {
             entity.setChangeAmount(dfNoComma.format(changeValueLabel.getText()));
             entity.setTotalAmount(total);
             entity.setDate(DateUtil.current());
+            entity.setBodega(BODEGA_MAIN);
             entity.setStock(stock);
             entity.setFKcreatedByUserId(IPOS.currentUser.getId());
 
@@ -423,7 +422,7 @@ public class AcceptPaymentDialog extends javax.swing.JDialog {
 
     private void itemComboBoxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemComboBoxActionPerformed
         Item item = (Item) itemComboBox.getSelectedItem();
-        List<Stock> stocks = stockJpaController.findStock(item);
+        List<Stock> stocks = stockJpaController.findStock(item, Warehouse.BODEGA_MAIN.getName());
 
         if (!stocks.isEmpty()) {
             stock = stocks.get(0);
@@ -481,7 +480,6 @@ public class AcceptPaymentDialog extends javax.swing.JDialog {
     private void initElements(EntityManagerFactory emf) {
         controller = new SalesJpaController(emf);
         stockJpaController = new StockJpaController(emf);
-        supplierJpaController = new SupplierJpaController(emf);
         itemJpaController = new ItemJpaController(emf);
         unitJpaController = new UnitJpaController(emf);
         dfNoComma = new DecimalFormatterUtil("#####0.00");
@@ -490,7 +488,7 @@ public class AcceptPaymentDialog extends javax.swing.JDialog {
         quantity = BigDecimal.ZERO;
 
         // Set combo box.
-        itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities(BODEGA)));
+        itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities()));
     }
 
     private void hideThis() {

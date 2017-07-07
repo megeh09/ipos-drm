@@ -31,15 +31,15 @@ import javax.xml.bind.annotation.XmlRootElement;
 @Table(name = "StockWithdrawal")
 @XmlRootElement
 @NamedQueries({
-    @NamedQuery(name = "StockWithdrawal.findAll", query = "SELECT s FROM StockWithdrawal s"),
-    @NamedQuery(name = "StockWithdrawal.findById", query = "SELECT s FROM StockWithdrawal s WHERE s.id = :id"),
-    @NamedQuery(name = "StockWithdrawal.findByPurpose", query = "SELECT s FROM StockWithdrawal s WHERE s.purpose = :purpose"),
-    @NamedQuery(name = "StockWithdrawal.findByQuantity", query = "SELECT s FROM StockWithdrawal s WHERE s.quantity = :quantity"),
-    @NamedQuery(name = "StockWithdrawal.findByDate", query = "SELECT s FROM StockWithdrawal s WHERE s.date = :date"),
-    @NamedQuery(name = "StockWithdrawal.findByCreatedOn", query = "SELECT s FROM StockWithdrawal s WHERE s.createdOn = :createdOn"),
-    @NamedQuery(name = "StockWithdrawal.findByUpdatedOn", query = "SELECT s FROM StockWithdrawal s WHERE s.updatedOn = :updatedOn"),
-    @NamedQuery(name = "StockWithdrawal.findStockWithdrawalFromTo", query = "SELECT s FROM StockWithdrawal s WHERE s.date BETWEEN :from AND :to"),
-    @NamedQuery(name = "StockWithdrawal.findStockWithdrawalFromToAndStock", query = "SELECT s FROM StockWithdrawal s WHERE s.stock.id = :stockId AND s.date BETWEEN :from AND :to")})
+    @NamedQuery(name = "StockWithdrawal.findAll", query = "SELECT s FROM StockWithdrawal s WHERE s.bodega = :bodega"),
+    @NamedQuery(name = "StockWithdrawal.findById", query = "SELECT s FROM StockWithdrawal s WHERE s.id = :id AND s.bodega = :bodega"),
+    @NamedQuery(name = "StockWithdrawal.findByPurpose", query = "SELECT s FROM StockWithdrawal s WHERE s.purpose = :purpose AND s.bodega = :bodega"),
+    @NamedQuery(name = "StockWithdrawal.findByQuantity", query = "SELECT s FROM StockWithdrawal s WHERE s.quantity = :quantity AND s.bodega = :bodega"),
+    @NamedQuery(name = "StockWithdrawal.findByDate", query = "SELECT s FROM StockWithdrawal s WHERE s.date = :date AND s.bodega = :bodega"),
+    @NamedQuery(name = "StockWithdrawal.findByCreatedOn", query = "SELECT s FROM StockWithdrawal s WHERE s.createdOn = :createdOn AND s.bodega = :bodega"),
+    @NamedQuery(name = "StockWithdrawal.findByUpdatedOn", query = "SELECT s FROM StockWithdrawal s WHERE s.updatedOn = :updatedOn AND s.bodega = :bodega"),
+    @NamedQuery(name = "StockWithdrawal.findStockWithdrawalFromTo", query = "SELECT s FROM StockWithdrawal s WHERE s.bodega = :bodega AND s.date BETWEEN :from AND :to"),
+    @NamedQuery(name = "StockWithdrawal.findStockWithdrawalFromToAndStock", query = "SELECT s FROM StockWithdrawal s WHERE s.stock.id = :stockId AND s.bodega = :bodega AND s.date BETWEEN :from AND :to")})
 public class StockWithdrawal implements Serializable {
 
     private static final long serialVersionUID = 1L;

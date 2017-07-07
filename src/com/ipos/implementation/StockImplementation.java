@@ -46,11 +46,11 @@ public class StockImplementation {
         userJpaController = new UserJpaController(emf);
     }
 
-    public ComboBoxModel getComboBoxModel() {
-        return JComboBoxModelUtil.getStockModel("Select Stock", stockJpaController.findStockEntities());
+    public ComboBoxModel getComboBoxModel(String bodega) {
+        return JComboBoxModelUtil.getStockModel("Select Stock", stockJpaController.findStockEntities(bodega));
     }
 
-    public TableModel getTableModel() {
+    public TableModel getTableModel(String bodega) {
         Object[] columnName = {
             "SC Number",
             "Code",
@@ -62,7 +62,7 @@ public class StockImplementation {
         };
 
         DefaultTableModel model = new DefaultTableModel(null, columnName);
-        List<Stock> stocks = stockJpaController.findStockEntities();
+        List<Stock> stocks = stockJpaController.findStockEntities(bodega);
 
         try {
             for (Stock stock : stocks) {
@@ -86,8 +86,8 @@ public class StockImplementation {
         return model;
     }
 
-    public void add() {
-        StockInDialog dialog = new StockInDialog(null, true, this.emf);
+    public void add(String bodega) {
+        StockInDialog dialog = new StockInDialog(null, true, this.emf, bodega);
 
         dialog.setLocationRelativeTo(null);
         dialog.setVisible(true);
@@ -107,8 +107,8 @@ public class StockImplementation {
         }
     }
 
-    public void withdrawal() {
-        StockWithdrawalDialog dialog = new StockWithdrawalDialog(null, true, this.emf);
+    public void withdrawal(String bodega) {
+        StockWithdrawalDialog dialog = new StockWithdrawalDialog(null, true, this.emf, bodega);
 
         dialog.setLocationRelativeTo(null);
         dialog.setVisible(true);
