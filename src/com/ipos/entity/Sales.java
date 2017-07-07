@@ -75,6 +75,9 @@ public class Sales implements Serializable {
     @Temporal(TemporalType.DATE)
     private Date date;
     @Basic(optional = false)
+    @Column(name = "bodega")
+    private String bodega;
+    @Basic(optional = false)
     @Column(name = "createdOn")
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdOn;
@@ -96,7 +99,7 @@ public class Sales implements Serializable {
         this.id = id;
     }
 
-    public Sales(Integer id, BigDecimal quantity, BigDecimal unitPrice, BigDecimal cashAmount, BigDecimal changeAmount, BigDecimal totalAmount, Date date, Date createdOn, Date updatedOn, Stock stock, int fKcreatedByUserId) {
+    public Sales(Integer id, BigDecimal quantity, BigDecimal unitPrice, BigDecimal cashAmount, BigDecimal changeAmount, BigDecimal totalAmount, Date date, String bodega, Date createdOn, Date updatedOn, Stock stock, int fKcreatedByUserId) {
         this.id = id;
         this.quantity = quantity;
         this.unitPrice = unitPrice;
@@ -104,6 +107,7 @@ public class Sales implements Serializable {
         this.changeAmount = changeAmount;
         this.totalAmount = totalAmount;
         this.date = date;
+        this.bodega = bodega;
         this.createdOn = createdOn;
         this.updatedOn = updatedOn;
         this.stock = stock;
@@ -164,6 +168,14 @@ public class Sales implements Serializable {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String getBodega() {
+        return bodega;
+    }
+
+    public void setBodega(String bodega) {
+        this.bodega = bodega;
     }
 
     public Date getCreatedOn() {

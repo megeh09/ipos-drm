@@ -56,7 +56,7 @@ public class ItemJpaController implements Serializable {
             String msg = ex.getLocalizedMessage();
             if (msg == null || msg.length() == 0) {
                 Integer id = item.getId();
-                if (findItem(id) == null) {
+                if (findItem(id, item.getBodega()) == null) {
                     throw new NonexistentEntityException("The item with id " + id + " no longer exists.");
                 }
             }
@@ -89,20 +89,21 @@ public class ItemJpaController implements Serializable {
         }
     }
 
-    public List<Item> findItemEntities() {
-        return findItemEntities(true, -1, -1);
+    public List<Item> findItemEntities(String bodega) {
+        return findItemEntities(true, -1, -1, bodega);
     }
 
-    public List<Item> findItemEntities(int maxResults, int firstResult) {
-        return findItemEntities(false, maxResults, firstResult);
+    public List<Item> findItemEntities(int maxResults, int firstResult, String bodega) {
+        return findItemEntities(false, maxResults, firstResult, bodega);
     }
 
-    private List<Item> findItemEntities(boolean all, int maxResults, int firstResult) {
+    private List<Item> findItemEntities(boolean all, int maxResults, int firstResult, String bodega) {
         EntityManager em = getEntityManager();
         try {
             CriteriaQuery cq = em.getCriteriaBuilder().createQuery();
             cq.select(cq.from(Item.class));
-            Query q = em.createQuery(cq);
+            Query q = em.createQuery(cq)
+                    .setParameter("bodega", bodega);
             if (!all) {
                 q.setMaxResults(maxResults);
                 q.setFirstResult(firstResult);
@@ -113,16 +114,18 @@ public class ItemJpaController implements Serializable {
         }
     }
 
-    public List<Item> findItemEntitiesOrderByDesc() {
+    public List<Item> findItemEntitiesOrderByDesc(String bodega) {
         EntityManager em = getEntityManager();
         try {
-            return em.createNamedQuery("Item.findAllOrderByDesc").getResultList();
+            return em.createNamedQuery("Item.findAllOrderByDesc")
+                    .setParameter("bodega", bodega)
+                    .getResultList();
         } finally {
             em.close();
         }
     }
 
-    public Item findItem(Integer id) {
+    public Item findItem(Integer id, String bodega) {
         EntityManager em = getEntityManager();
         try {
             return em.find(Item.class, id);
@@ -131,22 +134,24 @@ public class ItemJpaController implements Serializable {
         }
     }
 
-    public List<Item> findByName(String name) {
+    public List<Item> findByName(String name, String bodega) {
         EntityManager em = getEntityManager();
         try {
             return em.createNamedQuery("Item.findByName")
                     .setParameter("name", name)
+                    .setParameter("bodega", bodega)
                     .getResultList();
         } finally {
             em.close();
         }
     }
 
-    public List<Item> findLikeName(String name) {
+    public List<Item> findLikeName(String name, String bodega) {
         EntityManager em = getEntityManager();
         try {
             return em.createNamedQuery("Item.findLikeName")
                     .setParameter("name", '%' + name + '%')
+                    .setParameter("bodega", bodega)
                     .getResultList();
         } finally {
             em.close();

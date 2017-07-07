@@ -8,6 +8,7 @@ package com.ipos.view.sales;
 import com.ipos.entity.Item;
 import com.ipos.entity.Sales;
 import com.ipos.entity.Stock;
+import com.ipos.entity.enums.Warehouse;
 import com.ipos.helper.util.DateUtil;
 import com.ipos.helper.util.DecimalFormatterUtil;
 import com.ipos.helper.util.JComboBoxModelUtil;
@@ -30,6 +31,7 @@ import javax.swing.JOptionPane;
  */
 public class AcceptPaymentDialog extends javax.swing.JDialog {
 
+    private final String BODEGA = Warehouse.BODEGA_1.getName();
     private SalesJpaController controller;
     private StockJpaController stockJpaController;
     private SupplierJpaController supplierJpaController;
@@ -488,7 +490,7 @@ public class AcceptPaymentDialog extends javax.swing.JDialog {
         quantity = BigDecimal.ZERO;
 
         // Set combo box.
-        itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities()));
+        itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities(BODEGA)));
     }
 
     private void hideThis() {

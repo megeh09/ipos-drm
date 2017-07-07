@@ -82,6 +82,9 @@ public class Stock implements Serializable {
     @Temporal(TemporalType.DATE)
     private Date date;
     @Basic(optional = false)
+    @Column(name = "bodega")
+    private String bodega;
+    @Basic(optional = false)
     @Column(name = "createdOn")
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdOn;
@@ -109,7 +112,7 @@ public class Stock implements Serializable {
         this.id = id;
     }
 
-    public Stock(Integer id, String code, String stockCardNumber, BigDecimal quantity, BigDecimal unitPrice, boolean isExpirable, Date date, Date createdOn, Date updatedOn, int fKsupplierId, int fKpersonnelId, Item item, int fKcreatedByUserId) {
+    public Stock(Integer id, String code, String stockCardNumber, BigDecimal quantity, BigDecimal unitPrice, boolean isExpirable, Date date, String bodega, Date createdOn, Date updatedOn, int fKsupplierId, int fKpersonnelId, Item item, int fKcreatedByUserId) {
         this.id = id;
         this.code = code;
         this.stockCardNumber = stockCardNumber;
@@ -117,6 +120,7 @@ public class Stock implements Serializable {
         this.unitPrice = unitPrice;
         this.isExpirable = isExpirable;
         this.date = date;
+        this.bodega = bodega;
         this.createdOn = createdOn;
         this.updatedOn = updatedOn;
         this.fKsupplierId = fKsupplierId;
@@ -187,6 +191,14 @@ public class Stock implements Serializable {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String getBodega() {
+        return bodega;
+    }
+
+    public void setBodega(String bodega) {
+        this.bodega = bodega;
     }
 
     public Date getCreatedOn() {

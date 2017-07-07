@@ -60,6 +60,9 @@ public class StockWithdrawal implements Serializable {
     @Temporal(TemporalType.DATE)
     private Date date;
     @Basic(optional = false)
+    @Column(name = "bodega")
+    private String bodega;
+    @Basic(optional = false)
     @Column(name = "createdOn")
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdOn;
@@ -84,11 +87,12 @@ public class StockWithdrawal implements Serializable {
         this.id = id;
     }
 
-    public StockWithdrawal(Integer id, String purpose, BigDecimal quantity, Date date, Date createdOn, Date updatedOn, Stock stock, Personnel personnel, User user) {
+    public StockWithdrawal(Integer id, String purpose, BigDecimal quantity, Date date, String bodega, Date createdOn, Date updatedOn, Stock stock, Personnel personnel, User user) {
         this.id = id;
         this.purpose = purpose;
         this.quantity = quantity;
         this.date = date;
+        this.bodega = bodega;
         this.createdOn = createdOn;
         this.updatedOn = updatedOn;
         this.stock = stock;
@@ -126,6 +130,14 @@ public class StockWithdrawal implements Serializable {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String getBodega() {
+        return bodega;
+    }
+
+    public void setBodega(String bodega) {
+        this.bodega = bodega;
     }
 
     public Date getCreatedOn() {

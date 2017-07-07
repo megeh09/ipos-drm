@@ -8,6 +8,7 @@ package com.ipos.view.stock.adjust;
 import com.ipos.entity.Item;
 import com.ipos.entity.Personnel;
 import com.ipos.entity.Stock;
+import com.ipos.entity.enums.Warehouse;
 import com.ipos.helper.util.DecimalFormatterUtil;
 import com.ipos.helper.util.JComboBoxModelUtil;
 import com.ipos.jpa.controller.ItemJpaController;
@@ -26,6 +27,7 @@ import javax.swing.JOptionPane;
  */
 public class StockAdjustDialog extends javax.swing.JDialog {
 
+    private final String BODEGA = Warehouse.BODEGA_1.getName();
     private StockJpaController controller;
     private PersonnelJpaController personnelJpaController;
     private ItemJpaController itemJpaController;
@@ -313,11 +315,11 @@ public class StockAdjustDialog extends javax.swing.JDialog {
 
         // Set combo box.
         personnelComboBox.setModel(JComboBoxModelUtil.getPersonnelModel("Select Supplier", personnelJpaController.findPersonnelEntities()));
-        itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities()));
+        itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities(BODEGA)));
 
         // Set entity to be updated.
         codeTextField.setText(stock.getCode());
-        itemComboBox.setSelectedItem(itemJpaController.findItem(stock.getItem().getId()));
+        itemComboBox.setSelectedItem(itemJpaController.findItem(stock.getItem().getId(), BODEGA));
         personnelComboBox.setSelectedItem(personnelJpaController.findPersonnel(stock.getFKpersonnelId()));
         stockCardTextField.setText(stock.getStockCardNumber());
         quantityFormattedTextField.setText("");

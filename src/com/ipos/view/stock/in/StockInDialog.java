@@ -8,6 +8,7 @@ package com.ipos.view.stock.in;
 import com.ipos.entity.Item;
 import com.ipos.entity.Personnel;
 import com.ipos.entity.Stock;
+import com.ipos.entity.enums.Warehouse;
 import com.ipos.helper.util.DateUtil;
 import com.ipos.helper.util.DecimalFormatterUtil;
 import com.ipos.helper.util.GeneratorUtil;
@@ -30,6 +31,7 @@ import javax.swing.JOptionPane;
  */
 public class StockInDialog extends javax.swing.JDialog {
 
+    private final String BODEGA = Warehouse.BODEGA_1.getName();
     private StockJpaController controller;
     private PersonnelJpaController personnelJpaController;
     private ItemJpaController itemJpaController;
@@ -320,7 +322,7 @@ public class StockInDialog extends javax.swing.JDialog {
 
         // Set combo box.
         personnelComboBox.setModel(JComboBoxModelUtil.getPersonnelModel("Select Personnel", personnelJpaController.findPersonnelEntities()));
-        itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities()));
+        itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities(BODEGA)));
     }
 
     private void hideThis() {

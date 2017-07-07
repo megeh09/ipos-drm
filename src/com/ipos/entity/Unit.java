@@ -55,6 +55,9 @@ public class Unit implements Serializable {
     @Temporal(TemporalType.DATE)
     private Date date;
     @Basic(optional = false)
+    @Column(name = "bodega")
+    private String bodega;
+    @Basic(optional = false)
     @Column(name = "createdOn")
     @Temporal(TemporalType.TIMESTAMP)
     private Date createdOn;
@@ -73,11 +76,12 @@ public class Unit implements Serializable {
         this.id = id;
     }
 
-    public Unit(Integer id, String code, String description, Date date, Date createdOn, Date updatedOn, int fKcreatedByUserId) {
+    public Unit(Integer id, String code, String description, Date date, String bodega, Date createdOn, Date updatedOn, int fKcreatedByUserId) {
         this.id = id;
         this.code = code;
         this.description = description;
         this.date = date;
+        this.bodega = bodega;
         this.createdOn = createdOn;
         this.updatedOn = updatedOn;
         this.fKcreatedByUserId = fKcreatedByUserId;
@@ -113,6 +117,14 @@ public class Unit implements Serializable {
 
     public void setDate(Date date) {
         this.date = date;
+    }
+
+    public String getBodega() {
+        return bodega;
+    }
+
+    public void setBodega(String bodega) {
+        this.bodega = bodega;
     }
 
     public Date getCreatedOn() {

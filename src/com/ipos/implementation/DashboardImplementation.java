@@ -43,7 +43,7 @@ public class DashboardImplementation {
         userJpaController = new UserJpaController(emf);
     }
 
-    public TableModel getHotTableModel() {
+    public TableModel getHotTableModel(String bodega) {
         Object[] columnName = {
             "Item",
             "Quantity",
@@ -62,7 +62,7 @@ public class DashboardImplementation {
                 Object[] newRow = new Object[6];
                 Stock stock = stockJpaController.findStock(sale.getStock().getId());
 
-                newRow[i++] = itemJpaController.findItem(stock.getItem().getId());
+                newRow[i++] = itemJpaController.findItem(stock.getItem().getId(), bodega);
                 newRow[i++] = sale.getQuantity();
                 newRow[i++] = sale.getUnitPrice();
                 newRow[i++] = sale.getTotalAmount();

@@ -44,7 +44,7 @@ public class SalesImplementation {
         userJpaController = new UserJpaController(emf);
     }
 
-    public TableModel getTableModel() {
+    public TableModel getTableModel(String bodega) {
         Object[] columnName = {
             "Item",
             "Quantity",
@@ -63,7 +63,7 @@ public class SalesImplementation {
                 Object[] newRow = new Object[6];
                 Stock stock = stockJpaController.findStock(sale.getStock().getId());
 
-                newRow[i++] = itemJpaController.findItem(stock.getItem().getId());
+                newRow[i++] = itemJpaController.findItem(stock.getItem().getId(), bodega);
                 newRow[i++] = sale.getQuantity();
                 newRow[i++] = sale.getUnitPrice();
                 newRow[i++] = sale.getTotalAmount();

@@ -41,7 +41,7 @@ public class ItemImplementation {
         userJpaController = new UserJpaController(emf);
     }
 
-    public TableModel getTableModel() {
+    public TableModel getTableModel(String bodega) {
         Object[] columnName = {
             "Code",
             "SC Number",
@@ -53,7 +53,7 @@ public class ItemImplementation {
         };
 
         DefaultTableModel model = new DefaultTableModel(null, columnName);
-        List<Item> items = itemJpaController.findItemEntities();
+        List<Item> items = itemJpaController.findItemEntities(bodega);
 
         for (Item item : items) {
             int i = 0;

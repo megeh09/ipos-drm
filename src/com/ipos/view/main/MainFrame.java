@@ -6,6 +6,7 @@
 package com.ipos.view.main;
 
 import com.ipos.entity.Stock;
+import com.ipos.entity.enums.Warehouse;
 import com.ipos.helper.renderer.BigDecimalRenderer;
 import com.ipos.helper.util.DateUtil;
 import com.ipos.helper.util.JTableSearchUtil;
@@ -40,6 +41,8 @@ import org.jdesktop.swingx.decorator.HighlighterFactory;
 public class MainFrame extends javax.swing.JFrame {
 
     private static final MainFrame INSTANCE = new MainFrame();
+    private final String BODEGA_1 = Warehouse.BODEGA_1.getName();
+    private final String BODEGA_2 = Warehouse.BODEGA_2.getName();
     private final EntityManagerFactory EMF = ConnectionPersistence.getEntityManagerFactory();
     private final Color MOUSE_ENTERED_COLOR = new java.awt.Color(0, 173, 208);
     private final Color MOUSE_B1_EXITED_COLOR = new java.awt.Color(57, 72, 93);
@@ -90,7 +93,7 @@ public class MainFrame extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        dashboardPanel = new javax.swing.JPanel();
+        b1DashboardPanel = new javax.swing.JPanel();
         dashboardTopPanel = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
         jLabel22 = new javax.swing.JLabel();
@@ -105,7 +108,7 @@ public class MainFrame extends javax.swing.JFrame {
         dashboardAlmostOutOfStockXTable = new org.jdesktop.swingx.JXTable();
         jPanel1 = new javax.swing.JPanel();
         dashboardBottomPanel = new javax.swing.JPanel();
-        stocksPanel = new javax.swing.JPanel();
+        b1StocksPanel = new javax.swing.JPanel();
         stocksTopPanel = new javax.swing.JPanel();
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
@@ -119,7 +122,7 @@ public class MainFrame extends javax.swing.JFrame {
         stockScrollPane = new javax.swing.JScrollPane();
         stockXTable = new org.jdesktop.swingx.JXTable();
         stocksBottomPanel = new javax.swing.JPanel();
-        reportsPanel = new javax.swing.JPanel();
+        b1ReportsPanel = new javax.swing.JPanel();
         reportsTopPanel = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -163,7 +166,7 @@ public class MainFrame extends javax.swing.JFrame {
         reportsStockOutScrollPane = new javax.swing.JScrollPane();
         reportsStockOutXTable = new org.jdesktop.swingx.JXTable();
         reportsBottomPanel = new javax.swing.JPanel();
-        settingsPanel = new javax.swing.JPanel();
+        b1SettingsPanel = new javax.swing.JPanel();
         settingsTopPanel = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
@@ -275,8 +278,8 @@ public class MainFrame extends javax.swing.JFrame {
         centerPanel = new javax.swing.JPanel();
         bottomPanel = new javax.swing.JPanel();
 
-        dashboardPanel.setPreferredSize(new java.awt.Dimension(950, 500));
-        dashboardPanel.setLayout(new java.awt.BorderLayout());
+        b1DashboardPanel.setPreferredSize(new java.awt.Dimension(950, 500));
+        b1DashboardPanel.setLayout(new java.awt.BorderLayout());
 
         dashboardTopPanel.setBackground(new java.awt.Color(254, 255, 255));
         dashboardTopPanel.setPreferredSize(new java.awt.Dimension(950, 50));
@@ -310,7 +313,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        dashboardPanel.add(dashboardTopPanel, java.awt.BorderLayout.NORTH);
+        b1DashboardPanel.add(dashboardTopPanel, java.awt.BorderLayout.NORTH);
 
         dashboardCenterPanel.setBackground(new java.awt.Color(232, 236, 239));
         dashboardCenterPanel.setLayout(new java.awt.BorderLayout());
@@ -426,7 +429,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         dashboardCenterPanel.add(jPanel1, java.awt.BorderLayout.SOUTH);
 
-        dashboardPanel.add(dashboardCenterPanel, java.awt.BorderLayout.CENTER);
+        b1DashboardPanel.add(dashboardCenterPanel, java.awt.BorderLayout.CENTER);
 
         dashboardBottomPanel.setBackground(new java.awt.Color(232, 236, 239));
         dashboardBottomPanel.setPreferredSize(new java.awt.Dimension(950, 0));
@@ -442,10 +445,10 @@ public class MainFrame extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        dashboardPanel.add(dashboardBottomPanel, java.awt.BorderLayout.SOUTH);
+        b1DashboardPanel.add(dashboardBottomPanel, java.awt.BorderLayout.SOUTH);
 
-        stocksPanel.setPreferredSize(new java.awt.Dimension(950, 500));
-        stocksPanel.setLayout(new java.awt.BorderLayout());
+        b1StocksPanel.setPreferredSize(new java.awt.Dimension(950, 500));
+        b1StocksPanel.setLayout(new java.awt.BorderLayout());
 
         stocksTopPanel.setBackground(new java.awt.Color(254, 255, 255));
         stocksTopPanel.setPreferredSize(new java.awt.Dimension(950, 50));
@@ -529,7 +532,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGap(5, 5, 5))
         );
 
-        stocksPanel.add(stocksTopPanel, java.awt.BorderLayout.NORTH);
+        b1StocksPanel.add(stocksTopPanel, java.awt.BorderLayout.NORTH);
 
         stocksCenterPanel.setBackground(new java.awt.Color(232, 236, 239));
 
@@ -609,7 +612,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        stocksPanel.add(stocksCenterPanel, java.awt.BorderLayout.CENTER);
+        b1StocksPanel.add(stocksCenterPanel, java.awt.BorderLayout.CENTER);
 
         stocksBottomPanel.setBackground(new java.awt.Color(232, 236, 239));
         stocksBottomPanel.setPreferredSize(new java.awt.Dimension(950, 0));
@@ -625,10 +628,10 @@ public class MainFrame extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        stocksPanel.add(stocksBottomPanel, java.awt.BorderLayout.SOUTH);
+        b1StocksPanel.add(stocksBottomPanel, java.awt.BorderLayout.SOUTH);
 
-        reportsPanel.setPreferredSize(new java.awt.Dimension(740, 500));
-        reportsPanel.setLayout(new java.awt.BorderLayout());
+        b1ReportsPanel.setPreferredSize(new java.awt.Dimension(740, 500));
+        b1ReportsPanel.setLayout(new java.awt.BorderLayout());
 
         reportsTopPanel.setBackground(new java.awt.Color(254, 255, 255));
         reportsTopPanel.setPreferredSize(new java.awt.Dimension(740, 50));
@@ -671,7 +674,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        reportsPanel.add(reportsTopPanel, java.awt.BorderLayout.NORTH);
+        b1ReportsPanel.add(reportsTopPanel, java.awt.BorderLayout.NORTH);
 
         reportsCenterPanel.setBackground(new java.awt.Color(232, 236, 239));
         reportsCenterPanel.setPreferredSize(new java.awt.Dimension(740, 450));
@@ -1032,7 +1035,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        reportsPanel.add(reportsCenterPanel, java.awt.BorderLayout.CENTER);
+        b1ReportsPanel.add(reportsCenterPanel, java.awt.BorderLayout.CENTER);
 
         reportsBottomPanel.setBackground(new java.awt.Color(232, 236, 239));
         reportsBottomPanel.setPreferredSize(new java.awt.Dimension(950, 0));
@@ -1048,10 +1051,10 @@ public class MainFrame extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        reportsPanel.add(reportsBottomPanel, java.awt.BorderLayout.SOUTH);
+        b1ReportsPanel.add(reportsBottomPanel, java.awt.BorderLayout.SOUTH);
 
-        settingsPanel.setPreferredSize(new java.awt.Dimension(950, 500));
-        settingsPanel.setLayout(new java.awt.BorderLayout());
+        b1SettingsPanel.setPreferredSize(new java.awt.Dimension(950, 500));
+        b1SettingsPanel.setLayout(new java.awt.BorderLayout());
 
         settingsTopPanel.setBackground(new java.awt.Color(254, 255, 255));
         settingsTopPanel.setPreferredSize(new java.awt.Dimension(950, 50));
@@ -1094,7 +1097,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        settingsPanel.add(settingsTopPanel, java.awt.BorderLayout.NORTH);
+        b1SettingsPanel.add(settingsTopPanel, java.awt.BorderLayout.NORTH);
 
         settingsCenterPanel.setBackground(new java.awt.Color(232, 236, 239));
 
@@ -1763,7 +1766,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        settingsPanel.add(settingsCenterPanel, java.awt.BorderLayout.CENTER);
+        b1SettingsPanel.add(settingsCenterPanel, java.awt.BorderLayout.CENTER);
 
         settingsBottomPanel.setBackground(new java.awt.Color(232, 236, 239));
         settingsBottomPanel.setPreferredSize(new java.awt.Dimension(950, 0));
@@ -1779,7 +1782,7 @@ public class MainFrame extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        settingsPanel.add(settingsBottomPanel, java.awt.BorderLayout.SOUTH);
+        b1SettingsPanel.add(settingsBottomPanel, java.awt.BorderLayout.SOUTH);
 
         b1CenterPanel.setBackground(new java.awt.Color(255, 255, 255));
         b1CenterPanel.setPreferredSize(new java.awt.Dimension(1024, 500));
@@ -2453,7 +2456,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b1SettingsButtonMouseExited
 
     private void b1DashboardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1DashboardButtonActionPerformed
-        triggerB1Panel(dashboardPanel);
+        triggerB1Panel(b1DashboardPanel);
         triggerButtonMouseEntered(b1DashboardButton);
         triggerB1ChangeButton(b1DashboardButton);
 
@@ -2462,7 +2465,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b1DashboardButtonActionPerformed
 
     private void b1StocksButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1StocksButtonActionPerformed
-        triggerB1Panel(stocksPanel);
+        triggerB1Panel(b1StocksPanel);
         triggerButtonMouseEntered(b1StocksButton);
         triggerB1ChangeButton(b1StocksButton);
 
@@ -2471,7 +2474,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b1StocksButtonActionPerformed
 
     private void b1ReportsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ReportsButtonActionPerformed
-        triggerB1Panel(reportsPanel);
+        triggerB1Panel(b1ReportsPanel);
         triggerButtonMouseEntered(b1ReportsButton);
         triggerB1ChangeButton(b1ReportsButton);
 
@@ -2480,7 +2483,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b1ReportsButtonActionPerformed
 
     private void b1SettingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SettingsButtonActionPerformed
-        triggerB1Panel(settingsPanel);
+        triggerB1Panel(b1SettingsPanel);
         triggerButtonMouseEntered(b1SettingsButton);
         triggerB1ChangeButton(b1SettingsButton);
 
@@ -2542,25 +2545,25 @@ public class MainFrame extends javax.swing.JFrame {
         itemImplementation.add();
 
         // Reload table.
-        setItemTable();
+        setItemTable(BODEGA_1);
     }//GEN-LAST:event_itemAddButtonActionPerformed
 
     private void itemUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemUpdateButtonActionPerformed
         itemImplementation.update(itemXTable);
 
         // Reload table.
-        setItemTable();
+        setItemTable(BODEGA_1);
     }//GEN-LAST:event_itemUpdateButtonActionPerformed
 
     private void itemRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemRemoveButtonActionPerformed
         itemImplementation.remove(itemXTable);
 
         // Reload table.
-        setItemTable();
+        setItemTable(BODEGA_1);
     }//GEN-LAST:event_itemRemoveButtonActionPerformed
 
     private void itemRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemRefreshButtonActionPerformed
-        setItemTable();
+        setItemTable(BODEGA_1);
     }//GEN-LAST:event_itemRefreshButtonActionPerformed
 
     private void personnelAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personnelAddButtonActionPerformed
@@ -2687,7 +2690,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_stockRefreshButtonActionPerformed
 
     private void reportsSalesGenerateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportsSalesGenerateButtonActionPerformed
-        generateSalesReport();
+        generateSalesReport(BODEGA_1);
     }//GEN-LAST:event_reportsSalesGenerateButtonActionPerformed
 
     private void reportsStocksGenerateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportsStocksGenerateButtonActionPerformed
@@ -2703,7 +2706,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b2DashboardButtonMouseExited
 
     private void b2DashboardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2DashboardButtonActionPerformed
-        triggerB2Panel(dashboardPanel);
+        triggerB2Panel(b1DashboardPanel);
         triggerButtonMouseEntered(b2DashboardButton);
         triggerB2ChangeButton(b2DashboardButton);
 
@@ -2720,7 +2723,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b2StocksButtonMouseExited
 
     private void b2StocksButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2StocksButtonActionPerformed
-        triggerB2Panel(stocksPanel);
+        triggerB2Panel(b1StocksPanel);
         triggerButtonMouseEntered(b2StocksButton);
         triggerB2ChangeButton(b2StocksButton);
 
@@ -2737,7 +2740,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b2ReportsButtonMouseExited
 
     private void b2ReportsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ReportsButtonActionPerformed
-        triggerB2Panel(reportsPanel);
+        triggerB2Panel(b1ReportsPanel);
         triggerButtonMouseEntered(b2ReportsButton);
         triggerB2ChangeButton(b2ReportsButton);
 
@@ -2754,7 +2757,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b2SettingsButtonMouseExited
 
     private void b2SettingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2SettingsButtonActionPerformed
-        triggerB2Panel(settingsPanel);
+        triggerB2Panel(b1SettingsPanel);
         triggerButtonMouseEntered(b2SettingsButton);
         triggerB2ChangeButton(b2SettingsButton);
 
@@ -2797,14 +2800,18 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel b1CurrentUserGroupLabel7;
     private javax.swing.JLabel b1CurrentUserLabel;
     private javax.swing.JButton b1DashboardButton;
+    private javax.swing.JPanel b1DashboardPanel;
     private javax.swing.JPanel b1LeftInnerPanel;
     private javax.swing.JPanel b1LeftPanel;
     private javax.swing.JScrollPane b1LeftPanelScrollPane;
     private javax.swing.JButton b1ReportsButton;
+    private javax.swing.JPanel b1ReportsPanel;
     private javax.swing.JPanel b1RightPanel;
     private javax.swing.JScrollPane b1RightPanelScrollPane;
     private javax.swing.JButton b1SettingsButton;
+    private javax.swing.JPanel b1SettingsPanel;
     private javax.swing.JButton b1StocksButton;
+    private javax.swing.JPanel b1StocksPanel;
     private javax.swing.JPanel b1TargetPanel;
     private javax.swing.JPanel b1UserPanel;
     private javax.swing.JPanel b2CenterPanel;
@@ -2831,7 +2838,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel dashboardCenterPanel;
     private javax.swing.JScrollPane dashboardHotScrollPane;
     private org.jdesktop.swingx.JXTable dashboardHotXTable;
-    private javax.swing.JPanel dashboardPanel;
     private javax.swing.JPanel dashboardTopPanel;
     private javax.swing.JButton itemAddButton;
     private javax.swing.JPanel itemCenterPanel;
@@ -2879,7 +2885,6 @@ public class MainFrame extends javax.swing.JFrame {
     private org.jdesktop.swingx.JXTable personnelXTable;
     private javax.swing.JPanel reportsBottomPanel;
     private javax.swing.JPanel reportsCenterPanel;
-    private javax.swing.JPanel reportsPanel;
     private javax.swing.JPanel reportsSalesCenterPanel;
     private com.toedter.calendar.JDateChooser reportsSalesFromDateChooser;
     private javax.swing.JLabel reportsSalesFromLabel;
@@ -2916,7 +2921,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel salesStockLabel;
     private javax.swing.JPanel settingsBottomPanel;
     private javax.swing.JPanel settingsCenterPanel;
-    private javax.swing.JPanel settingsPanel;
     private javax.swing.JTabbedPane settingsTabbedPane;
     private javax.swing.JPanel settingsTopPanel;
     private javax.swing.JButton stockAdjustButton;
@@ -2930,7 +2934,6 @@ public class MainFrame extends javax.swing.JFrame {
     private org.jdesktop.swingx.JXTable stockXTable;
     private javax.swing.JPanel stocksBottomPanel;
     private javax.swing.JPanel stocksCenterPanel;
-    private javax.swing.JPanel stocksPanel;
     private javax.swing.JComboBox stocksStockComboBox;
     private javax.swing.JLabel stocksStockLabel;
     private javax.swing.JPanel stocksTopPanel;
@@ -3005,19 +3008,19 @@ public class MainFrame extends javax.swing.JFrame {
         stocksStockComboBox.setModel(stockImplementation.getComboBoxModel());
         stockOutStockComboBox.setModel(stockImplementation.getComboBoxModel());
 
-        // Generate default report.
-        generateSalesReport();
+        // Generate BODEGA 1 default reports.
+        generateSalesReport(BODEGA_1);
         generateStocksReport();
         generateStockOutReport();
 
-        // Set tables.
+        // Set BODEGA 1 tables.
         setUnitTable();
         setSupplierTable();
         setPersonnelTable();
         setUserTable();
-        setItemTable();
+        setItemTable(BODEGA_1);
         setStockTable();
-        setDashboardHotTable();
+        setDashboardHotTable(BODEGA_1);
         setDashboardAlmostOutOfStockTable();
 
         unitXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -3150,13 +3153,13 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Set column width.
         userXTable.getColumnModel().getColumn(0).setPreferredWidth(300);
-        userXTable.getColumnModel().getColumn(0).setPreferredWidth(250);
-        userXTable.getColumnModel().getColumn(1).setPreferredWidth(150);
-        userXTable.getColumnModel().getColumn(2).setPreferredWidth(200);
+        userXTable.getColumnModel().getColumn(1).setPreferredWidth(250);
+        userXTable.getColumnModel().getColumn(2).setPreferredWidth(150);
+        userXTable.getColumnModel().getColumn(3).setPreferredWidth(200);
     }
 
-    private void setItemTable() {
-        itemXTable.setModel(itemImplementation.getTableModel());
+    private void setItemTable(String bodega) {
+        itemXTable.setModel(itemImplementation.getTableModel(bodega));
         itemXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         itemXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
@@ -3188,8 +3191,8 @@ public class MainFrame extends javax.swing.JFrame {
         stockXTable.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
     }
 
-    private void setDashboardHotTable() {
-        dashboardHotXTable.setModel(dashboardImplementation.getHotTableModel());
+    private void setDashboardHotTable(String bodega) {
+        dashboardHotXTable.setModel(dashboardImplementation.getHotTableModel(bodega));
         dashboardHotXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         dashboardHotXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
@@ -3225,12 +3228,12 @@ public class MainFrame extends javax.swing.JFrame {
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
     }
 
-    private void generateSalesReport() {
+    private void generateSalesReport(String bodega) {
         Date from = reportsSalesFromDateChooser.getDate();
         Date to = reportsSalesToDateChooser.getDate();
         Integer stockId = (salesStockComboBox.getSelectedIndex() < 1 ? 0 : ((Stock) salesStockComboBox.getModel().getSelectedItem()).getId());
 
-        reportsSalesXTable.setModel(reportsImplementation.getSalesReportTableModel(from, to, stockId));
+        reportsSalesXTable.setModel(reportsImplementation.getSalesReportTableModel(from, to, stockId, bodega));
         reportsSalesXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         reportsSalesXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
