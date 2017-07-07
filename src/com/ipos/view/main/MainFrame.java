@@ -167,63 +167,63 @@ public class MainFrame extends javax.swing.JFrame {
         reportsStockOutXTable = new org.jdesktop.swingx.JXTable();
         reportsBottomPanel = new javax.swing.JPanel();
         b1SettingsPanel = new javax.swing.JPanel();
-        settingsTopPanel = new javax.swing.JPanel();
+        b1SettingsTopPanel = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
-        settingsCenterPanel = new javax.swing.JPanel();
-        settingsTabbedPane = new javax.swing.JTabbedPane();
-        itemPanel = new javax.swing.JPanel();
-        itemTopPanel = new javax.swing.JPanel();
-        itemXSearchField = new org.jdesktop.swingx.JXSearchField();
-        itemRemoveButton = new javax.swing.JButton();
-        itemUpdateButton = new javax.swing.JButton();
-        itemAddButton = new javax.swing.JButton();
-        itemRefreshButton = new javax.swing.JButton();
-        itemCenterPanel = new javax.swing.JPanel();
-        itemScrollPane = new javax.swing.JScrollPane();
-        itemXTable = new org.jdesktop.swingx.JXTable();
-        supplierPanel = new javax.swing.JPanel();
-        supplierTopPanel = new javax.swing.JPanel();
-        supplierRemoveButton = new javax.swing.JButton();
-        supplierUpdateButton = new javax.swing.JButton();
-        suppliderAddButton = new javax.swing.JButton();
-        supplierXSearchField = new org.jdesktop.swingx.JXSearchField();
-        supplierRefreshButton = new javax.swing.JButton();
-        supplierCenterPanel = new javax.swing.JPanel();
-        suplierScrollPane = new javax.swing.JScrollPane();
-        supplierXTable = new org.jdesktop.swingx.JXTable();
-        personnelPanel = new javax.swing.JPanel();
-        personnelTopPanel = new javax.swing.JPanel();
-        personnelRemoveButton = new javax.swing.JButton();
-        personnelUpdateButton = new javax.swing.JButton();
-        personnelAddButton = new javax.swing.JButton();
-        personnelXSearchField = new org.jdesktop.swingx.JXSearchField();
-        personnelRefreshButton = new javax.swing.JButton();
-        personnelCenterPanel = new javax.swing.JPanel();
-        personnelScrollPane = new javax.swing.JScrollPane();
-        personnelXTable = new org.jdesktop.swingx.JXTable();
-        unitPanel = new javax.swing.JPanel();
-        unitTopPanel = new javax.swing.JPanel();
-        unitRemoveButton = new javax.swing.JButton();
-        unitUpdateButton = new javax.swing.JButton();
-        unitAddButton = new javax.swing.JButton();
-        unitXSearchField = new org.jdesktop.swingx.JXSearchField();
-        unitRefreshButton = new javax.swing.JButton();
-        unitCenterPanel = new javax.swing.JPanel();
-        unitScrollPane = new javax.swing.JScrollPane();
-        unitXTable = new org.jdesktop.swingx.JXTable();
-        userPanel = new javax.swing.JPanel();
-        userTopPanel = new javax.swing.JPanel();
-        userRemoveButton = new javax.swing.JButton();
-        userUpdateButton = new javax.swing.JButton();
-        userAddButton = new javax.swing.JButton();
-        userXSearchField = new org.jdesktop.swingx.JXSearchField();
-        userRefreshButton = new javax.swing.JButton();
-        userCenterPanel = new javax.swing.JPanel();
-        userScrollPane = new javax.swing.JScrollPane();
-        userXTable = new org.jdesktop.swingx.JXTable();
-        settingsBottomPanel = new javax.swing.JPanel();
+        b1SettingsCenterPanel = new javax.swing.JPanel();
+        b1SettingsTabbedPane = new javax.swing.JTabbedPane();
+        b1ItemPanel = new javax.swing.JPanel();
+        b1ItemTopPanel = new javax.swing.JPanel();
+        b1ItemXSearchField = new org.jdesktop.swingx.JXSearchField();
+        b1ItemRemoveButton = new javax.swing.JButton();
+        b1ItemUpdateButton = new javax.swing.JButton();
+        b1ItemAddButton = new javax.swing.JButton();
+        b1ItemRefreshButton = new javax.swing.JButton();
+        b1ItemCenterPanel = new javax.swing.JPanel();
+        b1ItemScrollPane = new javax.swing.JScrollPane();
+        b1ItemXTable = new org.jdesktop.swingx.JXTable();
+        b1SupplierPanel = new javax.swing.JPanel();
+        b1SupplierTopPanel = new javax.swing.JPanel();
+        b1SupplierRemoveButton = new javax.swing.JButton();
+        b1SupplierUpdateButton = new javax.swing.JButton();
+        b1SuppliderAddButton = new javax.swing.JButton();
+        b1SupplierXSearchField = new org.jdesktop.swingx.JXSearchField();
+        b1SupplierRefreshButton = new javax.swing.JButton();
+        b1SupplierCenterPanel = new javax.swing.JPanel();
+        b1SuplierScrollPane = new javax.swing.JScrollPane();
+        b1SupplierXTable = new org.jdesktop.swingx.JXTable();
+        b1PersonnelPanel = new javax.swing.JPanel();
+        b1PersonnelTopPanel = new javax.swing.JPanel();
+        b1PersonnelRemoveButton = new javax.swing.JButton();
+        b1PersonnelUpdateButton = new javax.swing.JButton();
+        b1PersonnelAddButton = new javax.swing.JButton();
+        b1PersonnelXSearchField = new org.jdesktop.swingx.JXSearchField();
+        b1PersonnelRefreshButton = new javax.swing.JButton();
+        b1PersonnelCenterPanel = new javax.swing.JPanel();
+        b1PersonnelScrollPane = new javax.swing.JScrollPane();
+        b1PersonnelXTable = new org.jdesktop.swingx.JXTable();
+        b1UnitPanel = new javax.swing.JPanel();
+        b1UnitTopPanel = new javax.swing.JPanel();
+        b1UnitRemoveButton = new javax.swing.JButton();
+        b1UnitUpdateButton = new javax.swing.JButton();
+        b1UnitAddButton = new javax.swing.JButton();
+        b1UnitXSearchField = new org.jdesktop.swingx.JXSearchField();
+        b1UnitRefreshButton = new javax.swing.JButton();
+        b1UnitCenterPanel = new javax.swing.JPanel();
+        b1UnitScrollPane = new javax.swing.JScrollPane();
+        b1UnitXTable = new org.jdesktop.swingx.JXTable();
+        b1UsersPanel = new javax.swing.JPanel();
+        b1UserTopPanel = new javax.swing.JPanel();
+        b1UserRemoveButton = new javax.swing.JButton();
+        b1UserUpdateButton = new javax.swing.JButton();
+        b1UserAddButton = new javax.swing.JButton();
+        b1UserXSearchField = new org.jdesktop.swingx.JXSearchField();
+        b1UserRefreshButton = new javax.swing.JButton();
+        b1UserCenterPanel = new javax.swing.JPanel();
+        b1UserScrollPane = new javax.swing.JScrollPane();
+        b1UserXTable = new org.jdesktop.swingx.JXTable();
+        b1SettingsBottomPanel = new javax.swing.JPanel();
         b1CenterPanel = new javax.swing.JPanel();
         b1LeftPanel = new javax.swing.JPanel();
         b1LeftPanelScrollPane = new javax.swing.JScrollPane();
@@ -1056,8 +1056,8 @@ public class MainFrame extends javax.swing.JFrame {
         b1SettingsPanel.setPreferredSize(new java.awt.Dimension(950, 500));
         b1SettingsPanel.setLayout(new java.awt.BorderLayout());
 
-        settingsTopPanel.setBackground(new java.awt.Color(254, 255, 255));
-        settingsTopPanel.setPreferredSize(new java.awt.Dimension(950, 50));
+        b1SettingsTopPanel.setBackground(new java.awt.Color(254, 255, 255));
+        b1SettingsTopPanel.setPreferredSize(new java.awt.Dimension(950, 50));
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 8)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 173, 208));
@@ -1071,25 +1071,25 @@ public class MainFrame extends javax.swing.JFrame {
         jLabel10.setForeground(new java.awt.Color(46, 46, 46));
         jLabel10.setText("Settings");
 
-        javax.swing.GroupLayout settingsTopPanelLayout = new javax.swing.GroupLayout(settingsTopPanel);
-        settingsTopPanel.setLayout(settingsTopPanelLayout);
-        settingsTopPanelLayout.setHorizontalGroup(
-            settingsTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(settingsTopPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout b1SettingsTopPanelLayout = new javax.swing.GroupLayout(b1SettingsTopPanel);
+        b1SettingsTopPanel.setLayout(b1SettingsTopPanelLayout);
+        b1SettingsTopPanelLayout.setHorizontalGroup(
+            b1SettingsTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1SettingsTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(settingsTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(settingsTopPanelLayout.createSequentialGroup()
+                .addGroup(b1SettingsTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(b1SettingsTopPanelLayout.createSequentialGroup()
                         .addComponent(jLabel8)
                         .addGap(3, 3, 3)
                         .addComponent(jLabel9))
                     .addComponent(jLabel10))
                 .addContainerGap(877, Short.MAX_VALUE))
         );
-        settingsTopPanelLayout.setVerticalGroup(
-            settingsTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(settingsTopPanelLayout.createSequentialGroup()
+        b1SettingsTopPanelLayout.setVerticalGroup(
+            b1SettingsTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1SettingsTopPanelLayout.createSequentialGroup()
                 .addGap(5, 5, 5)
-                .addGroup(settingsTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                .addGroup(b1SettingsTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel8)
                     .addComponent(jLabel9))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -1097,120 +1097,120 @@ public class MainFrame extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
-        b1SettingsPanel.add(settingsTopPanel, java.awt.BorderLayout.NORTH);
+        b1SettingsPanel.add(b1SettingsTopPanel, java.awt.BorderLayout.NORTH);
 
-        settingsCenterPanel.setBackground(new java.awt.Color(232, 236, 239));
+        b1SettingsCenterPanel.setBackground(new java.awt.Color(232, 236, 239));
 
-        settingsTabbedPane.setBackground(new java.awt.Color(255, 255, 255));
-        settingsTabbedPane.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        settingsTabbedPane.setUI(new WindowsTabbedPaneUI() {
+        b1SettingsTabbedPane.setBackground(new java.awt.Color(255, 255, 255));
+        b1SettingsTabbedPane.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1SettingsTabbedPane.setUI(new WindowsTabbedPaneUI() {
             @Override
             protected int calculateTabWidth(int tabPlacement, int tabIndex, FontMetrics metrics) {
                 return 100;
             }
         });
 
-        itemPanel.setBackground(new java.awt.Color(255, 255, 255));
-        itemPanel.setLayout(new java.awt.BorderLayout());
+        b1ItemPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1ItemPanel.setLayout(new java.awt.BorderLayout());
 
-        itemTopPanel.setBackground(new java.awt.Color(255, 255, 255));
-        itemTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
+        b1ItemTopPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1ItemTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
 
-        itemXSearchField.setColumns(30);
-        itemXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
-        itemXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        itemXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
-        itemXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
-        itemXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
+        b1ItemXSearchField.setColumns(30);
+        b1ItemXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        b1ItemXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1ItemXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        b1ItemXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        b1ItemXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
-                itemXSearchFieldFocusLost(evt);
+                b1ItemXSearchFieldFocusLost(evt);
             }
         });
-        itemXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
+        b1ItemXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                itemXSearchFieldKeyReleased(evt);
+                b1ItemXSearchFieldKeyReleased(evt);
             }
         });
 
-        itemRemoveButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        itemRemoveButton.setText("REMOVE");
-        itemRemoveButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        itemRemoveButton.setFocusPainted(false);
-        itemRemoveButton.addActionListener(new java.awt.event.ActionListener() {
+        b1ItemRemoveButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1ItemRemoveButton.setText("REMOVE");
+        b1ItemRemoveButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1ItemRemoveButton.setFocusPainted(false);
+        b1ItemRemoveButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemRemoveButtonActionPerformed(evt);
+                b1ItemRemoveButtonActionPerformed(evt);
             }
         });
 
-        itemUpdateButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        itemUpdateButton.setText("UPDATE");
-        itemUpdateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        itemUpdateButton.setFocusPainted(false);
-        itemUpdateButton.addActionListener(new java.awt.event.ActionListener() {
+        b1ItemUpdateButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1ItemUpdateButton.setText("UPDATE");
+        b1ItemUpdateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1ItemUpdateButton.setFocusPainted(false);
+        b1ItemUpdateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemUpdateButtonActionPerformed(evt);
+                b1ItemUpdateButtonActionPerformed(evt);
             }
         });
 
-        itemAddButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        itemAddButton.setText("ADD");
-        itemAddButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        itemAddButton.setFocusPainted(false);
-        itemAddButton.addActionListener(new java.awt.event.ActionListener() {
+        b1ItemAddButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1ItemAddButton.setText("ADD");
+        b1ItemAddButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1ItemAddButton.setFocusPainted(false);
+        b1ItemAddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemAddButtonActionPerformed(evt);
+                b1ItemAddButtonActionPerformed(evt);
             }
         });
 
-        itemRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        itemRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
-        itemRefreshButton.setBorderPainted(false);
-        itemRefreshButton.setContentAreaFilled(false);
-        itemRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        itemRefreshButton.setFocusPainted(false);
-        itemRefreshButton.addActionListener(new java.awt.event.ActionListener() {
+        b1ItemRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1ItemRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1ItemRefreshButton.setBorderPainted(false);
+        b1ItemRefreshButton.setContentAreaFilled(false);
+        b1ItemRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1ItemRefreshButton.setFocusPainted(false);
+        b1ItemRefreshButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                itemRefreshButtonActionPerformed(evt);
+                b1ItemRefreshButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout itemTopPanelLayout = new javax.swing.GroupLayout(itemTopPanel);
-        itemTopPanel.setLayout(itemTopPanelLayout);
-        itemTopPanelLayout.setHorizontalGroup(
-            itemTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itemTopPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout b1ItemTopPanelLayout = new javax.swing.GroupLayout(b1ItemTopPanel);
+        b1ItemTopPanel.setLayout(b1ItemTopPanelLayout);
+        b1ItemTopPanelLayout.setHorizontalGroup(
+            b1ItemTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1ItemTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(itemXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1ItemXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(itemRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1ItemRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
-                .addComponent(itemAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1ItemAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(itemUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1ItemUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(itemRemoveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1ItemRemoveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        itemTopPanelLayout.setVerticalGroup(
-            itemTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(itemTopPanelLayout.createSequentialGroup()
+        b1ItemTopPanelLayout.setVerticalGroup(
+            b1ItemTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1ItemTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(itemTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(itemRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addGroup(itemTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(itemRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(itemUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(itemAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(itemXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(b1ItemTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(b1ItemRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(b1ItemTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(b1ItemRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1ItemUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1ItemAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1ItemXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
-        itemPanel.add(itemTopPanel, java.awt.BorderLayout.NORTH);
+        b1ItemPanel.add(b1ItemTopPanel, java.awt.BorderLayout.NORTH);
 
-        itemCenterPanel.setBackground(new java.awt.Color(255, 255, 255));
-        itemCenterPanel.setLayout(new java.awt.BorderLayout());
+        b1ItemCenterPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1ItemCenterPanel.setLayout(new java.awt.BorderLayout());
 
-        itemXTable.setModel(new javax.swing.table.DefaultTableModel(
+        b1ItemXTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
                 {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
@@ -1221,124 +1221,124 @@ public class MainFrame extends javax.swing.JFrame {
                 "Code", "Date Created", "Supplier", "Amount"
             }
         ));
-        itemXTable.setColumnControlVisible(true);
-        itemXTable.setEditable(false);
-        itemXTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        itemXTable.setHorizontalScrollEnabled(true);
-        itemXTable.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
-        itemXTable.setRowHeight(20);
-        itemXTable.setShowHorizontalLines(false);
-        itemXTable.setShowVerticalLines(false);
-        itemXTable.getTableHeader().setReorderingAllowed(false);
-        itemScrollPane.setViewportView(itemXTable);
+        b1ItemXTable.setColumnControlVisible(true);
+        b1ItemXTable.setEditable(false);
+        b1ItemXTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1ItemXTable.setHorizontalScrollEnabled(true);
+        b1ItemXTable.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        b1ItemXTable.setRowHeight(20);
+        b1ItemXTable.setShowHorizontalLines(false);
+        b1ItemXTable.setShowVerticalLines(false);
+        b1ItemXTable.getTableHeader().setReorderingAllowed(false);
+        b1ItemScrollPane.setViewportView(b1ItemXTable);
 
-        itemCenterPanel.add(itemScrollPane, java.awt.BorderLayout.CENTER);
+        b1ItemCenterPanel.add(b1ItemScrollPane, java.awt.BorderLayout.CENTER);
 
-        itemPanel.add(itemCenterPanel, java.awt.BorderLayout.CENTER);
+        b1ItemPanel.add(b1ItemCenterPanel, java.awt.BorderLayout.CENTER);
 
-        settingsTabbedPane.addTab("Item", itemPanel);
+        b1SettingsTabbedPane.addTab("Item", b1ItemPanel);
 
-        supplierPanel.setBackground(new java.awt.Color(255, 255, 255));
-        supplierPanel.setLayout(new java.awt.BorderLayout());
+        b1SupplierPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1SupplierPanel.setLayout(new java.awt.BorderLayout());
 
-        supplierTopPanel.setBackground(new java.awt.Color(255, 255, 255));
-        supplierTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
+        b1SupplierTopPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1SupplierTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
 
-        supplierRemoveButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        supplierRemoveButton.setText("REMOVE");
-        supplierRemoveButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        supplierRemoveButton.setFocusPainted(false);
-        supplierRemoveButton.addActionListener(new java.awt.event.ActionListener() {
+        b1SupplierRemoveButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1SupplierRemoveButton.setText("REMOVE");
+        b1SupplierRemoveButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1SupplierRemoveButton.setFocusPainted(false);
+        b1SupplierRemoveButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                supplierRemoveButtonActionPerformed(evt);
+                b1SupplierRemoveButtonActionPerformed(evt);
             }
         });
 
-        supplierUpdateButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        supplierUpdateButton.setText("UPDATE");
-        supplierUpdateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        supplierUpdateButton.setFocusPainted(false);
-        supplierUpdateButton.addActionListener(new java.awt.event.ActionListener() {
+        b1SupplierUpdateButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1SupplierUpdateButton.setText("UPDATE");
+        b1SupplierUpdateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1SupplierUpdateButton.setFocusPainted(false);
+        b1SupplierUpdateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                supplierUpdateButtonActionPerformed(evt);
+                b1SupplierUpdateButtonActionPerformed(evt);
             }
         });
 
-        suppliderAddButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        suppliderAddButton.setText("ADD");
-        suppliderAddButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        suppliderAddButton.setFocusPainted(false);
-        suppliderAddButton.addActionListener(new java.awt.event.ActionListener() {
+        b1SuppliderAddButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1SuppliderAddButton.setText("ADD");
+        b1SuppliderAddButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1SuppliderAddButton.setFocusPainted(false);
+        b1SuppliderAddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                suppliderAddButtonActionPerformed(evt);
+                b1SuppliderAddButtonActionPerformed(evt);
             }
         });
 
-        supplierXSearchField.setColumns(30);
-        supplierXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
-        supplierXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        supplierXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
-        supplierXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
-        supplierXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
+        b1SupplierXSearchField.setColumns(30);
+        b1SupplierXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        b1SupplierXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1SupplierXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        b1SupplierXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        b1SupplierXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
-                supplierXSearchFieldFocusLost(evt);
+                b1SupplierXSearchFieldFocusLost(evt);
             }
         });
-        supplierXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
+        b1SupplierXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                supplierXSearchFieldKeyReleased(evt);
+                b1SupplierXSearchFieldKeyReleased(evt);
             }
         });
 
-        supplierRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        supplierRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
-        supplierRefreshButton.setBorderPainted(false);
-        supplierRefreshButton.setContentAreaFilled(false);
-        supplierRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        supplierRefreshButton.setFocusPainted(false);
-        supplierRefreshButton.addActionListener(new java.awt.event.ActionListener() {
+        b1SupplierRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1SupplierRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1SupplierRefreshButton.setBorderPainted(false);
+        b1SupplierRefreshButton.setContentAreaFilled(false);
+        b1SupplierRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1SupplierRefreshButton.setFocusPainted(false);
+        b1SupplierRefreshButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                supplierRefreshButtonActionPerformed(evt);
+                b1SupplierRefreshButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout supplierTopPanelLayout = new javax.swing.GroupLayout(supplierTopPanel);
-        supplierTopPanel.setLayout(supplierTopPanelLayout);
-        supplierTopPanelLayout.setHorizontalGroup(
-            supplierTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(supplierTopPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout b1SupplierTopPanelLayout = new javax.swing.GroupLayout(b1SupplierTopPanel);
+        b1SupplierTopPanel.setLayout(b1SupplierTopPanelLayout);
+        b1SupplierTopPanelLayout.setHorizontalGroup(
+            b1SupplierTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1SupplierTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(supplierXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1SupplierXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(supplierRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1SupplierRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
-                .addComponent(suppliderAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1SuppliderAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(supplierUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1SupplierUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(supplierRemoveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1SupplierRemoveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        supplierTopPanelLayout.setVerticalGroup(
-            supplierTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(supplierTopPanelLayout.createSequentialGroup()
+        b1SupplierTopPanelLayout.setVerticalGroup(
+            b1SupplierTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1SupplierTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(supplierTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(supplierRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addGroup(supplierTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(supplierRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(supplierUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(suppliderAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(supplierXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(b1SupplierTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(b1SupplierRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(b1SupplierTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(b1SupplierRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1SupplierUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1SuppliderAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1SupplierXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
-        supplierPanel.add(supplierTopPanel, java.awt.BorderLayout.NORTH);
+        b1SupplierPanel.add(b1SupplierTopPanel, java.awt.BorderLayout.NORTH);
 
-        supplierCenterPanel.setBackground(new java.awt.Color(255, 255, 255));
-        supplierCenterPanel.setLayout(new java.awt.BorderLayout());
+        b1SupplierCenterPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1SupplierCenterPanel.setLayout(new java.awt.BorderLayout());
 
-        supplierXTable.setModel(new javax.swing.table.DefaultTableModel(
+        b1SupplierXTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
                 {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
@@ -1349,124 +1349,124 @@ public class MainFrame extends javax.swing.JFrame {
                 "Code", "Date Created", "Supplier", "Amount"
             }
         ));
-        supplierXTable.setColumnControlVisible(true);
-        supplierXTable.setEditable(false);
-        supplierXTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        supplierXTable.setHorizontalScrollEnabled(true);
-        supplierXTable.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
-        supplierXTable.setRowHeight(20);
-        supplierXTable.setShowHorizontalLines(false);
-        supplierXTable.setShowVerticalLines(false);
-        supplierXTable.getTableHeader().setReorderingAllowed(false);
-        suplierScrollPane.setViewportView(supplierXTable);
+        b1SupplierXTable.setColumnControlVisible(true);
+        b1SupplierXTable.setEditable(false);
+        b1SupplierXTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1SupplierXTable.setHorizontalScrollEnabled(true);
+        b1SupplierXTable.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        b1SupplierXTable.setRowHeight(20);
+        b1SupplierXTable.setShowHorizontalLines(false);
+        b1SupplierXTable.setShowVerticalLines(false);
+        b1SupplierXTable.getTableHeader().setReorderingAllowed(false);
+        b1SuplierScrollPane.setViewportView(b1SupplierXTable);
 
-        supplierCenterPanel.add(suplierScrollPane, java.awt.BorderLayout.CENTER);
+        b1SupplierCenterPanel.add(b1SuplierScrollPane, java.awt.BorderLayout.CENTER);
 
-        supplierPanel.add(supplierCenterPanel, java.awt.BorderLayout.CENTER);
+        b1SupplierPanel.add(b1SupplierCenterPanel, java.awt.BorderLayout.CENTER);
 
-        settingsTabbedPane.addTab("Supplier", supplierPanel);
+        b1SettingsTabbedPane.addTab("Supplier", b1SupplierPanel);
 
-        personnelPanel.setBackground(new java.awt.Color(255, 255, 255));
-        personnelPanel.setLayout(new java.awt.BorderLayout());
+        b1PersonnelPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1PersonnelPanel.setLayout(new java.awt.BorderLayout());
 
-        personnelTopPanel.setBackground(new java.awt.Color(255, 255, 255));
-        personnelTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
+        b1PersonnelTopPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1PersonnelTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
 
-        personnelRemoveButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        personnelRemoveButton.setText("REMOVE");
-        personnelRemoveButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        personnelRemoveButton.setFocusPainted(false);
-        personnelRemoveButton.addActionListener(new java.awt.event.ActionListener() {
+        b1PersonnelRemoveButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1PersonnelRemoveButton.setText("REMOVE");
+        b1PersonnelRemoveButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1PersonnelRemoveButton.setFocusPainted(false);
+        b1PersonnelRemoveButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                personnelRemoveButtonActionPerformed(evt);
+                b1PersonnelRemoveButtonActionPerformed(evt);
             }
         });
 
-        personnelUpdateButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        personnelUpdateButton.setText("UPDATE");
-        personnelUpdateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        personnelUpdateButton.setFocusPainted(false);
-        personnelUpdateButton.addActionListener(new java.awt.event.ActionListener() {
+        b1PersonnelUpdateButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1PersonnelUpdateButton.setText("UPDATE");
+        b1PersonnelUpdateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1PersonnelUpdateButton.setFocusPainted(false);
+        b1PersonnelUpdateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                personnelUpdateButtonActionPerformed(evt);
+                b1PersonnelUpdateButtonActionPerformed(evt);
             }
         });
 
-        personnelAddButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        personnelAddButton.setText("ADD");
-        personnelAddButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        personnelAddButton.setFocusPainted(false);
-        personnelAddButton.addActionListener(new java.awt.event.ActionListener() {
+        b1PersonnelAddButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1PersonnelAddButton.setText("ADD");
+        b1PersonnelAddButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1PersonnelAddButton.setFocusPainted(false);
+        b1PersonnelAddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                personnelAddButtonActionPerformed(evt);
+                b1PersonnelAddButtonActionPerformed(evt);
             }
         });
 
-        personnelXSearchField.setColumns(30);
-        personnelXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
-        personnelXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        personnelXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
-        personnelXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
-        personnelXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
+        b1PersonnelXSearchField.setColumns(30);
+        b1PersonnelXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        b1PersonnelXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1PersonnelXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        b1PersonnelXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        b1PersonnelXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
-                personnelXSearchFieldFocusLost(evt);
+                b1PersonnelXSearchFieldFocusLost(evt);
             }
         });
-        personnelXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
+        b1PersonnelXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                personnelXSearchFieldKeyReleased(evt);
+                b1PersonnelXSearchFieldKeyReleased(evt);
             }
         });
 
-        personnelRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        personnelRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
-        personnelRefreshButton.setBorderPainted(false);
-        personnelRefreshButton.setContentAreaFilled(false);
-        personnelRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        personnelRefreshButton.setFocusPainted(false);
-        personnelRefreshButton.addActionListener(new java.awt.event.ActionListener() {
+        b1PersonnelRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1PersonnelRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1PersonnelRefreshButton.setBorderPainted(false);
+        b1PersonnelRefreshButton.setContentAreaFilled(false);
+        b1PersonnelRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1PersonnelRefreshButton.setFocusPainted(false);
+        b1PersonnelRefreshButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                personnelRefreshButtonActionPerformed(evt);
+                b1PersonnelRefreshButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout personnelTopPanelLayout = new javax.swing.GroupLayout(personnelTopPanel);
-        personnelTopPanel.setLayout(personnelTopPanelLayout);
-        personnelTopPanelLayout.setHorizontalGroup(
-            personnelTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(personnelTopPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout b1PersonnelTopPanelLayout = new javax.swing.GroupLayout(b1PersonnelTopPanel);
+        b1PersonnelTopPanel.setLayout(b1PersonnelTopPanelLayout);
+        b1PersonnelTopPanelLayout.setHorizontalGroup(
+            b1PersonnelTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1PersonnelTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(personnelXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1PersonnelXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(personnelRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1PersonnelRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
-                .addComponent(personnelAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1PersonnelAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(personnelUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1PersonnelUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(personnelRemoveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1PersonnelRemoveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        personnelTopPanelLayout.setVerticalGroup(
-            personnelTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(personnelTopPanelLayout.createSequentialGroup()
+        b1PersonnelTopPanelLayout.setVerticalGroup(
+            b1PersonnelTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1PersonnelTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(personnelTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(personnelRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addGroup(personnelTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(personnelRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(personnelUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(personnelAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(personnelXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(b1PersonnelTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(b1PersonnelRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(b1PersonnelTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(b1PersonnelRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1PersonnelUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1PersonnelAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1PersonnelXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
-        personnelPanel.add(personnelTopPanel, java.awt.BorderLayout.NORTH);
+        b1PersonnelPanel.add(b1PersonnelTopPanel, java.awt.BorderLayout.NORTH);
 
-        personnelCenterPanel.setBackground(new java.awt.Color(255, 255, 255));
-        personnelCenterPanel.setLayout(new java.awt.BorderLayout());
+        b1PersonnelCenterPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1PersonnelCenterPanel.setLayout(new java.awt.BorderLayout());
 
-        personnelXTable.setModel(new javax.swing.table.DefaultTableModel(
+        b1PersonnelXTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
                 {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
@@ -1477,123 +1477,123 @@ public class MainFrame extends javax.swing.JFrame {
                 "Code", "Date Created", "Supplier", "Amount"
             }
         ));
-        personnelXTable.setColumnControlVisible(true);
-        personnelXTable.setEditable(false);
-        personnelXTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        personnelXTable.setHorizontalScrollEnabled(true);
-        personnelXTable.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
-        personnelXTable.setRowHeight(20);
-        personnelXTable.setShowHorizontalLines(false);
-        personnelXTable.setShowVerticalLines(false);
-        personnelXTable.getTableHeader().setReorderingAllowed(false);
-        personnelScrollPane.setViewportView(personnelXTable);
+        b1PersonnelXTable.setColumnControlVisible(true);
+        b1PersonnelXTable.setEditable(false);
+        b1PersonnelXTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1PersonnelXTable.setHorizontalScrollEnabled(true);
+        b1PersonnelXTable.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        b1PersonnelXTable.setRowHeight(20);
+        b1PersonnelXTable.setShowHorizontalLines(false);
+        b1PersonnelXTable.setShowVerticalLines(false);
+        b1PersonnelXTable.getTableHeader().setReorderingAllowed(false);
+        b1PersonnelScrollPane.setViewportView(b1PersonnelXTable);
 
-        personnelCenterPanel.add(personnelScrollPane, java.awt.BorderLayout.CENTER);
+        b1PersonnelCenterPanel.add(b1PersonnelScrollPane, java.awt.BorderLayout.CENTER);
 
-        personnelPanel.add(personnelCenterPanel, java.awt.BorderLayout.CENTER);
+        b1PersonnelPanel.add(b1PersonnelCenterPanel, java.awt.BorderLayout.CENTER);
 
-        settingsTabbedPane.addTab("Personnel", personnelPanel);
+        b1SettingsTabbedPane.addTab("Personnel", b1PersonnelPanel);
 
-        unitPanel.setBackground(new java.awt.Color(255, 255, 255));
-        unitPanel.setLayout(new java.awt.BorderLayout());
+        b1UnitPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1UnitPanel.setLayout(new java.awt.BorderLayout());
 
-        unitTopPanel.setBackground(new java.awt.Color(255, 255, 255));
-        unitTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
+        b1UnitTopPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1UnitTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
 
-        unitRemoveButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        unitRemoveButton.setText("REMOVE");
-        unitRemoveButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        unitRemoveButton.setFocusPainted(false);
-        unitRemoveButton.addActionListener(new java.awt.event.ActionListener() {
+        b1UnitRemoveButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UnitRemoveButton.setText("REMOVE");
+        b1UnitRemoveButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UnitRemoveButton.setFocusPainted(false);
+        b1UnitRemoveButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                unitRemoveButtonActionPerformed(evt);
+                b1UnitRemoveButtonActionPerformed(evt);
             }
         });
 
-        unitUpdateButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        unitUpdateButton.setText("UPDATE");
-        unitUpdateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        unitUpdateButton.setFocusPainted(false);
-        unitUpdateButton.addActionListener(new java.awt.event.ActionListener() {
+        b1UnitUpdateButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UnitUpdateButton.setText("UPDATE");
+        b1UnitUpdateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UnitUpdateButton.setFocusPainted(false);
+        b1UnitUpdateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                unitUpdateButtonActionPerformed(evt);
+                b1UnitUpdateButtonActionPerformed(evt);
             }
         });
 
-        unitAddButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        unitAddButton.setText("ADD");
-        unitAddButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        unitAddButton.setFocusPainted(false);
-        unitAddButton.addActionListener(new java.awt.event.ActionListener() {
+        b1UnitAddButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UnitAddButton.setText("ADD");
+        b1UnitAddButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UnitAddButton.setFocusPainted(false);
+        b1UnitAddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                unitAddButtonActionPerformed(evt);
+                b1UnitAddButtonActionPerformed(evt);
             }
         });
 
-        unitXSearchField.setColumns(30);
-        unitXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
-        unitXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        unitXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
-        unitXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
-        unitXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
+        b1UnitXSearchField.setColumns(30);
+        b1UnitXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        b1UnitXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1UnitXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        b1UnitXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        b1UnitXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
-                unitXSearchFieldFocusLost(evt);
+                b1UnitXSearchFieldFocusLost(evt);
             }
         });
-        unitXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
+        b1UnitXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                unitXSearchFieldKeyReleased(evt);
+                b1UnitXSearchFieldKeyReleased(evt);
             }
         });
 
-        unitRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        unitRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
-        unitRefreshButton.setBorderPainted(false);
-        unitRefreshButton.setContentAreaFilled(false);
-        unitRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        unitRefreshButton.setFocusPainted(false);
-        unitRefreshButton.addActionListener(new java.awt.event.ActionListener() {
+        b1UnitRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UnitRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1UnitRefreshButton.setBorderPainted(false);
+        b1UnitRefreshButton.setContentAreaFilled(false);
+        b1UnitRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UnitRefreshButton.setFocusPainted(false);
+        b1UnitRefreshButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                unitRefreshButtonActionPerformed(evt);
+                b1UnitRefreshButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout unitTopPanelLayout = new javax.swing.GroupLayout(unitTopPanel);
-        unitTopPanel.setLayout(unitTopPanelLayout);
-        unitTopPanelLayout.setHorizontalGroup(
-            unitTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(unitTopPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout b1UnitTopPanelLayout = new javax.swing.GroupLayout(b1UnitTopPanel);
+        b1UnitTopPanel.setLayout(b1UnitTopPanelLayout);
+        b1UnitTopPanelLayout.setHorizontalGroup(
+            b1UnitTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1UnitTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(unitXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1UnitXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(unitRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1UnitRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
-                .addComponent(unitAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1UnitAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(unitUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1UnitUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(unitRemoveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1UnitRemoveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        unitTopPanelLayout.setVerticalGroup(
-            unitTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(unitTopPanelLayout.createSequentialGroup()
+        b1UnitTopPanelLayout.setVerticalGroup(
+            b1UnitTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1UnitTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(unitTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(unitRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(unitUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(unitAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(unitXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(unitRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addGroup(b1UnitTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(b1UnitRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(b1UnitUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(b1UnitAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(b1UnitXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(b1UnitRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
-        unitPanel.add(unitTopPanel, java.awt.BorderLayout.NORTH);
+        b1UnitPanel.add(b1UnitTopPanel, java.awt.BorderLayout.NORTH);
 
-        unitCenterPanel.setBackground(new java.awt.Color(255, 255, 255));
-        unitCenterPanel.setLayout(new java.awt.BorderLayout());
+        b1UnitCenterPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1UnitCenterPanel.setLayout(new java.awt.BorderLayout());
 
-        unitXTable.setModel(new javax.swing.table.DefaultTableModel(
+        b1UnitXTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, "XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
                 {null, "XXX-2013002", "06 May 2013", "Bing's", "273.00"},
@@ -1604,124 +1604,124 @@ public class MainFrame extends javax.swing.JFrame {
                 "entity", "Code", "Date Created", "Supplier", "Amount"
             }
         ));
-        unitXTable.setColumnControlVisible(true);
-        unitXTable.setEditable(false);
-        unitXTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        unitXTable.setHorizontalScrollEnabled(true);
-        unitXTable.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
-        unitXTable.setRowHeight(20);
-        unitXTable.setShowHorizontalLines(false);
-        unitXTable.setShowVerticalLines(false);
-        unitXTable.getTableHeader().setReorderingAllowed(false);
-        unitScrollPane.setViewportView(unitXTable);
+        b1UnitXTable.setColumnControlVisible(true);
+        b1UnitXTable.setEditable(false);
+        b1UnitXTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1UnitXTable.setHorizontalScrollEnabled(true);
+        b1UnitXTable.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        b1UnitXTable.setRowHeight(20);
+        b1UnitXTable.setShowHorizontalLines(false);
+        b1UnitXTable.setShowVerticalLines(false);
+        b1UnitXTable.getTableHeader().setReorderingAllowed(false);
+        b1UnitScrollPane.setViewportView(b1UnitXTable);
 
-        unitCenterPanel.add(unitScrollPane, java.awt.BorderLayout.CENTER);
+        b1UnitCenterPanel.add(b1UnitScrollPane, java.awt.BorderLayout.CENTER);
 
-        unitPanel.add(unitCenterPanel, java.awt.BorderLayout.CENTER);
+        b1UnitPanel.add(b1UnitCenterPanel, java.awt.BorderLayout.CENTER);
 
-        settingsTabbedPane.addTab("Unit", unitPanel);
+        b1SettingsTabbedPane.addTab("Unit", b1UnitPanel);
 
-        userPanel.setBackground(new java.awt.Color(255, 255, 255));
-        userPanel.setLayout(new java.awt.BorderLayout());
+        b1UsersPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1UsersPanel.setLayout(new java.awt.BorderLayout());
 
-        userTopPanel.setBackground(new java.awt.Color(255, 255, 255));
-        userTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
+        b1UserTopPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1UserTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
 
-        userRemoveButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        userRemoveButton.setText("REMOVE");
-        userRemoveButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        userRemoveButton.setFocusPainted(false);
-        userRemoveButton.addActionListener(new java.awt.event.ActionListener() {
+        b1UserRemoveButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UserRemoveButton.setText("REMOVE");
+        b1UserRemoveButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UserRemoveButton.setFocusPainted(false);
+        b1UserRemoveButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userRemoveButtonActionPerformed(evt);
+                b1UserRemoveButtonActionPerformed(evt);
             }
         });
 
-        userUpdateButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        userUpdateButton.setText("UPDATE");
-        userUpdateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        userUpdateButton.setFocusPainted(false);
-        userUpdateButton.addActionListener(new java.awt.event.ActionListener() {
+        b1UserUpdateButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UserUpdateButton.setText("UPDATE");
+        b1UserUpdateButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UserUpdateButton.setFocusPainted(false);
+        b1UserUpdateButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userUpdateButtonActionPerformed(evt);
+                b1UserUpdateButtonActionPerformed(evt);
             }
         });
 
-        userAddButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        userAddButton.setText("ADD");
-        userAddButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        userAddButton.setFocusPainted(false);
-        userAddButton.addActionListener(new java.awt.event.ActionListener() {
+        b1UserAddButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UserAddButton.setText("ADD");
+        b1UserAddButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UserAddButton.setFocusPainted(false);
+        b1UserAddButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userAddButtonActionPerformed(evt);
+                b1UserAddButtonActionPerformed(evt);
             }
         });
 
-        userXSearchField.setColumns(30);
-        userXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
-        userXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        userXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
-        userXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
-        userXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
+        b1UserXSearchField.setColumns(30);
+        b1UserXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        b1UserXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1UserXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        b1UserXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        b1UserXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
-                userXSearchFieldFocusLost(evt);
+                b1UserXSearchFieldFocusLost(evt);
             }
         });
-        userXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
+        b1UserXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                userXSearchFieldKeyReleased(evt);
+                b1UserXSearchFieldKeyReleased(evt);
             }
         });
 
-        userRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        userRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
-        userRefreshButton.setBorderPainted(false);
-        userRefreshButton.setContentAreaFilled(false);
-        userRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        userRefreshButton.setFocusPainted(false);
-        userRefreshButton.addActionListener(new java.awt.event.ActionListener() {
+        b1UserRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UserRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1UserRefreshButton.setBorderPainted(false);
+        b1UserRefreshButton.setContentAreaFilled(false);
+        b1UserRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UserRefreshButton.setFocusPainted(false);
+        b1UserRefreshButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                userRefreshButtonActionPerformed(evt);
+                b1UserRefreshButtonActionPerformed(evt);
             }
         });
 
-        javax.swing.GroupLayout userTopPanelLayout = new javax.swing.GroupLayout(userTopPanel);
-        userTopPanel.setLayout(userTopPanelLayout);
-        userTopPanelLayout.setHorizontalGroup(
-            userTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(userTopPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout b1UserTopPanelLayout = new javax.swing.GroupLayout(b1UserTopPanel);
+        b1UserTopPanel.setLayout(b1UserTopPanelLayout);
+        b1UserTopPanelLayout.setHorizontalGroup(
+            b1UserTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1UserTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(userXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1UserXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(userRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1UserRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
-                .addComponent(userAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1UserAddButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(userUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1UserUpdateButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(userRemoveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(b1UserRemoveButton, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
-        userTopPanelLayout.setVerticalGroup(
-            userTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(userTopPanelLayout.createSequentialGroup()
+        b1UserTopPanelLayout.setVerticalGroup(
+            b1UserTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1UserTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(userTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(userRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
-                    .addGroup(userTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(userRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(userUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(userAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(userXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(b1UserTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(b1UserRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addGroup(b1UserTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(b1UserRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1UserUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1UserAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1UserXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap())
         );
 
-        userPanel.add(userTopPanel, java.awt.BorderLayout.NORTH);
+        b1UsersPanel.add(b1UserTopPanel, java.awt.BorderLayout.NORTH);
 
-        userCenterPanel.setBackground(new java.awt.Color(255, 255, 255));
-        userCenterPanel.setLayout(new java.awt.BorderLayout());
+        b1UserCenterPanel.setBackground(new java.awt.Color(255, 255, 255));
+        b1UserCenterPanel.setLayout(new java.awt.BorderLayout());
 
-        userXTable.setModel(new javax.swing.table.DefaultTableModel(
+        b1UserXTable.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
                 {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
@@ -1732,57 +1732,57 @@ public class MainFrame extends javax.swing.JFrame {
                 "Code", "Date Created", "Supplier", "Amount"
             }
         ));
-        userXTable.setColumnControlVisible(true);
-        userXTable.setEditable(false);
-        userXTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        userXTable.setHorizontalScrollEnabled(true);
-        userXTable.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
-        userXTable.setRowHeight(20);
-        userXTable.setShowHorizontalLines(false);
-        userXTable.setShowVerticalLines(false);
-        userXTable.getTableHeader().setReorderingAllowed(false);
-        userScrollPane.setViewportView(userXTable);
+        b1UserXTable.setColumnControlVisible(true);
+        b1UserXTable.setEditable(false);
+        b1UserXTable.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1UserXTable.setHorizontalScrollEnabled(true);
+        b1UserXTable.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        b1UserXTable.setRowHeight(20);
+        b1UserXTable.setShowHorizontalLines(false);
+        b1UserXTable.setShowVerticalLines(false);
+        b1UserXTable.getTableHeader().setReorderingAllowed(false);
+        b1UserScrollPane.setViewportView(b1UserXTable);
 
-        userCenterPanel.add(userScrollPane, java.awt.BorderLayout.CENTER);
+        b1UserCenterPanel.add(b1UserScrollPane, java.awt.BorderLayout.CENTER);
 
-        userPanel.add(userCenterPanel, java.awt.BorderLayout.CENTER);
+        b1UsersPanel.add(b1UserCenterPanel, java.awt.BorderLayout.CENTER);
 
-        settingsTabbedPane.addTab("User", userPanel);
+        b1SettingsTabbedPane.addTab("User", b1UsersPanel);
 
-        javax.swing.GroupLayout settingsCenterPanelLayout = new javax.swing.GroupLayout(settingsCenterPanel);
-        settingsCenterPanel.setLayout(settingsCenterPanelLayout);
-        settingsCenterPanelLayout.setHorizontalGroup(
-            settingsCenterPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(settingsCenterPanelLayout.createSequentialGroup()
+        javax.swing.GroupLayout b1SettingsCenterPanelLayout = new javax.swing.GroupLayout(b1SettingsCenterPanel);
+        b1SettingsCenterPanel.setLayout(b1SettingsCenterPanelLayout);
+        b1SettingsCenterPanelLayout.setHorizontalGroup(
+            b1SettingsCenterPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1SettingsCenterPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(settingsTabbedPane)
+                .addComponent(b1SettingsTabbedPane)
                 .addContainerGap())
         );
-        settingsCenterPanelLayout.setVerticalGroup(
-            settingsCenterPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(settingsCenterPanelLayout.createSequentialGroup()
+        b1SettingsCenterPanelLayout.setVerticalGroup(
+            b1SettingsCenterPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1SettingsCenterPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(settingsTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE)
+                .addComponent(b1SettingsTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE)
                 .addContainerGap())
         );
 
-        b1SettingsPanel.add(settingsCenterPanel, java.awt.BorderLayout.CENTER);
+        b1SettingsPanel.add(b1SettingsCenterPanel, java.awt.BorderLayout.CENTER);
 
-        settingsBottomPanel.setBackground(new java.awt.Color(232, 236, 239));
-        settingsBottomPanel.setPreferredSize(new java.awt.Dimension(950, 0));
+        b1SettingsBottomPanel.setBackground(new java.awt.Color(232, 236, 239));
+        b1SettingsBottomPanel.setPreferredSize(new java.awt.Dimension(950, 0));
 
-        javax.swing.GroupLayout settingsBottomPanelLayout = new javax.swing.GroupLayout(settingsBottomPanel);
-        settingsBottomPanel.setLayout(settingsBottomPanelLayout);
-        settingsBottomPanelLayout.setHorizontalGroup(
-            settingsBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        javax.swing.GroupLayout b1SettingsBottomPanelLayout = new javax.swing.GroupLayout(b1SettingsBottomPanel);
+        b1SettingsBottomPanel.setLayout(b1SettingsBottomPanelLayout);
+        b1SettingsBottomPanelLayout.setHorizontalGroup(
+            b1SettingsBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 950, Short.MAX_VALUE)
         );
-        settingsBottomPanelLayout.setVerticalGroup(
-            settingsBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+        b1SettingsBottomPanelLayout.setVerticalGroup(
+            b1SettingsBottomPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        b1SettingsPanel.add(settingsBottomPanel, java.awt.BorderLayout.SOUTH);
+        b1SettingsPanel.add(b1SettingsBottomPanel, java.awt.BorderLayout.SOUTH);
 
         b1CenterPanel.setBackground(new java.awt.Color(255, 255, 255));
         b1CenterPanel.setPreferredSize(new java.awt.Dimension(1024, 500));
@@ -2491,170 +2491,170 @@ public class MainFrame extends javax.swing.JFrame {
         previousB1Button = b1SettingsButton;
     }//GEN-LAST:event_b1SettingsButtonActionPerformed
 
-    private void unitAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unitAddButtonActionPerformed
+    private void b1UnitAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UnitAddButtonActionPerformed
         unitImplementation.add();
 
         // Reload table.
         setUnitTable();
-    }//GEN-LAST:event_unitAddButtonActionPerformed
+    }//GEN-LAST:event_b1UnitAddButtonActionPerformed
 
-    private void unitUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unitUpdateButtonActionPerformed
-        unitImplementation.update(unitXTable);
-
-        // Reload table.
-        setUnitTable();
-    }//GEN-LAST:event_unitUpdateButtonActionPerformed
-
-    private void unitRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unitRemoveButtonActionPerformed
-        unitImplementation.remove(unitXTable);
+    private void b1UnitUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UnitUpdateButtonActionPerformed
+        unitImplementation.update(b1UnitXTable);
 
         // Reload table.
         setUnitTable();
-    }//GEN-LAST:event_unitRemoveButtonActionPerformed
+    }//GEN-LAST:event_b1UnitUpdateButtonActionPerformed
 
-    private void unitRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_unitRefreshButtonActionPerformed
+    private void b1UnitRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UnitRemoveButtonActionPerformed
+        unitImplementation.remove(b1UnitXTable);
+
+        // Reload table.
         setUnitTable();
-    }//GEN-LAST:event_unitRefreshButtonActionPerformed
+    }//GEN-LAST:event_b1UnitRemoveButtonActionPerformed
 
-    private void suppliderAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_suppliderAddButtonActionPerformed
+    private void b1UnitRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UnitRefreshButtonActionPerformed
+        setUnitTable();
+    }//GEN-LAST:event_b1UnitRefreshButtonActionPerformed
+
+    private void b1SuppliderAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SuppliderAddButtonActionPerformed
         supplierImplementation.add();
 
         // Reload table.
         setSupplierTable();
-    }//GEN-LAST:event_suppliderAddButtonActionPerformed
+    }//GEN-LAST:event_b1SuppliderAddButtonActionPerformed
 
-    private void supplierUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_supplierUpdateButtonActionPerformed
-        supplierImplementation.update(supplierXTable);
-
-        // Reload table.
-        setSupplierTable();
-    }//GEN-LAST:event_supplierUpdateButtonActionPerformed
-
-    private void supplierRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_supplierRemoveButtonActionPerformed
-        supplierImplementation.remove(supplierXTable);
+    private void b1SupplierUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SupplierUpdateButtonActionPerformed
+        supplierImplementation.update(b1SupplierXTable);
 
         // Reload table.
         setSupplierTable();
-    }//GEN-LAST:event_supplierRemoveButtonActionPerformed
+    }//GEN-LAST:event_b1SupplierUpdateButtonActionPerformed
 
-    private void supplierRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_supplierRefreshButtonActionPerformed
+    private void b1SupplierRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SupplierRemoveButtonActionPerformed
+        supplierImplementation.remove(b1SupplierXTable);
+
+        // Reload table.
         setSupplierTable();
-    }//GEN-LAST:event_supplierRefreshButtonActionPerformed
+    }//GEN-LAST:event_b1SupplierRemoveButtonActionPerformed
 
-    private void itemAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemAddButtonActionPerformed
+    private void b1SupplierRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SupplierRefreshButtonActionPerformed
+        setSupplierTable();
+    }//GEN-LAST:event_b1SupplierRefreshButtonActionPerformed
+
+    private void b1ItemAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemAddButtonActionPerformed
         itemImplementation.add();
 
         // Reload table.
         setItemTable(BODEGA_1);
-    }//GEN-LAST:event_itemAddButtonActionPerformed
+    }//GEN-LAST:event_b1ItemAddButtonActionPerformed
 
-    private void itemUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemUpdateButtonActionPerformed
-        itemImplementation.update(itemXTable);
-
-        // Reload table.
-        setItemTable(BODEGA_1);
-    }//GEN-LAST:event_itemUpdateButtonActionPerformed
-
-    private void itemRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemRemoveButtonActionPerformed
-        itemImplementation.remove(itemXTable);
+    private void b1ItemUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemUpdateButtonActionPerformed
+        itemImplementation.update(b1ItemXTable);
 
         // Reload table.
         setItemTable(BODEGA_1);
-    }//GEN-LAST:event_itemRemoveButtonActionPerformed
+    }//GEN-LAST:event_b1ItemUpdateButtonActionPerformed
 
-    private void itemRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_itemRefreshButtonActionPerformed
+    private void b1ItemRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemRemoveButtonActionPerformed
+        itemImplementation.remove(b1ItemXTable);
+
+        // Reload table.
         setItemTable(BODEGA_1);
-    }//GEN-LAST:event_itemRefreshButtonActionPerformed
+    }//GEN-LAST:event_b1ItemRemoveButtonActionPerformed
 
-    private void personnelAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personnelAddButtonActionPerformed
+    private void b1ItemRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemRefreshButtonActionPerformed
+        setItemTable(BODEGA_1);
+    }//GEN-LAST:event_b1ItemRefreshButtonActionPerformed
+
+    private void b1PersonnelAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1PersonnelAddButtonActionPerformed
         personnelImplementation.add();
 
         // Reload table.
         setPersonnelTable();
-    }//GEN-LAST:event_personnelAddButtonActionPerformed
+    }//GEN-LAST:event_b1PersonnelAddButtonActionPerformed
 
-    private void personnelUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personnelUpdateButtonActionPerformed
-        personnelImplementation.update(personnelXTable);
-
-        // Reload table.
-        setPersonnelTable();
-    }//GEN-LAST:event_personnelUpdateButtonActionPerformed
-
-    private void personnelRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personnelRemoveButtonActionPerformed
-        personnelImplementation.remove(personnelXTable);
+    private void b1PersonnelUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1PersonnelUpdateButtonActionPerformed
+        personnelImplementation.update(b1PersonnelXTable);
 
         // Reload table.
         setPersonnelTable();
-    }//GEN-LAST:event_personnelRemoveButtonActionPerformed
+    }//GEN-LAST:event_b1PersonnelUpdateButtonActionPerformed
 
-    private void personnelRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_personnelRefreshButtonActionPerformed
+    private void b1PersonnelRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1PersonnelRemoveButtonActionPerformed
+        personnelImplementation.remove(b1PersonnelXTable);
+
+        // Reload table.
         setPersonnelTable();
-    }//GEN-LAST:event_personnelRefreshButtonActionPerformed
+    }//GEN-LAST:event_b1PersonnelRemoveButtonActionPerformed
 
-    private void userAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userAddButtonActionPerformed
+    private void b1PersonnelRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1PersonnelRefreshButtonActionPerformed
+        setPersonnelTable();
+    }//GEN-LAST:event_b1PersonnelRefreshButtonActionPerformed
+
+    private void b1UserAddButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UserAddButtonActionPerformed
         userImplementation.add();
 
         // Reload table.
         setUserTable();
-    }//GEN-LAST:event_userAddButtonActionPerformed
+    }//GEN-LAST:event_b1UserAddButtonActionPerformed
 
-    private void userUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userUpdateButtonActionPerformed
-        userImplementation.update(userXTable);
-
-        // Reload table.
-        setUserTable();
-    }//GEN-LAST:event_userUpdateButtonActionPerformed
-
-    private void userRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userRemoveButtonActionPerformed
-        userImplementation.remove(userXTable);
+    private void b1UserUpdateButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UserUpdateButtonActionPerformed
+        userImplementation.update(b1UserXTable);
 
         // Reload table.
         setUserTable();
-    }//GEN-LAST:event_userRemoveButtonActionPerformed
+    }//GEN-LAST:event_b1UserUpdateButtonActionPerformed
 
-    private void userRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_userRefreshButtonActionPerformed
+    private void b1UserRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UserRemoveButtonActionPerformed
+        userImplementation.remove(b1UserXTable);
+
+        // Reload table.
         setUserTable();
-    }//GEN-LAST:event_userRefreshButtonActionPerformed
+    }//GEN-LAST:event_b1UserRemoveButtonActionPerformed
 
-    private void itemXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_itemXSearchFieldFocusLost
-        performSearch(itemXTable, itemXSearchField.getText());
-    }//GEN-LAST:event_itemXSearchFieldFocusLost
+    private void b1UserRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UserRefreshButtonActionPerformed
+        setUserTable();
+    }//GEN-LAST:event_b1UserRefreshButtonActionPerformed
 
-    private void itemXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_itemXSearchFieldKeyReleased
-        performSearch(itemXTable, itemXSearchField.getText());
-    }//GEN-LAST:event_itemXSearchFieldKeyReleased
+    private void b1ItemXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1ItemXSearchFieldFocusLost
+        performSearch(b1ItemXTable, b1ItemXSearchField.getText());
+    }//GEN-LAST:event_b1ItemXSearchFieldFocusLost
 
-    private void supplierXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_supplierXSearchFieldFocusLost
-        performSearch(supplierXTable, supplierXSearchField.getText());
-    }//GEN-LAST:event_supplierXSearchFieldFocusLost
+    private void b1ItemXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1ItemXSearchFieldKeyReleased
+        performSearch(b1ItemXTable, b1ItemXSearchField.getText());
+    }//GEN-LAST:event_b1ItemXSearchFieldKeyReleased
 
-    private void supplierXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_supplierXSearchFieldKeyReleased
-        performSearch(supplierXTable, supplierXSearchField.getText());
-    }//GEN-LAST:event_supplierXSearchFieldKeyReleased
+    private void b1SupplierXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1SupplierXSearchFieldFocusLost
+        performSearch(b1SupplierXTable, b1SupplierXSearchField.getText());
+    }//GEN-LAST:event_b1SupplierXSearchFieldFocusLost
 
-    private void personnelXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_personnelXSearchFieldFocusLost
-        performSearch(personnelXTable, personnelXSearchField.getText());
-    }//GEN-LAST:event_personnelXSearchFieldFocusLost
+    private void b1SupplierXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1SupplierXSearchFieldKeyReleased
+        performSearch(b1SupplierXTable, b1SupplierXSearchField.getText());
+    }//GEN-LAST:event_b1SupplierXSearchFieldKeyReleased
 
-    private void personnelXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_personnelXSearchFieldKeyReleased
-        performSearch(personnelXTable, personnelXSearchField.getText());
-    }//GEN-LAST:event_personnelXSearchFieldKeyReleased
+    private void b1PersonnelXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1PersonnelXSearchFieldFocusLost
+        performSearch(b1PersonnelXTable, b1PersonnelXSearchField.getText());
+    }//GEN-LAST:event_b1PersonnelXSearchFieldFocusLost
 
-    private void unitXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_unitXSearchFieldFocusLost
-        performSearch(unitXTable, unitXSearchField.getText());
-    }//GEN-LAST:event_unitXSearchFieldFocusLost
+    private void b1PersonnelXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1PersonnelXSearchFieldKeyReleased
+        performSearch(b1PersonnelXTable, b1PersonnelXSearchField.getText());
+    }//GEN-LAST:event_b1PersonnelXSearchFieldKeyReleased
 
-    private void unitXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_unitXSearchFieldKeyReleased
-        performSearch(unitXTable, unitXSearchField.getText());
-    }//GEN-LAST:event_unitXSearchFieldKeyReleased
+    private void b1UnitXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1UnitXSearchFieldFocusLost
+        performSearch(b1UnitXTable, b1UnitXSearchField.getText());
+    }//GEN-LAST:event_b1UnitXSearchFieldFocusLost
 
-    private void userXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_userXSearchFieldFocusLost
-        performSearch(userXTable, userXSearchField.getText());
-    }//GEN-LAST:event_userXSearchFieldFocusLost
+    private void b1UnitXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1UnitXSearchFieldKeyReleased
+        performSearch(b1UnitXTable, b1UnitXSearchField.getText());
+    }//GEN-LAST:event_b1UnitXSearchFieldKeyReleased
 
-    private void userXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_userXSearchFieldKeyReleased
-        performSearch(userXTable, userXSearchField.getText());
-    }//GEN-LAST:event_userXSearchFieldKeyReleased
+    private void b1UserXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1UserXSearchFieldFocusLost
+        performSearch(b1UserXTable, b1UserXSearchField.getText());
+    }//GEN-LAST:event_b1UserXSearchFieldFocusLost
+
+    private void b1UserXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1UserXSearchFieldKeyReleased
+        performSearch(b1UserXTable, b1UserXSearchField.getText());
+    }//GEN-LAST:event_b1UserXSearchFieldKeyReleased
 
     private void stockXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_stockXSearchFieldFocusLost
         performSearch(stockXTable, stockXSearchField.getText());
@@ -2801,19 +2801,73 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel b1CurrentUserLabel;
     private javax.swing.JButton b1DashboardButton;
     private javax.swing.JPanel b1DashboardPanel;
+    private javax.swing.JButton b1ItemAddButton;
+    private javax.swing.JPanel b1ItemCenterPanel;
+    private javax.swing.JPanel b1ItemPanel;
+    private javax.swing.JButton b1ItemRefreshButton;
+    private javax.swing.JButton b1ItemRemoveButton;
+    private javax.swing.JScrollPane b1ItemScrollPane;
+    private javax.swing.JPanel b1ItemTopPanel;
+    private javax.swing.JButton b1ItemUpdateButton;
+    private org.jdesktop.swingx.JXSearchField b1ItemXSearchField;
+    private org.jdesktop.swingx.JXTable b1ItemXTable;
     private javax.swing.JPanel b1LeftInnerPanel;
     private javax.swing.JPanel b1LeftPanel;
     private javax.swing.JScrollPane b1LeftPanelScrollPane;
+    private javax.swing.JButton b1PersonnelAddButton;
+    private javax.swing.JPanel b1PersonnelCenterPanel;
+    private javax.swing.JPanel b1PersonnelPanel;
+    private javax.swing.JButton b1PersonnelRefreshButton;
+    private javax.swing.JButton b1PersonnelRemoveButton;
+    private javax.swing.JScrollPane b1PersonnelScrollPane;
+    private javax.swing.JPanel b1PersonnelTopPanel;
+    private javax.swing.JButton b1PersonnelUpdateButton;
+    private org.jdesktop.swingx.JXSearchField b1PersonnelXSearchField;
+    private org.jdesktop.swingx.JXTable b1PersonnelXTable;
     private javax.swing.JButton b1ReportsButton;
     private javax.swing.JPanel b1ReportsPanel;
     private javax.swing.JPanel b1RightPanel;
     private javax.swing.JScrollPane b1RightPanelScrollPane;
+    private javax.swing.JPanel b1SettingsBottomPanel;
     private javax.swing.JButton b1SettingsButton;
+    private javax.swing.JPanel b1SettingsCenterPanel;
     private javax.swing.JPanel b1SettingsPanel;
+    private javax.swing.JTabbedPane b1SettingsTabbedPane;
+    private javax.swing.JPanel b1SettingsTopPanel;
     private javax.swing.JButton b1StocksButton;
     private javax.swing.JPanel b1StocksPanel;
+    private javax.swing.JScrollPane b1SuplierScrollPane;
+    private javax.swing.JButton b1SuppliderAddButton;
+    private javax.swing.JPanel b1SupplierCenterPanel;
+    private javax.swing.JPanel b1SupplierPanel;
+    private javax.swing.JButton b1SupplierRefreshButton;
+    private javax.swing.JButton b1SupplierRemoveButton;
+    private javax.swing.JPanel b1SupplierTopPanel;
+    private javax.swing.JButton b1SupplierUpdateButton;
+    private org.jdesktop.swingx.JXSearchField b1SupplierXSearchField;
+    private org.jdesktop.swingx.JXTable b1SupplierXTable;
     private javax.swing.JPanel b1TargetPanel;
+    private javax.swing.JButton b1UnitAddButton;
+    private javax.swing.JPanel b1UnitCenterPanel;
+    private javax.swing.JPanel b1UnitPanel;
+    private javax.swing.JButton b1UnitRefreshButton;
+    private javax.swing.JButton b1UnitRemoveButton;
+    private javax.swing.JScrollPane b1UnitScrollPane;
+    private javax.swing.JPanel b1UnitTopPanel;
+    private javax.swing.JButton b1UnitUpdateButton;
+    private org.jdesktop.swingx.JXSearchField b1UnitXSearchField;
+    private org.jdesktop.swingx.JXTable b1UnitXTable;
+    private javax.swing.JButton b1UserAddButton;
+    private javax.swing.JPanel b1UserCenterPanel;
     private javax.swing.JPanel b1UserPanel;
+    private javax.swing.JButton b1UserRefreshButton;
+    private javax.swing.JButton b1UserRemoveButton;
+    private javax.swing.JScrollPane b1UserScrollPane;
+    private javax.swing.JPanel b1UserTopPanel;
+    private javax.swing.JButton b1UserUpdateButton;
+    private org.jdesktop.swingx.JXSearchField b1UserXSearchField;
+    private org.jdesktop.swingx.JXTable b1UserXTable;
+    private javax.swing.JPanel b1UsersPanel;
     private javax.swing.JPanel b2CenterPanel;
     private javax.swing.JLabel b2CurrentUserGroupLabel;
     private javax.swing.JLabel b2CurrentUserLabel;
@@ -2839,16 +2893,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JScrollPane dashboardHotScrollPane;
     private org.jdesktop.swingx.JXTable dashboardHotXTable;
     private javax.swing.JPanel dashboardTopPanel;
-    private javax.swing.JButton itemAddButton;
-    private javax.swing.JPanel itemCenterPanel;
-    private javax.swing.JPanel itemPanel;
-    private javax.swing.JButton itemRefreshButton;
-    private javax.swing.JButton itemRemoveButton;
-    private javax.swing.JScrollPane itemScrollPane;
-    private javax.swing.JPanel itemTopPanel;
-    private javax.swing.JButton itemUpdateButton;
-    private org.jdesktop.swingx.JXSearchField itemXSearchField;
-    private org.jdesktop.swingx.JXTable itemXTable;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -2873,16 +2917,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
     private javax.swing.JPanel mainPanel;
-    private javax.swing.JButton personnelAddButton;
-    private javax.swing.JPanel personnelCenterPanel;
-    private javax.swing.JPanel personnelPanel;
-    private javax.swing.JButton personnelRefreshButton;
-    private javax.swing.JButton personnelRemoveButton;
-    private javax.swing.JScrollPane personnelScrollPane;
-    private javax.swing.JPanel personnelTopPanel;
-    private javax.swing.JButton personnelUpdateButton;
-    private org.jdesktop.swingx.JXSearchField personnelXSearchField;
-    private org.jdesktop.swingx.JXTable personnelXTable;
     private javax.swing.JPanel reportsBottomPanel;
     private javax.swing.JPanel reportsCenterPanel;
     private javax.swing.JPanel reportsSalesCenterPanel;
@@ -2919,10 +2953,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel reportsTopPanel;
     private javax.swing.JComboBox salesStockComboBox;
     private javax.swing.JLabel salesStockLabel;
-    private javax.swing.JPanel settingsBottomPanel;
-    private javax.swing.JPanel settingsCenterPanel;
-    private javax.swing.JTabbedPane settingsTabbedPane;
-    private javax.swing.JPanel settingsTopPanel;
     private javax.swing.JButton stockAdjustButton;
     private javax.swing.JButton stockInButton;
     private javax.swing.JButton stockOutButton;
@@ -2938,38 +2968,8 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel stocksStockLabel;
     private javax.swing.JPanel stocksTopPanel;
     private javax.swing.JLabel storeLabel;
-    private javax.swing.JScrollPane suplierScrollPane;
-    private javax.swing.JButton suppliderAddButton;
-    private javax.swing.JPanel supplierCenterPanel;
-    private javax.swing.JPanel supplierPanel;
-    private javax.swing.JButton supplierRefreshButton;
-    private javax.swing.JButton supplierRemoveButton;
-    private javax.swing.JPanel supplierTopPanel;
-    private javax.swing.JButton supplierUpdateButton;
-    private org.jdesktop.swingx.JXSearchField supplierXSearchField;
-    private org.jdesktop.swingx.JXTable supplierXTable;
     private javax.swing.JLabel titleLabel;
     private javax.swing.JPanel topPanel;
-    private javax.swing.JButton unitAddButton;
-    private javax.swing.JPanel unitCenterPanel;
-    private javax.swing.JPanel unitPanel;
-    private javax.swing.JButton unitRefreshButton;
-    private javax.swing.JButton unitRemoveButton;
-    private javax.swing.JScrollPane unitScrollPane;
-    private javax.swing.JPanel unitTopPanel;
-    private javax.swing.JButton unitUpdateButton;
-    private org.jdesktop.swingx.JXSearchField unitXSearchField;
-    private org.jdesktop.swingx.JXTable unitXTable;
-    private javax.swing.JButton userAddButton;
-    private javax.swing.JPanel userCenterPanel;
-    private javax.swing.JPanel userPanel;
-    private javax.swing.JButton userRefreshButton;
-    private javax.swing.JButton userRemoveButton;
-    private javax.swing.JScrollPane userScrollPane;
-    private javax.swing.JPanel userTopPanel;
-    private javax.swing.JButton userUpdateButton;
-    private org.jdesktop.swingx.JXSearchField userXSearchField;
-    private org.jdesktop.swingx.JXTable userXTable;
     private javax.swing.JRadioButton w1B1RadioButton;
     private javax.swing.JRadioButton w1B2RadioButton;
     private javax.swing.JRadioButton w2B1RadioButton;
@@ -3023,16 +3023,16 @@ public class MainFrame extends javax.swing.JFrame {
         setDashboardHotTable(BODEGA_1);
         setDashboardAlmostOutOfStockTable();
 
-        unitXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        unitXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
-        supplierXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        supplierXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
-        personnelXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        personnelXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
-        userXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        userXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
-        itemXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        itemXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1UnitXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1UnitXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1SupplierXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1SupplierXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1PersonnelXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1PersonnelXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1UserXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1UserXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1ItemXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1ItemXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
         stockXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         stockXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
         dashboardHotXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -3111,66 +3111,66 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     private void setUnitTable() {
-        unitXTable.setModel(unitImplementation.getTableModel());
-        unitXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        unitXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1UnitXTable.setModel(unitImplementation.getTableModel());
+        b1UnitXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1UnitXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
         // Set column width.
-        unitXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
-        unitXTable.getColumnModel().getColumn(1).setPreferredWidth(400);
-        unitXTable.getColumnModel().getColumn(2).setPreferredWidth(150);
-        unitXTable.getColumnModel().getColumn(3).setPreferredWidth(200);
+        b1UnitXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
+        b1UnitXTable.getColumnModel().getColumn(1).setPreferredWidth(400);
+        b1UnitXTable.getColumnModel().getColumn(2).setPreferredWidth(150);
+        b1UnitXTable.getColumnModel().getColumn(3).setPreferredWidth(200);
     }
 
     private void setSupplierTable() {
-        supplierXTable.setModel(supplierImplementation.getTableModel());
-        supplierXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        supplierXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1SupplierXTable.setModel(supplierImplementation.getTableModel());
+        b1SupplierXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1SupplierXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
         // Set column width.
-        supplierXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
-        supplierXTable.getColumnModel().getColumn(1).setPreferredWidth(150);
-        supplierXTable.getColumnModel().getColumn(2).setPreferredWidth(300);
-        supplierXTable.getColumnModel().getColumn(3).setPreferredWidth(150);
-        supplierXTable.getColumnModel().getColumn(4).setPreferredWidth(200);
+        b1SupplierXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
+        b1SupplierXTable.getColumnModel().getColumn(1).setPreferredWidth(150);
+        b1SupplierXTable.getColumnModel().getColumn(2).setPreferredWidth(300);
+        b1SupplierXTable.getColumnModel().getColumn(3).setPreferredWidth(150);
+        b1SupplierXTable.getColumnModel().getColumn(4).setPreferredWidth(200);
     }
 
     private void setPersonnelTable() {
-        personnelXTable.setModel(personnelImplementation.getTableModel());
-        personnelXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        personnelXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1PersonnelXTable.setModel(personnelImplementation.getTableModel());
+        b1PersonnelXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1PersonnelXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
         // Set column width.
-        personnelXTable.getColumnModel().getColumn(0).setPreferredWidth(500);
-        personnelXTable.getColumnModel().getColumn(1).setPreferredWidth(150);
-        personnelXTable.getColumnModel().getColumn(2).setPreferredWidth(200);
+        b1PersonnelXTable.getColumnModel().getColumn(0).setPreferredWidth(500);
+        b1PersonnelXTable.getColumnModel().getColumn(1).setPreferredWidth(150);
+        b1PersonnelXTable.getColumnModel().getColumn(2).setPreferredWidth(200);
     }
 
     private void setUserTable() {
-        userXTable.setModel(userImplementation.getTableModel());
-        userXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        userXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1UserXTable.setModel(userImplementation.getTableModel());
+        b1UserXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1UserXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
         // Set column width.
-        userXTable.getColumnModel().getColumn(0).setPreferredWidth(300);
-        userXTable.getColumnModel().getColumn(1).setPreferredWidth(250);
-        userXTable.getColumnModel().getColumn(2).setPreferredWidth(150);
-        userXTable.getColumnModel().getColumn(3).setPreferredWidth(200);
+        b1UserXTable.getColumnModel().getColumn(0).setPreferredWidth(300);
+        b1UserXTable.getColumnModel().getColumn(1).setPreferredWidth(250);
+        b1UserXTable.getColumnModel().getColumn(2).setPreferredWidth(150);
+        b1UserXTable.getColumnModel().getColumn(3).setPreferredWidth(200);
     }
 
     private void setItemTable(String bodega) {
-        itemXTable.setModel(itemImplementation.getTableModel(bodega));
-        itemXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        itemXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1ItemXTable.setModel(itemImplementation.getTableModel(bodega));
+        b1ItemXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1ItemXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
         // Set column width.
-        itemXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
-        itemXTable.getColumnModel().getColumn(1).setPreferredWidth(100);
-        itemXTable.getColumnModel().getColumn(2).setPreferredWidth(150);
-        itemXTable.getColumnModel().getColumn(3).setPreferredWidth(50);
-        itemXTable.getColumnModel().getColumn(4).setPreferredWidth(200);
-        itemXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
-        itemXTable.getColumnModel().getColumn(6).setPreferredWidth(150);
+        b1ItemXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
+        b1ItemXTable.getColumnModel().getColumn(1).setPreferredWidth(100);
+        b1ItemXTable.getColumnModel().getColumn(2).setPreferredWidth(150);
+        b1ItemXTable.getColumnModel().getColumn(3).setPreferredWidth(50);
+        b1ItemXTable.getColumnModel().getColumn(4).setPreferredWidth(200);
+        b1ItemXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
+        b1ItemXTable.getColumnModel().getColumn(6).setPreferredWidth(150);
     }
 
     private void setStockTable() {

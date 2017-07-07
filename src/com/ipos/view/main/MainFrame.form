@@ -1585,7 +1585,7 @@
 
       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
       <SubComponents>
-        <Container class="javax.swing.JPanel" name="settingsTopPanel">
+        <Container class="javax.swing.JPanel" name="b1SettingsTopPanel">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="fe" type="rgb"/>
@@ -1668,7 +1668,7 @@
             </Component>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="settingsCenterPanel">
+        <Container class="javax.swing.JPanel" name="b1SettingsCenterPanel">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ef" green="ec" red="e8" type="rgb"/>
@@ -1685,7 +1685,7 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="settingsTabbedPane" max="32767" attributes="0"/>
+                      <Component id="b1SettingsTabbedPane" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -1694,14 +1694,14 @@
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace max="-2" attributes="0"/>
-                      <Component id="settingsTabbedPane" pref="428" max="32767" attributes="0"/>
+                      <Component id="b1SettingsTabbedPane" pref="428" max="32767" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
               </Group>
             </DimensionLayout>
           </Layout>
           <SubComponents>
-            <Container class="javax.swing.JTabbedPane" name="settingsTabbedPane">
+            <Container class="javax.swing.JTabbedPane" name="b1SettingsTabbedPane">
               <Properties>
                 <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1711,12 +1711,12 @@
                 </Property>
               </Properties>
               <AuxValues>
-                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="settingsTabbedPane.setUI(new WindowsTabbedPaneUI() {&#xa;    @Override&#xa;    protected int calculateTabWidth(int tabPlacement, int tabIndex, FontMetrics metrics) {&#xa;        return 100;&#xa;    }&#xa;});"/>
+                <AuxValue name="JavaCodeGenerator_InitCodePost" type="java.lang.String" value="b1SettingsTabbedPane.setUI(new WindowsTabbedPaneUI() {&#xa;    @Override&#xa;    protected int calculateTabWidth(int tabPlacement, int tabIndex, FontMetrics metrics) {&#xa;        return 100;&#xa;    }&#xa;});"/>
               </AuxValues>
 
               <Layout class="org.netbeans.modules.form.compat2.layouts.support.JTabbedPaneSupportLayout"/>
               <SubComponents>
-                <Container class="javax.swing.JPanel" name="itemPanel">
+                <Container class="javax.swing.JPanel" name="b1ItemPanel">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1732,7 +1732,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                   <SubComponents>
-                    <Container class="javax.swing.JPanel" name="itemTopPanel">
+                    <Container class="javax.swing.JPanel" name="b1ItemTopPanel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1752,15 +1752,15 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="itemXSearchField" min="-2" pref="230" max="-2" attributes="0"/>
+                                  <Component id="b1ItemXSearchField" min="-2" pref="230" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="itemRefreshButton" min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="b1ItemRefreshButton" min="-2" pref="28" max="-2" attributes="0"/>
                                   <EmptySpace pref="329" max="32767" attributes="0"/>
-                                  <Component id="itemAddButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1ItemAddButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="itemUpdateButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1ItemUpdateButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="itemRemoveButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1ItemRemoveButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -1770,12 +1770,12 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="itemRefreshButton" alignment="0" pref="0" max="32767" attributes="0"/>
+                                      <Component id="b1ItemRefreshButton" alignment="0" pref="0" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="itemRemoveButton" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="itemUpdateButton" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="itemAddButton" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="itemXSearchField" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                                          <Component id="b1ItemRemoveButton" alignment="3" max="32767" attributes="0"/>
+                                          <Component id="b1ItemUpdateButton" alignment="3" max="32767" attributes="0"/>
+                                          <Component id="b1ItemAddButton" alignment="3" max="32767" attributes="0"/>
+                                          <Component id="b1ItemXSearchField" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -1784,7 +1784,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="org.jdesktop.swingx.JXSearchField" name="itemXSearchField">
+                        <Component class="org.jdesktop.swingx.JXSearchField" name="b1ItemXSearchField">
                           <Properties>
                             <Property name="columns" type="int" value="30"/>
                             <Property name="focusBehavior" type="org.jdesktop.swingx.prompt.PromptSupport$FocusBehavior" editor="org.netbeans.modules.form.editors.EnumEditor">
@@ -1801,11 +1801,11 @@
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="itemXSearchFieldFocusLost"/>
-                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="itemXSearchFieldKeyReleased"/>
+                            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="b1ItemXSearchFieldFocusLost"/>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="b1ItemXSearchFieldKeyReleased"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="itemRemoveButton">
+                        <Component class="javax.swing.JButton" name="b1ItemRemoveButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -1817,10 +1817,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemRemoveButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1ItemRemoveButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="itemUpdateButton">
+                        <Component class="javax.swing.JButton" name="b1ItemUpdateButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -1832,10 +1832,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemUpdateButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1ItemUpdateButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="itemAddButton">
+                        <Component class="javax.swing.JButton" name="b1ItemAddButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -1847,10 +1847,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemAddButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1ItemAddButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="itemRefreshButton">
+                        <Component class="javax.swing.JButton" name="b1ItemRefreshButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -1866,12 +1866,12 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="itemRefreshButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1ItemRefreshButtonActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="itemCenterPanel">
+                    <Container class="javax.swing.JPanel" name="b1ItemCenterPanel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1885,7 +1885,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                       <SubComponents>
-                        <Container class="javax.swing.JScrollPane" name="itemScrollPane">
+                        <Container class="javax.swing.JScrollPane" name="b1ItemScrollPane">
                           <AuxValues>
                             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
                           </AuxValues>
@@ -1897,7 +1897,7 @@
 
                           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                           <SubComponents>
-                            <Component class="org.jdesktop.swingx.JXTable" name="itemXTable">
+                            <Component class="org.jdesktop.swingx.JXTable" name="b1ItemXTable">
                               <Properties>
                                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                                   <Table columnCount="4" rowCount="4">
@@ -1950,7 +1950,7 @@
                     </Container>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="supplierPanel">
+                <Container class="javax.swing.JPanel" name="b1SupplierPanel">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1966,7 +1966,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                   <SubComponents>
-                    <Container class="javax.swing.JPanel" name="supplierTopPanel">
+                    <Container class="javax.swing.JPanel" name="b1SupplierTopPanel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -1986,15 +1986,15 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="supplierXSearchField" min="-2" pref="230" max="-2" attributes="0"/>
+                                  <Component id="b1SupplierXSearchField" min="-2" pref="230" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="supplierRefreshButton" min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="b1SupplierRefreshButton" min="-2" pref="28" max="-2" attributes="0"/>
                                   <EmptySpace pref="329" max="32767" attributes="0"/>
-                                  <Component id="suppliderAddButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1SuppliderAddButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="supplierUpdateButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1SupplierUpdateButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="supplierRemoveButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1SupplierRemoveButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -2004,12 +2004,12 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="supplierRefreshButton" alignment="0" pref="0" max="32767" attributes="0"/>
+                                      <Component id="b1SupplierRefreshButton" alignment="0" pref="0" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="supplierRemoveButton" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="supplierUpdateButton" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="suppliderAddButton" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="supplierXSearchField" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                                          <Component id="b1SupplierRemoveButton" alignment="3" max="32767" attributes="0"/>
+                                          <Component id="b1SupplierUpdateButton" alignment="3" max="32767" attributes="0"/>
+                                          <Component id="b1SuppliderAddButton" alignment="3" max="32767" attributes="0"/>
+                                          <Component id="b1SupplierXSearchField" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -2018,7 +2018,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JButton" name="supplierRemoveButton">
+                        <Component class="javax.swing.JButton" name="b1SupplierRemoveButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2030,10 +2030,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="supplierRemoveButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1SupplierRemoveButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="supplierUpdateButton">
+                        <Component class="javax.swing.JButton" name="b1SupplierUpdateButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2045,10 +2045,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="supplierUpdateButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1SupplierUpdateButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="suppliderAddButton">
+                        <Component class="javax.swing.JButton" name="b1SuppliderAddButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2060,10 +2060,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="suppliderAddButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1SuppliderAddButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="org.jdesktop.swingx.JXSearchField" name="supplierXSearchField">
+                        <Component class="org.jdesktop.swingx.JXSearchField" name="b1SupplierXSearchField">
                           <Properties>
                             <Property name="columns" type="int" value="30"/>
                             <Property name="focusBehavior" type="org.jdesktop.swingx.prompt.PromptSupport$FocusBehavior" editor="org.netbeans.modules.form.editors.EnumEditor">
@@ -2080,11 +2080,11 @@
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="supplierXSearchFieldFocusLost"/>
-                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="supplierXSearchFieldKeyReleased"/>
+                            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="b1SupplierXSearchFieldFocusLost"/>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="b1SupplierXSearchFieldKeyReleased"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="supplierRefreshButton">
+                        <Component class="javax.swing.JButton" name="b1SupplierRefreshButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2100,12 +2100,12 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="supplierRefreshButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1SupplierRefreshButtonActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="supplierCenterPanel">
+                    <Container class="javax.swing.JPanel" name="b1SupplierCenterPanel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2119,7 +2119,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                       <SubComponents>
-                        <Container class="javax.swing.JScrollPane" name="suplierScrollPane">
+                        <Container class="javax.swing.JScrollPane" name="b1SuplierScrollPane">
                           <AuxValues>
                             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
                           </AuxValues>
@@ -2131,7 +2131,7 @@
 
                           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                           <SubComponents>
-                            <Component class="org.jdesktop.swingx.JXTable" name="supplierXTable">
+                            <Component class="org.jdesktop.swingx.JXTable" name="b1SupplierXTable">
                               <Properties>
                                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                                   <Table columnCount="4" rowCount="4">
@@ -2184,7 +2184,7 @@
                     </Container>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="personnelPanel">
+                <Container class="javax.swing.JPanel" name="b1PersonnelPanel">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2200,7 +2200,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                   <SubComponents>
-                    <Container class="javax.swing.JPanel" name="personnelTopPanel">
+                    <Container class="javax.swing.JPanel" name="b1PersonnelTopPanel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2220,15 +2220,15 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="personnelXSearchField" min="-2" pref="230" max="-2" attributes="0"/>
+                                  <Component id="b1PersonnelXSearchField" min="-2" pref="230" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="personnelRefreshButton" min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="b1PersonnelRefreshButton" min="-2" pref="28" max="-2" attributes="0"/>
                                   <EmptySpace pref="329" max="32767" attributes="0"/>
-                                  <Component id="personnelAddButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1PersonnelAddButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="personnelUpdateButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1PersonnelUpdateButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="personnelRemoveButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1PersonnelRemoveButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -2238,12 +2238,12 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="personnelRefreshButton" alignment="0" pref="0" max="32767" attributes="0"/>
+                                      <Component id="b1PersonnelRefreshButton" alignment="0" pref="0" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="personnelRemoveButton" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="personnelUpdateButton" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="personnelAddButton" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="personnelXSearchField" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                                          <Component id="b1PersonnelRemoveButton" alignment="3" max="32767" attributes="0"/>
+                                          <Component id="b1PersonnelUpdateButton" alignment="3" max="32767" attributes="0"/>
+                                          <Component id="b1PersonnelAddButton" alignment="3" max="32767" attributes="0"/>
+                                          <Component id="b1PersonnelXSearchField" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -2252,7 +2252,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JButton" name="personnelRemoveButton">
+                        <Component class="javax.swing.JButton" name="b1PersonnelRemoveButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2264,10 +2264,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="personnelRemoveButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1PersonnelRemoveButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="personnelUpdateButton">
+                        <Component class="javax.swing.JButton" name="b1PersonnelUpdateButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2279,10 +2279,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="personnelUpdateButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1PersonnelUpdateButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="personnelAddButton">
+                        <Component class="javax.swing.JButton" name="b1PersonnelAddButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2294,10 +2294,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="personnelAddButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1PersonnelAddButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="org.jdesktop.swingx.JXSearchField" name="personnelXSearchField">
+                        <Component class="org.jdesktop.swingx.JXSearchField" name="b1PersonnelXSearchField">
                           <Properties>
                             <Property name="columns" type="int" value="30"/>
                             <Property name="focusBehavior" type="org.jdesktop.swingx.prompt.PromptSupport$FocusBehavior" editor="org.netbeans.modules.form.editors.EnumEditor">
@@ -2314,11 +2314,11 @@
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="personnelXSearchFieldFocusLost"/>
-                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="personnelXSearchFieldKeyReleased"/>
+                            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="b1PersonnelXSearchFieldFocusLost"/>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="b1PersonnelXSearchFieldKeyReleased"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="personnelRefreshButton">
+                        <Component class="javax.swing.JButton" name="b1PersonnelRefreshButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2334,12 +2334,12 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="personnelRefreshButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1PersonnelRefreshButtonActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="personnelCenterPanel">
+                    <Container class="javax.swing.JPanel" name="b1PersonnelCenterPanel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2353,7 +2353,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                       <SubComponents>
-                        <Container class="javax.swing.JScrollPane" name="personnelScrollPane">
+                        <Container class="javax.swing.JScrollPane" name="b1PersonnelScrollPane">
                           <AuxValues>
                             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
                           </AuxValues>
@@ -2365,7 +2365,7 @@
 
                           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                           <SubComponents>
-                            <Component class="org.jdesktop.swingx.JXTable" name="personnelXTable">
+                            <Component class="org.jdesktop.swingx.JXTable" name="b1PersonnelXTable">
                               <Properties>
                                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                                   <Table columnCount="4" rowCount="4">
@@ -2418,7 +2418,7 @@
                     </Container>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="unitPanel">
+                <Container class="javax.swing.JPanel" name="b1UnitPanel">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2434,7 +2434,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                   <SubComponents>
-                    <Container class="javax.swing.JPanel" name="unitTopPanel">
+                    <Container class="javax.swing.JPanel" name="b1UnitTopPanel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2454,15 +2454,15 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="unitXSearchField" min="-2" pref="230" max="-2" attributes="0"/>
+                                  <Component id="b1UnitXSearchField" min="-2" pref="230" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="unitRefreshButton" min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="b1UnitRefreshButton" min="-2" pref="28" max="-2" attributes="0"/>
                                   <EmptySpace pref="329" max="32767" attributes="0"/>
-                                  <Component id="unitAddButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1UnitAddButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="unitUpdateButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1UnitUpdateButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="unitRemoveButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1UnitRemoveButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -2472,11 +2472,11 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="3" attributes="0">
-                                      <Component id="unitRemoveButton" alignment="3" max="32767" attributes="0"/>
-                                      <Component id="unitUpdateButton" alignment="3" max="32767" attributes="0"/>
-                                      <Component id="unitAddButton" alignment="3" max="32767" attributes="0"/>
-                                      <Component id="unitXSearchField" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
-                                      <Component id="unitRefreshButton" alignment="3" pref="0" max="32767" attributes="0"/>
+                                      <Component id="b1UnitRemoveButton" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="b1UnitUpdateButton" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="b1UnitAddButton" alignment="3" max="32767" attributes="0"/>
+                                      <Component id="b1UnitXSearchField" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                                      <Component id="b1UnitRefreshButton" alignment="3" pref="0" max="32767" attributes="0"/>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
@@ -2484,7 +2484,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JButton" name="unitRemoveButton">
+                        <Component class="javax.swing.JButton" name="b1UnitRemoveButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2496,10 +2496,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="unitRemoveButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1UnitRemoveButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="unitUpdateButton">
+                        <Component class="javax.swing.JButton" name="b1UnitUpdateButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2511,10 +2511,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="unitUpdateButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1UnitUpdateButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="unitAddButton">
+                        <Component class="javax.swing.JButton" name="b1UnitAddButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2526,10 +2526,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="unitAddButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1UnitAddButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="org.jdesktop.swingx.JXSearchField" name="unitXSearchField">
+                        <Component class="org.jdesktop.swingx.JXSearchField" name="b1UnitXSearchField">
                           <Properties>
                             <Property name="columns" type="int" value="30"/>
                             <Property name="focusBehavior" type="org.jdesktop.swingx.prompt.PromptSupport$FocusBehavior" editor="org.netbeans.modules.form.editors.EnumEditor">
@@ -2546,11 +2546,11 @@
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="unitXSearchFieldFocusLost"/>
-                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="unitXSearchFieldKeyReleased"/>
+                            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="b1UnitXSearchFieldFocusLost"/>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="b1UnitXSearchFieldKeyReleased"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="unitRefreshButton">
+                        <Component class="javax.swing.JButton" name="b1UnitRefreshButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2566,12 +2566,12 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="unitRefreshButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1UnitRefreshButtonActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="unitCenterPanel">
+                    <Container class="javax.swing.JPanel" name="b1UnitCenterPanel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2585,7 +2585,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                       <SubComponents>
-                        <Container class="javax.swing.JScrollPane" name="unitScrollPane">
+                        <Container class="javax.swing.JScrollPane" name="b1UnitScrollPane">
                           <AuxValues>
                             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
                           </AuxValues>
@@ -2597,7 +2597,7 @@
 
                           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                           <SubComponents>
-                            <Component class="org.jdesktop.swingx.JXTable" name="unitXTable">
+                            <Component class="org.jdesktop.swingx.JXTable" name="b1UnitXTable">
                               <Properties>
                                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                                   <Table columnCount="5" rowCount="4">
@@ -2651,7 +2651,7 @@
                     </Container>
                   </SubComponents>
                 </Container>
-                <Container class="javax.swing.JPanel" name="userPanel">
+                <Container class="javax.swing.JPanel" name="b1UsersPanel">
                   <Properties>
                     <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                       <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2667,7 +2667,7 @@
 
                   <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                   <SubComponents>
-                    <Container class="javax.swing.JPanel" name="userTopPanel">
+                    <Container class="javax.swing.JPanel" name="b1UserTopPanel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2687,15 +2687,15 @@
                           <Group type="103" groupAlignment="0" attributes="0">
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="userXSearchField" min="-2" pref="230" max="-2" attributes="0"/>
+                                  <Component id="b1UserXSearchField" min="-2" pref="230" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="userRefreshButton" min="-2" pref="28" max="-2" attributes="0"/>
+                                  <Component id="b1UserRefreshButton" min="-2" pref="28" max="-2" attributes="0"/>
                                   <EmptySpace pref="329" max="32767" attributes="0"/>
-                                  <Component id="userAddButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1UserAddButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="userUpdateButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1UserUpdateButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
-                                  <Component id="userRemoveButton" min="-2" pref="100" max="-2" attributes="0"/>
+                                  <Component id="b1UserRemoveButton" min="-2" pref="100" max="-2" attributes="0"/>
                                   <EmptySpace max="-2" attributes="0"/>
                               </Group>
                           </Group>
@@ -2705,12 +2705,12 @@
                               <Group type="102" alignment="0" attributes="0">
                                   <EmptySpace max="-2" attributes="0"/>
                                   <Group type="103" groupAlignment="0" attributes="0">
-                                      <Component id="userRefreshButton" alignment="0" pref="0" max="32767" attributes="0"/>
+                                      <Component id="b1UserRefreshButton" alignment="0" pref="0" max="32767" attributes="0"/>
                                       <Group type="103" groupAlignment="3" attributes="0">
-                                          <Component id="userRemoveButton" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="userUpdateButton" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="userAddButton" alignment="3" max="32767" attributes="0"/>
-                                          <Component id="userXSearchField" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
+                                          <Component id="b1UserRemoveButton" alignment="3" max="32767" attributes="0"/>
+                                          <Component id="b1UserUpdateButton" alignment="3" max="32767" attributes="0"/>
+                                          <Component id="b1UserAddButton" alignment="3" max="32767" attributes="0"/>
+                                          <Component id="b1UserXSearchField" alignment="3" min="-2" pref="28" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
                                   <EmptySpace max="-2" attributes="0"/>
@@ -2719,7 +2719,7 @@
                         </DimensionLayout>
                       </Layout>
                       <SubComponents>
-                        <Component class="javax.swing.JButton" name="userRemoveButton">
+                        <Component class="javax.swing.JButton" name="b1UserRemoveButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2731,10 +2731,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="userRemoveButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1UserRemoveButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="userUpdateButton">
+                        <Component class="javax.swing.JButton" name="b1UserUpdateButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2746,10 +2746,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="userUpdateButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1UserUpdateButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="userAddButton">
+                        <Component class="javax.swing.JButton" name="b1UserAddButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2761,10 +2761,10 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="userAddButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1UserAddButtonActionPerformed"/>
                           </Events>
                         </Component>
-                        <Component class="org.jdesktop.swingx.JXSearchField" name="userXSearchField">
+                        <Component class="org.jdesktop.swingx.JXSearchField" name="b1UserXSearchField">
                           <Properties>
                             <Property name="columns" type="int" value="30"/>
                             <Property name="focusBehavior" type="org.jdesktop.swingx.prompt.PromptSupport$FocusBehavior" editor="org.netbeans.modules.form.editors.EnumEditor">
@@ -2781,11 +2781,11 @@
                             </Property>
                           </Properties>
                           <Events>
-                            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="userXSearchFieldFocusLost"/>
-                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="userXSearchFieldKeyReleased"/>
+                            <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="b1UserXSearchFieldFocusLost"/>
+                            <EventHandler event="keyReleased" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="b1UserXSearchFieldKeyReleased"/>
                           </Events>
                         </Component>
-                        <Component class="javax.swing.JButton" name="userRefreshButton">
+                        <Component class="javax.swing.JButton" name="b1UserRefreshButton">
                           <Properties>
                             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                               <Font name="Tahoma" size="12" style="0"/>
@@ -2801,12 +2801,12 @@
                             <Property name="focusPainted" type="boolean" value="false"/>
                           </Properties>
                           <Events>
-                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="userRefreshButtonActionPerformed"/>
+                            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="b1UserRefreshButtonActionPerformed"/>
                           </Events>
                         </Component>
                       </SubComponents>
                     </Container>
-                    <Container class="javax.swing.JPanel" name="userCenterPanel">
+                    <Container class="javax.swing.JPanel" name="b1UserCenterPanel">
                       <Properties>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -2820,7 +2820,7 @@
 
                       <Layout class="org.netbeans.modules.form.compat2.layouts.DesignBorderLayout"/>
                       <SubComponents>
-                        <Container class="javax.swing.JScrollPane" name="userScrollPane">
+                        <Container class="javax.swing.JScrollPane" name="b1UserScrollPane">
                           <AuxValues>
                             <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
                           </AuxValues>
@@ -2832,7 +2832,7 @@
 
                           <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
                           <SubComponents>
-                            <Component class="org.jdesktop.swingx.JXTable" name="userXTable">
+                            <Component class="org.jdesktop.swingx.JXTable" name="b1UserXTable">
                               <Properties>
                                 <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
                                   <Table columnCount="4" rowCount="4">
@@ -2889,7 +2889,7 @@
             </Container>
           </SubComponents>
         </Container>
-        <Container class="javax.swing.JPanel" name="settingsBottomPanel">
+        <Container class="javax.swing.JPanel" name="b1SettingsBottomPanel">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ef" green="ec" red="e8" type="rgb"/>
