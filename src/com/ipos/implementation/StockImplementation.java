@@ -62,7 +62,7 @@ public class StockImplementation {
         };
 
         DefaultTableModel model = new DefaultTableModel(null, columnName);
-        List<Stock> stocks = stockJpaController.findStockEntities(bodega);
+        List<Stock> stocks = stockJpaController.findStocks(bodega);
 
         try {
             for (Stock stock : stocks) {

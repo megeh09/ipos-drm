@@ -127,12 +127,10 @@ public class StockJpaController implements Serializable {
         }
     }
 
-    public List<Stock> findStockEntitiesOrderByIdDesc(String bodega) {
+    public List<Stock> findStockEntitiesOrderByIdDesc() {
         EntityManager em = getEntityManager();
         try {
-            return em.createNamedQuery("Stock.findAllOrderByIdDesc")
-                    .setParameter("bodega", bodega)
-                    .getResultList();
+            return em.createNamedQuery("Stock.findAllOrderByIdDesc").getResultList();
         } finally {
             em.close();
         }

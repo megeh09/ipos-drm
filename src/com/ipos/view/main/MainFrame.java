@@ -118,10 +118,10 @@ public class MainFrame extends javax.swing.JFrame {
         stockAdjustButton = new javax.swing.JButton();
         stockInButton = new javax.swing.JButton();
         stocksCenterPanel = new javax.swing.JPanel();
-        stockXSearchField = new org.jdesktop.swingx.JXSearchField();
         stockRefreshButton = new javax.swing.JButton();
         stockScrollPane = new javax.swing.JScrollPane();
         stockXTable = new org.jdesktop.swingx.JXTable();
+        stockXSearchField = new org.jdesktop.swingx.JXSearchField();
         stocksBottomPanel = new javax.swing.JPanel();
         b1ReportsPanel = new javax.swing.JPanel();
         reportsTopPanel = new javax.swing.JPanel();
@@ -176,11 +176,11 @@ public class MainFrame extends javax.swing.JFrame {
         b1SettingsTabbedPane = new javax.swing.JTabbedPane();
         b1ItemPanel = new javax.swing.JPanel();
         b1ItemTopPanel = new javax.swing.JPanel();
-        b1ItemXSearchField = new org.jdesktop.swingx.JXSearchField();
         b1ItemRemoveButton = new javax.swing.JButton();
         b1ItemUpdateButton = new javax.swing.JButton();
         b1ItemAddButton = new javax.swing.JButton();
         b1ItemRefreshButton = new javax.swing.JButton();
+        b1ItemXSearchField = new org.jdesktop.swingx.JXSearchField();
         b1ItemCenterPanel = new javax.swing.JPanel();
         b1ItemScrollPane = new javax.swing.JScrollPane();
         b1ItemXTable = new org.jdesktop.swingx.JXTable();
@@ -189,8 +189,8 @@ public class MainFrame extends javax.swing.JFrame {
         b1SupplierRemoveButton = new javax.swing.JButton();
         b1SupplierUpdateButton = new javax.swing.JButton();
         b1SuppliderAddButton = new javax.swing.JButton();
-        b1SupplierXSearchField = new org.jdesktop.swingx.JXSearchField();
         b1SupplierRefreshButton = new javax.swing.JButton();
+        b1SupplierXSearchField = new org.jdesktop.swingx.JXSearchField();
         b1SupplierCenterPanel = new javax.swing.JPanel();
         b1SuplierScrollPane = new javax.swing.JScrollPane();
         b1SupplierXTable = new org.jdesktop.swingx.JXTable();
@@ -199,8 +199,8 @@ public class MainFrame extends javax.swing.JFrame {
         b1PersonnelRemoveButton = new javax.swing.JButton();
         b1PersonnelUpdateButton = new javax.swing.JButton();
         b1PersonnelAddButton = new javax.swing.JButton();
-        b1PersonnelXSearchField = new org.jdesktop.swingx.JXSearchField();
         b1PersonnelRefreshButton = new javax.swing.JButton();
+        b1PersonnelXSearchField = new org.jdesktop.swingx.JXSearchField();
         b1PersonnelCenterPanel = new javax.swing.JPanel();
         b1PersonnelScrollPane = new javax.swing.JScrollPane();
         b1PersonnelXTable = new org.jdesktop.swingx.JXTable();
@@ -209,8 +209,8 @@ public class MainFrame extends javax.swing.JFrame {
         b1UnitRemoveButton = new javax.swing.JButton();
         b1UnitUpdateButton = new javax.swing.JButton();
         b1UnitAddButton = new javax.swing.JButton();
-        b1UnitXSearchField = new org.jdesktop.swingx.JXSearchField();
         b1UnitRefreshButton = new javax.swing.JButton();
+        b1UnitXSearchField = new org.jdesktop.swingx.JXSearchField();
         b1UnitCenterPanel = new javax.swing.JPanel();
         b1UnitScrollPane = new javax.swing.JScrollPane();
         b1UnitXTable = new org.jdesktop.swingx.JXTable();
@@ -219,8 +219,8 @@ public class MainFrame extends javax.swing.JFrame {
         b1UserRemoveButton = new javax.swing.JButton();
         b1UserUpdateButton = new javax.swing.JButton();
         b1UserAddButton = new javax.swing.JButton();
-        b1UserXSearchField = new org.jdesktop.swingx.JXSearchField();
         b1UserRefreshButton = new javax.swing.JButton();
+        b1UserXSearchField = new org.jdesktop.swingx.JXSearchField();
         b1UserCenterPanel = new javax.swing.JPanel();
         b1UserScrollPane = new javax.swing.JScrollPane();
         b1UserXTable = new org.jdesktop.swingx.JXTable();
@@ -267,6 +267,137 @@ public class MainFrame extends javax.swing.JFrame {
         b2RightPanel = new javax.swing.JPanel();
         b2RightPanelScrollPane = new javax.swing.JScrollPane();
         b2TargetPanel = new javax.swing.JPanel();
+        b2DashboardPanel = new javax.swing.JPanel();
+        dashboardTopPanel1 = new javax.swing.JPanel();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel23 = new javax.swing.JLabel();
+        dashboardCenterPanel1 = new javax.swing.JPanel();
+        jPanel6 = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        dashboardHotScrollPane1 = new javax.swing.JScrollPane();
+        dashboardHotXTable1 = new org.jdesktop.swingx.JXTable();
+        jPanel8 = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
+        dashboardAlmostOutOfStockScrollPane1 = new javax.swing.JScrollPane();
+        dashboardAlmostOutOfStockXTable1 = new org.jdesktop.swingx.JXTable();
+        jPanel10 = new javax.swing.JPanel();
+        dashboardBottomPanel1 = new javax.swing.JPanel();
+        b2StocksPanel = new javax.swing.JPanel();
+        stocksTopPanel3 = new javax.swing.JPanel();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel35 = new javax.swing.JLabel();
+        stockOutButton3 = new javax.swing.JButton();
+        stockAdjustButton3 = new javax.swing.JButton();
+        stockInButton3 = new javax.swing.JButton();
+        stocksCenterPanel3 = new javax.swing.JPanel();
+        stockRefreshButton1 = new javax.swing.JButton();
+        stockScrollPane1 = new javax.swing.JScrollPane();
+        stockXTable1 = new org.jdesktop.swingx.JXTable();
+        stockXSearchField1 = new org.jdesktop.swingx.JXSearchField();
+        stocksBottomPanel1 = new javax.swing.JPanel();
+        b2ReportsPanel = new javax.swing.JPanel();
+        reportsTopPanel1 = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        reportsCenterPanel1 = new javax.swing.JPanel();
+        reportsTabbedPane1 = new javax.swing.JTabbedPane();
+        reportsSalesPanel1 = new javax.swing.JPanel();
+        reportsSalesTopPanel1 = new javax.swing.JPanel();
+        reportsSalesGenerateButton1 = new javax.swing.JButton();
+        reportsSalesFromDateChooser1 = new com.toedter.calendar.JDateChooser();
+        reportsSalesFromLabel1 = new javax.swing.JLabel();
+        reportsSalesToLabel1 = new javax.swing.JLabel();
+        reportsSalesToDateChooser1 = new com.toedter.calendar.JDateChooser();
+        salesStockComboBox1 = new javax.swing.JComboBox();
+        salesStockLabel1 = new javax.swing.JLabel();
+        reportsSalesCenterPanel1 = new javax.swing.JPanel();
+        reportsSalesScrollPane1 = new javax.swing.JScrollPane();
+        reportsSalesXTable1 = new org.jdesktop.swingx.JXTable();
+        reportsStocksPanel1 = new javax.swing.JPanel();
+        reportsStocksTopPanel1 = new javax.swing.JPanel();
+        reportsStocksFromLabel1 = new javax.swing.JLabel();
+        reportsStocksFromDateChooser1 = new com.toedter.calendar.JDateChooser();
+        reportsStocksToLabel1 = new javax.swing.JLabel();
+        reportsStocksToDateChooser1 = new com.toedter.calendar.JDateChooser();
+        reportsStocksGenerateButton1 = new javax.swing.JButton();
+        stocksStockLabel1 = new javax.swing.JLabel();
+        stocksStockComboBox1 = new javax.swing.JComboBox();
+        reportsStocksCenterPanel1 = new javax.swing.JPanel();
+        reportsStocksScrollPane1 = new javax.swing.JScrollPane();
+        reportsStocksXTable1 = new org.jdesktop.swingx.JXTable();
+        reportsStockOutPanel1 = new javax.swing.JPanel();
+        reportsStockOutTopPanel1 = new javax.swing.JPanel();
+        reportsStockOutFromLabel1 = new javax.swing.JLabel();
+        reportsStockOutFromDateChooser1 = new com.toedter.calendar.JDateChooser();
+        reportsStockOutToLabel1 = new javax.swing.JLabel();
+        reportsStockOutToDateChooser1 = new com.toedter.calendar.JDateChooser();
+        reportsStockOutGenerateButton1 = new javax.swing.JButton();
+        stockOutStockLabel1 = new javax.swing.JLabel();
+        stockOutStockComboBox1 = new javax.swing.JComboBox();
+        reportsStockOutCenterPanel1 = new javax.swing.JPanel();
+        reportsStockOutScrollPane1 = new javax.swing.JScrollPane();
+        reportsStockOutXTable1 = new org.jdesktop.swingx.JXTable();
+        reportsBottomPanel1 = new javax.swing.JPanel();
+        b2SettingsPanel = new javax.swing.JPanel();
+        b1SettingsTopPanel1 = new javax.swing.JPanel();
+        jLabel36 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel38 = new javax.swing.JLabel();
+        b1SettingsCenterPanel1 = new javax.swing.JPanel();
+        b1SettingsTabbedPane1 = new javax.swing.JTabbedPane();
+        b1ItemPanel1 = new javax.swing.JPanel();
+        b1ItemTopPanel1 = new javax.swing.JPanel();
+        b1ItemRemoveButton1 = new javax.swing.JButton();
+        b1ItemUpdateButton1 = new javax.swing.JButton();
+        b1ItemAddButton1 = new javax.swing.JButton();
+        b1ItemRefreshButton1 = new javax.swing.JButton();
+        b1ItemXSearchField1 = new org.jdesktop.swingx.JXSearchField();
+        b1ItemCenterPanel1 = new javax.swing.JPanel();
+        b1ItemScrollPane1 = new javax.swing.JScrollPane();
+        b1ItemXTable1 = new org.jdesktop.swingx.JXTable();
+        b1SupplierPanel1 = new javax.swing.JPanel();
+        b1SupplierTopPanel1 = new javax.swing.JPanel();
+        b1SupplierRemoveButton1 = new javax.swing.JButton();
+        b1SupplierUpdateButton1 = new javax.swing.JButton();
+        b1SuppliderAddButton1 = new javax.swing.JButton();
+        b1SupplierRefreshButton1 = new javax.swing.JButton();
+        b1SupplierXSearchField1 = new org.jdesktop.swingx.JXSearchField();
+        b1SupplierCenterPanel1 = new javax.swing.JPanel();
+        b1SuplierScrollPane1 = new javax.swing.JScrollPane();
+        b1SupplierXTable1 = new org.jdesktop.swingx.JXTable();
+        b1PersonnelPanel1 = new javax.swing.JPanel();
+        b1PersonnelTopPanel1 = new javax.swing.JPanel();
+        b1PersonnelRemoveButton1 = new javax.swing.JButton();
+        b1PersonnelUpdateButton1 = new javax.swing.JButton();
+        b1PersonnelAddButton1 = new javax.swing.JButton();
+        b1PersonnelRefreshButton1 = new javax.swing.JButton();
+        b1PersonnelXSearchField1 = new org.jdesktop.swingx.JXSearchField();
+        b1PersonnelCenterPanel1 = new javax.swing.JPanel();
+        b1PersonnelScrollPane1 = new javax.swing.JScrollPane();
+        b1PersonnelXTable1 = new org.jdesktop.swingx.JXTable();
+        b1UnitPanel1 = new javax.swing.JPanel();
+        b1UnitTopPanel1 = new javax.swing.JPanel();
+        b1UnitRemoveButton1 = new javax.swing.JButton();
+        b1UnitUpdateButton1 = new javax.swing.JButton();
+        b1UnitAddButton1 = new javax.swing.JButton();
+        b1UnitRefreshButton1 = new javax.swing.JButton();
+        b1UnitXSearchField1 = new org.jdesktop.swingx.JXSearchField();
+        b1UnitCenterPanel1 = new javax.swing.JPanel();
+        b1UnitScrollPane1 = new javax.swing.JScrollPane();
+        b1UnitXTable1 = new org.jdesktop.swingx.JXTable();
+        b1UsersPanel1 = new javax.swing.JPanel();
+        b1UserTopPanel1 = new javax.swing.JPanel();
+        b1UserRemoveButton1 = new javax.swing.JButton();
+        b1UserUpdateButton1 = new javax.swing.JButton();
+        b1UserAddButton1 = new javax.swing.JButton();
+        b1UserRefreshButton1 = new javax.swing.JButton();
+        b1UserXSearchField1 = new org.jdesktop.swingx.JXSearchField();
+        b1UserCenterPanel1 = new javax.swing.JPanel();
+        b1UserScrollPane1 = new javax.swing.JScrollPane();
+        b1UserXTable1 = new org.jdesktop.swingx.JXTable();
+        b1SettingsBottomPanel1 = new javax.swing.JPanel();
         bodega1ButtonGroup = new javax.swing.ButtonGroup();
         bodega2ButtonGroup = new javax.swing.ButtonGroup();
         mainPanel = new javax.swing.JPanel();
@@ -537,22 +668,6 @@ public class MainFrame extends javax.swing.JFrame {
 
         stocksCenterPanel.setBackground(new java.awt.Color(232, 236, 239));
 
-        stockXSearchField.setColumns(30);
-        stockXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
-        stockXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        stockXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
-        stockXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
-        stockXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                stockXSearchFieldFocusLost(evt);
-            }
-        });
-        stockXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                stockXSearchFieldKeyReleased(evt);
-            }
-        });
-
         stockRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         stockRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
         stockRefreshButton.setBorderPainted(false);
@@ -586,6 +701,22 @@ public class MainFrame extends javax.swing.JFrame {
         stockXTable.getTableHeader().setReorderingAllowed(false);
         stockScrollPane.setViewportView(stockXTable);
 
+        stockXSearchField.setColumns(30);
+        stockXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        stockXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stockXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        stockXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        stockXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                stockXSearchFieldFocusLost(evt);
+            }
+        });
+        stockXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                stockXSearchFieldKeyReleased(evt);
+            }
+        });
+
         javax.swing.GroupLayout stocksCenterPanelLayout = new javax.swing.GroupLayout(stocksCenterPanel);
         stocksCenterPanel.setLayout(stocksCenterPanelLayout);
         stocksCenterPanelLayout.setHorizontalGroup(
@@ -606,8 +737,8 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(stocksCenterPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(stocksCenterPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(stockXSearchField, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
-                    .addComponent(stockRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                    .addComponent(stockRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(stockXSearchField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(stockScrollPane, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
                 .addContainerGap())
@@ -1039,7 +1170,7 @@ public class MainFrame extends javax.swing.JFrame {
         b1ReportsPanel.add(reportsCenterPanel, java.awt.BorderLayout.CENTER);
 
         reportsBottomPanel.setBackground(new java.awt.Color(232, 236, 239));
-        reportsBottomPanel.setPreferredSize(new java.awt.Dimension(950, 0));
+        reportsBottomPanel.setPreferredSize(new java.awt.Dimension(740, 0));
 
         javax.swing.GroupLayout reportsBottomPanelLayout = new javax.swing.GroupLayout(reportsBottomPanel);
         reportsBottomPanel.setLayout(reportsBottomPanelLayout);
@@ -1117,22 +1248,6 @@ public class MainFrame extends javax.swing.JFrame {
         b1ItemTopPanel.setBackground(new java.awt.Color(255, 255, 255));
         b1ItemTopPanel.setPreferredSize(new java.awt.Dimension(0, 50));
 
-        b1ItemXSearchField.setColumns(30);
-        b1ItemXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
-        b1ItemXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        b1ItemXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
-        b1ItemXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
-        b1ItemXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                b1ItemXSearchFieldFocusLost(evt);
-            }
-        });
-        b1ItemXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                b1ItemXSearchFieldKeyReleased(evt);
-            }
-        });
-
         b1ItemRemoveButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         b1ItemRemoveButton.setText("REMOVE");
         b1ItemRemoveButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
@@ -1175,6 +1290,22 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        b1ItemXSearchField.setColumns(30);
+        b1ItemXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        b1ItemXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1ItemXSearchField.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        b1ItemXSearchField.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        b1ItemXSearchField.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                b1ItemXSearchFieldFocusLost(evt);
+            }
+        });
+        b1ItemXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                b1ItemXSearchFieldKeyReleased(evt);
+            }
+        });
+
         javax.swing.GroupLayout b1ItemTopPanelLayout = new javax.swing.GroupLayout(b1ItemTopPanel);
         b1ItemTopPanel.setLayout(b1ItemTopPanelLayout);
         b1ItemTopPanelLayout.setHorizontalGroup(
@@ -1197,12 +1328,12 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(b1ItemTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(b1ItemTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(b1ItemRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(b1ItemRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, Short.MAX_VALUE)
                     .addGroup(b1ItemTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(b1ItemRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(b1ItemUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(b1ItemAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(b1ItemXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(b1ItemAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(b1ItemXSearchField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -1275,6 +1406,18 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        b1SupplierRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1SupplierRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1SupplierRefreshButton.setBorderPainted(false);
+        b1SupplierRefreshButton.setContentAreaFilled(false);
+        b1SupplierRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1SupplierRefreshButton.setFocusPainted(false);
+        b1SupplierRefreshButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1SupplierRefreshButtonActionPerformed(evt);
+            }
+        });
+
         b1SupplierXSearchField.setColumns(30);
         b1SupplierXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
         b1SupplierXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -1288,18 +1431,6 @@ public class MainFrame extends javax.swing.JFrame {
         b1SupplierXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 b1SupplierXSearchFieldKeyReleased(evt);
-            }
-        });
-
-        b1SupplierRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        b1SupplierRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
-        b1SupplierRefreshButton.setBorderPainted(false);
-        b1SupplierRefreshButton.setContentAreaFilled(false);
-        b1SupplierRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        b1SupplierRefreshButton.setFocusPainted(false);
-        b1SupplierRefreshButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b1SupplierRefreshButtonActionPerformed(evt);
             }
         });
 
@@ -1325,12 +1456,12 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(b1SupplierTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(b1SupplierTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(b1SupplierRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(b1SupplierRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, Short.MAX_VALUE)
                     .addGroup(b1SupplierTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(b1SupplierRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(b1SupplierUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(b1SuppliderAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(b1SupplierXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(b1SuppliderAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(b1SupplierXSearchField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -1403,6 +1534,18 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        b1PersonnelRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1PersonnelRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1PersonnelRefreshButton.setBorderPainted(false);
+        b1PersonnelRefreshButton.setContentAreaFilled(false);
+        b1PersonnelRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1PersonnelRefreshButton.setFocusPainted(false);
+        b1PersonnelRefreshButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1PersonnelRefreshButtonActionPerformed(evt);
+            }
+        });
+
         b1PersonnelXSearchField.setColumns(30);
         b1PersonnelXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
         b1PersonnelXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -1416,18 +1559,6 @@ public class MainFrame extends javax.swing.JFrame {
         b1PersonnelXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 b1PersonnelXSearchFieldKeyReleased(evt);
-            }
-        });
-
-        b1PersonnelRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        b1PersonnelRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
-        b1PersonnelRefreshButton.setBorderPainted(false);
-        b1PersonnelRefreshButton.setContentAreaFilled(false);
-        b1PersonnelRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        b1PersonnelRefreshButton.setFocusPainted(false);
-        b1PersonnelRefreshButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b1PersonnelRefreshButtonActionPerformed(evt);
             }
         });
 
@@ -1453,12 +1584,12 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(b1PersonnelTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(b1PersonnelTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(b1PersonnelRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(b1PersonnelRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, Short.MAX_VALUE)
                     .addGroup(b1PersonnelTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(b1PersonnelRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(b1PersonnelUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(b1PersonnelAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(b1PersonnelXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(b1PersonnelAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(b1PersonnelXSearchField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -1531,6 +1662,18 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        b1UnitRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UnitRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1UnitRefreshButton.setBorderPainted(false);
+        b1UnitRefreshButton.setContentAreaFilled(false);
+        b1UnitRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UnitRefreshButton.setFocusPainted(false);
+        b1UnitRefreshButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1UnitRefreshButtonActionPerformed(evt);
+            }
+        });
+
         b1UnitXSearchField.setColumns(30);
         b1UnitXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
         b1UnitXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -1544,18 +1687,6 @@ public class MainFrame extends javax.swing.JFrame {
         b1UnitXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 b1UnitXSearchFieldKeyReleased(evt);
-            }
-        });
-
-        b1UnitRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        b1UnitRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
-        b1UnitRefreshButton.setBorderPainted(false);
-        b1UnitRefreshButton.setContentAreaFilled(false);
-        b1UnitRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        b1UnitRefreshButton.setFocusPainted(false);
-        b1UnitRefreshButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b1UnitRefreshButtonActionPerformed(evt);
             }
         });
 
@@ -1580,12 +1711,13 @@ public class MainFrame extends javax.swing.JFrame {
             b1UnitTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(b1UnitTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(b1UnitTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(b1UnitRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(b1UnitUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(b1UnitAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(b1UnitXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(b1UnitRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE))
+                .addGroup(b1UnitTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(b1UnitTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(b1UnitRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1UnitUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1UnitAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1UnitRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, Short.MAX_VALUE))
+                    .addComponent(b1UnitXSearchField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -1658,6 +1790,18 @@ public class MainFrame extends javax.swing.JFrame {
             }
         });
 
+        b1UserRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UserRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1UserRefreshButton.setBorderPainted(false);
+        b1UserRefreshButton.setContentAreaFilled(false);
+        b1UserRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UserRefreshButton.setFocusPainted(false);
+        b1UserRefreshButton.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1UserRefreshButtonActionPerformed(evt);
+            }
+        });
+
         b1UserXSearchField.setColumns(30);
         b1UserXSearchField.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
         b1UserXSearchField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -1671,18 +1815,6 @@ public class MainFrame extends javax.swing.JFrame {
         b1UserXSearchField.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
                 b1UserXSearchFieldKeyReleased(evt);
-            }
-        });
-
-        b1UserRefreshButton.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
-        b1UserRefreshButton.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
-        b1UserRefreshButton.setBorderPainted(false);
-        b1UserRefreshButton.setContentAreaFilled(false);
-        b1UserRefreshButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
-        b1UserRefreshButton.setFocusPainted(false);
-        b1UserRefreshButton.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                b1UserRefreshButtonActionPerformed(evt);
             }
         });
 
@@ -1708,12 +1840,12 @@ public class MainFrame extends javax.swing.JFrame {
             .addGroup(b1UserTopPanelLayout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(b1UserTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(b1UserRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 0, Short.MAX_VALUE)
+                    .addComponent(b1UserRefreshButton, javax.swing.GroupLayout.PREFERRED_SIZE, 28, Short.MAX_VALUE)
                     .addGroup(b1UserTopPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(b1UserRemoveButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(b1UserUpdateButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(b1UserAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(b1UserXSearchField, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(b1UserAddButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(b1UserXSearchField, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                 .addContainerGap())
         );
 
@@ -2323,6 +2455,1512 @@ public class MainFrame extends javax.swing.JFrame {
 
         b2CenterPanel.add(b2RightPanel, java.awt.BorderLayout.CENTER);
 
+        b2DashboardPanel.setLayout(new java.awt.BorderLayout());
+
+        dashboardTopPanel1.setBackground(new java.awt.Color(254, 255, 255));
+        dashboardTopPanel1.setPreferredSize(new java.awt.Dimension(950, 50));
+
+        jLabel21.setFont(new java.awt.Font("Tahoma", 1, 8)); // NOI18N
+        jLabel21.setForeground(new java.awt.Color(0, 173, 208));
+        jLabel21.setText("My");
+
+        jLabel23.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(46, 46, 46));
+        jLabel23.setText("Dashboard 22222");
+
+        javax.swing.GroupLayout dashboardTopPanel1Layout = new javax.swing.GroupLayout(dashboardTopPanel1);
+        dashboardTopPanel1.setLayout(dashboardTopPanel1Layout);
+        dashboardTopPanel1Layout.setHorizontalGroup(
+            dashboardTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dashboardTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(dashboardTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel21)
+                    .addComponent(jLabel23))
+                .addContainerGap(800, Short.MAX_VALUE))
+        );
+        dashboardTopPanel1Layout.setVerticalGroup(
+            dashboardTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(dashboardTopPanel1Layout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addComponent(jLabel21)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel23, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        b2DashboardPanel.add(dashboardTopPanel1, java.awt.BorderLayout.NORTH);
+
+        dashboardCenterPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        dashboardCenterPanel1.setLayout(new java.awt.BorderLayout());
+
+        jPanel6.setPreferredSize(new java.awt.Dimension(950, 225));
+
+        jPanel7.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "HOT Items", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Papyrus", 0, 14))); // NOI18N
+        jPanel7.setLayout(new java.awt.BorderLayout());
+
+        dashboardHotXTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
+                {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
+                {"XXX-2013003", "04 Jul 2013", "Ricky's", "11,733.00"},
+                {"XXX-2013004", "09 Jun 2013", "Scooby's", "25,213.00"}
+            },
+            new String [] {
+                "Code", "Date Created", "Supplier", "Amount"
+            }
+        ));
+        dashboardHotXTable1.setColumnControlVisible(true);
+        dashboardHotXTable1.setEditable(false);
+        dashboardHotXTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        dashboardHotXTable1.setHorizontalScrollEnabled(true);
+        dashboardHotXTable1.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        dashboardHotXTable1.setRowHeight(20);
+        dashboardHotXTable1.setShowHorizontalLines(false);
+        dashboardHotXTable1.setShowVerticalLines(false);
+        dashboardHotXTable1.getTableHeader().setReorderingAllowed(false);
+        dashboardHotScrollPane1.setViewportView(dashboardHotXTable1);
+
+        jPanel7.add(dashboardHotScrollPane1, java.awt.BorderLayout.CENTER);
+
+        javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
+        jPanel6.setLayout(jPanel6Layout);
+        jPanel6Layout.setHorizontalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel6Layout.setVerticalGroup(
+            jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel6Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        dashboardCenterPanel1.add(jPanel6, java.awt.BorderLayout.NORTH);
+
+        jPanel8.setPreferredSize(new java.awt.Dimension(950, 225));
+
+        jPanel9.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Almost Out Of Stock Items", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Papyrus", 0, 14))); // NOI18N
+        jPanel9.setLayout(new java.awt.BorderLayout());
+
+        dashboardAlmostOutOfStockXTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
+                {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
+                {"XXX-2013003", "04 Jul 2013", "Ricky's", "11,733.00"},
+                {"XXX-2013004", "09 Jun 2013", "Scooby's", "25,213.00"}
+            },
+            new String [] {
+                "Code", "Date Created", "Supplier", "Amount"
+            }
+        ));
+        dashboardAlmostOutOfStockXTable1.setColumnControlVisible(true);
+        dashboardAlmostOutOfStockXTable1.setEditable(false);
+        dashboardAlmostOutOfStockXTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        dashboardAlmostOutOfStockXTable1.setHorizontalScrollEnabled(true);
+        dashboardAlmostOutOfStockXTable1.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        dashboardAlmostOutOfStockXTable1.setRowHeight(20);
+        dashboardAlmostOutOfStockXTable1.setShowHorizontalLines(false);
+        dashboardAlmostOutOfStockXTable1.setShowVerticalLines(false);
+        dashboardAlmostOutOfStockXTable1.getTableHeader().setReorderingAllowed(false);
+        dashboardAlmostOutOfStockScrollPane1.setViewportView(dashboardAlmostOutOfStockXTable1);
+
+        jPanel9.add(dashboardAlmostOutOfStockScrollPane1, java.awt.BorderLayout.CENTER);
+
+        javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
+        jPanel8.setLayout(jPanel8Layout);
+        jPanel8Layout.setHorizontalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        jPanel8Layout.setVerticalGroup(
+            jPanel8Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel8Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 203, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        dashboardCenterPanel1.add(jPanel8, java.awt.BorderLayout.CENTER);
+
+        jPanel10.setPreferredSize(new java.awt.Dimension(950, 0));
+
+        javax.swing.GroupLayout jPanel10Layout = new javax.swing.GroupLayout(jPanel10);
+        jPanel10.setLayout(jPanel10Layout);
+        jPanel10Layout.setHorizontalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+        jPanel10Layout.setVerticalGroup(
+            jPanel10Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        dashboardCenterPanel1.add(jPanel10, java.awt.BorderLayout.SOUTH);
+
+        b2DashboardPanel.add(dashboardCenterPanel1, java.awt.BorderLayout.CENTER);
+
+        dashboardBottomPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        dashboardBottomPanel1.setPreferredSize(new java.awt.Dimension(950, 0));
+
+        javax.swing.GroupLayout dashboardBottomPanel1Layout = new javax.swing.GroupLayout(dashboardBottomPanel1);
+        dashboardBottomPanel1.setLayout(dashboardBottomPanel1Layout);
+        dashboardBottomPanel1Layout.setHorizontalGroup(
+            dashboardBottomPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 950, Short.MAX_VALUE)
+        );
+        dashboardBottomPanel1Layout.setVerticalGroup(
+            dashboardBottomPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        b2DashboardPanel.add(dashboardBottomPanel1, java.awt.BorderLayout.SOUTH);
+
+        b2StocksPanel.setPreferredSize(new java.awt.Dimension(950, 500));
+        b2StocksPanel.setLayout(new java.awt.BorderLayout());
+
+        stocksTopPanel3.setBackground(new java.awt.Color(254, 255, 255));
+        stocksTopPanel3.setPreferredSize(new java.awt.Dimension(950, 50));
+
+        jLabel33.setFont(new java.awt.Font("Tahoma", 1, 8)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(0, 173, 208));
+        jLabel33.setText("HOME");
+
+        jLabel34.setFont(new java.awt.Font("Tahoma", 1, 8)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(0, 173, 208));
+        jLabel34.setText("/");
+
+        jLabel35.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(46, 46, 46));
+        jLabel35.setText("Stocks 2222");
+
+        stockOutButton3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        stockOutButton3.setText("STOCK OUT");
+        stockOutButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        stockOutButton3.setFocusPainted(false);
+        stockOutButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                stockOutButton3ActionPerformed(evt);
+            }
+        });
+
+        stockAdjustButton3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        stockAdjustButton3.setText("STOCK ADJUST");
+        stockAdjustButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        stockAdjustButton3.setFocusPainted(false);
+        stockAdjustButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                stockAdjustButton3ActionPerformed(evt);
+            }
+        });
+
+        stockInButton3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        stockInButton3.setText("STOCK IN");
+        stockInButton3.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        stockInButton3.setFocusPainted(false);
+        stockInButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                stockInButton3ActionPerformed(evt);
+            }
+        });
+
+        javax.swing.GroupLayout stocksTopPanel3Layout = new javax.swing.GroupLayout(stocksTopPanel3);
+        stocksTopPanel3.setLayout(stocksTopPanel3Layout);
+        stocksTopPanel3Layout.setHorizontalGroup(
+            stocksTopPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(stocksTopPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(stocksTopPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(stocksTopPanel3Layout.createSequentialGroup()
+                        .addComponent(jLabel33)
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel34))
+                    .addComponent(jLabel35))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 431, Short.MAX_VALUE)
+                .addComponent(stockInButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(stockAdjustButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(stockOutButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        stocksTopPanel3Layout.setVerticalGroup(
+            stocksTopPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, stocksTopPanel3Layout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addGroup(stocksTopPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(stockInButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addGroup(stocksTopPanel3Layout.createSequentialGroup()
+                        .addGroup(stocksTopPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel33)
+                            .addComponent(jLabel34))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel35, javax.swing.GroupLayout.DEFAULT_SIZE, 24, Short.MAX_VALUE))
+                    .addComponent(stockAdjustButton3, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(stockOutButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(5, 5, 5))
+        );
+
+        b2StocksPanel.add(stocksTopPanel3, java.awt.BorderLayout.NORTH);
+
+        stocksCenterPanel3.setBackground(new java.awt.Color(232, 236, 239));
+
+        stockRefreshButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        stockRefreshButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        stockRefreshButton1.setBorderPainted(false);
+        stockRefreshButton1.setContentAreaFilled(false);
+        stockRefreshButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        stockRefreshButton1.setFocusPainted(false);
+        stockRefreshButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                stockRefreshButton1ActionPerformed(evt);
+            }
+        });
+
+        stockXTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
+                {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
+                {"XXX-2013003", "04 Jul 2013", "Ricky's", "11,733.00"},
+                {"XXX-2013004", "09 Jun 2013", "Scooby's", "25,213.00"}
+            },
+            new String [] {
+                "Code", "Date Created", "Supplier", "Amount"
+            }
+        ));
+        stockXTable1.setColumnControlVisible(true);
+        stockXTable1.setEditable(false);
+        stockXTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stockXTable1.setHorizontalScrollEnabled(true);
+        stockXTable1.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        stockXTable1.setRowHeight(20);
+        stockXTable1.setShowGrid(false);
+        stockXTable1.getTableHeader().setReorderingAllowed(false);
+        stockScrollPane1.setViewportView(stockXTable1);
+
+        stockXSearchField1.setColumns(30);
+        stockXSearchField1.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        stockXSearchField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stockXSearchField1.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        stockXSearchField1.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        stockXSearchField1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                stockXSearchField1FocusLost(evt);
+            }
+        });
+        stockXSearchField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                stockXSearchField1KeyReleased(evt);
+            }
+        });
+
+        javax.swing.GroupLayout stocksCenterPanel3Layout = new javax.swing.GroupLayout(stocksCenterPanel3);
+        stocksCenterPanel3.setLayout(stocksCenterPanel3Layout);
+        stocksCenterPanel3Layout.setHorizontalGroup(
+            stocksCenterPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(stocksCenterPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(stocksCenterPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(stocksCenterPanel3Layout.createSequentialGroup()
+                        .addComponent(stockXSearchField1, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(stockRefreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 596, Short.MAX_VALUE))
+                    .addComponent(stockScrollPane1))
+                .addContainerGap())
+        );
+        stocksCenterPanel3Layout.setVerticalGroup(
+            stocksCenterPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(stocksCenterPanel3Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(stocksCenterPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(stockRefreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(stockXSearchField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(stockScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 389, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        b2StocksPanel.add(stocksCenterPanel3, java.awt.BorderLayout.CENTER);
+
+        stocksBottomPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        stocksBottomPanel1.setPreferredSize(new java.awt.Dimension(950, 0));
+
+        javax.swing.GroupLayout stocksBottomPanel1Layout = new javax.swing.GroupLayout(stocksBottomPanel1);
+        stocksBottomPanel1.setLayout(stocksBottomPanel1Layout);
+        stocksBottomPanel1Layout.setHorizontalGroup(
+            stocksBottomPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 950, Short.MAX_VALUE)
+        );
+        stocksBottomPanel1Layout.setVerticalGroup(
+            stocksBottomPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        b2StocksPanel.add(stocksBottomPanel1, java.awt.BorderLayout.SOUTH);
+
+        b2ReportsPanel.setPreferredSize(new java.awt.Dimension(740, 500));
+        b2ReportsPanel.setLayout(new java.awt.BorderLayout());
+
+        reportsTopPanel1.setBackground(new java.awt.Color(254, 255, 255));
+        reportsTopPanel1.setPreferredSize(new java.awt.Dimension(740, 50));
+
+        jLabel30.setFont(new java.awt.Font("Tahoma", 1, 8)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(0, 173, 208));
+        jLabel30.setText("HOME");
+
+        jLabel31.setFont(new java.awt.Font("Tahoma", 1, 8)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(0, 173, 208));
+        jLabel31.setText("/");
+
+        jLabel32.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel32.setForeground(new java.awt.Color(46, 46, 46));
+        jLabel32.setText("Reports 2222");
+
+        javax.swing.GroupLayout reportsTopPanel1Layout = new javax.swing.GroupLayout(reportsTopPanel1);
+        reportsTopPanel1.setLayout(reportsTopPanel1Layout);
+        reportsTopPanel1Layout.setHorizontalGroup(
+            reportsTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportsTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(reportsTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(reportsTopPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel30)
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel31))
+                    .addComponent(jLabel32))
+                .addContainerGap(624, Short.MAX_VALUE))
+        );
+        reportsTopPanel1Layout.setVerticalGroup(
+            reportsTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportsTopPanel1Layout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addGroup(reportsTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel30)
+                    .addComponent(jLabel31))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel32, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        b2ReportsPanel.add(reportsTopPanel1, java.awt.BorderLayout.NORTH);
+
+        reportsCenterPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        reportsCenterPanel1.setPreferredSize(new java.awt.Dimension(740, 450));
+
+        reportsTabbedPane1.setBackground(new java.awt.Color(232, 236, 239));
+        reportsTabbedPane1.setTabPlacement(javax.swing.JTabbedPane.LEFT);
+        reportsTabbedPane1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsTabbedPane1.setUI(new WindowsTabbedPaneUI() {
+            @Override
+            protected int calculateTabWidth(int tabPlacement, int tabIndex, FontMetrics metrics) {
+                return 80;
+            }
+        });
+
+        reportsSalesPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        reportsSalesPanel1.setLayout(new java.awt.BorderLayout());
+
+        reportsSalesTopPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        reportsSalesTopPanel1.setPreferredSize(new java.awt.Dimension(0, 50));
+
+        reportsSalesGenerateButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        reportsSalesGenerateButton1.setText("GENERATE");
+        reportsSalesGenerateButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        reportsSalesGenerateButton1.setFocusPainted(false);
+        reportsSalesGenerateButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reportsSalesGenerateButton1ActionPerformed(evt);
+            }
+        });
+
+        reportsSalesFromDateChooser1.setDateFormatString("MMM d, yyyy");
+        reportsSalesFromDateChooser1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        reportsSalesFromDateChooser1.setName("acquisitionDate"); // NOI18N
+        reportsSalesFromDateChooser1.setPreferredSize(new java.awt.Dimension(99, 27));
+
+        reportsSalesFromLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsSalesFromLabel1.setText("From:");
+
+        reportsSalesToLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsSalesToLabel1.setText("To:");
+
+        reportsSalesToDateChooser1.setDateFormatString("MMM d, yyyy");
+        reportsSalesToDateChooser1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        reportsSalesToDateChooser1.setName("acquisitionDate"); // NOI18N
+        reportsSalesToDateChooser1.setPreferredSize(new java.awt.Dimension(99, 27));
+
+        salesStockComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        salesStockComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        salesStockComboBox1.setName("approvedBy"); // NOI18N
+
+        salesStockLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        salesStockLabel1.setText("Stock:");
+
+        javax.swing.GroupLayout reportsSalesTopPanel1Layout = new javax.swing.GroupLayout(reportsSalesTopPanel1);
+        reportsSalesTopPanel1.setLayout(reportsSalesTopPanel1Layout);
+        reportsSalesTopPanel1Layout.setHorizontalGroup(
+            reportsSalesTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportsSalesTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(reportsSalesFromLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(reportsSalesFromDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(reportsSalesToLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(reportsSalesToDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(salesStockLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(salesStockComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(reportsSalesGenerateButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(96, 96, 96))
+        );
+        reportsSalesTopPanel1Layout.setVerticalGroup(
+            reportsSalesTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportsSalesTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(reportsSalesTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(reportsSalesTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(salesStockLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(salesStockComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(reportsSalesGenerateButton1))
+                    .addComponent(reportsSalesToLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reportsSalesToDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reportsSalesFromLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reportsSalesFromDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(15, Short.MAX_VALUE))
+        );
+
+        reportsSalesPanel1.add(reportsSalesTopPanel1, java.awt.BorderLayout.NORTH);
+
+        reportsSalesCenterPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        reportsSalesCenterPanel1.setLayout(new java.awt.BorderLayout());
+
+        reportsSalesXTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
+                {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
+                {"XXX-2013003", "04 Jul 2013", "Ricky's", "11,733.00"},
+                {"XXX-2013004", "09 Jun 2013", "Scooby's", "25,213.00"}
+            },
+            new String [] {
+                "Code", "Date Created", "Supplier", "Amount"
+            }
+        ));
+        reportsSalesXTable1.setColumnControlVisible(true);
+        reportsSalesXTable1.setEditable(false);
+        reportsSalesXTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsSalesXTable1.setHorizontalScrollEnabled(true);
+        reportsSalesXTable1.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        reportsSalesXTable1.setRowHeight(20);
+        reportsSalesXTable1.setShowHorizontalLines(false);
+        reportsSalesXTable1.setShowVerticalLines(false);
+        reportsSalesXTable1.getTableHeader().setReorderingAllowed(false);
+        reportsSalesScrollPane1.setViewportView(reportsSalesXTable1);
+
+        reportsSalesCenterPanel1.add(reportsSalesScrollPane1, java.awt.BorderLayout.CENTER);
+
+        reportsSalesPanel1.add(reportsSalesCenterPanel1, java.awt.BorderLayout.CENTER);
+
+        reportsTabbedPane1.addTab("Sales", reportsSalesPanel1);
+
+        reportsStocksPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        reportsStocksPanel1.setLayout(new java.awt.BorderLayout());
+
+        reportsStocksTopPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        reportsStocksTopPanel1.setPreferredSize(new java.awt.Dimension(0, 50));
+
+        reportsStocksFromLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsStocksFromLabel1.setText("From:");
+
+        reportsStocksFromDateChooser1.setDateFormatString("MMM d, yyyy");
+        reportsStocksFromDateChooser1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        reportsStocksFromDateChooser1.setName("acquisitionDate"); // NOI18N
+        reportsStocksFromDateChooser1.setPreferredSize(new java.awt.Dimension(99, 27));
+
+        reportsStocksToLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsStocksToLabel1.setText("To:");
+
+        reportsStocksToDateChooser1.setDateFormatString("MMM d, yyyy");
+        reportsStocksToDateChooser1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        reportsStocksToDateChooser1.setName("acquisitionDate"); // NOI18N
+        reportsStocksToDateChooser1.setPreferredSize(new java.awt.Dimension(99, 27));
+
+        reportsStocksGenerateButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        reportsStocksGenerateButton1.setText("GENERATE");
+        reportsStocksGenerateButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        reportsStocksGenerateButton1.setFocusPainted(false);
+        reportsStocksGenerateButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reportsStocksGenerateButton1ActionPerformed(evt);
+            }
+        });
+
+        stocksStockLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stocksStockLabel1.setText("Stock:");
+
+        stocksStockComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stocksStockComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        stocksStockComboBox1.setName("approvedBy"); // NOI18N
+
+        javax.swing.GroupLayout reportsStocksTopPanel1Layout = new javax.swing.GroupLayout(reportsStocksTopPanel1);
+        reportsStocksTopPanel1.setLayout(reportsStocksTopPanel1Layout);
+        reportsStocksTopPanel1Layout.setHorizontalGroup(
+            reportsStocksTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportsStocksTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(reportsStocksFromLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(reportsStocksFromDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(reportsStocksToLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(reportsStocksToDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(stocksStockLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(stocksStockComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(reportsStocksGenerateButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(96, 96, 96))
+        );
+        reportsStocksTopPanel1Layout.setVerticalGroup(
+            reportsStocksTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportsStocksTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(reportsStocksTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(reportsStocksToLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reportsStocksToDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reportsStocksFromLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reportsStocksFromDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(reportsStocksTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(reportsStocksTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(stocksStockLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(stocksStockComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(reportsStocksGenerateButton1)))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+
+        reportsStocksPanel1.add(reportsStocksTopPanel1, java.awt.BorderLayout.NORTH);
+
+        reportsStocksCenterPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        reportsStocksCenterPanel1.setLayout(new java.awt.BorderLayout());
+
+        reportsStocksXTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
+                {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
+                {"XXX-2013003", "04 Jul 2013", "Ricky's", "11,733.00"},
+                {"XXX-2013004", "09 Jun 2013", "Scooby's", "25,213.00"}
+            },
+            new String [] {
+                "Code", "Date Created", "Supplier", "Amount"
+            }
+        ));
+        reportsStocksXTable1.setColumnControlVisible(true);
+        reportsStocksXTable1.setEditable(false);
+        reportsStocksXTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsStocksXTable1.setHorizontalScrollEnabled(true);
+        reportsStocksXTable1.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        reportsStocksXTable1.setRowHeight(20);
+        reportsStocksXTable1.setShowHorizontalLines(false);
+        reportsStocksXTable1.setShowVerticalLines(false);
+        reportsStocksXTable1.getTableHeader().setReorderingAllowed(false);
+        reportsStocksScrollPane1.setViewportView(reportsStocksXTable1);
+
+        reportsStocksCenterPanel1.add(reportsStocksScrollPane1, java.awt.BorderLayout.CENTER);
+
+        reportsStocksPanel1.add(reportsStocksCenterPanel1, java.awt.BorderLayout.CENTER);
+
+        reportsTabbedPane1.addTab("Stocks", reportsStocksPanel1);
+
+        reportsStockOutPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        reportsStockOutPanel1.setLayout(new java.awt.BorderLayout());
+
+        reportsStockOutTopPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        reportsStockOutTopPanel1.setPreferredSize(new java.awt.Dimension(0, 50));
+
+        reportsStockOutFromLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsStockOutFromLabel1.setText("From:");
+
+        reportsStockOutFromDateChooser1.setDateFormatString("MMM d, yyyy");
+        reportsStockOutFromDateChooser1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        reportsStockOutFromDateChooser1.setName("acquisitionDate"); // NOI18N
+        reportsStockOutFromDateChooser1.setPreferredSize(new java.awt.Dimension(99, 27));
+
+        reportsStockOutToLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsStockOutToLabel1.setText("To:");
+
+        reportsStockOutToDateChooser1.setDateFormatString("MMM d, yyyy");
+        reportsStockOutToDateChooser1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        reportsStockOutToDateChooser1.setName("acquisitionDate"); // NOI18N
+        reportsStockOutToDateChooser1.setPreferredSize(new java.awt.Dimension(99, 27));
+
+        reportsStockOutGenerateButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        reportsStockOutGenerateButton1.setText("GENERATE");
+        reportsStockOutGenerateButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        reportsStockOutGenerateButton1.setFocusPainted(false);
+        reportsStockOutGenerateButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                reportsStockOutGenerateButton1ActionPerformed(evt);
+            }
+        });
+
+        stockOutStockLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stockOutStockLabel1.setText("Stock:");
+
+        stockOutStockComboBox1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        stockOutStockComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        stockOutStockComboBox1.setName("approvedBy"); // NOI18N
+
+        javax.swing.GroupLayout reportsStockOutTopPanel1Layout = new javax.swing.GroupLayout(reportsStockOutTopPanel1);
+        reportsStockOutTopPanel1.setLayout(reportsStockOutTopPanel1Layout);
+        reportsStockOutTopPanel1Layout.setHorizontalGroup(
+            reportsStockOutTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportsStockOutTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(reportsStockOutFromLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(reportsStockOutFromDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(reportsStockOutToLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(reportsStockOutToDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(stockOutStockLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(stockOutStockComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 145, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(reportsStockOutGenerateButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(96, 96, 96))
+        );
+        reportsStockOutTopPanel1Layout.setVerticalGroup(
+            reportsStockOutTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportsStockOutTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(reportsStockOutTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(reportsStockOutToLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reportsStockOutToDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reportsStockOutFromLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(reportsStockOutFromDateChooser1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(reportsStockOutTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addGroup(reportsStockOutTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(stockOutStockLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(stockOutStockComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addComponent(reportsStockOutGenerateButton1)))
+                .addContainerGap(16, Short.MAX_VALUE))
+        );
+
+        reportsStockOutPanel1.add(reportsStockOutTopPanel1, java.awt.BorderLayout.NORTH);
+
+        reportsStockOutCenterPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        reportsStockOutCenterPanel1.setLayout(new java.awt.BorderLayout());
+
+        reportsStockOutXTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
+                {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
+                {"XXX-2013003", "04 Jul 2013", "Ricky's", "11,733.00"},
+                {"XXX-2013004", "09 Jun 2013", "Scooby's", "25,213.00"}
+            },
+            new String [] {
+                "Code", "Date Created", "Supplier", "Amount"
+            }
+        ));
+        reportsStockOutXTable1.setColumnControlVisible(true);
+        reportsStockOutXTable1.setEditable(false);
+        reportsStockOutXTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        reportsStockOutXTable1.setHorizontalScrollEnabled(true);
+        reportsStockOutXTable1.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        reportsStockOutXTable1.setRowHeight(20);
+        reportsStockOutXTable1.setShowHorizontalLines(false);
+        reportsStockOutXTable1.setShowVerticalLines(false);
+        reportsStockOutXTable1.getTableHeader().setReorderingAllowed(false);
+        reportsStockOutScrollPane1.setViewportView(reportsStockOutXTable1);
+
+        reportsStockOutCenterPanel1.add(reportsStockOutScrollPane1, java.awt.BorderLayout.CENTER);
+
+        reportsStockOutPanel1.add(reportsStockOutCenterPanel1, java.awt.BorderLayout.CENTER);
+
+        reportsTabbedPane1.addTab("Stock Out", reportsStockOutPanel1);
+
+        javax.swing.GroupLayout reportsCenterPanel1Layout = new javax.swing.GroupLayout(reportsCenterPanel1);
+        reportsCenterPanel1.setLayout(reportsCenterPanel1Layout);
+        reportsCenterPanel1Layout.setHorizontalGroup(
+            reportsCenterPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportsCenterPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(reportsTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+        reportsCenterPanel1Layout.setVerticalGroup(
+            reportsCenterPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(reportsCenterPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(reportsTabbedPane1)
+                .addContainerGap())
+        );
+
+        b2ReportsPanel.add(reportsCenterPanel1, java.awt.BorderLayout.CENTER);
+
+        reportsBottomPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        reportsBottomPanel1.setPreferredSize(new java.awt.Dimension(740, 0));
+
+        javax.swing.GroupLayout reportsBottomPanel1Layout = new javax.swing.GroupLayout(reportsBottomPanel1);
+        reportsBottomPanel1.setLayout(reportsBottomPanel1Layout);
+        reportsBottomPanel1Layout.setHorizontalGroup(
+            reportsBottomPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 740, Short.MAX_VALUE)
+        );
+        reportsBottomPanel1Layout.setVerticalGroup(
+            reportsBottomPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        b2ReportsPanel.add(reportsBottomPanel1, java.awt.BorderLayout.SOUTH);
+
+        b2SettingsPanel.setPreferredSize(new java.awt.Dimension(950, 500));
+        b2SettingsPanel.setLayout(new java.awt.BorderLayout());
+
+        b1SettingsTopPanel1.setBackground(new java.awt.Color(254, 255, 255));
+        b1SettingsTopPanel1.setPreferredSize(new java.awt.Dimension(950, 50));
+
+        jLabel36.setFont(new java.awt.Font("Tahoma", 1, 8)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(0, 173, 208));
+        jLabel36.setText("HOME");
+
+        jLabel37.setFont(new java.awt.Font("Tahoma", 1, 8)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(0, 173, 208));
+        jLabel37.setText("/");
+
+        jLabel38.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jLabel38.setForeground(new java.awt.Color(46, 46, 46));
+        jLabel38.setText("Settings 2222");
+
+        javax.swing.GroupLayout b1SettingsTopPanel1Layout = new javax.swing.GroupLayout(b1SettingsTopPanel1);
+        b1SettingsTopPanel1.setLayout(b1SettingsTopPanel1Layout);
+        b1SettingsTopPanel1Layout.setHorizontalGroup(
+            b1SettingsTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1SettingsTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(b1SettingsTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(b1SettingsTopPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel36)
+                        .addGap(3, 3, 3)
+                        .addComponent(jLabel37))
+                    .addComponent(jLabel38))
+                .addContainerGap(831, Short.MAX_VALUE))
+        );
+        b1SettingsTopPanel1Layout.setVerticalGroup(
+            b1SettingsTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1SettingsTopPanel1Layout.createSequentialGroup()
+                .addGap(5, 5, 5)
+                .addGroup(b1SettingsTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel36)
+                    .addComponent(jLabel37))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel38, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        b2SettingsPanel.add(b1SettingsTopPanel1, java.awt.BorderLayout.NORTH);
+
+        b1SettingsCenterPanel1.setBackground(new java.awt.Color(232, 236, 239));
+
+        b1SettingsTabbedPane1.setBackground(new java.awt.Color(255, 255, 255));
+        b1SettingsTabbedPane1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1SettingsTabbedPane1.setUI(new WindowsTabbedPaneUI() {
+            @Override
+            protected int calculateTabWidth(int tabPlacement, int tabIndex, FontMetrics metrics) {
+                return 100;
+            }
+        });
+
+        b1ItemPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1ItemPanel1.setLayout(new java.awt.BorderLayout());
+
+        b1ItemTopPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1ItemTopPanel1.setPreferredSize(new java.awt.Dimension(0, 50));
+
+        b1ItemRemoveButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1ItemRemoveButton1.setText("REMOVE");
+        b1ItemRemoveButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1ItemRemoveButton1.setFocusPainted(false);
+        b1ItemRemoveButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1ItemRemoveButton1ActionPerformed(evt);
+            }
+        });
+
+        b1ItemUpdateButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1ItemUpdateButton1.setText("UPDATE");
+        b1ItemUpdateButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1ItemUpdateButton1.setFocusPainted(false);
+        b1ItemUpdateButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1ItemUpdateButton1ActionPerformed(evt);
+            }
+        });
+
+        b1ItemAddButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1ItemAddButton1.setText("ADD");
+        b1ItemAddButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1ItemAddButton1.setFocusPainted(false);
+        b1ItemAddButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1ItemAddButton1ActionPerformed(evt);
+            }
+        });
+
+        b1ItemRefreshButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1ItemRefreshButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1ItemRefreshButton1.setBorderPainted(false);
+        b1ItemRefreshButton1.setContentAreaFilled(false);
+        b1ItemRefreshButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1ItemRefreshButton1.setFocusPainted(false);
+        b1ItemRefreshButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1ItemRefreshButton1ActionPerformed(evt);
+            }
+        });
+
+        b1ItemXSearchField1.setColumns(30);
+        b1ItemXSearchField1.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        b1ItemXSearchField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1ItemXSearchField1.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        b1ItemXSearchField1.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        b1ItemXSearchField1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                b1ItemXSearchField1FocusLost(evt);
+            }
+        });
+        b1ItemXSearchField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                b1ItemXSearchField1KeyReleased(evt);
+            }
+        });
+
+        javax.swing.GroupLayout b1ItemTopPanel1Layout = new javax.swing.GroupLayout(b1ItemTopPanel1);
+        b1ItemTopPanel1.setLayout(b1ItemTopPanel1Layout);
+        b1ItemTopPanel1Layout.setHorizontalGroup(
+            b1ItemTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1ItemTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(b1ItemXSearchField1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1ItemRefreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
+                .addComponent(b1ItemAddButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1ItemUpdateButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1ItemRemoveButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        b1ItemTopPanel1Layout.setVerticalGroup(
+            b1ItemTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1ItemTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(b1ItemTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(b1ItemRefreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, Short.MAX_VALUE)
+                    .addGroup(b1ItemTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(b1ItemRemoveButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1ItemUpdateButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1ItemAddButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(b1ItemXSearchField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        b1ItemPanel1.add(b1ItemTopPanel1, java.awt.BorderLayout.NORTH);
+
+        b1ItemCenterPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1ItemCenterPanel1.setLayout(new java.awt.BorderLayout());
+
+        b1ItemXTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
+                {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
+                {"XXX-2013003", "04 Jul 2013", "Ricky's", "11,733.00"},
+                {"XXX-2013004", "09 Jun 2013", "Scooby's", "25,213.00"}
+            },
+            new String [] {
+                "Code", "Date Created", "Supplier", "Amount"
+            }
+        ));
+        b1ItemXTable1.setColumnControlVisible(true);
+        b1ItemXTable1.setEditable(false);
+        b1ItemXTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1ItemXTable1.setHorizontalScrollEnabled(true);
+        b1ItemXTable1.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        b1ItemXTable1.setRowHeight(20);
+        b1ItemXTable1.setShowHorizontalLines(false);
+        b1ItemXTable1.setShowVerticalLines(false);
+        b1ItemXTable1.getTableHeader().setReorderingAllowed(false);
+        b1ItemScrollPane1.setViewportView(b1ItemXTable1);
+
+        b1ItemCenterPanel1.add(b1ItemScrollPane1, java.awt.BorderLayout.CENTER);
+
+        b1ItemPanel1.add(b1ItemCenterPanel1, java.awt.BorderLayout.CENTER);
+
+        b1SettingsTabbedPane1.addTab("Item", b1ItemPanel1);
+
+        b1SupplierPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1SupplierPanel1.setLayout(new java.awt.BorderLayout());
+
+        b1SupplierTopPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1SupplierTopPanel1.setPreferredSize(new java.awt.Dimension(0, 50));
+
+        b1SupplierRemoveButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1SupplierRemoveButton1.setText("REMOVE");
+        b1SupplierRemoveButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1SupplierRemoveButton1.setFocusPainted(false);
+        b1SupplierRemoveButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1SupplierRemoveButton1ActionPerformed(evt);
+            }
+        });
+
+        b1SupplierUpdateButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1SupplierUpdateButton1.setText("UPDATE");
+        b1SupplierUpdateButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1SupplierUpdateButton1.setFocusPainted(false);
+        b1SupplierUpdateButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1SupplierUpdateButton1ActionPerformed(evt);
+            }
+        });
+
+        b1SuppliderAddButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1SuppliderAddButton1.setText("ADD");
+        b1SuppliderAddButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1SuppliderAddButton1.setFocusPainted(false);
+        b1SuppliderAddButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1SuppliderAddButton1ActionPerformed(evt);
+            }
+        });
+
+        b1SupplierRefreshButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1SupplierRefreshButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1SupplierRefreshButton1.setBorderPainted(false);
+        b1SupplierRefreshButton1.setContentAreaFilled(false);
+        b1SupplierRefreshButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1SupplierRefreshButton1.setFocusPainted(false);
+        b1SupplierRefreshButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1SupplierRefreshButton1ActionPerformed(evt);
+            }
+        });
+
+        b1SupplierXSearchField1.setColumns(30);
+        b1SupplierXSearchField1.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        b1SupplierXSearchField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1SupplierXSearchField1.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        b1SupplierXSearchField1.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        b1SupplierXSearchField1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                b1SupplierXSearchField1FocusLost(evt);
+            }
+        });
+        b1SupplierXSearchField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                b1SupplierXSearchField1KeyReleased(evt);
+            }
+        });
+
+        javax.swing.GroupLayout b1SupplierTopPanel1Layout = new javax.swing.GroupLayout(b1SupplierTopPanel1);
+        b1SupplierTopPanel1.setLayout(b1SupplierTopPanel1Layout);
+        b1SupplierTopPanel1Layout.setHorizontalGroup(
+            b1SupplierTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1SupplierTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(b1SupplierXSearchField1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1SupplierRefreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
+                .addComponent(b1SuppliderAddButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1SupplierUpdateButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1SupplierRemoveButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        b1SupplierTopPanel1Layout.setVerticalGroup(
+            b1SupplierTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1SupplierTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(b1SupplierTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(b1SupplierRefreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, Short.MAX_VALUE)
+                    .addGroup(b1SupplierTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(b1SupplierRemoveButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1SupplierUpdateButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1SuppliderAddButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(b1SupplierXSearchField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        b1SupplierPanel1.add(b1SupplierTopPanel1, java.awt.BorderLayout.NORTH);
+
+        b1SupplierCenterPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1SupplierCenterPanel1.setLayout(new java.awt.BorderLayout());
+
+        b1SupplierXTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
+                {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
+                {"XXX-2013003", "04 Jul 2013", "Ricky's", "11,733.00"},
+                {"XXX-2013004", "09 Jun 2013", "Scooby's", "25,213.00"}
+            },
+            new String [] {
+                "Code", "Date Created", "Supplier", "Amount"
+            }
+        ));
+        b1SupplierXTable1.setColumnControlVisible(true);
+        b1SupplierXTable1.setEditable(false);
+        b1SupplierXTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1SupplierXTable1.setHorizontalScrollEnabled(true);
+        b1SupplierXTable1.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        b1SupplierXTable1.setRowHeight(20);
+        b1SupplierXTable1.setShowHorizontalLines(false);
+        b1SupplierXTable1.setShowVerticalLines(false);
+        b1SupplierXTable1.getTableHeader().setReorderingAllowed(false);
+        b1SuplierScrollPane1.setViewportView(b1SupplierXTable1);
+
+        b1SupplierCenterPanel1.add(b1SuplierScrollPane1, java.awt.BorderLayout.CENTER);
+
+        b1SupplierPanel1.add(b1SupplierCenterPanel1, java.awt.BorderLayout.CENTER);
+
+        b1SettingsTabbedPane1.addTab("Supplier", b1SupplierPanel1);
+
+        b1PersonnelPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1PersonnelPanel1.setLayout(new java.awt.BorderLayout());
+
+        b1PersonnelTopPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1PersonnelTopPanel1.setPreferredSize(new java.awt.Dimension(0, 50));
+
+        b1PersonnelRemoveButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1PersonnelRemoveButton1.setText("REMOVE");
+        b1PersonnelRemoveButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1PersonnelRemoveButton1.setFocusPainted(false);
+        b1PersonnelRemoveButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1PersonnelRemoveButton1ActionPerformed(evt);
+            }
+        });
+
+        b1PersonnelUpdateButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1PersonnelUpdateButton1.setText("UPDATE");
+        b1PersonnelUpdateButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1PersonnelUpdateButton1.setFocusPainted(false);
+        b1PersonnelUpdateButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1PersonnelUpdateButton1ActionPerformed(evt);
+            }
+        });
+
+        b1PersonnelAddButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1PersonnelAddButton1.setText("ADD");
+        b1PersonnelAddButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1PersonnelAddButton1.setFocusPainted(false);
+        b1PersonnelAddButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1PersonnelAddButton1ActionPerformed(evt);
+            }
+        });
+
+        b1PersonnelRefreshButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1PersonnelRefreshButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1PersonnelRefreshButton1.setBorderPainted(false);
+        b1PersonnelRefreshButton1.setContentAreaFilled(false);
+        b1PersonnelRefreshButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1PersonnelRefreshButton1.setFocusPainted(false);
+        b1PersonnelRefreshButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1PersonnelRefreshButton1ActionPerformed(evt);
+            }
+        });
+
+        b1PersonnelXSearchField1.setColumns(30);
+        b1PersonnelXSearchField1.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        b1PersonnelXSearchField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1PersonnelXSearchField1.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        b1PersonnelXSearchField1.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        b1PersonnelXSearchField1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                b1PersonnelXSearchField1FocusLost(evt);
+            }
+        });
+        b1PersonnelXSearchField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                b1PersonnelXSearchField1KeyReleased(evt);
+            }
+        });
+
+        javax.swing.GroupLayout b1PersonnelTopPanel1Layout = new javax.swing.GroupLayout(b1PersonnelTopPanel1);
+        b1PersonnelTopPanel1.setLayout(b1PersonnelTopPanel1Layout);
+        b1PersonnelTopPanel1Layout.setHorizontalGroup(
+            b1PersonnelTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1PersonnelTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(b1PersonnelXSearchField1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1PersonnelRefreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
+                .addComponent(b1PersonnelAddButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1PersonnelUpdateButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1PersonnelRemoveButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        b1PersonnelTopPanel1Layout.setVerticalGroup(
+            b1PersonnelTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1PersonnelTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(b1PersonnelTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(b1PersonnelRefreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, Short.MAX_VALUE)
+                    .addGroup(b1PersonnelTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(b1PersonnelRemoveButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1PersonnelUpdateButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1PersonnelAddButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(b1PersonnelXSearchField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        b1PersonnelPanel1.add(b1PersonnelTopPanel1, java.awt.BorderLayout.NORTH);
+
+        b1PersonnelCenterPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1PersonnelCenterPanel1.setLayout(new java.awt.BorderLayout());
+
+        b1PersonnelXTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
+                {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
+                {"XXX-2013003", "04 Jul 2013", "Ricky's", "11,733.00"},
+                {"XXX-2013004", "09 Jun 2013", "Scooby's", "25,213.00"}
+            },
+            new String [] {
+                "Code", "Date Created", "Supplier", "Amount"
+            }
+        ));
+        b1PersonnelXTable1.setColumnControlVisible(true);
+        b1PersonnelXTable1.setEditable(false);
+        b1PersonnelXTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1PersonnelXTable1.setHorizontalScrollEnabled(true);
+        b1PersonnelXTable1.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        b1PersonnelXTable1.setRowHeight(20);
+        b1PersonnelXTable1.setShowHorizontalLines(false);
+        b1PersonnelXTable1.setShowVerticalLines(false);
+        b1PersonnelXTable1.getTableHeader().setReorderingAllowed(false);
+        b1PersonnelScrollPane1.setViewportView(b1PersonnelXTable1);
+
+        b1PersonnelCenterPanel1.add(b1PersonnelScrollPane1, java.awt.BorderLayout.CENTER);
+
+        b1PersonnelPanel1.add(b1PersonnelCenterPanel1, java.awt.BorderLayout.CENTER);
+
+        b1SettingsTabbedPane1.addTab("Personnel", b1PersonnelPanel1);
+
+        b1UnitPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1UnitPanel1.setLayout(new java.awt.BorderLayout());
+
+        b1UnitTopPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1UnitTopPanel1.setPreferredSize(new java.awt.Dimension(0, 50));
+
+        b1UnitRemoveButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UnitRemoveButton1.setText("REMOVE");
+        b1UnitRemoveButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UnitRemoveButton1.setFocusPainted(false);
+        b1UnitRemoveButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1UnitRemoveButton1ActionPerformed(evt);
+            }
+        });
+
+        b1UnitUpdateButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UnitUpdateButton1.setText("UPDATE");
+        b1UnitUpdateButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UnitUpdateButton1.setFocusPainted(false);
+        b1UnitUpdateButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1UnitUpdateButton1ActionPerformed(evt);
+            }
+        });
+
+        b1UnitAddButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UnitAddButton1.setText("ADD");
+        b1UnitAddButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UnitAddButton1.setFocusPainted(false);
+        b1UnitAddButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1UnitAddButton1ActionPerformed(evt);
+            }
+        });
+
+        b1UnitRefreshButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UnitRefreshButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1UnitRefreshButton1.setBorderPainted(false);
+        b1UnitRefreshButton1.setContentAreaFilled(false);
+        b1UnitRefreshButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UnitRefreshButton1.setFocusPainted(false);
+        b1UnitRefreshButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1UnitRefreshButton1ActionPerformed(evt);
+            }
+        });
+
+        b1UnitXSearchField1.setColumns(30);
+        b1UnitXSearchField1.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        b1UnitXSearchField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1UnitXSearchField1.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        b1UnitXSearchField1.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        b1UnitXSearchField1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                b1UnitXSearchField1FocusLost(evt);
+            }
+        });
+        b1UnitXSearchField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                b1UnitXSearchField1KeyReleased(evt);
+            }
+        });
+
+        javax.swing.GroupLayout b1UnitTopPanel1Layout = new javax.swing.GroupLayout(b1UnitTopPanel1);
+        b1UnitTopPanel1.setLayout(b1UnitTopPanel1Layout);
+        b1UnitTopPanel1Layout.setHorizontalGroup(
+            b1UnitTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1UnitTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(b1UnitXSearchField1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1UnitRefreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
+                .addComponent(b1UnitAddButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1UnitUpdateButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1UnitRemoveButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        b1UnitTopPanel1Layout.setVerticalGroup(
+            b1UnitTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1UnitTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(b1UnitTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(b1UnitTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(b1UnitRemoveButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1UnitUpdateButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1UnitAddButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1UnitRefreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, Short.MAX_VALUE))
+                    .addComponent(b1UnitXSearchField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        b1UnitPanel1.add(b1UnitTopPanel1, java.awt.BorderLayout.NORTH);
+
+        b1UnitCenterPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1UnitCenterPanel1.setLayout(new java.awt.BorderLayout());
+
+        b1UnitXTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, "XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
+                {null, "XXX-2013002", "06 May 2013", "Bing's", "273.00"},
+                {null, "XXX-2013003", "04 Jul 2013", "Ricky's", "11,733.00"},
+                {null, "XXX-2013004", "09 Jun 2013", "Scooby's", "25,213.00"}
+            },
+            new String [] {
+                "entity", "Code", "Date Created", "Supplier", "Amount"
+            }
+        ));
+        b1UnitXTable1.setColumnControlVisible(true);
+        b1UnitXTable1.setEditable(false);
+        b1UnitXTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1UnitXTable1.setHorizontalScrollEnabled(true);
+        b1UnitXTable1.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        b1UnitXTable1.setRowHeight(20);
+        b1UnitXTable1.setShowHorizontalLines(false);
+        b1UnitXTable1.setShowVerticalLines(false);
+        b1UnitXTable1.getTableHeader().setReorderingAllowed(false);
+        b1UnitScrollPane1.setViewportView(b1UnitXTable1);
+
+        b1UnitCenterPanel1.add(b1UnitScrollPane1, java.awt.BorderLayout.CENTER);
+
+        b1UnitPanel1.add(b1UnitCenterPanel1, java.awt.BorderLayout.CENTER);
+
+        b1SettingsTabbedPane1.addTab("Unit", b1UnitPanel1);
+
+        b1UsersPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1UsersPanel1.setLayout(new java.awt.BorderLayout());
+
+        b1UserTopPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1UserTopPanel1.setPreferredSize(new java.awt.Dimension(0, 50));
+
+        b1UserRemoveButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UserRemoveButton1.setText("REMOVE");
+        b1UserRemoveButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UserRemoveButton1.setFocusPainted(false);
+        b1UserRemoveButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1UserRemoveButton1ActionPerformed(evt);
+            }
+        });
+
+        b1UserUpdateButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UserUpdateButton1.setText("UPDATE");
+        b1UserUpdateButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UserUpdateButton1.setFocusPainted(false);
+        b1UserUpdateButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1UserUpdateButton1ActionPerformed(evt);
+            }
+        });
+
+        b1UserAddButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UserAddButton1.setText("ADD");
+        b1UserAddButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UserAddButton1.setFocusPainted(false);
+        b1UserAddButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1UserAddButton1ActionPerformed(evt);
+            }
+        });
+
+        b1UserRefreshButton1.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
+        b1UserRefreshButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/ipos/resources/image/triangular-arrows-sign-for-recycle.png"))); // NOI18N
+        b1UserRefreshButton1.setBorderPainted(false);
+        b1UserRefreshButton1.setContentAreaFilled(false);
+        b1UserRefreshButton1.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        b1UserRefreshButton1.setFocusPainted(false);
+        b1UserRefreshButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                b1UserRefreshButton1ActionPerformed(evt);
+            }
+        });
+
+        b1UserXSearchField1.setColumns(30);
+        b1UserXSearchField1.setFocusBehavior(org.jdesktop.swingx.prompt.PromptSupport.FocusBehavior.HIGHLIGHT_PROMPT);
+        b1UserXSearchField1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1UserXSearchField1.setLayoutStyle(org.jdesktop.swingx.JXSearchField.LayoutStyle.MAC);
+        b1UserXSearchField1.setMargin(new java.awt.Insets(2, 5, 2, 2));
+        b1UserXSearchField1.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                b1UserXSearchField1FocusLost(evt);
+            }
+        });
+        b1UserXSearchField1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                b1UserXSearchField1KeyReleased(evt);
+            }
+        });
+
+        javax.swing.GroupLayout b1UserTopPanel1Layout = new javax.swing.GroupLayout(b1UserTopPanel1);
+        b1UserTopPanel1.setLayout(b1UserTopPanel1Layout);
+        b1UserTopPanel1Layout.setHorizontalGroup(
+            b1UserTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1UserTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(b1UserXSearchField1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1UserRefreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 329, Short.MAX_VALUE)
+                .addComponent(b1UserAddButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1UserUpdateButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(b1UserRemoveButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
+        );
+        b1UserTopPanel1Layout.setVerticalGroup(
+            b1UserTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1UserTopPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(b1UserTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(b1UserRefreshButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 28, Short.MAX_VALUE)
+                    .addGroup(b1UserTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(b1UserRemoveButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1UserUpdateButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(b1UserAddButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(b1UserXSearchField1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap())
+        );
+
+        b1UsersPanel1.add(b1UserTopPanel1, java.awt.BorderLayout.NORTH);
+
+        b1UserCenterPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        b1UserCenterPanel1.setLayout(new java.awt.BorderLayout());
+
+        b1UserXTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {"XXX-2013001", "19 Jul 2013", "Nijosa", "1,233.00"},
+                {"XXX-2013002", "06 May 2013", "Bing's", "273.00"},
+                {"XXX-2013003", "04 Jul 2013", "Ricky's", "11,733.00"},
+                {"XXX-2013004", "09 Jun 2013", "Scooby's", "25,213.00"}
+            },
+            new String [] {
+                "Code", "Date Created", "Supplier", "Amount"
+            }
+        ));
+        b1UserXTable1.setColumnControlVisible(true);
+        b1UserXTable1.setEditable(false);
+        b1UserXTable1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        b1UserXTable1.setHorizontalScrollEnabled(true);
+        b1UserXTable1.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
+        b1UserXTable1.setRowHeight(20);
+        b1UserXTable1.setShowHorizontalLines(false);
+        b1UserXTable1.setShowVerticalLines(false);
+        b1UserXTable1.getTableHeader().setReorderingAllowed(false);
+        b1UserScrollPane1.setViewportView(b1UserXTable1);
+
+        b1UserCenterPanel1.add(b1UserScrollPane1, java.awt.BorderLayout.CENTER);
+
+        b1UsersPanel1.add(b1UserCenterPanel1, java.awt.BorderLayout.CENTER);
+
+        b1SettingsTabbedPane1.addTab("User", b1UsersPanel1);
+
+        javax.swing.GroupLayout b1SettingsCenterPanel1Layout = new javax.swing.GroupLayout(b1SettingsCenterPanel1);
+        b1SettingsCenterPanel1.setLayout(b1SettingsCenterPanel1Layout);
+        b1SettingsCenterPanel1Layout.setHorizontalGroup(
+            b1SettingsCenterPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1SettingsCenterPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(b1SettingsTabbedPane1)
+                .addContainerGap())
+        );
+        b1SettingsCenterPanel1Layout.setVerticalGroup(
+            b1SettingsCenterPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(b1SettingsCenterPanel1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(b1SettingsTabbedPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 428, Short.MAX_VALUE)
+                .addContainerGap())
+        );
+
+        b2SettingsPanel.add(b1SettingsCenterPanel1, java.awt.BorderLayout.CENTER);
+
+        b1SettingsBottomPanel1.setBackground(new java.awt.Color(232, 236, 239));
+        b1SettingsBottomPanel1.setPreferredSize(new java.awt.Dimension(950, 0));
+
+        javax.swing.GroupLayout b1SettingsBottomPanel1Layout = new javax.swing.GroupLayout(b1SettingsBottomPanel1);
+        b1SettingsBottomPanel1.setLayout(b1SettingsBottomPanel1Layout);
+        b1SettingsBottomPanel1Layout.setHorizontalGroup(
+            b1SettingsBottomPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 950, Short.MAX_VALUE)
+        );
+        b1SettingsBottomPanel1Layout.setVerticalGroup(
+            b1SettingsBottomPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+        );
+
+        b2SettingsPanel.add(b1SettingsBottomPanel1, java.awt.BorderLayout.SOUTH);
+
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Dumaguete Rubi Marketing - IPOS");
 
@@ -2617,54 +4255,6 @@ public class MainFrame extends javax.swing.JFrame {
         b1SetUserTable();
     }//GEN-LAST:event_b1UserRefreshButtonActionPerformed
 
-    private void b1ItemXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1ItemXSearchFieldFocusLost
-        performSearch(b1ItemXTable, b1ItemXSearchField.getText());
-    }//GEN-LAST:event_b1ItemXSearchFieldFocusLost
-
-    private void b1ItemXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1ItemXSearchFieldKeyReleased
-        performSearch(b1ItemXTable, b1ItemXSearchField.getText());
-    }//GEN-LAST:event_b1ItemXSearchFieldKeyReleased
-
-    private void b1SupplierXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1SupplierXSearchFieldFocusLost
-        performSearch(b1SupplierXTable, b1SupplierXSearchField.getText());
-    }//GEN-LAST:event_b1SupplierXSearchFieldFocusLost
-
-    private void b1SupplierXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1SupplierXSearchFieldKeyReleased
-        performSearch(b1SupplierXTable, b1SupplierXSearchField.getText());
-    }//GEN-LAST:event_b1SupplierXSearchFieldKeyReleased
-
-    private void b1PersonnelXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1PersonnelXSearchFieldFocusLost
-        performSearch(b1PersonnelXTable, b1PersonnelXSearchField.getText());
-    }//GEN-LAST:event_b1PersonnelXSearchFieldFocusLost
-
-    private void b1PersonnelXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1PersonnelXSearchFieldKeyReleased
-        performSearch(b1PersonnelXTable, b1PersonnelXSearchField.getText());
-    }//GEN-LAST:event_b1PersonnelXSearchFieldKeyReleased
-
-    private void b1UnitXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1UnitXSearchFieldFocusLost
-        performSearch(b1UnitXTable, b1UnitXSearchField.getText());
-    }//GEN-LAST:event_b1UnitXSearchFieldFocusLost
-
-    private void b1UnitXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1UnitXSearchFieldKeyReleased
-        performSearch(b1UnitXTable, b1UnitXSearchField.getText());
-    }//GEN-LAST:event_b1UnitXSearchFieldKeyReleased
-
-    private void b1UserXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1UserXSearchFieldFocusLost
-        performSearch(b1UserXTable, b1UserXSearchField.getText());
-    }//GEN-LAST:event_b1UserXSearchFieldFocusLost
-
-    private void b1UserXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1UserXSearchFieldKeyReleased
-        performSearch(b1UserXTable, b1UserXSearchField.getText());
-    }//GEN-LAST:event_b1UserXSearchFieldKeyReleased
-
-    private void stockXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_stockXSearchFieldFocusLost
-        performSearch(stockXTable, stockXSearchField.getText());
-    }//GEN-LAST:event_stockXSearchFieldFocusLost
-
-    private void stockXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_stockXSearchFieldKeyReleased
-        performSearch(stockXTable, stockXSearchField.getText());
-    }//GEN-LAST:event_stockXSearchFieldKeyReleased
-
     private void stockInButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockInButtonActionPerformed
         stockImplementation.add(currentBodega);
 
@@ -2707,7 +4297,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b2DashboardButtonMouseExited
 
     private void b2DashboardButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2DashboardButtonActionPerformed
-        triggerB2Panel(b1DashboardPanel);
+        triggerB2Panel(b2DashboardPanel);
         triggerButtonMouseEntered(b2DashboardButton);
         triggerB2ChangeButton(b2DashboardButton);
 
@@ -2724,7 +4314,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b2StocksButtonMouseExited
 
     private void b2StocksButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2StocksButtonActionPerformed
-        triggerB2Panel(b1StocksPanel);
+        triggerB2Panel(b2StocksPanel);
         triggerButtonMouseEntered(b2StocksButton);
         triggerB2ChangeButton(b2StocksButton);
 
@@ -2741,7 +4331,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b2ReportsButtonMouseExited
 
     private void b2ReportsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2ReportsButtonActionPerformed
-        triggerB2Panel(b1ReportsPanel);
+        triggerB2Panel(b2ReportsPanel);
         triggerButtonMouseEntered(b2ReportsButton);
         triggerB2ChangeButton(b2ReportsButton);
 
@@ -2758,7 +4348,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b2SettingsButtonMouseExited
 
     private void b2SettingsButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b2SettingsButtonActionPerformed
-        triggerB2Panel(b1SettingsPanel);
+        triggerB2Panel(b2SettingsPanel);
         triggerButtonMouseEntered(b2SettingsButton);
         triggerB2ChangeButton(b2SettingsButton);
 
@@ -2798,6 +4388,264 @@ public class MainFrame extends javax.swing.JFrame {
         b1GenerateStockOutReport();
     }//GEN-LAST:event_reportsStockOutGenerateButtonActionPerformed
 
+    private void reportsSalesGenerateButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportsSalesGenerateButton1ActionPerformed
+        b2GenerateSalesReport();
+    }//GEN-LAST:event_reportsSalesGenerateButton1ActionPerformed
+
+    private void reportsStocksGenerateButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportsStocksGenerateButton1ActionPerformed
+        b2GenerateStocksReport();
+    }//GEN-LAST:event_reportsStocksGenerateButton1ActionPerformed
+
+    private void reportsStockOutGenerateButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_reportsStockOutGenerateButton1ActionPerformed
+        b2GenerateStockOutReport();
+    }//GEN-LAST:event_reportsStockOutGenerateButton1ActionPerformed
+
+    private void stockOutButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockOutButton3ActionPerformed
+        stockImplementation.withdrawal(currentBodega);
+
+        // Reload table.
+        b2SetStockTable();
+    }//GEN-LAST:event_stockOutButton3ActionPerformed
+
+    private void stockAdjustButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockAdjustButton3ActionPerformed
+        stockImplementation.update(stockXTable1);
+
+        // Reload table.
+        b2SetStockTable();
+    }//GEN-LAST:event_stockAdjustButton3ActionPerformed
+
+    private void stockInButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockInButton3ActionPerformed
+        stockImplementation.add(currentBodega);
+
+        // Reload table.
+        b2SetStockTable();
+    }//GEN-LAST:event_stockInButton3ActionPerformed
+
+    private void stockRefreshButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockRefreshButton1ActionPerformed
+        b2SetStockTable();
+    }//GEN-LAST:event_stockRefreshButton1ActionPerformed
+
+    private void b1ItemRemoveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemRemoveButton1ActionPerformed
+        itemImplementation.remove(b1ItemXTable1);
+
+        // Reload table.
+        b2SetItemTable();
+    }//GEN-LAST:event_b1ItemRemoveButton1ActionPerformed
+
+    private void b1ItemUpdateButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemUpdateButton1ActionPerformed
+        itemImplementation.update(b1ItemXTable1);
+
+        // Reload table.
+        b2SetItemTable();
+    }//GEN-LAST:event_b1ItemUpdateButton1ActionPerformed
+
+    private void b1ItemAddButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemAddButton1ActionPerformed
+        itemImplementation.add();
+
+        // Reload table.
+        b2SetItemTable();
+    }//GEN-LAST:event_b1ItemAddButton1ActionPerformed
+
+    private void b1ItemRefreshButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemRefreshButton1ActionPerformed
+        b2SetItemTable();
+    }//GEN-LAST:event_b1ItemRefreshButton1ActionPerformed
+
+    private void b1SupplierRemoveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SupplierRemoveButton1ActionPerformed
+        supplierImplementation.remove(b1SupplierXTable1);
+
+        // Reload table.
+        b2SetSupplierTable();
+    }//GEN-LAST:event_b1SupplierRemoveButton1ActionPerformed
+
+    private void b1SupplierUpdateButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SupplierUpdateButton1ActionPerformed
+        supplierImplementation.update(b1SupplierXTable1);
+
+        // Reload table.
+        b2SetSupplierTable();
+    }//GEN-LAST:event_b1SupplierUpdateButton1ActionPerformed
+
+    private void b1SuppliderAddButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SuppliderAddButton1ActionPerformed
+        supplierImplementation.add();
+
+        // Reload table.
+        b2SetSupplierTable();
+    }//GEN-LAST:event_b1SuppliderAddButton1ActionPerformed
+
+    private void b1SupplierRefreshButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1SupplierRefreshButton1ActionPerformed
+        b2SetSupplierTable();
+    }//GEN-LAST:event_b1SupplierRefreshButton1ActionPerformed
+
+    private void b1PersonnelRemoveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1PersonnelRemoveButton1ActionPerformed
+        personnelImplementation.remove(b1PersonnelXTable1);
+
+        // Reload table.
+        b2SetPersonnelTable();
+    }//GEN-LAST:event_b1PersonnelRemoveButton1ActionPerformed
+
+    private void b1PersonnelUpdateButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1PersonnelUpdateButton1ActionPerformed
+        personnelImplementation.update(b1PersonnelXTable1);
+
+        // Reload table.
+        b2SetPersonnelTable();
+    }//GEN-LAST:event_b1PersonnelUpdateButton1ActionPerformed
+
+    private void b1PersonnelAddButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1PersonnelAddButton1ActionPerformed
+        personnelImplementation.add();
+
+        // Reload table.
+        b2SetPersonnelTable();
+    }//GEN-LAST:event_b1PersonnelAddButton1ActionPerformed
+
+    private void b1PersonnelRefreshButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1PersonnelRefreshButton1ActionPerformed
+        b2SetPersonnelTable();
+    }//GEN-LAST:event_b1PersonnelRefreshButton1ActionPerformed
+
+    private void b1UnitRemoveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UnitRemoveButton1ActionPerformed
+        unitImplementation.remove(b1UnitXTable1);
+
+        // Reload table.
+        b2SetUnitTable();
+    }//GEN-LAST:event_b1UnitRemoveButton1ActionPerformed
+
+    private void b1UnitUpdateButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UnitUpdateButton1ActionPerformed
+        unitImplementation.update(b1UnitXTable1);
+
+        // Reload table.
+        b2SetUnitTable();
+    }//GEN-LAST:event_b1UnitUpdateButton1ActionPerformed
+
+    private void b1UnitAddButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UnitAddButton1ActionPerformed
+        unitImplementation.add();
+
+        // Reload table.
+        b2SetUnitTable();
+    }//GEN-LAST:event_b1UnitAddButton1ActionPerformed
+
+    private void b1UnitRefreshButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UnitRefreshButton1ActionPerformed
+        b2SetUnitTable();
+    }//GEN-LAST:event_b1UnitRefreshButton1ActionPerformed
+
+    private void b1UserRemoveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UserRemoveButton1ActionPerformed
+        userImplementation.remove(b1UserXTable1);
+
+        // Reload table.
+        b2SetUserTable();
+    }//GEN-LAST:event_b1UserRemoveButton1ActionPerformed
+
+    private void b1UserUpdateButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UserUpdateButton1ActionPerformed
+        userImplementation.update(b1UserXTable1);
+
+        // Reload table.
+        b2SetUserTable();
+    }//GEN-LAST:event_b1UserUpdateButton1ActionPerformed
+
+    private void b1UserAddButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UserAddButton1ActionPerformed
+        userImplementation.add();
+
+        // Reload table.
+        b2SetUserTable();
+    }//GEN-LAST:event_b1UserAddButton1ActionPerformed
+
+    private void b1UserRefreshButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1UserRefreshButton1ActionPerformed
+        b2SetUserTable();
+    }//GEN-LAST:event_b1UserRefreshButton1ActionPerformed
+
+    private void stockXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_stockXSearchFieldFocusLost
+        performSearch(stockXTable, stockXSearchField.getText());
+    }//GEN-LAST:event_stockXSearchFieldFocusLost
+
+    private void stockXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_stockXSearchFieldKeyReleased
+        performSearch(stockXTable, stockXSearchField.getText());
+    }//GEN-LAST:event_stockXSearchFieldKeyReleased
+
+    private void stockXSearchField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_stockXSearchField1FocusLost
+        performSearch(stockXTable1, stockXSearchField1.getText());
+    }//GEN-LAST:event_stockXSearchField1FocusLost
+
+    private void stockXSearchField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_stockXSearchField1KeyReleased
+        performSearch(stockXTable1, stockXSearchField1.getText());
+    }//GEN-LAST:event_stockXSearchField1KeyReleased
+
+    private void b1ItemXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1ItemXSearchFieldFocusLost
+        performSearch(b1ItemXTable, b1ItemXSearchField.getText());
+    }//GEN-LAST:event_b1ItemXSearchFieldFocusLost
+
+    private void b1ItemXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1ItemXSearchFieldKeyReleased
+        performSearch(b1ItemXTable, b1ItemXSearchField.getText());
+    }//GEN-LAST:event_b1ItemXSearchFieldKeyReleased
+
+    private void b1SupplierXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1SupplierXSearchFieldFocusLost
+        performSearch(b1SupplierXTable, b1SupplierXSearchField.getText());
+    }//GEN-LAST:event_b1SupplierXSearchFieldFocusLost
+
+    private void b1SupplierXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1SupplierXSearchFieldKeyReleased
+        performSearch(b1SupplierXTable, b1SupplierXSearchField.getText());
+    }//GEN-LAST:event_b1SupplierXSearchFieldKeyReleased
+
+    private void b1PersonnelXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1PersonnelXSearchFieldFocusLost
+        performSearch(b1PersonnelXTable, b1PersonnelXSearchField.getText());
+    }//GEN-LAST:event_b1PersonnelXSearchFieldFocusLost
+
+    private void b1PersonnelXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1PersonnelXSearchFieldKeyReleased
+        performSearch(b1PersonnelXTable, b1PersonnelXSearchField.getText());
+    }//GEN-LAST:event_b1PersonnelXSearchFieldKeyReleased
+
+    private void b1UnitXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1UnitXSearchFieldFocusLost
+        performSearch(b1UnitXTable, b1UnitXSearchField.getText());
+    }//GEN-LAST:event_b1UnitXSearchFieldFocusLost
+
+    private void b1UnitXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1UnitXSearchFieldKeyReleased
+        performSearch(b1UnitXTable, b1UnitXSearchField.getText());
+    }//GEN-LAST:event_b1UnitXSearchFieldKeyReleased
+
+    private void b1UserXSearchFieldFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1UserXSearchFieldFocusLost
+        performSearch(b1UserXTable, b1UserXSearchField.getText());
+    }//GEN-LAST:event_b1UserXSearchFieldFocusLost
+
+    private void b1UserXSearchFieldKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1UserXSearchFieldKeyReleased
+        performSearch(b1UserXTable, b1UserXSearchField.getText());
+    }//GEN-LAST:event_b1UserXSearchFieldKeyReleased
+
+    private void b1ItemXSearchField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1ItemXSearchField1FocusLost
+        performSearch(b1ItemXTable1, b1ItemXSearchField1.getText());
+    }//GEN-LAST:event_b1ItemXSearchField1FocusLost
+
+    private void b1ItemXSearchField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1ItemXSearchField1KeyReleased
+        performSearch(b1ItemXTable1, b1ItemXSearchField1.getText());
+    }//GEN-LAST:event_b1ItemXSearchField1KeyReleased
+
+    private void b1SupplierXSearchField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1SupplierXSearchField1FocusLost
+        performSearch(b1SupplierXTable1, b1SupplierXSearchField1.getText());
+    }//GEN-LAST:event_b1SupplierXSearchField1FocusLost
+
+    private void b1SupplierXSearchField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1SupplierXSearchField1KeyReleased
+        performSearch(b1SupplierXTable1, b1SupplierXSearchField1.getText());
+    }//GEN-LAST:event_b1SupplierXSearchField1KeyReleased
+
+    private void b1PersonnelXSearchField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1PersonnelXSearchField1FocusLost
+        performSearch(b1PersonnelXTable1, b1PersonnelXSearchField1.getText());
+    }//GEN-LAST:event_b1PersonnelXSearchField1FocusLost
+
+    private void b1PersonnelXSearchField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1PersonnelXSearchField1KeyReleased
+        performSearch(b1PersonnelXTable1, b1PersonnelXSearchField1.getText());
+    }//GEN-LAST:event_b1PersonnelXSearchField1KeyReleased
+
+    private void b1UnitXSearchField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1UnitXSearchField1FocusLost
+        performSearch(b1UnitXTable1, b1UnitXSearchField1.getText());
+    }//GEN-LAST:event_b1UnitXSearchField1FocusLost
+
+    private void b1UnitXSearchField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1UnitXSearchField1KeyReleased
+        performSearch(b1UnitXTable1, b1UnitXSearchField1.getText());
+    }//GEN-LAST:event_b1UnitXSearchField1KeyReleased
+
+    private void b1UserXSearchField1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_b1UserXSearchField1FocusLost
+        performSearch(b1UserXTable1, b1UserXSearchField1.getText());
+    }//GEN-LAST:event_b1UserXSearchField1FocusLost
+
+    private void b1UserXSearchField1KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_b1UserXSearchField1KeyReleased
+        performSearch(b1UserXTable1, b1UserXSearchField1.getText());
+    }//GEN-LAST:event_b1UserXSearchField1KeyReleased
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel b1CenterPanel;
     private javax.swing.JLabel b1CurrentUserGroupLabel;
@@ -2811,84 +4659,144 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JButton b1DashboardButton;
     private javax.swing.JPanel b1DashboardPanel;
     private javax.swing.JButton b1ItemAddButton;
+    private javax.swing.JButton b1ItemAddButton1;
     private javax.swing.JPanel b1ItemCenterPanel;
+    private javax.swing.JPanel b1ItemCenterPanel1;
     private javax.swing.JPanel b1ItemPanel;
+    private javax.swing.JPanel b1ItemPanel1;
     private javax.swing.JButton b1ItemRefreshButton;
+    private javax.swing.JButton b1ItemRefreshButton1;
     private javax.swing.JButton b1ItemRemoveButton;
+    private javax.swing.JButton b1ItemRemoveButton1;
     private javax.swing.JScrollPane b1ItemScrollPane;
+    private javax.swing.JScrollPane b1ItemScrollPane1;
     private javax.swing.JPanel b1ItemTopPanel;
+    private javax.swing.JPanel b1ItemTopPanel1;
     private javax.swing.JButton b1ItemUpdateButton;
+    private javax.swing.JButton b1ItemUpdateButton1;
     private org.jdesktop.swingx.JXSearchField b1ItemXSearchField;
+    private org.jdesktop.swingx.JXSearchField b1ItemXSearchField1;
     private org.jdesktop.swingx.JXTable b1ItemXTable;
+    private org.jdesktop.swingx.JXTable b1ItemXTable1;
     private javax.swing.JPanel b1LeftInnerPanel;
     private javax.swing.JPanel b1LeftPanel;
     private javax.swing.JScrollPane b1LeftPanelScrollPane;
     private javax.swing.JButton b1PersonnelAddButton;
+    private javax.swing.JButton b1PersonnelAddButton1;
     private javax.swing.JPanel b1PersonnelCenterPanel;
+    private javax.swing.JPanel b1PersonnelCenterPanel1;
     private javax.swing.JPanel b1PersonnelPanel;
+    private javax.swing.JPanel b1PersonnelPanel1;
     private javax.swing.JButton b1PersonnelRefreshButton;
+    private javax.swing.JButton b1PersonnelRefreshButton1;
     private javax.swing.JButton b1PersonnelRemoveButton;
+    private javax.swing.JButton b1PersonnelRemoveButton1;
     private javax.swing.JScrollPane b1PersonnelScrollPane;
+    private javax.swing.JScrollPane b1PersonnelScrollPane1;
     private javax.swing.JPanel b1PersonnelTopPanel;
+    private javax.swing.JPanel b1PersonnelTopPanel1;
     private javax.swing.JButton b1PersonnelUpdateButton;
+    private javax.swing.JButton b1PersonnelUpdateButton1;
     private org.jdesktop.swingx.JXSearchField b1PersonnelXSearchField;
+    private org.jdesktop.swingx.JXSearchField b1PersonnelXSearchField1;
     private org.jdesktop.swingx.JXTable b1PersonnelXTable;
+    private org.jdesktop.swingx.JXTable b1PersonnelXTable1;
     private javax.swing.JButton b1ReportsButton;
     private javax.swing.JPanel b1ReportsPanel;
     private javax.swing.JPanel b1RightPanel;
     private javax.swing.JScrollPane b1RightPanelScrollPane;
     private javax.swing.JPanel b1SettingsBottomPanel;
+    private javax.swing.JPanel b1SettingsBottomPanel1;
     private javax.swing.JButton b1SettingsButton;
     private javax.swing.JPanel b1SettingsCenterPanel;
+    private javax.swing.JPanel b1SettingsCenterPanel1;
     private javax.swing.JPanel b1SettingsPanel;
     private javax.swing.JTabbedPane b1SettingsTabbedPane;
+    private javax.swing.JTabbedPane b1SettingsTabbedPane1;
     private javax.swing.JPanel b1SettingsTopPanel;
+    private javax.swing.JPanel b1SettingsTopPanel1;
     private javax.swing.JButton b1StocksButton;
     private javax.swing.JPanel b1StocksPanel;
+    private javax.swing.JPanel b1StocksPanel1;
+    private javax.swing.JPanel b1StocksPanel2;
     private javax.swing.JScrollPane b1SuplierScrollPane;
+    private javax.swing.JScrollPane b1SuplierScrollPane1;
     private javax.swing.JButton b1SuppliderAddButton;
+    private javax.swing.JButton b1SuppliderAddButton1;
     private javax.swing.JPanel b1SupplierCenterPanel;
+    private javax.swing.JPanel b1SupplierCenterPanel1;
     private javax.swing.JPanel b1SupplierPanel;
+    private javax.swing.JPanel b1SupplierPanel1;
     private javax.swing.JButton b1SupplierRefreshButton;
+    private javax.swing.JButton b1SupplierRefreshButton1;
     private javax.swing.JButton b1SupplierRemoveButton;
+    private javax.swing.JButton b1SupplierRemoveButton1;
     private javax.swing.JPanel b1SupplierTopPanel;
+    private javax.swing.JPanel b1SupplierTopPanel1;
     private javax.swing.JButton b1SupplierUpdateButton;
+    private javax.swing.JButton b1SupplierUpdateButton1;
     private org.jdesktop.swingx.JXSearchField b1SupplierXSearchField;
+    private org.jdesktop.swingx.JXSearchField b1SupplierXSearchField1;
     private org.jdesktop.swingx.JXTable b1SupplierXTable;
+    private org.jdesktop.swingx.JXTable b1SupplierXTable1;
     private javax.swing.JPanel b1TargetPanel;
     private javax.swing.JButton b1UnitAddButton;
+    private javax.swing.JButton b1UnitAddButton1;
     private javax.swing.JPanel b1UnitCenterPanel;
+    private javax.swing.JPanel b1UnitCenterPanel1;
     private javax.swing.JPanel b1UnitPanel;
+    private javax.swing.JPanel b1UnitPanel1;
     private javax.swing.JButton b1UnitRefreshButton;
+    private javax.swing.JButton b1UnitRefreshButton1;
     private javax.swing.JButton b1UnitRemoveButton;
+    private javax.swing.JButton b1UnitRemoveButton1;
     private javax.swing.JScrollPane b1UnitScrollPane;
+    private javax.swing.JScrollPane b1UnitScrollPane1;
     private javax.swing.JPanel b1UnitTopPanel;
+    private javax.swing.JPanel b1UnitTopPanel1;
     private javax.swing.JButton b1UnitUpdateButton;
+    private javax.swing.JButton b1UnitUpdateButton1;
     private org.jdesktop.swingx.JXSearchField b1UnitXSearchField;
+    private org.jdesktop.swingx.JXSearchField b1UnitXSearchField1;
     private org.jdesktop.swingx.JXTable b1UnitXTable;
+    private org.jdesktop.swingx.JXTable b1UnitXTable1;
     private javax.swing.JButton b1UserAddButton;
+    private javax.swing.JButton b1UserAddButton1;
     private javax.swing.JPanel b1UserCenterPanel;
+    private javax.swing.JPanel b1UserCenterPanel1;
     private javax.swing.JPanel b1UserPanel;
     private javax.swing.JButton b1UserRefreshButton;
+    private javax.swing.JButton b1UserRefreshButton1;
     private javax.swing.JButton b1UserRemoveButton;
+    private javax.swing.JButton b1UserRemoveButton1;
     private javax.swing.JScrollPane b1UserScrollPane;
+    private javax.swing.JScrollPane b1UserScrollPane1;
     private javax.swing.JPanel b1UserTopPanel;
+    private javax.swing.JPanel b1UserTopPanel1;
     private javax.swing.JButton b1UserUpdateButton;
+    private javax.swing.JButton b1UserUpdateButton1;
     private org.jdesktop.swingx.JXSearchField b1UserXSearchField;
+    private org.jdesktop.swingx.JXSearchField b1UserXSearchField1;
     private org.jdesktop.swingx.JXTable b1UserXTable;
+    private org.jdesktop.swingx.JXTable b1UserXTable1;
     private javax.swing.JPanel b1UsersPanel;
+    private javax.swing.JPanel b1UsersPanel1;
     private javax.swing.JPanel b2CenterPanel;
     private javax.swing.JLabel b2CurrentUserGroupLabel;
     private javax.swing.JLabel b2CurrentUserLabel;
     private javax.swing.JButton b2DashboardButton;
+    private javax.swing.JPanel b2DashboardPanel;
     private javax.swing.JPanel b2LeftInnerPanel;
     private javax.swing.JPanel b2LeftPanel;
     private javax.swing.JScrollPane b2LeftPanelScrollPane;
     private javax.swing.JButton b2ReportsButton;
+    private javax.swing.JPanel b2ReportsPanel;
     private javax.swing.JPanel b2RightPanel;
     private javax.swing.JScrollPane b2RightPanelScrollPane;
     private javax.swing.JButton b2SettingsButton;
+    private javax.swing.JPanel b2SettingsPanel;
     private javax.swing.JButton b2StocksButton;
+    private javax.swing.JPanel b2StocksPanel;
     private javax.swing.JPanel b2TargetPanel;
     private javax.swing.JPanel b2UserPanel;
     private javax.swing.ButtonGroup bodega1ButtonGroup;
@@ -2896,12 +4804,19 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel bottomPanel;
     private javax.swing.JPanel centerPanel;
     private javax.swing.JScrollPane dashboardAlmostOutOfStockScrollPane;
+    private javax.swing.JScrollPane dashboardAlmostOutOfStockScrollPane1;
     private org.jdesktop.swingx.JXTable dashboardAlmostOutOfStockXTable;
+    private org.jdesktop.swingx.JXTable dashboardAlmostOutOfStockXTable1;
     private javax.swing.JPanel dashboardBottomPanel;
+    private javax.swing.JPanel dashboardBottomPanel1;
     private javax.swing.JPanel dashboardCenterPanel;
+    private javax.swing.JPanel dashboardCenterPanel1;
     private javax.swing.JScrollPane dashboardHotScrollPane;
+    private javax.swing.JScrollPane dashboardHotScrollPane1;
     private org.jdesktop.swingx.JXTable dashboardHotXTable;
+    private org.jdesktop.swingx.JXTable dashboardHotXTable1;
     private javax.swing.JPanel dashboardTopPanel;
+    private javax.swing.JPanel dashboardTopPanel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -2914,68 +4829,150 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel20;
+    private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
+    private javax.swing.JLabel jLabel23;
+    private javax.swing.JLabel jLabel24;
+    private javax.swing.JLabel jLabel25;
+    private javax.swing.JLabel jLabel26;
+    private javax.swing.JLabel jLabel27;
+    private javax.swing.JLabel jLabel28;
+    private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel30;
+    private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
+    private javax.swing.JPanel jPanel10;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
     private javax.swing.JPanel jPanel4;
     private javax.swing.JPanel jPanel5;
+    private javax.swing.JPanel jPanel6;
+    private javax.swing.JPanel jPanel7;
+    private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
     private javax.swing.JPanel mainPanel;
     private javax.swing.JPanel reportsBottomPanel;
+    private javax.swing.JPanel reportsBottomPanel1;
     private javax.swing.JPanel reportsCenterPanel;
+    private javax.swing.JPanel reportsCenterPanel1;
     private javax.swing.JPanel reportsSalesCenterPanel;
+    private javax.swing.JPanel reportsSalesCenterPanel1;
     private com.toedter.calendar.JDateChooser reportsSalesFromDateChooser;
+    private com.toedter.calendar.JDateChooser reportsSalesFromDateChooser1;
     private javax.swing.JLabel reportsSalesFromLabel;
+    private javax.swing.JLabel reportsSalesFromLabel1;
     private javax.swing.JButton reportsSalesGenerateButton;
+    private javax.swing.JButton reportsSalesGenerateButton1;
     private javax.swing.JPanel reportsSalesPanel;
+    private javax.swing.JPanel reportsSalesPanel1;
     private javax.swing.JScrollPane reportsSalesScrollPane;
+    private javax.swing.JScrollPane reportsSalesScrollPane1;
     private com.toedter.calendar.JDateChooser reportsSalesToDateChooser;
+    private com.toedter.calendar.JDateChooser reportsSalesToDateChooser1;
     private javax.swing.JLabel reportsSalesToLabel;
+    private javax.swing.JLabel reportsSalesToLabel1;
     private javax.swing.JPanel reportsSalesTopPanel;
+    private javax.swing.JPanel reportsSalesTopPanel1;
     private org.jdesktop.swingx.JXTable reportsSalesXTable;
+    private org.jdesktop.swingx.JXTable reportsSalesXTable1;
     private javax.swing.JPanel reportsStockOutCenterPanel;
+    private javax.swing.JPanel reportsStockOutCenterPanel1;
     private com.toedter.calendar.JDateChooser reportsStockOutFromDateChooser;
+    private com.toedter.calendar.JDateChooser reportsStockOutFromDateChooser1;
     private javax.swing.JLabel reportsStockOutFromLabel;
+    private javax.swing.JLabel reportsStockOutFromLabel1;
     private javax.swing.JButton reportsStockOutGenerateButton;
+    private javax.swing.JButton reportsStockOutGenerateButton1;
     private javax.swing.JPanel reportsStockOutPanel;
+    private javax.swing.JPanel reportsStockOutPanel1;
     private javax.swing.JScrollPane reportsStockOutScrollPane;
+    private javax.swing.JScrollPane reportsStockOutScrollPane1;
     private com.toedter.calendar.JDateChooser reportsStockOutToDateChooser;
+    private com.toedter.calendar.JDateChooser reportsStockOutToDateChooser1;
     private javax.swing.JLabel reportsStockOutToLabel;
+    private javax.swing.JLabel reportsStockOutToLabel1;
     private javax.swing.JPanel reportsStockOutTopPanel;
+    private javax.swing.JPanel reportsStockOutTopPanel1;
     private org.jdesktop.swingx.JXTable reportsStockOutXTable;
+    private org.jdesktop.swingx.JXTable reportsStockOutXTable1;
     private javax.swing.JPanel reportsStocksCenterPanel;
+    private javax.swing.JPanel reportsStocksCenterPanel1;
     private com.toedter.calendar.JDateChooser reportsStocksFromDateChooser;
+    private com.toedter.calendar.JDateChooser reportsStocksFromDateChooser1;
     private javax.swing.JLabel reportsStocksFromLabel;
+    private javax.swing.JLabel reportsStocksFromLabel1;
     private javax.swing.JButton reportsStocksGenerateButton;
+    private javax.swing.JButton reportsStocksGenerateButton1;
     private javax.swing.JPanel reportsStocksPanel;
+    private javax.swing.JPanel reportsStocksPanel1;
     private javax.swing.JScrollPane reportsStocksScrollPane;
+    private javax.swing.JScrollPane reportsStocksScrollPane1;
     private com.toedter.calendar.JDateChooser reportsStocksToDateChooser;
+    private com.toedter.calendar.JDateChooser reportsStocksToDateChooser1;
     private javax.swing.JLabel reportsStocksToLabel;
+    private javax.swing.JLabel reportsStocksToLabel1;
     private javax.swing.JPanel reportsStocksTopPanel;
+    private javax.swing.JPanel reportsStocksTopPanel1;
     private org.jdesktop.swingx.JXTable reportsStocksXTable;
+    private org.jdesktop.swingx.JXTable reportsStocksXTable1;
     private javax.swing.JTabbedPane reportsTabbedPane;
+    private javax.swing.JTabbedPane reportsTabbedPane1;
     private javax.swing.JPanel reportsTopPanel;
+    private javax.swing.JPanel reportsTopPanel1;
     private javax.swing.JComboBox salesStockComboBox;
+    private javax.swing.JComboBox salesStockComboBox1;
     private javax.swing.JLabel salesStockLabel;
+    private javax.swing.JLabel salesStockLabel1;
     private javax.swing.JButton stockAdjustButton;
+    private javax.swing.JButton stockAdjustButton1;
+    private javax.swing.JButton stockAdjustButton2;
+    private javax.swing.JButton stockAdjustButton3;
     private javax.swing.JButton stockInButton;
+    private javax.swing.JButton stockInButton1;
+    private javax.swing.JButton stockInButton2;
+    private javax.swing.JButton stockInButton3;
     private javax.swing.JButton stockOutButton;
+    private javax.swing.JButton stockOutButton1;
+    private javax.swing.JButton stockOutButton2;
+    private javax.swing.JButton stockOutButton3;
     private javax.swing.JComboBox stockOutStockComboBox;
+    private javax.swing.JComboBox stockOutStockComboBox1;
     private javax.swing.JLabel stockOutStockLabel;
+    private javax.swing.JLabel stockOutStockLabel1;
     private javax.swing.JButton stockRefreshButton;
+    private javax.swing.JButton stockRefreshButton1;
     private javax.swing.JScrollPane stockScrollPane;
+    private javax.swing.JScrollPane stockScrollPane1;
     private org.jdesktop.swingx.JXSearchField stockXSearchField;
+    private org.jdesktop.swingx.JXSearchField stockXSearchField1;
     private org.jdesktop.swingx.JXTable stockXTable;
+    private org.jdesktop.swingx.JXTable stockXTable1;
     private javax.swing.JPanel stocksBottomPanel;
+    private javax.swing.JPanel stocksBottomPanel1;
     private javax.swing.JPanel stocksCenterPanel;
+    private javax.swing.JPanel stocksCenterPanel1;
+    private javax.swing.JPanel stocksCenterPanel2;
+    private javax.swing.JPanel stocksCenterPanel3;
     private javax.swing.JComboBox stocksStockComboBox;
+    private javax.swing.JComboBox stocksStockComboBox1;
     private javax.swing.JLabel stocksStockLabel;
+    private javax.swing.JLabel stocksStockLabel1;
     private javax.swing.JPanel stocksTopPanel;
+    private javax.swing.JPanel stocksTopPanel1;
+    private javax.swing.JPanel stocksTopPanel2;
+    private javax.swing.JPanel stocksTopPanel3;
     private javax.swing.JLabel storeLabel;
     private javax.swing.JLabel titleLabel;
     private javax.swing.JPanel topPanel;
@@ -3001,6 +4998,8 @@ public class MainFrame extends javax.swing.JFrame {
         bigDecimalRenderer = new BigDecimalRenderer(new DecimalFormat("#,##0.00"));
 
         // Set to default view.
+        w2B2RadioButtonActionPerformed(null);
+        b2DashboardButtonActionPerformed(null);
         w1B1RadioButtonActionPerformed(null);
         b1DashboardButtonActionPerformed(null);
 
@@ -3011,18 +5010,30 @@ public class MainFrame extends javax.swing.JFrame {
         reportsStocksToDateChooser.setDate(DateUtil.current());
         reportsStockOutFromDateChooser.setDate(DateUtil.current());
         reportsStockOutToDateChooser.setDate(DateUtil.current());
+        reportsSalesFromDateChooser1.setDate(DateUtil.current());
+        reportsSalesToDateChooser1.setDate(DateUtil.current());
+        reportsStocksFromDateChooser1.setDate(DateUtil.current());
+        reportsStocksToDateChooser1.setDate(DateUtil.current());
+        reportsStockOutFromDateChooser1.setDate(DateUtil.current());
+        reportsStockOutToDateChooser1.setDate(DateUtil.current());
 
         // Set combo box.
         salesStockComboBox.setModel(stockImplementation.getComboBoxModel(BODEGA_1));
         stocksStockComboBox.setModel(stockImplementation.getComboBoxModel(BODEGA_1));
         stockOutStockComboBox.setModel(stockImplementation.getComboBoxModel(BODEGA_1));
+        salesStockComboBox1.setModel(stockImplementation.getComboBoxModel(BODEGA_2));
+        stocksStockComboBox1.setModel(stockImplementation.getComboBoxModel(BODEGA_2));
+        stockOutStockComboBox1.setModel(stockImplementation.getComboBoxModel(BODEGA_2));
 
-        // Generate BODEGA 1 default reports.
+        // Generate default reports.
         b1GenerateSalesReport();
         b1GenerateStocksReport();
         b1GenerateStockOutReport();
+        b2GenerateSalesReport();
+        b2GenerateStocksReport();
+        b2GenerateStockOutReport();
 
-        // Set BODEGA 1 tables.
+        // Set tables.
         b1SetUnitTable();
         b1SetSupplierTable();
         b1SetPersonnelTable();
@@ -3031,6 +5042,14 @@ public class MainFrame extends javax.swing.JFrame {
         b1SetStockTable();
         b1SetDashboardHotTable();
         b1SetDashboardAlmostOutOfStockTable();
+        b2SetUnitTable();
+        b2SetSupplierTable();
+        b2SetPersonnelTable();
+        b2SetUserTable();
+        b2SetItemTable();
+        b2SetStockTable();
+        b2SetDashboardHotTable();
+        b2SetDashboardAlmostOutOfStockTable();
 
         b1UnitXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         b1UnitXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
@@ -3048,6 +5067,22 @@ public class MainFrame extends javax.swing.JFrame {
         dashboardHotXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
         dashboardAlmostOutOfStockXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         dashboardAlmostOutOfStockXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1UnitXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1UnitXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1SupplierXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1SupplierXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1PersonnelXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1PersonnelXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1UserXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1UserXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        b1ItemXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1ItemXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        stockXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        stockXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        dashboardHotXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        dashboardHotXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        dashboardAlmostOutOfStockXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        dashboardAlmostOutOfStockXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
     }
 
     public void setCurrentUserInfo() {
@@ -3131,6 +5166,18 @@ public class MainFrame extends javax.swing.JFrame {
         b1UnitXTable.getColumnModel().getColumn(3).setPreferredWidth(200);
     }
 
+    private void b2SetUnitTable() {
+        b1UnitXTable1.setModel(unitImplementation.getTableModel());
+        b1UnitXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1UnitXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+
+        // Set column width.
+        b1UnitXTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
+        b1UnitXTable1.getColumnModel().getColumn(1).setPreferredWidth(400);
+        b1UnitXTable1.getColumnModel().getColumn(2).setPreferredWidth(150);
+        b1UnitXTable1.getColumnModel().getColumn(3).setPreferredWidth(200);
+    }
+
     private void b1SetSupplierTable() {
         b1SupplierXTable.setModel(supplierImplementation.getTableModel());
         b1SupplierXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -3144,6 +5191,19 @@ public class MainFrame extends javax.swing.JFrame {
         b1SupplierXTable.getColumnModel().getColumn(4).setPreferredWidth(200);
     }
 
+    private void b2SetSupplierTable() {
+        b1SupplierXTable1.setModel(supplierImplementation.getTableModel());
+        b1SupplierXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1SupplierXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+
+        // Set column width.
+        b1SupplierXTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
+        b1SupplierXTable1.getColumnModel().getColumn(1).setPreferredWidth(150);
+        b1SupplierXTable1.getColumnModel().getColumn(2).setPreferredWidth(300);
+        b1SupplierXTable1.getColumnModel().getColumn(3).setPreferredWidth(150);
+        b1SupplierXTable1.getColumnModel().getColumn(4).setPreferredWidth(200);
+    }
+
     private void b1SetPersonnelTable() {
         b1PersonnelXTable.setModel(personnelImplementation.getTableModel());
         b1PersonnelXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -3153,6 +5213,17 @@ public class MainFrame extends javax.swing.JFrame {
         b1PersonnelXTable.getColumnModel().getColumn(0).setPreferredWidth(500);
         b1PersonnelXTable.getColumnModel().getColumn(1).setPreferredWidth(150);
         b1PersonnelXTable.getColumnModel().getColumn(2).setPreferredWidth(200);
+    }
+
+    private void b2SetPersonnelTable() {
+        b1PersonnelXTable1.setModel(personnelImplementation.getTableModel());
+        b1PersonnelXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1PersonnelXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+
+        // Set column width.
+        b1PersonnelXTable1.getColumnModel().getColumn(0).setPreferredWidth(500);
+        b1PersonnelXTable1.getColumnModel().getColumn(1).setPreferredWidth(150);
+        b1PersonnelXTable1.getColumnModel().getColumn(2).setPreferredWidth(200);
     }
 
     private void b1SetUserTable() {
@@ -3165,6 +5236,18 @@ public class MainFrame extends javax.swing.JFrame {
         b1UserXTable.getColumnModel().getColumn(1).setPreferredWidth(250);
         b1UserXTable.getColumnModel().getColumn(2).setPreferredWidth(150);
         b1UserXTable.getColumnModel().getColumn(3).setPreferredWidth(200);
+    }
+
+    private void b2SetUserTable() {
+        b1UserXTable1.setModel(userImplementation.getTableModel());
+        b1UserXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1UserXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+
+        // Set column width.
+        b1UserXTable1.getColumnModel().getColumn(0).setPreferredWidth(300);
+        b1UserXTable1.getColumnModel().getColumn(1).setPreferredWidth(250);
+        b1UserXTable1.getColumnModel().getColumn(2).setPreferredWidth(150);
+        b1UserXTable1.getColumnModel().getColumn(3).setPreferredWidth(200);
     }
 
     private void b1SetItemTable() {
@@ -3180,6 +5263,21 @@ public class MainFrame extends javax.swing.JFrame {
         b1ItemXTable.getColumnModel().getColumn(4).setPreferredWidth(200);
         b1ItemXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
         b1ItemXTable.getColumnModel().getColumn(6).setPreferredWidth(150);
+    }
+
+    private void b2SetItemTable() {
+        b1ItemXTable1.setModel(itemImplementation.getTableModel());
+        b1ItemXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        b1ItemXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+
+        // Set column width.
+        b1ItemXTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
+        b1ItemXTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
+        b1ItemXTable1.getColumnModel().getColumn(2).setPreferredWidth(150);
+        b1ItemXTable1.getColumnModel().getColumn(3).setPreferredWidth(50);
+        b1ItemXTable1.getColumnModel().getColumn(4).setPreferredWidth(200);
+        b1ItemXTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
+        b1ItemXTable1.getColumnModel().getColumn(6).setPreferredWidth(150);
     }
 
     private void b1SetStockTable() {
@@ -3198,6 +5296,24 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Set column renderer for decimals.
         stockXTable.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
+    }
+
+    private void b2SetStockTable() {
+        stockXTable1.setModel(stockImplementation.getTableModel(BODEGA_2));
+        stockXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        stockXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+
+        // Set column width.
+        stockXTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
+        stockXTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
+        stockXTable1.getColumnModel().getColumn(2).setPreferredWidth(250);
+        stockXTable1.getColumnModel().getColumn(3).setPreferredWidth(100);
+        stockXTable1.getColumnModel().getColumn(4).setPreferredWidth(100);
+        stockXTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
+        stockXTable1.getColumnModel().getColumn(6).setPreferredWidth(100);
+
+        // Set column renderer for decimals.
+        stockXTable1.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
     }
 
     private void b1SetDashboardHotTable() {
@@ -3219,6 +5335,25 @@ public class MainFrame extends javax.swing.JFrame {
         dashboardHotXTable.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
     }
 
+    private void b2SetDashboardHotTable() {
+        dashboardHotXTable1.setModel(dashboardImplementation.getHotTableModel(BODEGA_2));
+        dashboardHotXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        dashboardHotXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+
+        // Set column width.
+        dashboardHotXTable1.getColumnModel().getColumn(0).setPreferredWidth(200);
+        dashboardHotXTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
+        dashboardHotXTable1.getColumnModel().getColumn(2).setPreferredWidth(150);
+        dashboardHotXTable1.getColumnModel().getColumn(3).setPreferredWidth(150);
+        dashboardHotXTable1.getColumnModel().getColumn(4).setPreferredWidth(100);
+        dashboardHotXTable1.getColumnModel().getColumn(5).setPreferredWidth(150);
+
+        // Set column renderer for decimals.
+        dashboardHotXTable1.getColumnModel().getColumn(1).setCellRenderer(bigDecimalRenderer);
+        dashboardHotXTable1.getColumnModel().getColumn(2).setCellRenderer(bigDecimalRenderer);
+        dashboardHotXTable1.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
+    }
+
     private void b1SetDashboardAlmostOutOfStockTable() {
         dashboardAlmostOutOfStockXTable.setModel(dashboardImplementation.getAlmostOutOfStockTableModel(BODEGA_1));
         dashboardAlmostOutOfStockXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -3235,6 +5370,24 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Set column renderer for decimals.
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
+    }
+
+    private void b2SetDashboardAlmostOutOfStockTable() {
+        dashboardAlmostOutOfStockXTable1.setModel(dashboardImplementation.getAlmostOutOfStockTableModel(BODEGA_2));
+        dashboardAlmostOutOfStockXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        dashboardAlmostOutOfStockXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+
+        // Set column width.
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(1).setPreferredWidth(200);
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(2).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(3).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(4).setPreferredWidth(50);
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(6).setPreferredWidth(100);
+
+        // Set column renderer for decimals.
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
     }
 
     private void b1GenerateSalesReport() {
@@ -3260,6 +5413,29 @@ public class MainFrame extends javax.swing.JFrame {
         reportsSalesXTable.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
     }
 
+    private void b2GenerateSalesReport() {
+        Date from = reportsSalesFromDateChooser1.getDate(); 
+        Date to = reportsSalesToDateChooser1.getDate();
+        Integer stockId = (salesStockComboBox1.getSelectedIndex() < 1 ? 0 : ((Stock) salesStockComboBox1.getModel().getSelectedItem()).getId());
+
+        reportsSalesXTable1.setModel(reportsImplementation.getSalesReportTableModel(from, to, stockId, BODEGA_2));
+        reportsSalesXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        reportsSalesXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+
+        // Set column width.
+        reportsSalesXTable1.getColumnModel().getColumn(0).setPreferredWidth(200);
+        reportsSalesXTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
+        reportsSalesXTable1.getColumnModel().getColumn(2).setPreferredWidth(150);
+        reportsSalesXTable1.getColumnModel().getColumn(3).setPreferredWidth(150);
+        reportsSalesXTable1.getColumnModel().getColumn(4).setPreferredWidth(100);
+        reportsSalesXTable1.getColumnModel().getColumn(5).setPreferredWidth(150);
+
+        // Set column renderer for decimals.
+        reportsSalesXTable1.getColumnModel().getColumn(1).setCellRenderer(bigDecimalRenderer);
+        reportsSalesXTable1.getColumnModel().getColumn(2).setCellRenderer(bigDecimalRenderer);
+        reportsSalesXTable1.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
+    }
+
     private void b1GenerateStocksReport() {
         Date from = reportsStocksFromDateChooser.getDate();
         Date to = reportsStocksToDateChooser.getDate();
@@ -3282,6 +5458,28 @@ public class MainFrame extends javax.swing.JFrame {
         reportsStocksXTable.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
     }
 
+    private void b2GenerateStocksReport() {
+        Date from = reportsStocksFromDateChooser1.getDate();
+        Date to = reportsStocksToDateChooser1.getDate();
+        Integer stockId = (stocksStockComboBox1.getSelectedIndex() < 1 ? 0 : ((Stock) stocksStockComboBox1.getModel().getSelectedItem()).getId());
+
+        reportsStocksXTable1.setModel(reportsImplementation.getStocksReportTableModel(from, to, stockId, BODEGA_2));
+        reportsStocksXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        reportsStocksXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+
+        // Set column width.
+        reportsStocksXTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
+        reportsStocksXTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
+        reportsStocksXTable1.getColumnModel().getColumn(2).setPreferredWidth(100);
+        reportsStocksXTable1.getColumnModel().getColumn(3).setPreferredWidth(100);
+        reportsStocksXTable1.getColumnModel().getColumn(4).setPreferredWidth(50);
+        reportsStocksXTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
+        reportsStocksXTable1.getColumnModel().getColumn(6).setPreferredWidth(100);
+
+        // Set column renderer for decimals.
+        reportsStocksXTable1.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
+    }
+
     private void b1GenerateStockOutReport() {
         Date from = reportsStockOutFromDateChooser.getDate();
         Date to = reportsStockOutToDateChooser.getDate();
@@ -3300,5 +5498,25 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Set column renderer for decimals.
         reportsStockOutXTable.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
+    }
+
+    private void b2GenerateStockOutReport() {
+        Date from = reportsStockOutFromDateChooser1.getDate();
+        Date to = reportsStockOutToDateChooser1.getDate();
+        Integer stockId = (stockOutStockComboBox1.getSelectedIndex() < 1 ? 0 : ((Stock) stockOutStockComboBox1.getModel().getSelectedItem()).getId());
+
+        reportsStockOutXTable1.setModel(reportsImplementation.getStockOutReportTableModel(from, to, stockId, BODEGA_2));
+        reportsStockOutXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        reportsStockOutXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+
+        // Set column width.
+        reportsStockOutXTable1.getColumnModel().getColumn(0).setPreferredWidth(150);
+        reportsStockOutXTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
+        reportsStockOutXTable1.getColumnModel().getColumn(2).setPreferredWidth(250);
+        reportsStockOutXTable1.getColumnModel().getColumn(3).setPreferredWidth(50);
+        reportsStockOutXTable1.getColumnModel().getColumn(4).setPreferredWidth(100);
+
+        // Set column renderer for decimals.
+        reportsStockOutXTable1.getColumnModel().getColumn(3).setCellRenderer(bigDecimalRenderer);
     }
 }
