@@ -652,8 +652,7 @@
                       <Dimension value="[301, 200]"/>
                     </Property>
                     <Property name="rowHeight" type="int" value="20"/>
-                    <Property name="showHorizontalLines" type="boolean" value="false"/>
-                    <Property name="showVerticalLines" type="boolean" value="false"/>
+                    <Property name="showGrid" type="boolean" value="false"/>
                     <Property name="tableHeader" type="javax.swing.table.JTableHeader" editor="org.netbeans.modules.form.editors2.JTableHeaderEditor">
                       <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
                     </Property>
@@ -3277,6 +3276,9 @@
                         <Property name="selected" type="boolean" value="true"/>
                         <Property name="text" type="java.lang.String" value="BODEGA 1"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Hand Cursor"/>
+                        </Property>
                         <Property name="focusPainted" type="boolean" value="false"/>
                       </Properties>
                       <Events>
@@ -3296,6 +3298,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="BODEGA 2"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Hand Cursor"/>
+                        </Property>
                         <Property name="focusPainted" type="boolean" value="false"/>
                       </Properties>
                       <Events>
@@ -3723,6 +3728,9 @@
                         </Property>
                         <Property name="text" type="java.lang.String" value="BODEGA 1"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Hand Cursor"/>
+                        </Property>
                         <Property name="focusPainted" type="boolean" value="false"/>
                       </Properties>
                       <Events>
@@ -3743,6 +3751,9 @@
                         <Property name="selected" type="boolean" value="true"/>
                         <Property name="text" type="java.lang.String" value="BODEGA 2"/>
                         <Property name="contentAreaFilled" type="boolean" value="false"/>
+                        <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
+                          <Color id="Hand Cursor"/>
+                        </Property>
                         <Property name="focusPainted" type="boolean" value="false"/>
                       </Properties>
                       <Events>

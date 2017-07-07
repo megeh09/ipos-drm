@@ -578,8 +578,7 @@ public class MainFrame extends javax.swing.JFrame {
         stockXTable.setHorizontalScrollEnabled(true);
         stockXTable.setPreferredScrollableViewportSize(new java.awt.Dimension(301, 200));
         stockXTable.setRowHeight(20);
-        stockXTable.setShowHorizontalLines(false);
-        stockXTable.setShowVerticalLines(false);
+        stockXTable.setShowGrid(false);
         stockXTable.getTableHeader().setReorderingAllowed(false);
         stockScrollPane.setViewportView(stockXTable);
 
@@ -1022,7 +1021,7 @@ public class MainFrame extends javax.swing.JFrame {
             reportsCenterPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(reportsCenterPanelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(reportsTabbedPane, javax.swing.GroupLayout.PREFERRED_SIZE, 720, Short.MAX_VALUE)
+                .addComponent(reportsTabbedPane, javax.swing.GroupLayout.DEFAULT_SIZE, 720, Short.MAX_VALUE)
                 .addContainerGap())
         );
         reportsCenterPanelLayout.setVerticalGroup(
@@ -1950,6 +1949,7 @@ public class MainFrame extends javax.swing.JFrame {
         w1B1RadioButton.setSelected(true);
         w1B1RadioButton.setText("BODEGA 1");
         w1B1RadioButton.setContentAreaFilled(false);
+        w1B1RadioButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         w1B1RadioButton.setFocusPainted(false);
         w1B1RadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1962,6 +1962,7 @@ public class MainFrame extends javax.swing.JFrame {
         w1B2RadioButton.setForeground(new java.awt.Color(255, 255, 255));
         w1B2RadioButton.setText("BODEGA 2");
         w1B2RadioButton.setContentAreaFilled(false);
+        w1B2RadioButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         w1B2RadioButton.setFocusPainted(false);
         w1B2RadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2217,6 +2218,7 @@ public class MainFrame extends javax.swing.JFrame {
         w2B1RadioButton.setForeground(new java.awt.Color(255, 255, 255));
         w2B1RadioButton.setText("BODEGA 1");
         w2B1RadioButton.setContentAreaFilled(false);
+        w2B1RadioButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         w2B1RadioButton.setFocusPainted(false);
         w2B1RadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2230,6 +2232,7 @@ public class MainFrame extends javax.swing.JFrame {
         w2B2RadioButton.setSelected(true);
         w2B2RadioButton.setText("BODEGA 2");
         w2B2RadioButton.setContentAreaFilled(false);
+        w2B2RadioButton.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         w2B2RadioButton.setFocusPainted(false);
         w2B2RadioButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3027,6 +3030,8 @@ public class MainFrame extends javax.swing.JFrame {
         userXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
         itemXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         itemXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        stockXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+        stockXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
         dashboardHotXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         dashboardHotXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
         dashboardAlmostOutOfStockXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
