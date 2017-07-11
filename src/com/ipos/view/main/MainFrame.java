@@ -29,6 +29,7 @@ import java.util.Date;
 import java.util.Objects;
 import javax.persistence.EntityManagerFactory;
 import javax.swing.JButton;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JTable;
 import javax.swing.ListSelectionModel;
@@ -81,8 +82,12 @@ public class MainFrame extends javax.swing.JFrame {
      * Creates new form MainJFrame
      */
     public MainFrame() {
-        initComponents();
-        initElements();
+        try {
+            initComponents();
+            initElements();
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Error " + e.getMessage());
+        }
     }
 
     /**
@@ -2466,7 +2471,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(46, 46, 46));
-        jLabel23.setText("Dashboard 22222");
+        jLabel23.setText("Dashboard");
 
         javax.swing.GroupLayout dashboardTopPanel1Layout = new javax.swing.GroupLayout(dashboardTopPanel1);
         dashboardTopPanel1.setLayout(dashboardTopPanel1Layout);
@@ -2477,7 +2482,7 @@ public class MainFrame extends javax.swing.JFrame {
                 .addGroup(dashboardTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel21)
                     .addComponent(jLabel23))
-                .addContainerGap(800, Short.MAX_VALUE))
+                .addContainerGap(856, Short.MAX_VALUE))
         );
         dashboardTopPanel1Layout.setVerticalGroup(
             dashboardTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -2639,7 +2644,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         jLabel35.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel35.setForeground(new java.awt.Color(46, 46, 46));
-        jLabel35.setText("Stocks 2222");
+        jLabel35.setText("Stocks");
 
         stockOutButton3.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
         stockOutButton3.setText("STOCK OUT");
@@ -2683,7 +2688,7 @@ public class MainFrame extends javax.swing.JFrame {
                         .addGap(3, 3, 3)
                         .addComponent(jLabel34))
                     .addComponent(jLabel35))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 431, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 477, Short.MAX_VALUE)
                 .addComponent(stockInButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(stockAdjustButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -2822,7 +2827,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         jLabel32.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(46, 46, 46));
-        jLabel32.setText("Reports 2222");
+        jLabel32.setText("Reports");
 
         javax.swing.GroupLayout reportsTopPanel1Layout = new javax.swing.GroupLayout(reportsTopPanel1);
         reportsTopPanel1.setLayout(reportsTopPanel1Layout);
@@ -2836,7 +2841,7 @@ public class MainFrame extends javax.swing.JFrame {
                         .addGap(3, 3, 3)
                         .addComponent(jLabel31))
                     .addComponent(jLabel32))
-                .addContainerGap(624, Short.MAX_VALUE))
+                .addContainerGap(670, Short.MAX_VALUE))
         );
         reportsTopPanel1Layout.setVerticalGroup(
             reportsTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -3245,7 +3250,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         jLabel38.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel38.setForeground(new java.awt.Color(46, 46, 46));
-        jLabel38.setText("Settings 2222");
+        jLabel38.setText("Settings");
 
         javax.swing.GroupLayout b1SettingsTopPanel1Layout = new javax.swing.GroupLayout(b1SettingsTopPanel1);
         b1SettingsTopPanel1.setLayout(b1SettingsTopPanel1Layout);
@@ -3259,7 +3264,7 @@ public class MainFrame extends javax.swing.JFrame {
                         .addGap(3, 3, 3)
                         .addComponent(jLabel37))
                     .addComponent(jLabel38))
-                .addContainerGap(831, Short.MAX_VALUE))
+                .addContainerGap(877, Short.MAX_VALUE))
         );
         b1SettingsTopPanel1Layout.setVerticalGroup(
             b1SettingsTopPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -4359,28 +4364,28 @@ public class MainFrame extends javax.swing.JFrame {
     private void w1B1RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w1B1RadioButtonActionPerformed
         triggerCenterPanel(b1CenterPanel, "BODEGA 1 - Inventory System");
         bodega1ButtonGroup.setSelected(w1B1RadioButton.getModel(), true);
-        
+
         currentBodega = Warehouse.BODEGA_1.getName();
     }//GEN-LAST:event_w1B1RadioButtonActionPerformed
 
     private void w1B2RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w1B2RadioButtonActionPerformed
         triggerCenterPanel(b2CenterPanel, "BODEGA 2 - Inventory System");
         bodega2ButtonGroup.setSelected(w2B2RadioButton.getModel(), true);
-        
+
         currentBodega = Warehouse.BODEGA_2.getName();
     }//GEN-LAST:event_w1B2RadioButtonActionPerformed
 
     private void w2B1RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w2B1RadioButtonActionPerformed
         triggerCenterPanel(b1CenterPanel, "BODEGA 1 - Inventory System");
         bodega1ButtonGroup.setSelected(w1B1RadioButton.getModel(), true);
-        
+
         currentBodega = Warehouse.BODEGA_1.getName();
     }//GEN-LAST:event_w2B1RadioButtonActionPerformed
 
     private void w2B2RadioButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_w2B2RadioButtonActionPerformed
         triggerCenterPanel(b2CenterPanel, "BODEGA 2 - Inventory System");
         bodega2ButtonGroup.setSelected(w2B2RadioButton.getModel(), true);
-        
+
         currentBodega = Warehouse.BODEGA_2.getName();
     }//GEN-LAST:event_w2B2RadioButtonActionPerformed
 
@@ -4717,8 +4722,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel b1SettingsTopPanel1;
     private javax.swing.JButton b1StocksButton;
     private javax.swing.JPanel b1StocksPanel;
-    private javax.swing.JPanel b1StocksPanel1;
-    private javax.swing.JPanel b1StocksPanel2;
     private javax.swing.JScrollPane b1SuplierScrollPane;
     private javax.swing.JScrollPane b1SuplierScrollPane1;
     private javax.swing.JButton b1SuppliderAddButton;
@@ -4832,12 +4835,6 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
@@ -4936,16 +4933,10 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JLabel salesStockLabel;
     private javax.swing.JLabel salesStockLabel1;
     private javax.swing.JButton stockAdjustButton;
-    private javax.swing.JButton stockAdjustButton1;
-    private javax.swing.JButton stockAdjustButton2;
     private javax.swing.JButton stockAdjustButton3;
     private javax.swing.JButton stockInButton;
-    private javax.swing.JButton stockInButton1;
-    private javax.swing.JButton stockInButton2;
     private javax.swing.JButton stockInButton3;
     private javax.swing.JButton stockOutButton;
-    private javax.swing.JButton stockOutButton1;
-    private javax.swing.JButton stockOutButton2;
     private javax.swing.JButton stockOutButton3;
     private javax.swing.JComboBox stockOutStockComboBox;
     private javax.swing.JComboBox stockOutStockComboBox1;
@@ -4962,16 +4953,12 @@ public class MainFrame extends javax.swing.JFrame {
     private javax.swing.JPanel stocksBottomPanel;
     private javax.swing.JPanel stocksBottomPanel1;
     private javax.swing.JPanel stocksCenterPanel;
-    private javax.swing.JPanel stocksCenterPanel1;
-    private javax.swing.JPanel stocksCenterPanel2;
     private javax.swing.JPanel stocksCenterPanel3;
     private javax.swing.JComboBox stocksStockComboBox;
     private javax.swing.JComboBox stocksStockComboBox1;
     private javax.swing.JLabel stocksStockLabel;
     private javax.swing.JLabel stocksStockLabel1;
     private javax.swing.JPanel stocksTopPanel;
-    private javax.swing.JPanel stocksTopPanel1;
-    private javax.swing.JPanel stocksTopPanel2;
     private javax.swing.JPanel stocksTopPanel3;
     private javax.swing.JLabel storeLabel;
     private javax.swing.JLabel titleLabel;
@@ -5414,7 +5401,7 @@ public class MainFrame extends javax.swing.JFrame {
     }
 
     private void b2GenerateSalesReport() {
-        Date from = reportsSalesFromDateChooser1.getDate(); 
+        Date from = reportsSalesFromDateChooser1.getDate();
         Date to = reportsSalesToDateChooser1.getDate();
         Integer stockId = (salesStockComboBox1.getSelectedIndex() < 1 ? 0 : ((Stock) salesStockComboBox1.getModel().getSelectedItem()).getId());
 
