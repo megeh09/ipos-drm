@@ -5244,12 +5244,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Set column width.
         b1ItemXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
-        b1ItemXTable.getColumnModel().getColumn(1).setPreferredWidth(100);
-        b1ItemXTable.getColumnModel().getColumn(2).setPreferredWidth(150);
-        b1ItemXTable.getColumnModel().getColumn(3).setPreferredWidth(50);
-        b1ItemXTable.getColumnModel().getColumn(4).setPreferredWidth(200);
-        b1ItemXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
-        b1ItemXTable.getColumnModel().getColumn(6).setPreferredWidth(150);
+        b1ItemXTable.getColumnModel().getColumn(1).setPreferredWidth(200);
+        b1ItemXTable.getColumnModel().getColumn(2).setPreferredWidth(50);
+        b1ItemXTable.getColumnModel().getColumn(3).setPreferredWidth(250);
+        b1ItemXTable.getColumnModel().getColumn(4).setPreferredWidth(100);
+        b1ItemXTable.getColumnModel().getColumn(5).setPreferredWidth(150);
     }
 
     private void b2SetItemTable() {
@@ -5259,12 +5258,11 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Set column width.
         b1ItemXTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
-        b1ItemXTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
-        b1ItemXTable1.getColumnModel().getColumn(2).setPreferredWidth(150);
-        b1ItemXTable1.getColumnModel().getColumn(3).setPreferredWidth(50);
-        b1ItemXTable1.getColumnModel().getColumn(4).setPreferredWidth(200);
-        b1ItemXTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
-        b1ItemXTable1.getColumnModel().getColumn(6).setPreferredWidth(150);
+        b1ItemXTable1.getColumnModel().getColumn(1).setPreferredWidth(200);
+        b1ItemXTable1.getColumnModel().getColumn(2).setPreferredWidth(50);
+        b1ItemXTable1.getColumnModel().getColumn(3).setPreferredWidth(250);
+        b1ItemXTable1.getColumnModel().getColumn(4).setPreferredWidth(100);
+        b1ItemXTable1.getColumnModel().getColumn(5).setPreferredWidth(150);
     }
 
     private void b1SetStockTable() {

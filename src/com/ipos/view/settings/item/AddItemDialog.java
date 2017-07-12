@@ -57,8 +57,6 @@ public class AddItemDialog extends javax.swing.JDialog {
         codeLabel = new javax.swing.JLabel();
         codeTextField = new javax.swing.JTextField();
         descriptionLabel = new javax.swing.JLabel();
-        stockCardLabel = new javax.swing.JLabel();
-        stockCardTextField = new javax.swing.JTextField();
         nameLabel = new javax.swing.JLabel();
         nameTextField = new javax.swing.JTextField();
         unitComboBox = new javax.swing.JComboBox();
@@ -97,11 +95,6 @@ public class AddItemDialog extends javax.swing.JDialog {
 
         descriptionLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         descriptionLabel.setText("Description");
-
-        stockCardLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        stockCardLabel.setText("SC Number");
-
-        stockCardTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         nameLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         nameLabel.setText("Name");
@@ -152,10 +145,6 @@ public class AddItemDialog extends javax.swing.JDialog {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(codeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(centerPanelLayout.createSequentialGroup()
-                                .addComponent(stockCardLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(stockCardTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(centerPanelLayout.createSequentialGroup()
                                 .addComponent(colorLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(colorTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -169,10 +158,6 @@ public class AddItemDialog extends javax.swing.JDialog {
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(codeLabel)
                     .addComponent(codeTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(stockCardLabel)
-                    .addComponent(stockCardTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(nameLabel)
@@ -248,8 +233,8 @@ public class AddItemDialog extends javax.swing.JDialog {
 
         try {
             // Check if item is existing.
-            if (!controller.findByName(nameTextField.getText()).isEmpty()) {
-                JOptionPane.showMessageDialog(null, "An item found with the same name.  Please check.", "Warning", JOptionPane.WARNING_MESSAGE);
+            if (!controller.findByName(nameTextField.getText(), colorTextField.getText()).isEmpty()) {
+                JOptionPane.showMessageDialog(null, "An item found with the same name and color.  Please check.", "Warning", JOptionPane.WARNING_MESSAGE);
 
                 return;
             }
@@ -262,7 +247,7 @@ public class AddItemDialog extends javax.swing.JDialog {
             }
 
             entity.setCode(codeTextField.getText());
-            entity.setStockCardNumber(stockCardTextField.getText());
+            entity.setStockCardNumber("");
             entity.setName(nameTextField.getText());
             entity.setColor(colorTextField.getText());
             entity.setDescription(descriptionTextArea.getText());
@@ -302,8 +287,6 @@ public class AddItemDialog extends javax.swing.JDialog {
     private javax.swing.JPanel mainPanel;
     private javax.swing.JLabel nameLabel;
     private javax.swing.JTextField nameTextField;
-    private javax.swing.JLabel stockCardLabel;
-    private javax.swing.JTextField stockCardTextField;
     private javax.swing.JPanel topPanel;
     private javax.swing.JComboBox unitComboBox;
     private javax.swing.JLabel unitLabel;

@@ -131,11 +131,12 @@ public class ItemJpaController implements Serializable {
         }
     }
 
-    public List<Item> findByName(String name) {
+    public List<Item> findByName(String name, String color) {
         EntityManager em = getEntityManager();
         try {
-            return em.createNamedQuery("Item.findByName")
+            return em.createNamedQuery("Item.findByNameAndColor")
                     .setParameter("name", name)
+                    .setParameter("color", color)
                     .getResultList();
         } finally {
             em.close();

@@ -33,7 +33,7 @@ import javax.xml.bind.annotation.XmlRootElement;
     @NamedQuery(name = "Item.findById", query = "SELECT i FROM Item i WHERE i.id = :id"),
     @NamedQuery(name = "Item.findByCode", query = "SELECT i FROM Item i WHERE i.code = :code"),
     @NamedQuery(name = "Item.findByStockCardNumber", query = "SELECT i FROM Item i WHERE i.stockCardNumber = :stockCardNumber"),
-    @NamedQuery(name = "Item.findByName", query = "SELECT i FROM Item i WHERE i.name = :name"),
+    @NamedQuery(name = "Item.findByNameAndColor", query = "SELECT i FROM Item i WHERE i.name = :name AND i.color = :color"),
     @NamedQuery(name = "Item.findLikeName", query = "SELECT i FROM Item i WHERE i.name like :name"),
     @NamedQuery(name = "Item.findByColor", query = "SELECT i FROM Item i WHERE i.color = :color"),
     @NamedQuery(name = "Item.findByDescription", query = "SELECT i FROM Item i WHERE i.description = :description"),
@@ -215,7 +215,7 @@ public class Item implements Serializable {
 
     @Override
     public String toString() {
-        return name;
+        return name.concat(" / ").concat(color);
     }
     
 }

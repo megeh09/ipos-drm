@@ -44,7 +44,6 @@ public class ItemImplementation {
     public TableModel getTableModel() {
         Object[] columnName = {
             "Code",
-            "SC Number",
             "Name",
             "Unit",
             "Description",
@@ -57,10 +56,9 @@ public class ItemImplementation {
 
         for (Item item : items) {
             int i = 0;
-            Object[] newRow = new Object[7];
+            Object[] newRow = new Object[6];
 
             newRow[i++] = item.getCode();
-            newRow[i++] = item.getStockCardNumber();
             newRow[i++] = item;
             newRow[i++] = unitJpaController.findUnit(item.getFKunitId()).getCode();
             newRow[i++] = item.getDescription();
