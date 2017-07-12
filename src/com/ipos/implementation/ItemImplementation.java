@@ -43,9 +43,11 @@ public class ItemImplementation {
 
     public TableModel getTableModel() {
         Object[] columnName = {
+            "item",
             "Code",
             "SC Number",
             "Name",
+            "Color",
             "Unit",
             "Description",
             "Date Ceated",
@@ -57,11 +59,13 @@ public class ItemImplementation {
 
         for (Item item : items) {
             int i = 0;
-            Object[] newRow = new Object[7];
+            Object[] newRow = new Object[9];
 
+            newRow[i++] = item;
             newRow[i++] = item.getCode();
             newRow[i++] = item.getStockCardNumber();
-            newRow[i++] = item;
+            newRow[i++] = item.getName();
+            newRow[i++] = item.getColor();
             newRow[i++] = unitJpaController.findUnit(item.getFKunitId()).getCode();
             newRow[i++] = item.getDescription();
             newRow[i++] = DateUtil.toMMMMddyyyyFormat(item.getDate());
@@ -84,7 +88,7 @@ public class ItemImplementation {
         Integer row = table.getSelectedRow();
 
         if (row > -1) {
-            Item item = (Item) table.getValueAt(row, 2);
+            Item item = (Item) table.getModel().getValueAt(row, 0);
             UpdateItemDialog dialog = new UpdateItemDialog(null, true, this.emf, item);
 
             dialog.setLocationRelativeTo(null);
@@ -99,7 +103,7 @@ public class ItemImplementation {
 
         if (row > -1) {
             try {
-                Item item = (Item) table.getValueAt(row, 2);
+                Item item = (Item) table.getModel().getValueAt(row, 0);
 
                 Integer response = JOptionPane.showConfirmDialog(null, "You are about to remove " + item.getName() + " item. Do you want to continue?", "Remove Confirmation", JOptionPane.YES_NO_OPTION);
 

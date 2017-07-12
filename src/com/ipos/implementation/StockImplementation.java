@@ -52,6 +52,7 @@ public class StockImplementation {
 
     public TableModel getTableModel(String bodega) {
         Object[] columnName = {
+            "stock",
             "Code",
             "SC Number",
             "Item",
@@ -68,11 +69,12 @@ public class StockImplementation {
         try {
             for (Stock stock : stocks) {
                 int i = 0;
-                Object[] newRow = new Object[8];
+                Object[] newRow = new Object[9];
 
+                newRow[i++] = stock;
                 newRow[i++] = stock.getCode();
                 newRow[i++] = stock.getItem().getStockCardNumber();
-                newRow[i++] = stock;
+                newRow[i++] = stock.getItem().getName();
                 newRow[i++] = stock.getItem().getColor();
                 newRow[i++] = stock.getQuantity();
                 newRow[i++] = personnelJpaController.findPersonnel(stock.getFKpersonnelId());
@@ -99,7 +101,7 @@ public class StockImplementation {
         Integer row = table.getSelectedRow();
 
         if (row > -1) {
-            Stock stock = (Stock) table.getValueAt(row, 2);
+            Stock stock = (Stock) table.getModel().getValueAt(row, 0);
             StockAdjustDialog dialog = new StockAdjustDialog(null, true, this.emf, stock);
 
             dialog.setLocationRelativeTo(null);

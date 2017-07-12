@@ -4847,30 +4847,38 @@ public class MainFrame extends javax.swing.JFrame {
         b1ItemXTable.setModel(itemImplementation.getTableModel());
         b1ItemXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         b1ItemXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
-
+        
+        // Remove columns.
+        b1ItemXTable.removeColumn(b1ItemXTable.getColumnModel().getColumn(0));
+        
         // Set column width.
         b1ItemXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
         b1ItemXTable.getColumnModel().getColumn(1).setPreferredWidth(100);
         b1ItemXTable.getColumnModel().getColumn(2).setPreferredWidth(150);
-        b1ItemXTable.getColumnModel().getColumn(3).setPreferredWidth(50);
-        b1ItemXTable.getColumnModel().getColumn(4).setPreferredWidth(200);
-        b1ItemXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
-        b1ItemXTable.getColumnModel().getColumn(6).setPreferredWidth(150);
+        b1ItemXTable.getColumnModel().getColumn(3).setPreferredWidth(100);
+        b1ItemXTable.getColumnModel().getColumn(4).setPreferredWidth(50);
+        b1ItemXTable.getColumnModel().getColumn(5).setPreferredWidth(200);
+        b1ItemXTable.getColumnModel().getColumn(6).setPreferredWidth(100);
+        b1ItemXTable.getColumnModel().getColumn(7).setPreferredWidth(150);
     }
 
     private void b2SetItemTable() {
         b1ItemXTable1.setModel(itemImplementation.getTableModel());
         b1ItemXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         b1ItemXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
+        
+        // Remove columns.
+        b1ItemXTable1.removeColumn(b1ItemXTable1.getColumnModel().getColumn(0));
 
         // Set column width.
         b1ItemXTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
         b1ItemXTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
         b1ItemXTable1.getColumnModel().getColumn(2).setPreferredWidth(150);
-        b1ItemXTable1.getColumnModel().getColumn(3).setPreferredWidth(50);
-        b1ItemXTable1.getColumnModel().getColumn(4).setPreferredWidth(200);
-        b1ItemXTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
-        b1ItemXTable1.getColumnModel().getColumn(6).setPreferredWidth(150);
+        b1ItemXTable1.getColumnModel().getColumn(3).setPreferredWidth(100);
+        b1ItemXTable1.getColumnModel().getColumn(4).setPreferredWidth(50);
+        b1ItemXTable1.getColumnModel().getColumn(5).setPreferredWidth(200);
+        b1ItemXTable1.getColumnModel().getColumn(6).setPreferredWidth(100);
+        b1ItemXTable1.getColumnModel().getColumn(7).setPreferredWidth(150);
     }
 
     private void b1SetStockTable() {
@@ -4878,6 +4886,9 @@ public class MainFrame extends javax.swing.JFrame {
         stockXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         stockXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
+        // Remove columns.
+        stockXTable.removeColumn(stockXTable.getColumnModel().getColumn(0));
+        
         // Set column width.
         stockXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
         stockXTable.getColumnModel().getColumn(1).setPreferredWidth(100);
@@ -4887,9 +4898,6 @@ public class MainFrame extends javax.swing.JFrame {
         stockXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
         stockXTable.getColumnModel().getColumn(6).setPreferredWidth(100);
         stockXTable.getColumnModel().getColumn(7).setPreferredWidth(100);
-
-        // Set column renderer for decimals.
-        stockXTable.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
     }
 
     private void b2SetStockTable() {
@@ -4897,6 +4905,9 @@ public class MainFrame extends javax.swing.JFrame {
         stockXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         stockXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
+        // Remove columns.
+        stockXTable1.removeColumn(stockXTable1.getColumnModel().getColumn(0));
+        
         // Set column width.
         stockXTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
         stockXTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
@@ -4906,9 +4917,6 @@ public class MainFrame extends javax.swing.JFrame {
         stockXTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
         stockXTable1.getColumnModel().getColumn(6).setPreferredWidth(100);
         stockXTable1.getColumnModel().getColumn(7).setPreferredWidth(100);
-
-        // Set column renderer for decimals.
-        stockXTable1.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
     }
 
     private void b1SetDashboardHotTable() {
