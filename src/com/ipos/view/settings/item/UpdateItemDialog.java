@@ -246,6 +246,13 @@ public class UpdateItemDialog extends javax.swing.JDialog {
         Item entity = item;
 
         try {
+//            // Check if item is existing.
+//            if (!controller.findByName(nameTextField.getText(), colorTextField.getText()).isEmpty()) {
+//                JOptionPane.showMessageDialog(null, "An item found with the same name and color.  Please check.", "Warning", JOptionPane.WARNING_MESSAGE);
+//
+//                return;
+//            }
+            
             // Check if it has unit selected.
             if (unitComboBox.getSelectedIndex() == 0) {
                 JOptionPane.showMessageDialog(null, "Error, please select unit.", "Failed", JOptionPane.ERROR_MESSAGE);

@@ -65,8 +65,6 @@ public class StockInDialog extends javax.swing.JDialog {
         bottomSeparator = new javax.swing.JSeparator();
         codeLabel = new javax.swing.JLabel();
         codeTextField = new javax.swing.JTextField();
-        stockCardLabel = new javax.swing.JLabel();
-        stockCardTextField = new javax.swing.JTextField();
         quantityLabel = new javax.swing.JLabel();
         itemComboBox = new javax.swing.JComboBox();
         itemLabel = new javax.swing.JLabel();
@@ -100,11 +98,6 @@ public class StockInDialog extends javax.swing.JDialog {
 
         codeTextField.setEditable(false);
         codeTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-
-        stockCardLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        stockCardLabel.setText("SC Number");
-
-        stockCardTextField.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
 
         quantityLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         quantityLabel.setText("Quantity");
@@ -158,16 +151,10 @@ public class StockInDialog extends javax.swing.JDialog {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(personnelComboBox, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(centerPanelLayout.createSequentialGroup()
-                                .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(centerPanelLayout.createSequentialGroup()
-                                        .addComponent(stockCardLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(stockCardTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(centerPanelLayout.createSequentialGroup()
-                                        .addComponent(quantityLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(quantityFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(0, 66, Short.MAX_VALUE)))
+                                .addComponent(quantityLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(quantityFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 146, Short.MAX_VALUE)))
                         .addGap(10, 10, 10))))
         );
         centerPanelLayout.setVerticalGroup(
@@ -185,10 +172,6 @@ public class StockInDialog extends javax.swing.JDialog {
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(personnelComboBox, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(personnelLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(stockCardLabel)
-                    .addComponent(stockCardTextField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(quantityLabel)
@@ -265,7 +248,7 @@ public class StockInDialog extends javax.swing.JDialog {
             }
 
             entity.setCode(codeTextField.getText());
-            entity.setStockCardNumber(stockCardTextField.getText());
+            entity.setStockCardNumber("");
             entity.setQuantity(dfNoComma.format(quantityFormattedTextField.getText()));
             entity.setUnitPrice(BigDecimal.ZERO);
             entity.setIsExpirable(false);
@@ -307,8 +290,6 @@ public class StockInDialog extends javax.swing.JDialog {
     private javax.swing.JLabel personnelLabel;
     public javax.swing.JFormattedTextField quantityFormattedTextField;
     private javax.swing.JLabel quantityLabel;
-    private javax.swing.JLabel stockCardLabel;
-    private javax.swing.JTextField stockCardTextField;
     private javax.swing.JPanel topPanel;
     // End of variables declaration//GEN-END:variables
 

@@ -52,9 +52,10 @@ public class StockImplementation {
 
     public TableModel getTableModel(String bodega) {
         Object[] columnName = {
-            "SC Number",
             "Code",
+            "SC Number",
             "Item",
+            "Color",
             "Quantity",
             "Personnel",
             "Date Ceated",
@@ -67,11 +68,12 @@ public class StockImplementation {
         try {
             for (Stock stock : stocks) {
                 int i = 0;
-                Object[] newRow = new Object[7];
+                Object[] newRow = new Object[8];
 
-                newRow[i++] = stock.getStockCardNumber();
                 newRow[i++] = stock.getCode();
+                newRow[i++] = stock.getItem().getStockCardNumber();
                 newRow[i++] = stock;
+                newRow[i++] = stock.getItem().getColor();
                 newRow[i++] = stock.getQuantity();
                 newRow[i++] = personnelJpaController.findPersonnel(stock.getFKpersonnelId());
                 newRow[i++] = DateUtil.toMMMMddyyyyFormat(stock.getDate());
