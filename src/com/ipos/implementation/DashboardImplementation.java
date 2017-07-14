@@ -80,11 +80,13 @@ public class DashboardImplementation {
 
     public TableModel getAlmostOutOfStockTableModel(String bodega) {
         Object[] columnName = {
+            "stock",
             "Code",
-            "Item",
-            "Personnel",
             "SC Number",
+            "Item",
+            "Color",
             "Quantity",
+            "Personnel",
             "Date Ceated",
             "Created By"
         };
@@ -96,13 +98,15 @@ public class DashboardImplementation {
         try {
             for (Stock stock : stocks) {
                 int i = 0;
-                Object[] newRow = new Object[7];
+                Object[] newRow = new Object[9];
 
-                newRow[i++] = stock.getCode();
                 newRow[i++] = stock;
-                newRow[i++] = personnelJpaController.findPersonnel(stock.getFKpersonnelId());
-                newRow[i++] = stock.getStockCardNumber();
+                newRow[i++] = stock.getCode();
+                newRow[i++] = stock.getItem().getStockCardNumber();
+                newRow[i++] = stock.getItem().getName();
+                newRow[i++] = stock.getItem().getColor();
                 newRow[i++] = stock.getQuantity();
+                newRow[i++] = personnelJpaController.findPersonnel(stock.getFKpersonnelId());
                 newRow[i++] = DateUtil.toMMMMddyyyyFormat(stock.getDate());
                 newRow[i++] = userJpaController.findUser(stock.getFKcreatedByUserId()).getFullname();
 

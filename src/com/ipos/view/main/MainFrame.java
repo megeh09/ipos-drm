@@ -4962,17 +4962,18 @@ public class MainFrame extends javax.swing.JFrame {
         dashboardAlmostOutOfStockXTable.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         dashboardAlmostOutOfStockXTable.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
+        // Remove columns.
+        dashboardAlmostOutOfStockXTable.removeColumn(dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(0));
+        
         // Set column width.
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
-        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(1).setPreferredWidth(200);
-        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(2).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(1).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(2).setPreferredWidth(250);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(3).setPreferredWidth(100);
-        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(4).setPreferredWidth(50);
+        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(4).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(6).setPreferredWidth(100);
-
-        // Set column renderer for decimals.
-        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
+        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(7).setPreferredWidth(100);
     }
 
     private void b2SetDashboardAlmostOutOfStockTable() {
@@ -4980,17 +4981,18 @@ public class MainFrame extends javax.swing.JFrame {
         dashboardAlmostOutOfStockXTable1.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
         dashboardAlmostOutOfStockXTable1.setHighlighters(HighlighterFactory.createSimpleStriping(HighlighterFactory.CLASSIC_LINE_PRINTER));
 
+        // Remove columns.
+        dashboardAlmostOutOfStockXTable1.removeColumn(dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(0));
+        
         // Set column width.
         dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
-        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(1).setPreferredWidth(200);
-        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(2).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(2).setPreferredWidth(250);
         dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(3).setPreferredWidth(100);
-        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(4).setPreferredWidth(50);
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(4).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(6).setPreferredWidth(100);
-
-        // Set column renderer for decimals.
-        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(4).setCellRenderer(bigDecimalRenderer);
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(7).setPreferredWidth(100);
     }
 
     private void b1GenerateSalesReport() {
