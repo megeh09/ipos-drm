@@ -6,8 +6,10 @@
 package com.ipos.implementation;
 
 import com.ipos.entity.Item;
+import com.ipos.entity.Stock;
 import com.ipos.helper.util.DateUtil;
 import com.ipos.jpa.controller.ItemJpaController;
+import com.ipos.jpa.controller.StockJpaController;
 import com.ipos.jpa.controller.UnitJpaController;
 import com.ipos.jpa.controller.UserJpaController;
 import com.ipos.jpa.controller.exceptions.NonexistentEntityException;
@@ -32,6 +34,7 @@ public class ItemImplementation {
     protected ItemJpaController itemJpaController;
     protected UnitJpaController unitJpaController;
     protected UserJpaController userJpaController;
+    protected StockJpaController stockJpaController;
 
     public ItemImplementation(EntityManagerFactory emf) {
         this.emf = emf;
@@ -39,6 +42,7 @@ public class ItemImplementation {
         itemJpaController = new ItemJpaController(emf);
         unitJpaController = new UnitJpaController(emf);
         userJpaController = new UserJpaController(emf);
+        stockJpaController = new StockJpaController(emf);
     }
 
     public TableModel getTableModel() {
@@ -88,7 +92,7 @@ public class ItemImplementation {
         Integer row = table.getSelectedRow();
 
         if (row > -1) {
-            Item item = (Item) table.getModel().getValueAt(row, 0);
+            Item item = (Item) table.getModel().getValueAt(table.convertRowIndexToModel(table.getSelectedRow()), 0);
             UpdateItemDialog dialog = new UpdateItemDialog(null, true, this.emf, item);
 
             dialog.setLocationRelativeTo(null);
@@ -98,12 +102,21 @@ public class ItemImplementation {
         }
     }
 
-    public void remove(JXTable table) {
+    public void remove(JXTable table, String bodega) {
         Integer row = table.getSelectedRow();
 
         if (row > -1) {
             try {
-                Item item = (Item) table.getModel().getValueAt(row, 0);
+                Item item = (Item) table.getModel().getValueAt(table.convertRowIndexToModel(table.getSelectedRow()), 0);
+
+                // Check if item has stocks.
+                List<Stock> stocks = stockJpaController.findStock(item, bodega);
+
+                if (!stocks.isEmpty()) {
+                    JOptionPane.showMessageDialog(null, "Delete not allowed.  This item has a corresponding stock.", "Error", JOptionPane.ERROR_MESSAGE);
+                    
+                    return;
+                }
 
                 Integer response = JOptionPane.showConfirmDialog(null, "You are about to remove " + item.getName() + " item. Do you want to continue?", "Remove Confirmation", JOptionPane.YES_NO_OPTION);
 

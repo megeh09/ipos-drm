@@ -3899,7 +3899,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_b1ItemUpdateButtonActionPerformed
 
     private void b1ItemRemoveButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemRemoveButtonActionPerformed
-        itemImplementation.remove(b1ItemXTable);
+        itemImplementation.remove(b1ItemXTable, currentBodega);
 
         // Reload table.
         b1SetItemTable();
@@ -3974,7 +3974,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_stockAdjustButtonActionPerformed
 
     private void stockOutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockOutButtonActionPerformed
-        stockImplementation.withdrawal(currentBodega);
+        stockImplementation.withdrawal(stockXTable, currentBodega);
 
         // Reload table.
         b1SetStockTable();
@@ -4105,7 +4105,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_reportsStockOutGenerateButton1ActionPerformed
 
     private void stockOutButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockOutButton3ActionPerformed
-        stockImplementation.withdrawal(currentBodega);
+        stockImplementation.withdrawal(stockXTable1, currentBodega);
 
         // Reload table.
         b2SetStockTable();
@@ -4130,7 +4130,7 @@ public class MainFrame extends javax.swing.JFrame {
     }//GEN-LAST:event_stockRefreshButton1ActionPerformed
 
     private void b1ItemRemoveButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_b1ItemRemoveButton1ActionPerformed
-        itemImplementation.remove(b1ItemXTable1);
+        itemImplementation.remove(b1ItemXTable1, currentBodega);
 
         // Reload table.
         b2SetItemTable();
@@ -4893,11 +4893,12 @@ public class MainFrame extends javax.swing.JFrame {
         stockXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
         stockXTable.getColumnModel().getColumn(1).setPreferredWidth(100);
         stockXTable.getColumnModel().getColumn(2).setPreferredWidth(250);
-        stockXTable.getColumnModel().getColumn(3).setPreferredWidth(100);
+        stockXTable.getColumnModel().getColumn(3).setPreferredWidth(250);
         stockXTable.getColumnModel().getColumn(4).setPreferredWidth(100);
         stockXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
         stockXTable.getColumnModel().getColumn(6).setPreferredWidth(100);
         stockXTable.getColumnModel().getColumn(7).setPreferredWidth(100);
+        stockXTable.getColumnModel().getColumn(8).setPreferredWidth(100);
     }
 
     private void b2SetStockTable() {
@@ -4912,11 +4913,12 @@ public class MainFrame extends javax.swing.JFrame {
         stockXTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
         stockXTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
         stockXTable1.getColumnModel().getColumn(2).setPreferredWidth(250);
-        stockXTable1.getColumnModel().getColumn(3).setPreferredWidth(100);
+        stockXTable1.getColumnModel().getColumn(3).setPreferredWidth(250);
         stockXTable1.getColumnModel().getColumn(4).setPreferredWidth(100);
         stockXTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
         stockXTable1.getColumnModel().getColumn(6).setPreferredWidth(100);
         stockXTable1.getColumnModel().getColumn(7).setPreferredWidth(100);
+        stockXTable1.getColumnModel().getColumn(8).setPreferredWidth(100);
     }
 
     private void b1SetDashboardHotTable() {
@@ -4969,11 +4971,12 @@ public class MainFrame extends javax.swing.JFrame {
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(0).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(1).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(2).setPreferredWidth(250);
-        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(3).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(3).setPreferredWidth(250);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(4).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(5).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(6).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(7).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable.getColumnModel().getColumn(8).setPreferredWidth(100);
     }
 
     private void b2SetDashboardAlmostOutOfStockTable() {
@@ -4988,11 +4991,12 @@ public class MainFrame extends javax.swing.JFrame {
         dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(0).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(1).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(2).setPreferredWidth(250);
-        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(3).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(3).setPreferredWidth(250);
         dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(4).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(5).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(6).setPreferredWidth(100);
         dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(7).setPreferredWidth(100);
+        dashboardAlmostOutOfStockXTable1.getColumnModel().getColumn(8).setPreferredWidth(100);
     }
 
     private void b1GenerateSalesReport() {

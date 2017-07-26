@@ -77,7 +77,7 @@ public class SupplierImplementation {
         Integer row = table.getSelectedRow();
 
         if (row > -1) {
-            Supplier supplier = (Supplier) table.getValueAt(row, 1);
+            Supplier supplier = (Supplier) table.getModel().getValueAt(table.convertRowIndexToModel(table.getSelectedRow()), 1);
             UpdateSupplierDialog dialog = new UpdateSupplierDialog(null, true, this.emf, supplier);
 
             dialog.setLocationRelativeTo(null);
@@ -92,7 +92,7 @@ public class SupplierImplementation {
 
         if (row > -1) {
             try {
-                Supplier supplier = (Supplier) table.getValueAt(row, 1);
+                Supplier supplier = (Supplier) table.getModel().getValueAt(table.convertRowIndexToModel(table.getSelectedRow()), 1);
 
                 Integer response = JOptionPane.showConfirmDialog(null, "You are about to remove " + supplier.getName() + " supplier. Do you want to continue?", "Remove Confirmation", JOptionPane.YES_NO_OPTION);
 

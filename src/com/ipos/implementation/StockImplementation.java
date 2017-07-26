@@ -56,6 +56,7 @@ public class StockImplementation {
             "Code",
             "SC Number",
             "Item",
+            "Description",
             "Color",
             "Quantity",
             "Personnel",
@@ -66,15 +67,16 @@ public class StockImplementation {
         DefaultTableModel model = new DefaultTableModel(null, columnName);
         List<Stock> stocks = stockJpaController.findStocks(bodega);
 
-        try {
+        try {            
             for (Stock stock : stocks) {
                 int i = 0;
-                Object[] newRow = new Object[9];
+                Object[] newRow = new Object[10];
 
                 newRow[i++] = stock;
                 newRow[i++] = stock.getCode();
                 newRow[i++] = stock.getItem().getStockCardNumber();
                 newRow[i++] = stock.getItem().getName();
+                newRow[i++] = stock.getItem().getDescription();
                 newRow[i++] = stock.getItem().getColor();
                 newRow[i++] = stock.getQuantity();
                 newRow[i++] = personnelJpaController.findPersonnel(stock.getFKpersonnelId());
@@ -101,7 +103,7 @@ public class StockImplementation {
         Integer row = table.getSelectedRow();
 
         if (row > -1) {
-            Stock stock = (Stock) table.getModel().getValueAt(row, 0);
+            Stock stock = (Stock) table.getModel().getValueAt(table.convertRowIndexToModel(table.getSelectedRow()), 0);
             StockAdjustDialog dialog = new StockAdjustDialog(null, true, this.emf, stock);
 
             dialog.setLocationRelativeTo(null);
@@ -111,8 +113,8 @@ public class StockImplementation {
         }
     }
 
-    public void withdrawal(String bodega) {
-        StockWithdrawalDialog dialog = new StockWithdrawalDialog(null, true, this.emf, bodega);
+    public void withdrawal(JXTable table, String bodega) {
+        StockWithdrawalDialog dialog = new StockWithdrawalDialog(null, true, this.emf, bodega, table);
 
         dialog.setLocationRelativeTo(null);
         dialog.setVisible(true);

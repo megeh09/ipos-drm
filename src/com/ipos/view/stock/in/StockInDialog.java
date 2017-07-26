@@ -16,6 +16,7 @@ import com.ipos.jpa.controller.ItemJpaController;
 import com.ipos.jpa.controller.PersonnelJpaController;
 import com.ipos.jpa.controller.StockJpaController;
 import com.ipos.start.IPOS;
+import com.jidesoft.swing.ComboBoxSearchable;
 import java.awt.HeadlessException;
 import java.math.BigDecimal;
 import java.util.List;
@@ -306,6 +307,10 @@ public class StockInDialog extends javax.swing.JDialog {
         // Set combo box.
         personnelComboBox.setModel(JComboBoxModelUtil.getPersonnelModel("Select Personnel", personnelJpaController.findPersonnelEntities()));
         itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities()));
+        
+        // Set combo box searchable.
+        ComboBoxSearchable s1 = new ComboBoxSearchable(personnelComboBox);
+        ComboBoxSearchable s2 = new ComboBoxSearchable(itemComboBox);
     }
 
     private void hideThis() {

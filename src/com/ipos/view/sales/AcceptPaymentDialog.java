@@ -17,6 +17,7 @@ import com.ipos.jpa.controller.SalesJpaController;
 import com.ipos.jpa.controller.StockJpaController;
 import com.ipos.jpa.controller.UnitJpaController;
 import com.ipos.start.IPOS;
+import com.jidesoft.swing.ComboBoxSearchable;
 import java.math.BigDecimal;
 import java.util.List;
 import java.util.logging.Level;
@@ -88,6 +89,8 @@ public class AcceptPaymentDialog extends javax.swing.JDialog {
         changeLabel = new javax.swing.JLabel();
         changeValueLabel = new javax.swing.JLabel();
         unitLabel = new javax.swing.JLabel();
+        discountLabel = new javax.swing.JLabel();
+        discountValueLabel = new javax.swing.JLabel();
         bottomPanel = new javax.swing.JPanel();
         acceptButton = new javax.swing.JButton();
         cancelButton = new javax.swing.JButton();
@@ -253,6 +256,13 @@ public class AcceptPaymentDialog extends javax.swing.JDialog {
         unitLabel.setForeground(new java.awt.Color(255, 0, 0));
         unitLabel.setText("-- unit --");
 
+        discountLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        discountLabel.setText("Discount");
+
+        discountValueLabel.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        discountValueLabel.setForeground(new java.awt.Color(255, 0, 0));
+        discountValueLabel.setText("-- NA --");
+
         javax.swing.GroupLayout centerPanelLayout = new javax.swing.GroupLayout(centerPanel);
         centerPanel.setLayout(centerPanelLayout);
         centerPanelLayout.setHorizontalGroup(
@@ -294,6 +304,11 @@ public class AcceptPaymentDialog extends javax.swing.JDialog {
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(cashFormattedTextField, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE)))
+                        .addContainerGap())
+                    .addGroup(centerPanelLayout.createSequentialGroup()
+                        .addComponent(discountLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(discountValueLabel, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addContainerGap())))
         );
         centerPanelLayout.setVerticalGroup(
@@ -311,6 +326,10 @@ public class AcceptPaymentDialog extends javax.swing.JDialog {
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(unitPriceLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(unitPriceValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(discountLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(discountValueLabel, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(18, 18, 18)
                 .addGroup(centerPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(quantityLabel)
@@ -458,6 +477,8 @@ public class AcceptPaymentDialog extends javax.swing.JDialog {
     private javax.swing.JPanel centerPanel;
     private javax.swing.JLabel changeLabel;
     private javax.swing.JLabel changeValueLabel;
+    private javax.swing.JLabel discountLabel;
+    private javax.swing.JLabel discountValueLabel;
     private javax.swing.JComboBox itemComboBox;
     private javax.swing.JLabel itemLabel;
     private javax.swing.JPanel mainPanel;
@@ -489,6 +510,9 @@ public class AcceptPaymentDialog extends javax.swing.JDialog {
 
         // Set combo box.
         itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities()));
+        
+        // Set combo box searchable.
+        ComboBoxSearchable s1 = new ComboBoxSearchable(itemComboBox);
     }
 
     private void hideThis() {

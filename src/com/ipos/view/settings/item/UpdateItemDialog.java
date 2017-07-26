@@ -11,6 +11,7 @@ import com.ipos.helper.util.JComboBoxModelUtil;
 import com.ipos.jpa.controller.ItemJpaController;
 import com.ipos.jpa.controller.UnitJpaController;
 import com.ipos.start.IPOS;
+import com.jidesoft.swing.ComboBoxSearchable;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.persistence.EntityManagerFactory;
@@ -314,6 +315,9 @@ public class UpdateItemDialog extends javax.swing.JDialog {
 
         // Set combo box.
         unitComboBox.setModel(JComboBoxModelUtil.getUnitModel("Select Unit", unitJpaController.findUnitEntities()));
+        
+        // Set combo box searchable.
+        ComboBoxSearchable s1 = new ComboBoxSearchable(unitComboBox);
 
         // Set entity to be updated.
         codeTextField.setText(item.getCode());

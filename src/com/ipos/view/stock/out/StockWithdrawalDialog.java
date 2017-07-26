@@ -16,12 +16,14 @@ import com.ipos.jpa.controller.StockJpaController;
 import com.ipos.jpa.controller.StockWithdrawalJpaController;
 import com.ipos.jpa.controller.UnitJpaController;
 import com.ipos.start.IPOS;
+import com.jidesoft.swing.ComboBoxSearchable;
 import java.awt.HeadlessException;
 import java.math.BigDecimal;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.persistence.EntityManagerFactory;
 import javax.swing.JOptionPane;
+import org.jdesktop.swingx.JXTable;
 
 /**
  *
@@ -45,11 +47,12 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
      * @param modal
      * @param emf
      * @param bodega
+     * @param table
      */
-    public StockWithdrawalDialog(java.awt.Frame parent, boolean modal, EntityManagerFactory emf, String bodega) {
+    public StockWithdrawalDialog(java.awt.Frame parent, boolean modal, EntityManagerFactory emf, String bodega, JXTable table) {
         super(parent, modal);
         initComponents();
-        initElements(emf, bodega);
+        initElements(emf, bodega, table);
     }
 
     /**
@@ -325,7 +328,7 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
         quantityFormattedTextField.setText("");
 
         // Request focus.
-        quantityFormattedTextField.requestFocus();
+//        quantityFormattedTextField.requestFocus();
     }//GEN-LAST:event_stockComboBoxActionPerformed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -349,7 +352,7 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
     private javax.swing.JButton withdrawButton;
     // End of variables declaration//GEN-END:variables
 
-    private void initElements(EntityManagerFactory emf, String b) {
+    private void initElements(EntityManagerFactory emf, String b, JXTable table) {
         bodega = b;
         controller = new StockWithdrawalJpaController(emf);
         stockJpaController = new StockJpaController(emf);
@@ -361,6 +364,13 @@ public class StockWithdrawalDialog extends javax.swing.JDialog {
         // Set combo box.
         stockComboBox.setModel(JComboBoxModelUtil.getStockModel("Select Stock", stockJpaController.findStocks(b)));
         personnelComboBox.setModel(JComboBoxModelUtil.getPersonnelModel("Select Personnel", personnelJpaController.findPersonnelEntities()));
+        
+        // Set combo box searchable.
+        ComboBoxSearchable s1 = new ComboBoxSearchable(stockComboBox);
+        ComboBoxSearchable s2 = new ComboBoxSearchable(personnelComboBox);
+        
+        // Set automatic stock.
+        stockComboBox.setSelectedItem((table.getSelectedRow() > -1) ? table.getModel().getValueAt(table.convertRowIndexToModel(table.getSelectedRow()), 0) : 0);
     }
 
     private void hideThis() {

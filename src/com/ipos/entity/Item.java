@@ -215,7 +215,7 @@ public class Item implements Serializable {
 
     @Override
     public String toString() {
-        return name.concat(" / ").concat(color);
+        return name.concat(" / ").concat(color).concat(" / ").concat(stockCardNumber);
     }
     
 }

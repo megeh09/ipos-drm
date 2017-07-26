@@ -14,6 +14,7 @@ import com.ipos.jpa.controller.ItemJpaController;
 import com.ipos.jpa.controller.PersonnelJpaController;
 import com.ipos.jpa.controller.StockJpaController;
 import com.ipos.start.IPOS;
+import com.jidesoft.swing.ComboBoxSearchable;
 import java.math.BigDecimal;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -295,6 +296,10 @@ public class StockAdjustDialog extends javax.swing.JDialog {
         // Set combo box.
         personnelComboBox.setModel(JComboBoxModelUtil.getPersonnelModel("Select Personnel", personnelJpaController.findPersonnelEntities()));
         itemComboBox.setModel(JComboBoxModelUtil.getItemModel("Select Item", itemJpaController.findItemEntities()));
+        
+        // Set combo box searchable.
+        ComboBoxSearchable s1 = new ComboBoxSearchable(personnelComboBox);
+        ComboBoxSearchable s2 = new ComboBoxSearchable(itemComboBox);
 
         // Set entity to be updated.
         codeTextField.setText(stock.getCode());

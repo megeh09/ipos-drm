@@ -62,6 +62,9 @@ public class Sales implements Serializable {
     @Column(name = "unitPrice")
     private BigDecimal unitPrice;
     @Basic(optional = false)
+    @Column(name = "discount")
+    private BigDecimal discount;
+    @Basic(optional = false)
     @Column(name = "cashAmount")
     private BigDecimal cashAmount;
     @Basic(optional = false)
@@ -99,10 +102,11 @@ public class Sales implements Serializable {
         this.id = id;
     }
 
-    public Sales(Integer id, BigDecimal quantity, BigDecimal unitPrice, BigDecimal cashAmount, BigDecimal changeAmount, BigDecimal totalAmount, Date date, String bodega, Date createdOn, Date updatedOn, Stock stock, int fKcreatedByUserId) {
+    public Sales(Integer id, BigDecimal quantity, BigDecimal unitPrice, BigDecimal discount, BigDecimal cashAmount, BigDecimal changeAmount, BigDecimal totalAmount, Date date, String bodega, Date createdOn, Date updatedOn, Stock stock, int fKcreatedByUserId) {
         this.id = id;
         this.quantity = quantity;
         this.unitPrice = unitPrice;
+        this.discount = discount;
         this.cashAmount = cashAmount;
         this.changeAmount = changeAmount;
         this.totalAmount = totalAmount;
@@ -136,6 +140,14 @@ public class Sales implements Serializable {
 
     public void setUnitPrice(BigDecimal unitPrice) {
         this.unitPrice = unitPrice;
+    }
+
+    public BigDecimal getDiscount() {
+        return discount;
+    }
+
+    public void setDiscount(BigDecimal discount) {
+        this.discount = discount;
     }
 
     public BigDecimal getCashAmount() {

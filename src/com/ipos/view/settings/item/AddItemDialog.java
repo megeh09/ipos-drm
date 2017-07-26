@@ -13,6 +13,7 @@ import com.ipos.helper.util.JComboBoxModelUtil;
 import com.ipos.jpa.controller.ItemJpaController;
 import com.ipos.jpa.controller.UnitJpaController;
 import com.ipos.start.IPOS;
+import com.jidesoft.swing.ComboBoxSearchable;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -318,6 +319,9 @@ public class AddItemDialog extends javax.swing.JDialog {
 
         // Set combo box.
         unitComboBox.setModel(JComboBoxModelUtil.getUnitModel("Select Unit", unitJpaController.findUnitEntities()));
+        
+        // Set combo box searchable.
+        ComboBoxSearchable s1 = new ComboBoxSearchable(unitComboBox);
     }
 
     private void hideThis() {

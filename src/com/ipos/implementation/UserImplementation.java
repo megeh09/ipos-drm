@@ -72,7 +72,7 @@ public class UserImplementation {
         Integer row = table.getSelectedRow();
 
         if (row > -1) {
-            User user = (User) table.getValueAt(row, 0);
+            User user = (User) table.getModel().getValueAt(table.convertRowIndexToModel(table.getSelectedRow()), 0);
             UpdateUserDialog dialog = new UpdateUserDialog(null, true, this.emf, user);
 
             dialog.setLocationRelativeTo(null);
@@ -87,7 +87,7 @@ public class UserImplementation {
 
         if (row > -1) {
             try {
-                User user = (User) table.getValueAt(row, 0);
+                User user = (User) table.getModel().getValueAt(table.convertRowIndexToModel(table.getSelectedRow()), 0);
 
                 Integer response = JOptionPane.showConfirmDialog(null, "You are about to remove " + user.getFullname() + " user. Do you want to continue?", "Remove Confirmation", JOptionPane.YES_NO_OPTION);
 

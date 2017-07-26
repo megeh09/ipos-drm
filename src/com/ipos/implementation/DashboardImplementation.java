@@ -84,6 +84,7 @@ public class DashboardImplementation {
             "Code",
             "SC Number",
             "Item",
+            "Description",
             "Color",
             "Quantity",
             "Personnel",
@@ -98,12 +99,13 @@ public class DashboardImplementation {
         try {
             for (Stock stock : stocks) {
                 int i = 0;
-                Object[] newRow = new Object[9];
+                Object[] newRow = new Object[10];
 
                 newRow[i++] = stock;
                 newRow[i++] = stock.getCode();
                 newRow[i++] = stock.getItem().getStockCardNumber();
                 newRow[i++] = stock.getItem().getName();
+                newRow[i++] = stock.getItem().getDescription();
                 newRow[i++] = stock.getItem().getColor();
                 newRow[i++] = stock.getQuantity();
                 newRow[i++] = personnelJpaController.findPersonnel(stock.getFKpersonnelId());

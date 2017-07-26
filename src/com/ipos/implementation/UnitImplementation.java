@@ -75,7 +75,7 @@ public class UnitImplementation {
         Integer row = table.getSelectedRow();
 
         if (row > -1) {
-            Unit unit = (Unit) table.getValueAt(row, 0);
+            Unit unit = (Unit) table.getModel().getValueAt(table.convertRowIndexToModel(table.getSelectedRow()), 0);
             UpdateUnitDialog dialog = new UpdateUnitDialog(null, true, this.emf, unit);
 
             dialog.setLocationRelativeTo(null);
@@ -90,7 +90,7 @@ public class UnitImplementation {
 
         if (row > -1) {
             try {
-                Unit unit = (Unit) table.getValueAt(row, 0);
+                Unit unit = (Unit) table.getModel().getValueAt(table.convertRowIndexToModel(table.getSelectedRow()), 0);
 
                 Integer response = JOptionPane.showConfirmDialog(null, "You are about to remove " + unit.getDescription() + "(" + unit.getCode() + ") unit. Do you want to continue?", "Remove Confirmation", JOptionPane.YES_NO_OPTION);
 

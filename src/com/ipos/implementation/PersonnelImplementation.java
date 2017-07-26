@@ -73,7 +73,7 @@ public class PersonnelImplementation {
         Integer row = table.getSelectedRow();
 
         if (row > -1) {
-            Personnel personnel = (Personnel) table.getValueAt(row, 0);
+            Personnel personnel = (Personnel) table.getModel().getValueAt(table.convertRowIndexToModel(table.getSelectedRow()), 0);
             UpdatePersonnelDialog dialog = new UpdatePersonnelDialog(null, true, this.emf, personnel);
 
             dialog.setLocationRelativeTo(null);
@@ -88,7 +88,7 @@ public class PersonnelImplementation {
 
         if (row > -1) {
             try {
-                Personnel personnel = (Personnel) table.getValueAt(row, 0);
+                Personnel personnel = (Personnel) table.getModel().getValueAt(table.convertRowIndexToModel(table.getSelectedRow()), 0);
 
                 Integer response = JOptionPane.showConfirmDialog(null, "You are about to remove " + personnel.getFullname() + " personnel. Do you want to continue?", "Remove Confirmation", JOptionPane.YES_NO_OPTION);
 
