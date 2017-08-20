@@ -3964,6 +3964,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Reload table.
         b1SetStockTable();
+        performSearch(stockXTable, stockXSearchField.getText());
     }//GEN-LAST:event_stockInButtonActionPerformed
 
     private void stockAdjustButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockAdjustButtonActionPerformed
@@ -3971,6 +3972,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Reload table.
         b1SetStockTable();
+        performSearch(stockXTable, stockXSearchField.getText());
     }//GEN-LAST:event_stockAdjustButtonActionPerformed
 
     private void stockOutButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockOutButtonActionPerformed
@@ -3978,6 +3980,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Reload table.
         b1SetStockTable();
+        performSearch(stockXTable, stockXSearchField.getText());
     }//GEN-LAST:event_stockOutButtonActionPerformed
 
     private void stockRefreshButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockRefreshButtonActionPerformed
@@ -4109,6 +4112,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Reload table.
         b2SetStockTable();
+        performSearch(stockXTable1, stockXSearchField1.getText());
     }//GEN-LAST:event_stockOutButton3ActionPerformed
 
     private void stockAdjustButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockAdjustButton3ActionPerformed
@@ -4116,6 +4120,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Reload table.
         b2SetStockTable();
+        performSearch(stockXTable1, stockXSearchField1.getText());
     }//GEN-LAST:event_stockAdjustButton3ActionPerformed
 
     private void stockInButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockInButton3ActionPerformed
@@ -4123,6 +4128,7 @@ public class MainFrame extends javax.swing.JFrame {
 
         // Reload table.
         b2SetStockTable();
+        performSearch(stockXTable1, stockXSearchField1.getText());
     }//GEN-LAST:event_stockInButton3ActionPerformed
 
     private void stockRefreshButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_stockRefreshButton1ActionPerformed

@@ -15,6 +15,8 @@ import com.ipos.jpa.controller.UserJpaController;
 import com.ipos.jpa.controller.exceptions.NonexistentEntityException;
 import com.ipos.view.settings.item.AddItemDialog;
 import com.ipos.view.settings.item.UpdateItemDialog;
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -111,17 +113,38 @@ public class ItemImplementation {
 
                 // Check if item has stocks.
                 List<Stock> stocks = stockJpaController.findStock(item, bodega);
+                List<Integer> ids = new ArrayList<>();
 
                 if (!stocks.isEmpty()) {
-                    JOptionPane.showMessageDialog(null, "Delete not allowed.  This item has a corresponding stock.", "Error", JOptionPane.ERROR_MESSAGE);
-                    
-                    return;
+                    Boolean isAllowed = false;
+
+                    // Check if stock has 0 quantity, allow delete.
+                    for (Stock s : stocks) {
+                        if (s.getQuantity().compareTo(BigDecimal.ZERO) == 0) {
+                            ids.add(s.getId());
+
+                            isAllowed = true;
+                        } else {
+                            isAllowed = false;
+                        }
+                    }
+
+                    if (!isAllowed) {
+                        JOptionPane.showMessageDialog(null, "Delete not allowed.  This item has a corresponding stock.", "Error", JOptionPane.ERROR_MESSAGE);
+
+                        return;
+                    }
                 }
 
                 Integer response = JOptionPane.showConfirmDialog(null, "You are about to remove " + item.getName() + " item. Do you want to continue?", "Remove Confirmation", JOptionPane.YES_NO_OPTION);
 
                 if (response == JOptionPane.YES_OPTION) {
                     itemJpaController.destroy(item.getId());
+
+                    // Remove all stocks.
+                    for (Integer id : ids) {
+                        stockJpaController.destroy(id);
+                    }
 
                     JOptionPane.showMessageDialog(null, "Item successfully deleted.", "Sucess", JOptionPane.INFORMATION_MESSAGE);
                 }
